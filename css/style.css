@@ -1548,7 +1548,7 @@ footer {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  min-height: 390px;
+  min-height: 300px;
 }
 
 footer a {
@@ -1568,7 +1568,7 @@ footer .footer-main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 footer .footer-main .footer-logo {
