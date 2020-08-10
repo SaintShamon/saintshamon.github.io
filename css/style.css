@@ -2239,10 +2239,15 @@ footer .author p {
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 572px) {
   .main-header .main-logo {
     margin-left: 10px;
     max-width: 300px;
+  }
+  .main-header .main-logo img {
+    margin-top: 10px;
+    max-width: 55px;
+    max-height: 55px;
   }
   .main-header .header-inner .logo-text {
     font-size: 20px;
