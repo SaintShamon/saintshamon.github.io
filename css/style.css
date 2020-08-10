@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(../scss/moby.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -1215,11 +1216,11 @@ header {
   line-height: 23px;
 }
 
-.projects .shop-block .product .product-inner p:last-child {
+.projects .shop-block .product .product-inner .price_product {
   border-top: 1px solid #cccccc;
 }
 
-.projects .shop-block .product .product-inner p:last-child span {
+.projects .shop-block .product .product-inner .price_product span {
   font-family: "Proxima nova extrabold", serif;
   font-weight: bold;
   font-size: 17px;
@@ -1630,7 +1631,7 @@ footer .footer-main .footer-contacts {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 50px;
+  margin-right: 0;
 }
 
 footer .footer-main .footer-contacts .contacts-inner {
@@ -1671,4 +1672,667 @@ footer .footer-main .footer-contacts .contacts-inner:last-child {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 50px;
+}
+
+footer .author {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+footer .author p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* Меню моб версия */
+#main-nav {
+  display: none;
+}
+
+.main-header .hamburger {
+  display: none;
+}
+
+.moby ul li a {
+  color: #e6e6e6;
+}
+
+.moby {
+  background: -webkit-gradient(linear, left top, left bottom, from(#330066), to(#339999));
+  background: linear-gradient(#330066, #339999);
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+  .block-header {
+    width: 80%;
+    margin: 50px auto;
+    margin-bottom: 0;
+  }
+  .block-header h2 {
+    max-width: 350px;
+    margin-top: 0;
+  }
+  .block-header .block-header-text {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .main-header {
+    margin: 0 20px;
+  }
+  .slider-main .main-menu {
+    margin: 0 auto;
+    max-width: 972px;
+  }
+  .slider-main .slider-main_first_text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .slider-main .slider-main_second_text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .advantages .form-block {
+    margin: 0 auto;
+  }
+  .advantages .first-form {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .advantages .first-form .form-fields-group {
+    margin-bottom: 10px;
+  }
+  .advantages .form-block::before {
+    top: 120px;
+    right: -50px;
+    margin-right: 0;
+  }
+  .advantages .form-button-block .form-block_check-text {
+    z-index: 3;
+    color: #ffffff;
+  }
+  .advantages .form-button-block .button-form {
+    position: relative;
+    border: 2px solid #339999;
+    z-index: 2;
+  }
+  .offers .block-header {
+    margin-top: 100px;
+  }
+  .offers .block-header-text {
+    max-width: 400px;
+  }
+  .offers .offers-main .offers-inner {
+    width: 100%;
+    max-width: 400px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-subheader {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .projects .shop-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .shop-block .product {
+    margin: 10px 20px;
+  }
+  .partners .partners-slider {
+    width: 100%;
+    max-width: 750px;
+  }
+  .reviews .reviews-main .review {
+    margin: 10px;
+  }
+  .reviews .reviews-main .review:last-child {
+    margin: 10px;
+  }
+  .faq .row {
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .contacts .contact-block_inner {
+    width: 100%;
+    max-width: 984px;
+  }
+  .contacts .contact-block_inner .contact-list li {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .contacts .contact-block_inner iframe {
+    display: block;
+    margin: 0 auto;
+  }
+  footer .footer-main {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  footer .footer-main .footer-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px auto;
+  }
+  footer .footer-main .footer-menu {
+    margin: 20px auto;
+    display: block;
+    max-width: 800px;
+  }
+  footer .footer-main .footer-menu .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer-main .footer-contacts {
+    display: block;
+    margin: 20px auto;
+  }
+  footer .footer-main .footer-contacts .contacts-inner {
+    max-width: 200px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  footer .footer-main .footer-contacts .contacts-inner:last-child {
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .author {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .author p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-header .main-logo {
+    margin-left: 10px;
+  }
+  .main-header .header-inner_contacts {
+    display: none;
+  }
+  .slider-main .main-menu {
+    display: none;
+  }
+  .slider-main .slider-text {
+    padding: 250px 20px 0;
+    text-align: center;
+  }
+  .slider-main .slider-text .slider-main_first_text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 18px 0;
+    font-style: "Proxima nova regular", serif;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: rgba(102, 153, 153, 0.7);
+    text-shadow: none;
+  }
+  .slider-main .slider-text .slider-main_second_text {
+    margin-top: 0;
+    padding: 10px 18px 30px;
+  }
+  .block-header h2 {
+    position: relative;
+    margin: 10px auto;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  .block-header .block-header-text {
+    margin: 15px auto;
+    margin-left: auto;
+  }
+  .advantages .advantages-slider {
+    width: 100%;
+    max-width: 690px;
+    margin: 30px auto;
+  }
+  .advantages .form-block {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .advantages .form-block h2 {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .advantages .form-block p {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 500px;
+  }
+  .advantages .first-form {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .advantages .first-form .form-fields-group {
+    margin-bottom: 10px;
+  }
+  .advantages .form-block::before {
+    top: 170px;
+    right: 40px;
+    width: 313px;
+    height: 337px;
+    margin-right: 0;
+    background-size: contain;
+  }
+  .advantages .form-button-block .form-block_check-text {
+    z-index: 3;
+    margin: 0 auto;
+  }
+  .advantages .form-button-block .button-form {
+    position: relative;
+    border: 2px solid #339999;
+    z-index: 2;
+  }
+  .offers .block-header-text {
+    max-width: 400px;
+  }
+  .offers .offers-main .offers-inner {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-subheader {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .offers .offers-main .offers-inner:last-child {
+    margin: 10px;
+  }
+  .projects .shop-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .shop-block .product {
+    margin: 10px;
+    max-width: 325px;
+  }
+  .projects .shop-block .product .product-inner p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .partners .partners-slider {
+    width: 100%;
+    max-width: 690px;
+    margin: 30px auto;
+  }
+  .reviews .reviews-main .review {
+    margin: 10px;
+  }
+  .reviews .reviews-main .review:last-child {
+    margin: 10px;
+  }
+  .faq .row {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+  .contacts .contact-block_inner {
+    width: 100%;
+    max-width: 984px;
+  }
+  .contacts .contact-block_inner .contact-list li {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .contacts .contact-block_inner iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 690px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-header .main-logo {
+    margin-left: 10px;
+  }
+  .main-header .header-inner_contacts {
+    display: none;
+  }
+  .main-header .hamburger {
+    display: inline-block;
+  }
+  .slider-main {
+    min-height: 100vh;
+  }
+  .slider-main .main-menu {
+    display: none;
+  }
+  .slider-main .slider-text {
+    padding: 150px 20px 0;
+    text-align: center;
+  }
+  .slider-main .slider-text .slider-main_first_text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 18px 0;
+    font-style: "Proxima nova regular", serif;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: rgba(102, 153, 153, 0.7);
+    text-shadow: none;
+  }
+  .slider-main .slider-text .slider-main_second_text {
+    margin-top: 0;
+    padding: 10px 18px 30px;
+  }
+  .block-header h2 {
+    position: relative;
+    margin: 10px auto;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+  }
+  .block-header .block-header-text {
+    margin: 15px auto;
+    margin-left: auto;
+  }
+  .advantages .advantages-slider {
+    width: 100%;
+    max-width: 690px;
+    margin: 30px auto;
+  }
+  .advantages .form-block {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .advantages .form-block h2 {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .advantages .form-block p {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 500px;
+  }
+  .advantages .first-form {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  .advantages .first-form .form-fields-group {
+    margin-bottom: 10px;
+  }
+  .advantages .form-block::before {
+    top: 170px;
+    right: 40px;
+    width: 313px;
+    height: 337px;
+    margin-right: 0;
+    background-size: contain;
+  }
+  .advantages .form-button-block .form-block_check-text {
+    z-index: 3;
+    margin: 0 auto;
+  }
+  .advantages .form-button-block .button-form {
+    position: relative;
+    border: 2px solid #339999;
+    z-index: 2;
+  }
+  .offers .block-header-text {
+    max-width: 400px;
+  }
+  .offers .offers-main .offers-inner {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-subheader {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .offers .offers-main .offers-inner:last-child {
+    margin: 10px;
+  }
+  .projects .shop-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projects .shop-block .product {
+    margin: 10px;
+    max-width: 325px;
+  }
+  .projects .shop-block .product .product-inner p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .partners .partners-slider {
+    width: 100%;
+    max-width: 690px;
+    margin: 30px auto;
+  }
+  .reviews .reviews-main .review {
+    margin: 10px;
+  }
+  .reviews .reviews-main .review:last-child {
+    margin: 10px;
+  }
+  .faq .row {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+  .contacts .contact-block_inner {
+    width: 100%;
+    max-width: 984px;
+  }
+  .contacts .contact-block_inner .contact-list li {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .contacts .contact-block_inner iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  footer .footer-main {
+    display: block;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  footer .footer-main .footer-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px auto;
+  }
+  footer .footer-main .footer-menu {
+    margin: 20px auto;
+    display: block;
+    max-width: 700px;
+  }
+  footer .footer-main .footer-menu .menu-list {
+    display: block;
+    text-align: center;
+  }
+  footer .footer-main .footer-contacts {
+    display: block;
+    margin: 20px auto;
+  }
+  footer .footer-main .footer-contacts .contacts-inner {
+    max-width: 200px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  footer .footer-main .footer-contacts .contacts-inner:last-child {
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .author {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .author p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main-header .main-logo {
+    margin-left: 10px;
+    max-width: 300px;
+  }
+  .main-header .header-inner .logo-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .slider-main .slider-text {
+    padding: 150px 20px 50px;
+    text-align: center;
+  }
+  .block-header {
+    text-align: center;
+    margin: 20px 10px 10px;
+  }
+  .advantages::before {
+    display: none;
+  }
+  .advantages .form-block::before {
+    display: none;
+  }
+  .reviews .reviews-main .review {
+    margin: 10px;
+  }
+  .reviews .reviews-main .review .review-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews .reviews-main .review p {
+    margin-left: 0;
+  }
+  .reviews .reviews-main .review iframe {
+    width: 100%;
+  }
+  .reviews .reviews-main .review:last-child {
+    margin: 10px;
+  }
+  .col:last-child {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .block-header h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .block-header .block-header-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-subheader {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-text {
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .offers .offers-main .offers-inner .offers-inner-lst-text {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .projects .shop-block .product .product-inner p {
+    font-family: "Proxima nova regular", serif;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .contacts .contact-block {
+    margin: 0 10px;
+  }
+  .contacts .contact-block .contact-list {
+    margin: 10px;
+  }
+  footer .footer-main .footer-logo {
+    display: block;
+  }
+  footer .footer-main .footer-logo img {
+    display: block;
+    margin: 0 auto;
+  }
+  footer .footer-main .footer-logo .header-inner {
+    margin-left: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main-header .main-logo img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+  .main-header .header-inner {
+    max-width: 200px;
+  }
+  .main-header .header-inner .logo-text {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main-header .header-inner .header-inner_text {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }

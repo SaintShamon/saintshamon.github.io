@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link type="text/css" rel="stylesheet" href="../css/hamburger.min.css">
 </head>
 
 <body>
@@ -24,6 +25,19 @@
             <p class="header-email">Пишите: <a href="mailto:youremail@yandex.ru<">youremail@yandex.ru</a></p>
           </div><button class="request-call btn">Заказать звонок</button>
         </div>
+        <button class="hamburger hamburger--collapse" type="button" id="main-menu-button"><span
+            class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#offers">Популярные объекты</a></li>
+            <li><a href="#partners">Партнеры</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#faq">Вопросы и ответы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -39,11 +53,13 @@
           <li><a href="#faq">Вопросы и ответы</a></li>
           <li><a href="#contacts">Контакты</a></li>
         </ul>
-        <p class="slider-main_first_text">Подберем для вас <span>дом и квартиру</span> безупречного качества <span>с
-            самой низкой ценой</span></p>
-        <p class="slider-main_second_text">Хотите купить новую квартиру и сделать правильный выбор?<br>Мы поможем
-          сделать это без посредников,
-          долгостроев и мошенников. </p>
+        <div class="slider-text">
+          <p class="slider-main_first_text">Подберем для вас <span>дом и квартиру</span>безупречного качества <span>с
+              самой низкой ценой</span></p>
+          <p class="slider-main_second_text">Хотите купить новую квартиру и сделать правильный выбор?<br>Мы поможем
+            сделать это без посредников,
+            долгостроев и мошенников. </p>
+        </div>
       </div>
     </section>
     <section class="advantages" id="advantages">
@@ -134,8 +150,8 @@
               <p class="offers-inner-subheader">Жилая площадь:</p>
               <p class="offers-inner-text">от 50 м2</p>
             </div>
-            <p class="offers-inner-lst-text">Понравилась квартира? Узнайте ее стоимость до рубля</p>
-            <button class="button-price btn">Узнать стоимость</button>
+            <p class="offers-inner-lst-text">Понравилась квартира? Узнайте ее стоимость до рубля</p><button
+              class="button-price btn">Узнать стоимость</button>
           </div>
         </div>
       </div>
@@ -149,62 +165,55 @@
             мы подберем отдельное предложение с учётом всех ваших пожеланий совершенно бесплатно</p>
         </div>
         <div class="shop-block">
-          <div class="product">
-            <img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
+          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
             <div class="product-inner">
               <p>ЖК "Новый проспект"</p>
               <p>Площадь квартир от 50 м2</p>
-              <p>Стоимость квартир: от <span>1 940 000</span> рублей</p>
-              <button class="more btn">Подробнее</button>
+              <p class="price_product">Стоимость квартир: от <span>1 940 000</span>рублей</p><button
+                class="more btn">Подробнее</button>
             </div>
           </div>
-          <div class="product">
-            <img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
+          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
             <div class="product-inner">
               <p>ЖК "Новый проспект"</p>
               <p>Площадь квартир от 50 м2</p>
-              <p>Стоимость квартир: от <span>1 940 000</span> рублей</p>
-              <button class="more btn">Подробнее</button>
+              <p class="price_product">Стоимость квартир: от <span>1 940 000</span>рублей</p><button
+                class="more btn">Подробнее</button>
             </div>
           </div>
-          <div class="product">
-            <img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
+          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
             <div class="product-inner">
               <p>ЖК "Новый проспект"</p>
               <p>Площадь квартир от 50 м2</p>
-              <p>Стоимость квартир: от <span>1 940 000</span> рублей</p>
-              <button class="more btn">Подробнее</button>
+              <p class="price_product">Стоимость квартир: от <span>1 940 000</span>рублей</p><button
+                class="more btn">Подробнее</button>
             </div>
           </div>
-          <div class="product">
-            <img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
+          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
             <div class="product-inner">
               <p>ЖК "Новый проспект"</p>
               <p>Площадь квартир от 50 м2</p>
-              <p>Стоимость квартир: от <span>1 940 000</span> рублей</p>
-              <button class="more btn">Подробнее</button>
+              <p class="price_product">Стоимость квартир: от <span>1 940 000</span>рублей</p><button
+                class="more btn">Подробнее</button>
             </div>
           </div>
-          <div class="product">
-            <img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
+          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
             <div class="product-inner">
               <p>ЖК "Новый проспект"</p>
               <p>Площадь квартир от 50 м2</p>
-              <p>Стоимость квартир: от <span>1 940 000</span> рублей</p>
-              <button class="more btn">Подробнее</button>
+              <p class="price_product">Стоимость квартир: от <span>1 940 000</span>рублей</p><button
+                class="more btn">Подробнее</button>
             </div>
           </div>
-          <div class="product">
-            <img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
+          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
             <div class="product-inner">
               <p>ЖК "Новый проспект"</p>
               <p>Площадь квартир от 50 м2</p>
-              <p>Стоимость квартир: от <span>1 940 000</span> рублей</p>
-              <button class="more btn">Подробнее</button>
+              <p class="price_product">Стоимость квартир: от <span>1 940 000</span>рублей</p><button
+                class="more btn">Подробнее</button>
             </div>
           </div>
-        </div>
-        <button class="more-offers btn">Все предложения</button>
+        </div><button class="more-offers btn">Все предложения</button>
       </div>
     </section>
     <section class="partners" id="partners">
@@ -216,38 +225,31 @@
         </div>
         <div class="partners-slider">
           <div>
-            <div class="slider-block">
-              <img src="../img/logo_partners/arsenal_logo-min.png" alt="" width="150" height="150">
-            </div>
+            <div class="slider-block"><img src="../img/logo_partners/arsenal_logo-min.png" alt="" width="150"
+                height="150"></div>
           </div>
           <div>
-            <div class="slider-block">
-              <img src="../img/logo_partners/gazprombank_logo-min.png" alt="" width="150" height="150">
-            </div>
+            <div class="slider-block"><img src="../img/logo_partners/gazprombank_logo-min.png" alt="" width="150"
+                height="150"></div>
           </div>
           <div>
-            <div class="slider-block">
-              <img src="../img/logo_partners/promsvyazbank_logo-min.png" alt="" width="150" height="150">
-            </div>
+            <div class="slider-block"><img src="../img/logo_partners/promsvyazbank_logo-min.png" alt="" width="150"
+                height="150"></div>
           </div>
           <div>
-            <div class="slider-block">
-              <img src="../img/logo_partners/rosselhozbank_logo-min.png" alt="" width="150" height="150">
-            </div>
+            <div class="slider-block"><img src="../img/logo_partners/rosselhozbank_logo-min.png" alt="" width="150"
+                height="150"></div>
           </div>
           <div>
-            <div class="slider-block">
-              <img src="../img/logo_partners/Rosstroyinvest-min.png" alt="" width="150" height="150">
-            </div>
+            <div class="slider-block"><img src="../img/logo_partners/Rosstroyinvest-min.png" alt="" width="150"
+                height="150"></div>
           </div>
           <div>
-            <div class="slider-block">
-              <img src="../img/logo_partners/Sberbank_logo-min.png" alt="" width="150" height="150">
-            </div>
+            <div class="slider-block"><img src="../img/logo_partners/Sberbank_logo-min.png" alt="" width="150"
+                height="150"></div>
           </div>
           <div>
-            <div class="slider-block">
-              <img src="../img/logo_partners/vtb_logo-min.png" alt="" width="150" height="150">
+            <div class="slider-block"><img src="../img/logo_partners/vtb_logo-min.png" alt="" width="150" height="150">
             </div>
           </div>
         </div>
@@ -262,11 +264,9 @@
             которые так же,
             как и вы решили приорести своё жильё</p>
         </div>
-
         <div class="reviews-main">
           <div class="review">
-            <div class="review-header">
-              <img src="../img/review_photo.jpg" alt="" width="75" height="75">
+            <div class="review-header"><img src="../img/review_photo.jpg" alt="" width="75" height="75">
               <h3>Иван Иванов</h3>
             </div>
             <p>Задача организации,
@@ -278,13 +278,12 @@
               позволяет оценить значение направлений прогрессивного развития. Не следует,
               однако забывать,
               что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании
-              существенных финансовых и административных условий.</p>
-            <iframe width="520" height="315" src="https://www.youtube.com/embed/LGFX4Nccq9U" frameborder="0"
+              существенных финансовых и административных условий.</p><iframe width="520" height="315"
+              src="https://www.youtube.com/embed/LGFX4Nccq9U" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="review">
-            <div class="review-header">
-              <img src="../img/review_photo.jpg" alt="" width="75" height="75">
+            <div class="review-header"><img src="../img/review_photo.jpg" alt="" width="75" height="75">
               <h3>Иван Иванов</h3>
             </div>
             <p>Задача организации,
@@ -296,8 +295,8 @@
               позволяет оценить значение направлений прогрессивного развития. Не следует,
               однако забывать,
               что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании
-              существенных финансовых и административных условий.</p>
-            <iframe width="520" height="315" src="https://www.youtube.com/embed/LGFX4Nccq9U" frameborder="0"
+              существенных финансовых и административных условий.</p><iframe width="520" height="315"
+              src="https://www.youtube.com/embed/LGFX4Nccq9U" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
@@ -311,73 +310,67 @@
         <div class="row">
           <div class="col">
             <div class="tabs">
-              <div class="tab">
-                <input type="checkbox" id="chck1">
-                <label class="tab-label" for="chck1">Как получить полную информацию о застройщике?</label>
-                <div class="tab-content">
-                  К сожалению, застройщики не всегда имеют безупречную репутацию и могут что-то утаивать от Вас, чтобы
-                  не было соблазна уйти к его конкуренту.
-                  Мы проводим полный анализ деловой репутации застройщика.
-                  Главный фактор работы с нами - правда. Будьте уверенны в застройщике, Вы - человек, который отдает за
-                  квартиру немалые деньги и вправе знать больше, чем застройщик готов Вам рассказать о себе.
-                </div>
+              <div class="tab"><input type="checkbox" id="chck1"><label class="tab-label" for="chck1">Как получить
+                  полную информацию о застройщике?</label>
+                <div class="tab-content">К сожалению,
+                  застройщики не всегда имеют безупречную репутацию и могут что-то утаивать от Вас,
+                  чтобы не было соблазна уйти к его конкуренту. Мы проводим полный анализ деловой репутации застройщика.
+                  Главный фактор работы с нами - правда. Будьте уверенны в застройщике,
+                  Вы - человек,
+                  который отдает за квартиру немалые деньги и вправе знать больше,
+                  чем застройщик готов Вам рассказать о себе. </div>
               </div>
-              <div class="tab">
-                <input type="checkbox" id="chck2">
-                <label class="tab-label" for="chck2">Почему нужно покупать квартиру в нашем агентстве?</label>
-                <div class="tab-content">
-                  В офисе строительной компании, Вам будут предлагать варианты, которые есть конкретно у этого
-                  застройщика.
-                  Таким образом Вас ограничивают в выборе. Обращаясь в наше агентство, Вы получаете полный доступ ко
-                  всем застройщикам, их предложениям, скидкам и планировкам.
-                  Из всего обилия вариантов Вы найдете квартиру своей мечты!
-                </div>
+              <div class="tab"><input type="checkbox" id="chck2"><label class="tab-label" for="chck2">Почему нужно
+                  покупать квартиру в нашем агентстве?</label>
+                <div class="tab-content">В офисе строительной компании,
+                  Вам будут предлагать варианты,
+                  которые есть конкретно у этого застройщика. Таким образом Вас ограничивают в выборе. Обращаясь в наше
+                  агентство,
+                  Вы получаете полный доступ ко всем застройщикам,
+                  их предложениям,
+                  скидкам и планировкам. Из всего обилия вариантов Вы найдете квартиру своей мечты ! </div>
               </div>
-              <div class="tab">
-                <input type="checkbox" id="chck3">
-                <label class="tab-label" for="chck3">Как оформить ипотеку (военную ипотеку)?</label>
-                <div class="tab-content">
-                  Если Вы никогда не сталкивались с кредитами и слово "ипотека" Вас пугает, не волнуйтесь, мы сделаем
-                  процесс согласования и получения ипотеки простым и понятным.
-                  Если Вы военнослужащий, мы подберем для Вас необходимый объект, который подходит под условия военной
-                  ипотеки.
-                  Всё очень просто! Для того, чтобы получить одобрение по ипотеке, не нужно искать лучший банк, у кого
-                  ниже процентная ставка, какие документы нужны, где и какие подводные камни. Просто позвоните нам или
-                  приезжайте к нам в офис. Пока вы будете пить кофе, наши специалисты раскроют Вам все секреты банков.
-                </div>
+              <div class="tab"><input type="checkbox" id="chck3"><label class="tab-label" for="chck3">Как оформить
+                  ипотеку (военную ипотеку)?</label>
+                <div class="tab-content">Если Вы никогда не сталкивались с кредитами и слово "ипотека"Вас пугает,
+                  не волнуйтесь,
+                  мы сделаем процесс согласования и получения ипотеки простым и понятным. Если Вы военнослужащий,
+                  мы подберем для Вас необходимый объект,
+                  который подходит под условия военной ипотеки. Всё очень просто ! Для того,
+                  чтобы получить одобрение по ипотеке,
+                  не нужно искать лучший банк,
+                  у кого ниже процентная ставка,
+                  какие документы нужны,
+                  где и какие подводные камни. Просто позвоните нам или приезжайте к нам в офис. Пока вы будете пить
+                  кофе,
+                  наши специалисты раскроют Вам все секреты банков. </div>
               </div>
-              <div class="tab">
-                <input type="checkbox" id="chck4">
-                <label class="tab-label" for="chck4">Как купить квартиру и не потратить своё время?</label>
-                <div class="tab-content">
-                  В современном мире человек тратит много времени на работу. Есть всего 1-2 выходных для решения бытовых
-                  ситуаций.
-                  Для того чтобы купить квартиру у надежного застройщика, не нужно уделять большое количество времени на
-                  изучение репутации застройщика, его сданные объекты и так далее.
-                  Мы уже сделали это за Вас. Вам нужно только позвонить или приехать к нам в офис и получить полную
-                  информацию по вашему вопросу. Вся сложная работа уже проделана.
-                </div>
+              <div class="tab"><input type="checkbox" id="chck4"><label class="tab-label" for="chck4">Как купить
+                  квартиру и не потратить своё время?</label>
+                <div class="tab-content">В современном мире человек тратит много времени на работу. Есть всего 1-2
+                  выходных для решения бытовых ситуаций. Для того чтобы купить квартиру у надежного застройщика,
+                  не нужно уделять большое количество времени на изучение репутации застройщика,
+                  его сданные объекты и так далее. Мы уже сделали это за Вас. Вам нужно только позвонить или приехать к
+                  нам в офис и получить полную информацию по вашему вопросу. Вся сложная работа уже проделана. </div>
               </div>
             </div>
           </div>
-
         </div>
     </section>
-
     <section class="contacts" id="contacts">
       <div class="container">
         <div class="block-header">
           <h2>Карта проезда в наш офис</h2>
           <p class="block-header-text">Приезжайте в любой день,
-            чтобы обсудить ваш будущий дом или квартиру за чашечкой чая. Будем рады знакомству!</p>
+            чтобы обсудить ваш будущий дом или квартиру за чашечкой чая. Будем рады знакомству !</p>
         </div>
         <div class="contact-block">
           <div class="contact-block_inner">
             <ul class="contact-list">
               <li>
                 <h3 class="contact-adress">Адрес офиса:</h3>
-                <p>Ул. Капитана Буркова 11/18, Мурманск</p>
-
+                <p>Ул. Капитана Буркова 11/18,
+                  Мурманск</p>
               </li>
               <li>
                 <h3 class="contact-time">Режим работы:</h3>
@@ -397,12 +390,9 @@
               </li>
             </ul>
           </div>
-          <div class="contact-block_inner">
-            <iframe
+          <div class="contact-block_inner"><iframe
               src="https://yandex.ua/map-widget/v1/?um=constructor%3A3e2cad9bb481f97a5379679c78ce70bf20d7ed45ef801cdc8fc81cfa740fda37&amp;source=constructor"
-              width="750" height="600" frameborder="0"></iframe>
-
-          </div>
+              width="750" height="600" frameborder="0"></iframe></div>
         </div>
       </div>
     </section>
@@ -410,8 +400,7 @@
   <footer>
     <div class="container">
       <div class="footer-main">
-        <div class="footer-logo">
-          <img src="../img/logo.jpg" width="90" height="90">
+        <div class="footer-logo"><img src="../img/logo.jpg" width="90" height="90">
           <div class="header-inner">
             <p class="logo-text">НОВЫЙ ПЕТЕРБУРГ</p>
             <p class="header-inner_text">Вся информация о недвижимости<br>Санкт-Петербурга</p>
@@ -431,23 +420,24 @@
         <div class="footer-contacts">
           <div class="contacts-inner">
             <h3>Контакты:</h3>
-            <p>Ул. Капитана Буркова 11/18, Мурманск</p>
-            <p><a href="mailto:youremail@yandex.ru<">youremail@yandex.ru</a></p>
+            <p>Ул. Капитана Буркова 11/18,
+              Мурманск</p>
+            <p><a href="mailto:youremail@yandex.ru">youremail@yandex.ru</a></p>
             <p><a href="tel:+78152215318">+7 (8152) 21-53-18</a></p>
           </div>
-          <div class="contacts-inner">
-            <a href="#">
-              <img src="../img/vk_logo.svg" width="50" height="50" alt="">
-            </a>
-            <a href="#">
-              <img src="../img/tel_logo.svg" width="50" height="50" alt="">
-            </a>
-          </div>
+          <div class="contacts-inner"><a href="#"><img src="../img/vk_logo.svg" width="50" height="50" alt=""></a><a
+              href="#"><img src="../img/tel_logo.svg" width="50" height="50" alt=""></a></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="author">
+          <p>Designed by <a href="maxkoitsan.website">Max Koitsan</a></p>
         </div>
       </div>
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/moby.min.js"></script>
   <script src="../js/libs.min.js"></script>
   <script src="../js/main.js"></script>
 </body>
