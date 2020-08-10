@@ -6,7 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url(../scss/moby.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -345,37 +344,56 @@ template {
 
 @font-face {
   font-family: "Proxima nova black";
-  src: url("../fonts/ProximaNova/Proxima-Nova-Black.otf") format("otf");
+  font-weight: normal;
+  src: url("../fonts/ProximaNova/ProximaNova-Black.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Black.ttf") format("tft");
+  src: url("../fonts/ProximaNova/ProximaNova-Black.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Black.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Proxima nova bold";
   font-weight: bold;
-  src: url("../fonts/ProximaNova/Proxima-Nova-Bold.otf") format("otf");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Proxima nova extrabold";
-  font-weight: extrabold;
-  src: url("../fonts/ProximaNova/Proxima-Nova-Extrabold.otf") format("otf");
+  font-weight: bold;
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Proxima nova light";
-  font-weight: extrabold;
-  src: url("../fonts/ProximaNova/Proxima-Nova-Light.otf") format("otf");
+  font-weight: lighter;
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Proxima nova regular";
-  font-weight: extrabold;
-  src: url("../fonts/ProximaNova/Proxima-Nova-Regular.otf") format("otf");
+  font-weight: normal;
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Proxima nova semibold";
-  font-weight: extrabold;
-  src: url("../fonts/ProximaNova/Proxima-Nova-Semibold.otf") format("otf");
+  font-weight: bolder;
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2");
 }
 
 /* Slider */
@@ -1880,6 +1898,9 @@ footer .author p {
   }
   .main-header .header-inner_contacts {
     display: none;
+  }
+  .main-header .hamburger {
+    display: inline-block;
   }
   .slider-main .main-menu {
     display: none;

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Proxima nova black";
+  font-weight: normal;
+  src: url("../fonts/ProximaNova/ProximaNova-Black.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Black.ttf") format("tft");
+  src: url("../fonts/ProximaNova/ProximaNova-Black.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Proxima nova bold";
+  font-weight: bold;
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Proxima nova extrabold";
+  font-weight: bold;
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Extrabld.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Proxima nova light";
+  font-weight: lighter;
+  src: url("../fonts/ProximaNova/ProximaNova-Light.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Proxima nova regular";
+  font-weight: normal;
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Proxima nova semibold";
+  font-weight: bolder;
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot") format("eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("ttf");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.woff2") format("woff2");
+}

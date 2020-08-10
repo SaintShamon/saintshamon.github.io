@@ -2,12 +2,12 @@
 @import "../scss/font.scss";
 @import "../scss/slick-theme.scss";
 @import "../scss/slick.scss";
-@import "../scss/moby.css";
 
 
 $darkblue:#330066;
 $lightblue:#339999;
 $grey: #333333;
+
 $font-black: 'Proxima nova black',
 serif;
 $font-bold: 'Proxima nova bold',
@@ -1248,6 +1248,10 @@ footer {
 
         .header-inner_contacts {
             display: none;
+        }
+
+        .hamburger {
+            display: inline-block;
         }
     }
 
