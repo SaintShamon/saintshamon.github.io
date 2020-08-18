@@ -434,9 +434,38 @@
         <div class="author">
           <p>Designed by <a href="https://maxkoitsan.website">Max Koitsan</a></p>
         </div>
+        <div id="map" style="width:800px; height:600px"></div>
       </div>
     </div>
   </footer>
+   <script type="text/javascript">
+        // Как только будет загружен API и готов DOM, выполняем инициализацию
+        ymaps.ready(init);
+ 
+        function init () {
+            var myMap = new ymaps.Map("map", {
+                    center: [56.317655,43.994362],
+                    zoom: 15
+                }),
+                // Создаем многоугольник
+               myPolygon = new ymaps.Polygon([[
+                    // Координаты вершин внешней границы многоугольника.
+			[56.316797,43.987925],
+			[56.316177,43.990586],
+			[56.316224,43.995564],
+			[56.317703,44.002258],
+			[56.319182,44.003288],
+			[56.318943,43.997194],
+			[56.318514,43.996679],
+			[56.320803,43.990071]
+                ]]);
+ 
+            myMap.geoObjects               
+                .add(myPolygon);
+        }
+    </script>
+        <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"
+            type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../js/moby.min.js"></script>
   <script src="../js/libs.min.js"></script>
