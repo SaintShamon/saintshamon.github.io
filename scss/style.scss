@@ -1712,12 +1712,18 @@ footer {
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 572px) {
 
     .main-header {
         .main-logo {
             margin-left: 10px;
             max-width: 300px;
+
+            img {
+                margin-top: 10px;
+                max-width: 55px;
+                max-height: 55px;
+            }
         }
 
         .header-inner .logo-text {
@@ -1878,4 +1884,10 @@ footer {
             }
         }
     }
+}
+
+#map {
+
+    widht: 600px;
+    height: 600px;
 }

@@ -2362,3 +2362,8 @@ footer .author p {
     line-height: 12px;
   }
 }
+
+#map {
+  widht: 600px;
+  height: 600px;
+}
