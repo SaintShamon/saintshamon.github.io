@@ -60,7 +60,7 @@ function init() {
     });
 
     // Загрузка YMapsML-файла.
-    ymaps.geoXml.load('https://sandbox.api.maps.yandex.net/examples/ru/2.1/ymapsml_polygon/data.xml')
+    ymaps.geoXml.load('https://saintshamon.github.io/js/data.xml')
         .then(function (res) {
             // Добавление геообъектов на карту.
             myMap.geoObjects.add(res.geoObjects);
