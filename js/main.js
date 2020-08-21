@@ -53,7 +53,7 @@ ymaps.ready(init);
 function init() {
     // Создание экземпляра карты.
     var myMap = new ymaps.Map('map', {
-        center: [61.766513, 34.344165],
+        center: [59.939095, 30.315868],
         zoom: 12
     }, {
         searchControlProvider: 'yandex#search'
