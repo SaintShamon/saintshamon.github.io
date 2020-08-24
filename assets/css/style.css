@@ -1,0 +1,277 @@
+.logo-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ogin-logo_text {
+  font-family: 'Uni Neue';
+  font-weight: 800;
+  color: #222222;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 5px 0;
+  letter-spacing: -0.5px;
+  letter-spacing: -0.03125rem;
+}
+
+.login-logo_text_down {
+  display: block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #818181;
+  text-transform: uppercase;
+  font-family: 'Uni Neue';
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  letter-spacing: 0.21875rem;
+}
+
+.logo_main img {
+  margin: .5em;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 25px;
+}
+
+.down_menu {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.down_menu .down_menu-item:first-child {
+  margin: 0 auto;
+}
+
+.down_menu .down_menu-item {
+  padding: 0 .625rem;
+}
+
+.down_menu .down_menu-item h4 {
+  text-align: center;
+}
+
+.down_menu .down_menu-item a {
+  text-decoration: none;
+}
+
+.token {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.token .token_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.token .token_col label {
+  display: inline-block;
+  margin: .5rem 0;
+}
+
+.token .token_col input {
+  max-width: calc(100% - 110px);
+  margin-top: 0;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.token .token_inner {
+  margin-top: 20px;
+  margin-left: .5rem;
+  font-size: small;
+}
+
+.trader .trader_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.trader .trader_col label {
+  display: inline-block;
+  margin: .5rem 0;
+}
+
+.trader .trader_col select {
+  max-width: calc(100% - 130px);
+  margin-top: 0;
+  margin-left: .5rem !important;
+  margin-right: .5rem !important;
+}
+
+.trader .trader_inner {
+  margin: 10px;
+}
+
+.trader .trader_inner .trader_inner_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text-primary_inner {
+  margin-bottom: .2rem;
+}
+
+.text-primary_inner:last-child {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.main-page_inner_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay {
+  display: block;
+  margin: 20px auto;
+}
+
+.pay .pay-button {
+  display: block !important;
+  margin: 0 auto;
+}
+
+.b-trader {
+  height: 185px !important;
+  padding: 13px;
+  position: relative;
+}
+
+.b-trader > div {
+  position: relative;
+  display: block;
+  height: 158px;
+  padding: 18px 0 0 22px;
+  border-radius: 10px;
+}
+
+.b-trader > div h4 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  font-family: 'SFUIText';
+  font-weight: 300;
+  color: #fff;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeSpeed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.b-trader > div p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-family: 'SFUIText';
+  color: #fff;
+  margin: 0 0 8px 0;
+  line-height: 17px;
+  line-height: 1.0625rem;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeSpeed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: 5;
+}
+
+.b-trader > div p strong {
+  font-family: 'SFUIText';
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  display: block;
+  line-height: 20px;
+  line-height: 1.25rem;
+}
+
+.b-trader > div p:last-child {
+  margin-bottom: 0;
+}
+
+.b-trader > div:before {
+  content: '';
+  width: 139px;
+  height: 136px;
+  background: url("../images/user.png") no-repeat;
+  position: absolute;
+  right: 17px;
+  bottom: 0;
+  z-index: 2;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.b-trader > div:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 10px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.b-trader > div:after {
+  background: #c81f1f;
+  background: linear-gradient(45deg, #c81f1f 0%, #f33333 100%);
+}

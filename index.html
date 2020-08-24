@@ -1,450 +1,681 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link type="text/css" rel="stylesheet" href="../css/hamburger.min.css">
-  <link type="text/css" rel="stylesheet" href="../css/moby.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Подключение</title>
+
+
+    <link type="text/css" href="assets/css/vendor-morris.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/vendor-bootstrap-datepicker.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/style.css" rel="stylesheet">
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+
+    <!-- Simplebar -->
+    <link type="text/css" href="assets/vendor/simplebar.css" rel="stylesheet">
 </head>
 
-<body onload="initialize()" onunload="GUnload()">
-  <header>
-    <div class="container">
-      <div class="main-header">
-        <div class="main-logo"><img src="../img/logo.jpg" width="90" height="90">
-          <div class="header-inner">
-            <p class="logo-text">НОВЫЙ ПЕТЕРБУРГ</p>
-            <p class="header-inner_text">Вся информация о недвижимости Санкт-Петербурга</p>
-          </div>
-        </div>
-        <div class="header-inner_contacts">
-          <div class="inner-phone">
-            <p class="header-phone">Звоните: <a href="tel:+78152215318">+7 (8152) 21-53-18</a></p>
-            <p class="header-email">Пишите: <a href="mailto:youremail@yandex.ru<">youremail@yandex.ru</a></p>
-          </div><button class="request-call btn">Заказать звонок</button>
-        </div>
-        <button class="hamburger hamburger--collapse" type="button" id="main-menu-button"><span
-            class="hamburger-box"><span class="hamburger-inner"></span></span></button>
-        <nav id="main-nav">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#advantages">Преимущества</a></li>
-            <li><a href="#offers">Популярные объекты</a></li>
-            <li><a href="#partners">Партнеры</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#faq">Вопросы и ответы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-            <ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="slider-main">
-      <div class="container">
-        <ul class="main-menu">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#advantages">Преимущества</a></li>
-          <li><a href="#offers">Популярные объекты</a></li>
-          <li><a href="#partners">Партнеры</a></li>
-          <li><a href="#reviews">Отзывы</a></li>
-          <li><a href="#faq">Вопросы и ответы</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-        </ul>
-        <div class="slider-text">
-          <p class="slider-main_first_text">Подберем для вас <span>дом и квартиру</span> безупречного качества <span>с
-              самой низкой ценой</span></p>
-          <p class="slider-main_second_text">Хотите купить новую квартиру и сделать правильный выбор?<br>Мы поможем
-            сделать это без посредников,
-            долгостроев и мошенников. </p>
-        </div>
-      </div>
-    </section>
-    <section class="advantages" id="advantages">
-      <div class="container">
-        <div class="block-header">
-          <h2>С нами по-настоящему выгодно работать</h2>
-          <p class="block-header-text">Наши клиенты — люди,
-            которые умеют обращаться с деньгами</p>
-        </div>
-        <div class="advantages-slider">
-          <div>
-            <div class="slider-block"><img src="../img/peace-treaty.png" alt="" width="185" height="185">
-              <p>Составляем договор</p>
-            </div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/house-outline.svg" alt="" width="185" height="185">
-              <p>Фото и видео объекта</p>
-            </div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/hand.svg" alt="" width="185" height="185">
-              <p>Составляем договор</p>
-            </div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/award.svg" alt="" width="185" height="185">
-              <p>Работаем на совесть</p>
-            </div>
-          </div>
-        </div>
-        <div class="form-block">
-          <h2 class="form-block_main-text">Заполните поля ниже,
-            чтобы начать работать с нами с максимальным <span>"пакетом
-              выгод"</span>
-          </h2>
-          <p class="form-block_inner-text">За вашим номером будут забронированы все бесплатные бонусы и акции,
-            которые есть на сегодняшний день</p>
-          <form class="first-form" action="">
-            <div class="form-fields-group"><input type="text" id="form-name" class="form-fields-input"
-                placeholder="Как вас зовут?" required></div>
-            <div class="form-fields-group"><input type="tel" id="form-number" class="form-fields-input"
-                placeholder="Телефон для связи" required></div>
-            <div class="form-fields-group"><input type="text" id="form-email" class="form-fields-input"
-                placeholder="Перезвоните мне" required></div>
-          </form>
-          <div class="form-button-block"><button class="button-form btn">Перезвоните мне</button>
-            <p class="form-block_check-text">Ваши данные в безопасности</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="offers" id="offers">
-      <div class="container">
-        <div class="block-header">
-          <h2>Горячие<br>предложения</h2>
-          <p class="block-header-text">Каждая квартира не только хороша внешне,
-            но и надежна в своих скрытых элементах. Это доказывает фотоотчет,
-            который мы отправляем всем клиентам на почту</p>
-        </div>
-        <div class="offers-main">
-          <div class="offers-inner"><img src="../img/product_img.jpg" alt="" width="500" height="375">
-            <div class="offers-inner_first-feature">
-              <p class="offers-inner-subheader">Место строительства:</p>
-              <p class="offers-inner-text">СНТ "Бархатный берег"</p>
-            </div>
-            <div class="offers-inner_second-feature">
-              <p class="offers-inner-subheader">Срок строительства:</p>
-              <p class="offers-inner-text">август 2020 - июль 2022</p>
-            </div>
-            <div class="offers-inner_third-feature">
-              <p class="offers-inner-subheader">Жилая площадь:</p>
-              <p class="offers-inner-text">от 50 м2</p>
-            </div>
-            <p class="offers-inner-lst-text">Понравилась квартира? Узнайте ее стоимость до рубля</p><button
-              class="button-price btn">Узнать стоимость</button>
-          </div>
-          <div class="offers-inner"><img src="../img/product_img.jpg" alt="" width="500" height="375">
-            <div class="offers-inner_first-feature">
-              <p class="offers-inner-subheader">Место строительства:</p>
-              <p class="offers-inner-text">СНТ "Бархатный берег"</p>
-            </div>
-            <div class="offers-inner_second-feature">
-              <p class="offers-inner-subheader">Срок строительства:</p>
-              <p class="offers-inner-text">август 2020 - июль 2022</p>
-            </div>
-            <div class="offers-inner_third-feature">
-              <p class="offers-inner-subheader">Жилая площадь:</p>
-              <p class="offers-inner-text">от 50 м2</p>
-            </div>
-            <p class="offers-inner-lst-text">Понравилась квартира? Узнайте ее стоимость до рубля</p><button
-              class="button-price btn">Узнать стоимость</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="projects" id="projeccts">
-      <div class="container">
-        <div class="block-header">
-          <h2>Самые популярные готовые предложения</h2>
-          <p class="block-header-text">Если вы не найдете то,
-            что вам по душе,
-            мы подберем отдельное предложение с учётом всех ваших пожеланий совершенно бесплатно</p>
-        </div>
-        <div class="shop-block">
-          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
-            <div class="product-inner">
-              <p>ЖК "Новый проспект"</p>
-              <p>Площадь квартир от 50 м2</p>
-              <p class="price_product">Стоимость квартир: от <span>1 940 000</span> рублей</p><button
-                class="more btn">Подробнее</button>
-            </div>
-          </div>
-          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
-            <div class="product-inner">
-              <p>ЖК "Новый проспект"</p>
-              <p>Площадь квартир от 50 м2</p>
-              <p class="price_product">Стоимость квартир: от <span>1 940 000</span> рублей</p><button
-                class="more btn">Подробнее</button>
-            </div>
-          </div>
-          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
-            <div class="product-inner">
-              <p>ЖК "Новый проспект"</p>
-              <p>Площадь квартир от 50 м2</p>
-              <p class="price_product">Стоимость квартир: от <span>1 940 000</span> рублей</p><button
-                class="more btn">Подробнее</button>
-            </div>
-          </div>
-          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
-            <div class="product-inner">
-              <p>ЖК "Новый проспект"</p>
-              <p>Площадь квартир от 50 м2</p>
-              <p class="price_product">Стоимость квартир: от <span>1 940 000</span> рублей</p><button
-                class="more btn">Подробнее</button>
-            </div>
-          </div>
-          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
-            <div class="product-inner">
-              <p>ЖК "Новый проспект"</p>
-              <p>Площадь квартир от 50 м2</p>
-              <p class="price_product">Стоимость квартир: от <span>1 940 000</span> рублей</p><button
-                class="more btn">Подробнее</button>
-            </div>
-          </div>
-          <div class="product"><img src="../img/diplomat-sankt-peterburg.jpg" alt="" width="375" height="375">
-            <div class="product-inner">
-              <p>ЖК "Новый проспект"</p>
-              <p>Площадь квартир от 50 м2</p>
-              <p class="price_product">Стоимость квартир: от <span>1 940 000</span> рублей</p><button
-                class="more btn">Подробнее</button>
-            </div>
-          </div>
-        </div><button class="more-offers btn">Все предложения</button>
-      </div>
-    </section>
-    <section class="partners" id="partners">
-      <div class="container">
-        <div class="block-header">
-          <h2>Наши партнеры</h2>
-          <p class="block-header-text">Наши клиенты — люди,
-            которые умеют обращаться с деньгами</p>
-        </div>
-        <div class="partners-slider">
-          <div>
-            <div class="slider-block"><img src="../img/logo_partners/arsenal_logo-min.png" alt="" width="150"
-                height="150"></div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/logo_partners/gazprombank_logo-min.png" alt="" width="150"
-                height="150"></div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/logo_partners/promsvyazbank_logo-min.png" alt="" width="150"
-                height="150"></div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/logo_partners/rosselhozbank_logo-min.png" alt="" width="150"
-                height="150"></div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/logo_partners/Rosstroyinvest-min.png" alt="" width="150"
-                height="150"></div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/logo_partners/Sberbank_logo-min.png" alt="" width="150"
-                height="150"></div>
-          </div>
-          <div>
-            <div class="slider-block"><img src="../img/logo_partners/vtb_logo-min.png" alt="" width="150" height="150">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="reviews" id="reviews">
-      <div class="container">
-        <div class="block-header">
-          <h2>Отзывы,
-            которым можно доверять</h2>
-          <p class="block-header-text">Это мнения простых людей,
-            которые так же,
-            как и вы решили приорести своё жильё</p>
-        </div>
-        <div class="reviews-main">
-          <div class="review">
-            <div class="review-header"><img src="../img/review_photo.jpg" alt="" width="75" height="75">
-              <h3>Иван Иванов</h3>
-            </div>
-            <p>Задача организации,
-              в особенности же постоянный количественный рост и сфера нашей активности позволяет оценить значение форм
-              развития. Не следует,
-              однако забывать,
-              что консультация с широким активом представляет собой интересный эксперимент проверки существенных
-              финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности
-              позволяет оценить значение направлений прогрессивного развития. Не следует,
-              однако забывать,
-              что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании
-              существенных финансовых и административных условий.</p><iframe width="520" height="315"
-              src="https://www.youtube.com/embed/LGFX4Nccq9U" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="review">
-            <div class="review-header"><img src="../img/review_photo.jpg" alt="" width="75" height="75">
-              <h3>Иван Иванов</h3>
-            </div>
-            <p>Задача организации,
-              в особенности же постоянный количественный рост и сфера нашей активности позволяет оценить значение форм
-              развития. Не следует,
-              однако забывать,
-              что консультация с широким активом представляет собой интересный эксперимент проверки существенных
-              финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности
-              позволяет оценить значение направлений прогрессивного развития. Не следует,
-              однако забывать,
-              что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании
-              существенных финансовых и административных условий.</p><iframe width="520" height="315"
-              src="https://www.youtube.com/embed/LGFX4Nccq9U" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="faq" id="faq">
-      <div class="container">
-        <div class="block-header">
-          <h2>Вопросы и ответы</h2>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="tabs">
-              <div class="tab"><input type="checkbox" id="chck1"><label class="tab-label" for="chck1">Как получить
-                  полную информацию о застройщике?</label>
-                <div class="tab-content">К сожалению,
-                  застройщики не всегда имеют безупречную репутацию и могут что-то утаивать от Вас,
-                  чтобы не было соблазна уйти к его конкуренту. Мы проводим полный анализ деловой репутации застройщика.
-                  Главный фактор работы с нами - правда. Будьте уверенны в застройщике,
-                  Вы - человек,
-                  который отдает за квартиру немалые деньги и вправе знать больше,
-                  чем застройщик готов Вам рассказать о себе. </div>
-              </div>
-              <div class="tab"><input type="checkbox" id="chck2"><label class="tab-label" for="chck2">Почему нужно
-                  покупать квартиру в нашем агентстве?</label>
-                <div class="tab-content">В офисе строительной компании,
-                  Вам будут предлагать варианты,
-                  которые есть конкретно у этого застройщика. Таким образом Вас ограничивают в выборе. Обращаясь в наше
-                  агентство,
-                  Вы получаете полный доступ ко всем застройщикам,
-                  их предложениям,
-                  скидкам и планировкам. Из всего обилия вариантов Вы найдете квартиру своей мечты ! </div>
-              </div>
-              <div class="tab"><input type="checkbox" id="chck3"><label class="tab-label" for="chck3">Как оформить
-                  ипотеку (военную ипотеку)?</label>
-                <div class="tab-content">Если Вы никогда не сталкивались с кредитами и слово "ипотека"Вас пугает,
-                  не волнуйтесь,
-                  мы сделаем процесс согласования и получения ипотеки простым и понятным. Если Вы военнослужащий,
-                  мы подберем для Вас необходимый объект,
-                  который подходит под условия военной ипотеки. Всё очень просто ! Для того,
-                  чтобы получить одобрение по ипотеке,
-                  не нужно искать лучший банк,
-                  у кого ниже процентная ставка,
-                  какие документы нужны,
-                  где и какие подводные камни. Просто позвоните нам или приезжайте к нам в офис. Пока вы будете пить
-                  кофе,
-                  наши специалисты раскроют Вам все секреты банков. </div>
-              </div>
-              <div class="tab"><input type="checkbox" id="chck4"><label class="tab-label" for="chck4">Как купить
-                  квартиру и не потратить своё время?</label>
-                <div class="tab-content">В современном мире человек тратит много времени на работу. Есть всего 1-2
-                  выходных для решения бытовых ситуаций. Для того чтобы купить квартиру у надежного застройщика,
-                  не нужно уделять большое количество времени на изучение репутации застройщика,
-                  его сданные объекты и так далее. Мы уже сделали это за Вас. Вам нужно только позвонить или приехать к
-                  нам в офис и получить полную информацию по вашему вопросу. Вся сложная работа уже проделана. </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section class="contacts" id="contacts">
-      <div class="container">
-        <div class="block-header">
-          <h2>Карта проезда в наш офис</h2>
-          <p class="block-header-text">Приезжайте в любой день,
-            чтобы обсудить ваш будущий дом или квартиру за чашечкой чая. Будем рады знакомству !</p>
-        </div>
-        <div class="contact-block">
-          <div class="contact-block_inner">
-            <ul class="contact-list">
-              <li>
-                <h3 class="contact-adress">Адрес офиса:</h3>
-                <p>Ул. Капитана Буркова 11/18,
-                  Мурманск</p>
-              </li>
-              <li>
-                <h3 class="contact-time">Режим работы:</h3>
-                <p>Ежедневно с 10:00 до 21:00</p>
-              </li>
-              <li>
-                <h3 class="contact-phone">Звоните:</h3>
-                <p><a href="tel:+78152215318">+7 (8152) 21-53-18</a></p>
-              </li>
-              <li>
-                <h3 class="contact-email">Почта для клиентов:</h3>
-                <p><a href="mailto:youremail@yandex.ru<">youremail@yandex.ru</a></p>
-              </li>
-              <li>
-                <h3 class="contact-email">Почта для комерческих предложений</h3>
-                <p><a href="mailto:youremail@yandex.ru<">youremail@yandex.ru</a></p>
-              </li>
-            </ul>
-          </div>
-          <div class="contact-block_inner"><iframe
-              src="https://yandex.ua/map-widget/v1/?um=constructor%3A3e2cad9bb481f97a5379679c78ce70bf20d7ed45ef801cdc8fc81cfa740fda37&amp;source=constructor"
-              width="750" height="600" frameborder="0"></iframe></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="footer-main">
-        <div class="footer-logo"><img src="../img/logo.jpg" width="90" height="90">
-          <div class="header-inner">
-            <p class="logo-text">НОВЫЙ ПЕТЕРБУРГ</p>
-            <p class="header-inner_text">Вся информация о недвижимости<br>Санкт-Петербурга</p>
-          </div>
-        </div>
-        <div class="footer-menu">
-          <ul class="menu-list">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#advantages">Преимущества</a></li>
-            <li><a href="#offers">Популярные объекты</a></li>
-            <li><a href="#partners">Партнеры</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#faq">Вопросы и ответы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="footer-contacts">
-          <div class="contacts-inner">
-            <h3>Контакты:</h3>
-            <p>Ул. Капитана Буркова 11/18,
-              Мурманск</p>
-            <p><a href="mailto:youremail@yandex.ru">youremail@yandex.ru</a></p>
-            <p><a href="tel:+78152215318">+7 (8152) 21-53-18</a></p>
-          </div>
-          <div class="contacts-inner"><a href="#"><img src="../img/vk_logo.svg" width="50" height="50" alt=""></a><a
-              href="#"><img src="../img/tel_logo.svg" width="50" height="50" alt=""></a></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="author">
-          <p>Designed by <a href="https://maxkoitsan.website">Max Koitsan</a></p>
-        </div>
+<body>
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-fullbleed data-push data-responsive-width="992px"
+        data-has-scrolling-region>
 
-        <div id="map"></div>
-      </div>
+        <div class="mdk-drawer-layout__content">
+            <!-- header-layout -->
+            <div
+                class="mdk-header-layout js-mdk-header-layout  mdk-header--fixed  mdk-header-layout__content--scrollable">
+                <!-- header -->
+                <div class="mdk-header js-mdk-header bg-primary" data-fixed>
+                    <div class="mdk-header__content">
+
+                        <nav class="navbar navbar-expand-md bg-primary navbar-dark d-flex-none">
+                            <button class="btn btn-link text-white pl-0" type="button" data-toggle="sidebar">
+                                <i class="material-icons align-middle md-36">short_text</i>
+                            </button>
+                            <!-- <div class="page-title m-0">Financial</div> -->
+
+                            <div class="collapse navbar-collapse" id="mainNavbar">
+                                <ul class="navbar-nav ml-auto align-items-center">
+                                    <li class="nav-item nav-link">
+                                        <div class="form-group m-0">
+                                            <div class="input-group input-group--inline">
+                                                <p>Активен до: 21.07.2021</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown notifications d-flex align-self-center align-items-center"
+                                        id="navbarNotifications">
+                                        <a href="#" class="nav-link dropdown-toggle notifications--active"
+                                            data-toggle="dropdown" aria-expanded="false">
+                                            <i class="material-icons align-middle">notifications</i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right"
+                                            aria-labelledby="notificationsDropdown" id="notificationsDropdown">
+                                            <ul class="nav nav-tabs-notifications" id="notifications-ul" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="notifications-tab" data-toggle="tab"
+                                                        href="#notifications" role="tab" aria-controls="notifications"
+                                                        aria-selected="true">
+                                                        Уведомления</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="alerts-tab" data-toggle="tab" href="#alerts"
+                                                        role="tab" aria-controls="alerts"
+                                                        aria-selected="false">Оповещения</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="messages-tab" data-toggle="tab"
+                                                        href="#messages" role="tab" aria-controls="messages"
+                                                        aria-selected="false">Сообщения</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="notifications-tabs">
+                                                <div class="tab-pane fade show active" id="notifications"
+                                                    role="tabpanel" aria-labelledby="notifications-tab">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">
+                                                            <div class="w-100">
+                                                                <a href="#">Артем</a> отправил новый ответ</div>
+                                                            <div class="w-100 text-muted">4 сек назад</div>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="w-100">
+                                                                <a href="#">Играгим</a> отправил новый ответ</div>
+                                                            <div class="w-100 text-muted">25 мин назад</div>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="w-100">
+                                                                <a href="#">Администратор</a> отправил новый ответ</div>
+                                                            <div class="w-100 text-muted">7 ч назад</div>
+                                                        </li>
+                                                        <li class="list-group-item text-right">
+                                                            <a href="#">
+                                                                <span class="align-middle">Посмотреть все</span>
+                                                                <i
+                                                                    class="material-icons md-18 align-middle">arrow_forward</i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="alerts" role="tabpanel"
+                                                    aria-labelledby="alerts-tab">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">
+                                                            <div class="media align-items-center">
+                                                                <i
+                                                                    class="material-icons align-middle mr-2 text-warning">
+                                                                    info_outline
+                                                                </i>
+                                                                <div class="media-body">
+                                                                    <div class="w-100">
+                                                                        <a href="profile.html">Артем</a> отправил новый
+                                                                        <a href="#">ответ</a>
+                                                                    </div>
+                                                                    <div class="w-100 text-muted">4 сек назад</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="media align-items-center">
+                                                                <i
+                                                                    class="material-icons align-middle mr-2 text-success">
+                                                                    check_circle
+                                                                </i>
+                                                                <div class="media-body">
+                                                                    <div class="w-100">
+                                                                        <a href="profile.html">Ибрагим</a> завершил
+                                                                        <a href="#">задачу</a>
+                                                                    </div>
+                                                                    <div class="w-100 text-muted">25 мин назад</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="media align-items-center">
+                                                                <i class="material-icons align-middle mr-2 text-danger">
+                                                                    warning
+                                                                </i>
+                                                                <div class="media-body">
+                                                                    <div class="w-100">
+                                                                        <a href="profile.html">Администратор</a> удалил
+                                                                        <a href="#">задачу</a>
+                                                                    </div>
+                                                                    <div class="w-100 text-muted">7 ч назад</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item text-right">
+                                                            <a href="#">
+                                                                <span class="align-middle">Посмотреть все</span>
+                                                                <i
+                                                                    class="material-icons md-18 align-middle">arrow_forward</i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="messages" role="tabpanel"
+                                                    aria-labelledby="messages-tab">
+                                                    <ul class="list-group list-group-flush">
+                                                        <li class="list-group-item">
+                                                            <div class="media align-items-center">
+                                                                <a href="profile.html">
+                                                                    <img src="assets/images/avatars/person-1.jpg"
+                                                                        class="img-fluid rounded-circle mr-2" width="35"
+                                                                        alt="">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <div class="w-100">Я начал этот проект, который мы
+                                                                        обсуждали...</div>
+                                                                    <div class="w-100 text-muted">4 сек назад</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="media align-items-center">
+                                                                <a href="profile.html">
+                                                                    <img src="assets/images/avatars/person-11.jpg"
+                                                                        class="img-fluid rounded-circle mr-2" width="35"
+                                                                        alt="">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <div class="w-100">Мы можем договориться о
+                                                                        встрече...?
+                                                                    </div>
+                                                                    <div class="w-100 text-muted">25 мин назад</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <div class="media align-items-center">
+                                                                <a href="profile.html">
+                                                                    <img src="assets/images/avatars/person-12.jpg"
+                                                                        class="img-fluid rounded-circle mr-2" width="35"
+                                                                        alt="">
+                                                                </a>
+                                                                <div class="media-body">
+                                                                    <div class="w-100">Нам нужно исправить некоторые
+                                                                        ошибки...</div>
+                                                                    <div class="w-100 text-muted">7 ч назад</div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item text-right">
+                                                            <a href="#">
+                                                                <span class="align-middle">Посмотреть все</span>
+                                                                <i
+                                                                    class="material-icons md-18 align-middle">arrow_forward</i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item nav-divider">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle dropdown-clear-caret"
+                                            data-toggle="sidebar" data-target="#user-drawer">
+                                            <i class="material-icons md-18 align-middle">settings</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- content -->
+                <div class="mdk-header-layout__content top-navbar mdk-header-layout__content--scrollable h-100">
+                    <!-- main content -->
+
+
+
+
+                    <div class="container-fluid">
+                        <!-- <div class="row font-1">
+                            <div class="col-lg-6">
+                                <div class="card token">
+                                    <div class="token_col">
+                                        <label for="token">Мой токен</label>
+                                        <input type="text" class="form-control" name="token" placeholder="">
+
+                                    </div>
+                                    <p class="token_inner"><a href="#">Как получить токен?</a></p>
+
+                                </div>
+
+                                <div class="card trader">
+                                    <div class="trader_col">
+                                        <label for="trader">Мой трейдер:</label>
+                                        <select class="form-control" id="trader">
+                                            <option>Михаил Середин</option>
+                                            <option>Выбрать трейдера</option>
+                                            <option>Сменить трейдера</option>
+                                            <option>Отключиться</option>
+                                        </select>
+                                    </div>
+                                    <div class="trader_inner">
+                                        <h5>
+                                            <a href="#">
+                                                <i class="material-icons align-middle">perm_contact_calendar</i>
+                                                <span class="drawer-menu-text"> Михаил Середин</span>
+                                            </a>
+                                        </h5>
+                                        <div class="trader_inner_text">
+                                            <h5 class="">
+                                                <i class="material-icons align-middle text-muted ">trending_up</i>
+                                                Средняя прибыль в год:</h5>
+                                            <div class="text-primary ml-auto">100%</div>
+                                        </div>
+                                        <div class="trader_inner_text">
+                                            <h5 class="">
+                                                <i class="material-icons align-middle text-muted ">payment</i>
+                                                Депозит:</h5>
+                                            <div class="text-primary ml-auto">$10,000</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card card-body flex-row align-items-center">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe
+                                            src="https://player.vimeo.com/video/97243285?title=0&byline=0&portrait=0"
+                                            style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> -->
+                        <div class="row font-1">
+                            <div class="col-lg-4">
+                                <div class="card card-body flex-row align-items-center">
+                                    <h5 class="m-0"><i
+                                            class="material-icons align-middle text-muted md-18">content_paste</i>
+                                        Текущий баланс
+                                    </h5>
+                                    <div class="text-primary ml-auto">$12,319</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <div class="card card-body flex-row align-items-center">
+                                    <h5 class="m-0"> К
+                                        оплате:
+                                    </h5>
+                                    <div class="text-primary ml-auto">
+                                        <p class="text-primary_inner">30,000 руб (0,03 BTC)</p>
+
+                                        <p class="text-primary_inner">до 05.11.20</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="card card-body">
+                                    <div class="main-page_inner_text">
+                                        <h5 class="">
+                                            <i class="material-icons align-middle text-muted ">date_range</i>
+                                            Последняя дата фиксации прибыли по сделкам:</h5>
+                                        <div class="text-primary ml-auto">01.11.2020</div>
+                                    </div>
+                                    <div class="main-page_inner_text">
+                                        <h5 class="">
+                                            <i class="material-icons align-middle text-muted ">trending_up</i>
+                                            Прибыль за прошедший расчетный период:</h5>
+                                        <div class="text-primary ml-auto">100 000 рублей</div>
+                                    </div>
+                                    <div class="main-page_inner_text">
+                                        <h5 class="">
+                                            <i class="material-icons align-middle text-muted ">date_range</i>
+                                            Следующая дата фиксации прибыли по сделкам:</h5>
+                                        <div class="text-primary ml-auto">01.12.20</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card-body pay">
+                                    <div class="mb-3 align-middle">
+                                        <button type="button"
+                                            class="btn btn-primary btn-lg pay-button">Оплатить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-earnings">
+                            <div class="card-group">
+                                <div class="card card-body mb-0">
+                                    <div class="media align-items-center">
+                                        <div class="media-body">
+                                            <p class="card-text text-muted mb-1">Earned today</p>
+                                            <h1 class="mb-0 font-weight-normal">&dollar;6,120</h1>
+                                        </div>
+                                        <div class="badge badge-success">+52%</div>
+                                    </div>
+                                </div>
+                                <div class="card card-body mb-0">
+                                    <div class="media align-items-center">
+                                        <div class="media-body">
+                                            <p class="card-text text-muted mb-1">Earned this week</p>
+                                            <h1 class="mb-0 font-weight-normal">&dollar;14,276</h1>
+                                        </div>
+                                        <div class="badge badge-primary">+16%</div>
+                                    </div>
+                                </div>
+                                <div class="card card-body mb-0">
+                                    <div class="media align-items-center">
+                                        <div class="media-body">
+                                            <p class="card-text text-muted mb-1">Earned this month</p>
+                                            <h1 class="mb-0 font-weight-normal">&dollar;39,882</h1>
+                                        </div>
+                                        <div class="badge badge-warning">+5%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bg-primary">
+                                <div id="morris-area-chart" style="width: 100%; height: 250px;"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+
+
+                                <div class="card trader">
+                                    <div class="trader_col">
+                                        <label for="trader">Мой трейдер:</label>
+                                        <select class="form-control" id="trader">
+                                            <option>Михаил Середин</option>
+                                            <option>Выбрать трейдера</option>
+                                            <option>Сменить трейдера</option>
+                                            <option>Отключиться</option>
+                                        </select>
+                                    </div>
+                                    <div class="trader_inner">
+                                        <h5>
+                                            <a href="#">
+                                                <i class="material-icons align-middle">perm_contact_calendar</i>
+                                                <span class="drawer-menu-text"> Михаил Середин</span>
+                                            </a>
+                                        </h5>
+                                        <div class="trader_inner_text">
+                                            <h5 class="">
+                                                <i class="material-icons align-middle text-muted ">trending_up</i>
+                                                Средняя прибыль в год:</h5>
+                                            <div class="text-primary ml-auto">100%</div>
+                                        </div>
+                                        <div class="trader_inner_text">
+                                            <h5 class="">
+                                                <i class="material-icons align-middle text-muted ">payment</i>
+                                                Депозит:</h5>
+                                            <div class="text-primary ml-auto">$10,000</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="b-trader" style="width: 297px;">
+                                            <div>
+                                                <h4>Михаил <br> Середин</h4>
+                                                <p>Средняя<br> прибыль в год</p>
+                                                <p><strong>100%</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Внимание!</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-justify mb-0">В первый день каждого месяца мы фиксируем прибыль
+                                            на вашем счету по закрытым позициям, после чего вам необходимо произвести
+                                            оплату в счет системы до 5 числа каждого месяца. В случае задержки оплаты мы
+                                            будем вынуждены закрыть все текущие позиции по акциям и отключить вас от
+                                            системы. При повторном подключении необходимо будет внести недополученные
+                                            средства по предыдущим сделкам, а также 300$ за подключение к системе. В
+                                            случае форс мажора вам необходимо связаться с поддержкой.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- // END drawer-layout__content -->
+
+        <!-- drawer -->
+        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+                <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
+
+                    <nav class="drawer  drawer--dark">
+                        <div class="drawer-spacer">
+                            <div class="media align-items-center">
+                                <a href="index.html" class="logo_main"> <img src="assets/images/logos/Logo_puls.png"
+                                        alt="main logo" width="30" height="30">
+                                </a>
+                                <div class="media-body">
+                                    <a href="account.html" class="h5 m-0 text-link">Личный кабинет</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DASHBOARDS MENU -->
+                        <ul class="drawer-menu" id="dasboardMenu" data-children=".drawer-submenu">
+                            <li class="drawer-menu-item active ">
+                                <a href="#">
+                                    <i class="material-icons">list</i>
+                                    <span class="drawer-menu-text"> Рабочий стол</span>
+                                </a>
+                            </li>
+                            <li class="drawer-menu-item">
+                                <a href="#">
+                                    <i class="material-icons">list</i>
+                                    <span class="drawer-menu-text"> Реферальная программа</span>
+                                </a>
+                            </li>
+                            <li class="drawer-menu-item ">
+                                <a href="connect.html">
+                                    <i class="material-icons">list</i>
+                                    <span class="drawer-menu-text"> Подключение</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Down MENU -->
+                        <ul class="drawer-menu down_menu">
+                            <li class="down_menu-item">
+                                <h4 class=""><a href="#">О сервисе</a></h5>
+                            </li>
+                            <li class="down_menu-item">
+                                <h5>Поддержка:</h5>
+                                <p>Телеграмм: <a class="drawer-menu-text" href="@pulsemirror">
+                                        @pulsemirror
+                                    </a></p>
+
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- // END drawer -->
+
+        <!-- drawer -->
+        <div class="mdk-drawer js-mdk-drawer" id="user-drawer" data-position="right" data-align="end">
+            <div class="mdk-drawer__content">
+                <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
+                    <nav class="drawer drawer--light">
+
+                        <!-- MENU -->
+                        <ul class="drawer-menu" id="userMenu" data-children=".drawer-submenu">
+                            <li class="drawer-menu-item">
+                                <a href="#">
+                                    <i class="material-icons">account_circle</i>
+                                    <span class="drawer-menu-text"> Настройки профиля</span>
+                                </a>
+                            </li>
+                            <li class="drawer-menu-item">
+                                <a href="login.html">
+                                    <i class="material-icons">exit_to_app</i>
+                                    <span class="drawer-menu-text"> Выход</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- // END drawer -->
+
     </div>
-  </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;apikey=9afbb4bc-d675-4925-9d87-8ea78e14aaef"
-    type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="../js/moby.min.js"></script>
-  <script src="../js/libs.min.js"></script>
-  <script src="../js/main.js"></script>
+    <!-- // END drawer-layout -->
+
+
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Simplebar -->
+    <!-- Used for adding a custom scrollbar to the drawer -->
+    <script src="assets/vendor/simplebar.js"></script>
+
+
+    <!-- Vendor -->
+    <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/vendor/moment.min.js"></script>
+
+
+    <!-- APP -->
+    <script src="assets/js/color_variables.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+    <script src="assets/vendor/dom-factory.js"></script>
+    <!-- DOM Factory -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+    <!-- MDK -->
+
+
+
+    <script>
+        (function () {
+            'use strict';
+            // Self Initialize DOM Factory Components
+            domFactory.handler.autoInit()
+
+
+            // Connect button(s) to drawer(s)
+            var sidebarToggle = document.querySelectorAll('[data-toggle="sidebar"]')
+
+            sidebarToggle.forEach(function (toggle) {
+                toggle.addEventListener('click', function (e) {
+                    var selector = e.currentTarget.getAttribute('data-target') || '#default-drawer'
+                    var drawer = document.querySelector(selector)
+                    if (drawer) {
+                        if (selector == '#default-drawer') {
+                            $('.container-fluid').toggleClass('container--max');
+                        }
+                        drawer.mdkDrawer.toggle();
+                    }
+                })
+            })
+        })()
+    </script>
+
+
+    <script src="assets/vendor/morris.min.js"></script>
+    <script src="assets/vendor/raphael.min.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+
+    <script>
+        $(function () {
+            window.morrisDashboardChart = new Morris.Area({
+                element: 'morris-area-chart',
+                data: [{
+                    year: '2017-01',
+                    a: 6352.27
+                },
+                {
+                    year: '2017-02',
+                    a: 4309.98
+                },
+                {
+                    year: '2017-03',
+                    a: 1465.98
+                },
+                {
+                    year: '2017-04',
+                    a: 1298.25
+                },
+                {
+                    year: '2017-05',
+                    a: 3209
+                },
+                {
+                    year: '2017-06',
+                    a: 2083
+                },
+                {
+                    year: '2017-07',
+                    a: 1285.23
+                },
+                {
+                    year: '2017-08',
+                    a: 1289
+                },
+                {
+                    year: '2017-09',
+                    a: 4430
+                },
+                {
+                    year: '2017-10',
+                    a: 8921.19
+                }
+                ],
+                xkey: 'year',
+                ykeys: ['a'],
+                labels: ['Earnings'],
+                lineColors: ['#fff'],
+                fillOpacity: '0.2',
+                gridEnabled: true,
+                gridTextColor: '#ffffff',
+                resize: true
+            });
+
+        });
+    </script>
+
+
 </body>
 
 </html>
