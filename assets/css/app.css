@@ -15160,7 +15160,7 @@ html [type=button] {
 }
 
 [dir=ltr] nav.drawer .drawer-spacer {
-  padding: 1.25rem .625rem
+  padding: 0.5rem .625rem
 }
 
 [dir=ltr] nav.drawer .drawer-menu {
