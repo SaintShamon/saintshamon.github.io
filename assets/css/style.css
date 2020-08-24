@@ -275,3 +275,7 @@
   background: #c81f1f;
   background: linear-gradient(45deg, #c81f1f 0%, #f33333 100%);
 }
+
+.media-body a {
+  font-size: 12px;
+}
