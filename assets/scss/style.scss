@@ -98,17 +98,20 @@
         label {
             display: inline-block;
             margin: .5rem 0;
+            margin-right: .5rem;
         }
 
         .form-control {
             display: block;
-            width: 85%;
+            width: 77%;
             // max-width: calc(100%);
             margin-top: 0;
             margin-right: 0;
         }
 
         .check {
+            display: block;
+            margin-right: .5rem;
             border: none;
             background: none;
             background-image: url('/assets/images/check.svg');

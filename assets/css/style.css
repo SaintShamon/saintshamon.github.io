@@ -111,16 +111,19 @@
 .token .token_col label {
   display: inline-block;
   margin: .5rem 0;
+  margin-right: .5rem;
 }
 
 .token .token_col .form-control {
   display: block;
-  width: 85%;
+  width: 77%;
   margin-top: 0;
   margin-right: 0;
 }
 
 .token .token_col .check {
+  display: block;
+  margin-right: .5rem;
   border: none;
   background: none;
   background-image: url("/assets/images/check.svg");
