@@ -68,64 +68,89 @@
 
 // Страница подключения
 
+
+.tinkoff_inv {
+    
+    padding: .75rem 1.25rem;
+    p {
+        margin-top: 0;
+        margin-bottom: 0.5rem!important;
+    }
+    a {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
 .token {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
+    padding: .75rem 1.25rem;
 
     .token_col {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
-        margin-left: 10px;
-        margin-top: 10px;
 
         label {
             display: inline-block;
             margin: .5rem 0;
         }
 
-        input {
-            max-width: calc(100% - 110px);
+        .form-control {
+            display: block;
+            width: 85%;
+            // max-width: calc(100%);
             margin-top: 0;
-            margin-left: .5rem;
-            margin-right: .5rem;
+            margin-right: 0;
+        }
+
+        .check {
+            border: none;
+            background: none;
+            background-image: url('/assets/images/check.svg');
+            background-size: cover;
+            width: 16px;
+            height: 16px;
+            
+        }
+
+        .check:hover {
+            background-image: url('/assets/images/check_clicked.svg');          
         }
     }
 
     .token_inner {
-        margin-top: 20px;
-        margin-left: .5rem;
+        margin-top: .5rem;
+        margin-bottom: 0;
+        margin-left: 0;
         font-size: small;
     }
 }
 
 .trader {
+    padding: .75rem 1.25rem;
     .trader_col {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 100%;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 0;
+        margin-top: 0;
 
-        label {
-            display: inline-block;
-            margin: .5rem 0;
-        }
-
-        select {
-            max-width: calc(100% - 130px);
-            margin-top: 0;
-            margin-left: .5rem !important;
-            margin-right: .5rem !important;
-        }
+        // select {
+        //     max-width: calc(100% - 110px);
+        //     margin-top: 0;
+        //     margin-left: auto !important;
+        //     margin-right: 0!important;
+        // }
     }
 
     .trader_inner {
-        margin: 10px;
+        margin: 10px 0;
 
         .trader_inner_text {
             display: flex;
@@ -136,12 +161,14 @@
 }
 
 .text-primary_inner {
-    margin-bottom: .2rem;
+    margin-bottom: 3px !important;
+    margin-top: 0;
 }
 
 .text-primary_inner:last-child {
     margin-bottom: 0;
     text-align: center;
+    font-size: smaller;
 }
 
 // Рабочая область
@@ -165,6 +192,8 @@
 
 
 .b-trader {
+    display: block;
+    width: 100%;
     height: 185px !important;
     padding: 13px;
     position: relative;
@@ -250,10 +279,38 @@
 }
 
 .b-trader>div:after {
-    background: rgb(200, 31, 31);
-    background: linear-gradient(45deg, rgba(200, 31, 31, 1) 0%, rgba(243, 51, 51, 1) 100%);
+    background: linear-gradient(45deg, #3783b5 0%, #25364a 100%);
+
 }
 
-.media-body a {
+.media .media-body>a {
     font-size: 0.79375rem !important;
+}
+
+.token_col .check {
+    display: block !important;
+    margin: 10px 3px !important;
+}
+
+// Button loader
+
+.spinner {
+    display: inline-block;
+    opacity: 0;
+    width: 0;
+    -webkit-transition: opacity 0.25s, width 0.25s;
+    -moz-transition: opacity 0.25s, width 0.25s;
+    -o-transition: opacity 0.25s, width 0.25s;
+    transition: opacity 0.25s, width 0.25s;
+}
+.has-spinner.active {
+    cursor:progress;
+}
+.has-spinner.active .spinner {
+    opacity: 1;
+    width: auto;
+}
+
+.has-spinner.btn.active .spinner {
+    min-width: 20px;
 }

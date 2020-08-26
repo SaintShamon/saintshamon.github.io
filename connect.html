@@ -10,13 +10,14 @@
 
     <link type="text/css" href="assets/css/vendor-morris.css" rel="stylesheet">
     <link type="text/css" href="assets/css/vendor-bootstrap-datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" href="assets/css/style.css" rel="stylesheet">
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
-    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
+    <!-- <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet"> -->
 
     <!-- Simplebar -->
     <link type="text/css" href="assets/vendor/simplebar.css" rel="stylesheet">
@@ -239,33 +240,32 @@
 
 
                     <div class="container-fluid">
-                        <div class="row font-1">
+                        <div class="row">
                             <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="tinkoff_inv">
+                                        <p>Ссылка для подключения к Тинькофф инвестициям</p>
+                                        <a href="https://www.tinkoff.ru/invest">https://www.tinkoff.ru/invest/</a>
+                                    </div>
+                                </div>
                                 <div class="card token">
                                     <div class="token_col">
                                         <label for="token">Мой токен</label>
                                         <input type="text" class="form-control" name="token" placeholder="">
-
+                                        <button class="check"></button>
                                     </div>
                                     <p class="token_inner"><a href="#">Как получить токен?</a></p>
 
                                 </div>
-
                                 <div class="card trader">
                                     <div class="trader_col">
-                                        <label for="trader">Мой трейдер:</label>
-                                        <select class="form-control" id="trader">
-                                            <option>Михаил Середин</option>
-                                            <option>Выбрать трейдера</option>
-                                            <option>Сменить трейдера</option>
-                                            <option>Отключиться</option>
-                                        </select>
+                                        <p>Мой трейдер</p>
                                     </div>
                                     <div class="trader_inner">
                                         <h5>
                                             <a href="#">
                                                 <i class="material-icons align-middle">perm_contact_calendar</i>
-                                                <span class="drawer-menu-text"> Михаил Середин</span>
+                                                <span class="drawer-menu-text"> Михаил Середин ntcn</span>
                                             </a>
                                         </h5>
                                         <div class="trader_inner_text">
@@ -278,116 +278,208 @@
                                             <h5 class="">
                                                 <i class="material-icons align-middle text-muted ">payment</i>
                                                 Депозит:</h5>
-                                            <div class="text-primary ml-auto">$10,000</div>
+                                            <div class="text-primary ml-auto">До $10,000</div>
                                         </div>
-
                                     </div>
-
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">
+                                            Выберите трейдера из списка:
+                                        </h4>
+                                    </div>
+                                    <div class="card">
+                                        <div class="table-responsive">
+                                            <table class="table m-0">
+                                                <thead>
+                                                    <tr>
+                                                        <!-- <th scope="col" class="text-center">#</th> -->
+                                                        <th scope="col" class="text-center">Имя</th>
+                                                        <th scope="col" class="text-center">Средняя прибыль в год</th>
+                                                        <th scope="col" class="text-center">Депозит</th>
+                                                        <th scope="col" class="text-center">Профиль в Тинькофф</th>
+                                                        <th scope="col" class="text-center"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="align-middle text-center" scope="row" id="name">
+                                                            Михаил Середин
+                                                        </td>
+                                                        <td class="align-middle text-center" id="percent">100%</td>
+                                                        <td class="align-middle text-center" id="money">$3000-$10000
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <img src="../assets/images/avatars/person-1.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2">
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <button type="button" class="btn btn-success has-spinner"
+                                                                id="1">Подключиться</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle text-center" scope="row">Мария Савченко
+                                                        </td>
+                                                        <td class="align-middle text-center">180%</td>
+                                                        <td class="align-middle text-center">$3000-$12000</td>
+                                                        <td class="align-middle text-center">
+                                                            <img src="../assets/images/avatars/person-9.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2">
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <button type="button" class="btn btn-success has-spinner"
+                                                                id="2">Подключиться</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle text-center" scope="row">Сергей Иваненко
+                                                        </td>
+                                                        <td class="align-middle text-center">140%</td>
+                                                        <td class="align-middle text-center">$3000-$9000</td>
+                                                        <td class="align-middle text-center">
+                                                            <img src="../assets/images/avatars/person-10.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2">
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <button type="button"
+                                                                class="btn btn-success has-spinner">Подключиться</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="align-middle text-center" scope="row">Трофимов Олег
+                                                        </td>
+                                                        <td class="align-middle text-center">100%</td>
+                                                        <td class="align-middle text-center">$3000-$10000</td>
+                                                        <td class="align-middle text-center">
+                                                            <img src="../assets/images/avatars/person-6.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2">
+                                                        </td>
+                                                        <td class="align-middle text-center">
+                                                            <button type="button"
+                                                                class="btn btn-success has-spinner">Подключиться</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="card card-body flex-row align-items-center">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe
-                                            src="https://player.vimeo.com/video/97243285?title=0&byline=0&portrait=0"
-                                            style="border:0" allowfullscreen></iframe>
+                                <div class="card ">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Инструкция</h4>
                                     </div>
+                                    <div class="card-body">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe
+                                                src="https://player.vimeo.com/video/97243285?title=0&byline=0&portrait=0"
+                                                style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
                         </div>
                     </div>
+
                 </div>
             </div>
-
         </div>
-        <!-- // END drawer-layout__content -->
 
-        <!-- drawer -->
-        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
-            <div class="mdk-drawer__content">
-                <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
+    </div>
+    <!-- // END drawer-layout__content -->
 
-                    <nav class="drawer  drawer--dark">
-                        <div class="drawer-spacer">
-                            <div class="media align-items-center">
-                                <a href="index.html" class="logo_main"> <img src="assets/images/logos/Logo_puls.png"
-                                        alt="main logo" width="50" height="50">
-                                </a>
-                                <div class="media-body">
-                                    <a href="account.html" class="h5 m-0 text-link">Pulse Mirror - личный кабинет</a>
-                                </div>
+    <!-- drawer -->
+    <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+        <div class="mdk-drawer__content">
+            <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
+
+                <nav class="drawer  drawer--dark">
+                    <div class="drawer-spacer">
+                        <div class="media align-items-center">
+                            <a href="index.html" class="logo_main"> <img src="assets/images/logos/Logo_puls.png"
+                                    alt="main logo" width="50" height="50">
+                            </a>
+                            <div class="media-body">
+                                <a href="account.html" class="m-0 text-link">Pulse Mirror - личный кабинет</a>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- DASHBOARDS MENU -->
-                        <ul class="drawer-menu" id="dasboardMenu" data-children=".drawer-submenu">
-                            <li class="drawer-menu-item active ">
-                                <a href="index.html">
-                                    <i class="material-icons">list</i>
-                                    <span class="drawer-menu-text"> Рабочий стол</span>
-                                </a>
-                            </li>
-                            <li class="drawer-menu-item">
-                                <a href="#">
-                                    <i class="material-icons">list</i>
-                                    <span class="drawer-menu-text"> Реферальная программа</span>
-                                </a>
-                            </li>
-                            <li class="drawer-menu-item ">
-                                <a href="connect.html">
-                                    <i class="material-icons">list</i>
-                                    <span class="drawer-menu-text"> Подключение</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <!-- DASHBOARDS MENU -->
+                    <ul class="drawer-menu" id="dasboardMenu" data-children=".drawer-submenu">
+                        <li class="drawer-menu-item active ">
+                            <a href="index.html">
+                                <i class="material-icons">poll</i>
+                                <span class="drawer-menu-text"> Рабочий стол</span>
+                            </a>
+                        </li>
+                        <li class="drawer-menu-item">
+                            <a href="#">
+                                <i class="material-icons">people</i>
+                                <span class="drawer-menu-text"> Реферальная программа</span>
+                            </a>
+                        </li>
+                        <li class="drawer-menu-item ">
+                            <a href="connect.html">
+                                <i class="material-icons">list</i>
+                                <span class="drawer-menu-text"> Подключение</span>
+                            </a>
+                        </li>
+                    </ul>
 
-                        <!-- Down MENU -->
-                        <ul class="drawer-menu down_menu">
-                            <li class="down_menu-item">
-                                <h4 class=""><a href="#">О сервисе</a></h5>
-                            </li>
-                            <li class="down_menu-item">
-                                <h5>Поддержка:</h5>
-                                <p>Телеграмм: <a class="drawer-menu-text" href="search.html">
-                                        Pulse Mirror
-                                    </a></p>
+                    <!-- Down MENU -->
+                    <ul class="drawer-menu down_menu">
+                        <li class="down_menu-item">
+                            <h4 class=""><a href="#">О сервисе</a></h5>
+                        </li>
+                        <li class="down_menu-item">
+                            <h5>Поддержка:</h5>
+                            <p>Телеграмм: <a class="drawer-menu-text" href="search.html">
+                                    Pulse Mirror
+                                </a></p>
 
-                            </li>
-                        </ul>
+                        </li>
+                    </ul>
 
-                    </nav>
-                </div>
+                </nav>
             </div>
         </div>
-        <!-- // END drawer -->
+    </div>
+    <!-- // END drawer -->
 
-        <!-- drawer -->
-        <div class="mdk-drawer js-mdk-drawer" id="user-drawer" data-position="right" data-align="end">
-            <div class="mdk-drawer__content">
-                <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
-                    <nav class="drawer drawer--light">
+    <!-- drawer -->
+    <div class="mdk-drawer js-mdk-drawer" id="user-drawer" data-position="right" data-align="end">
+        <div class="mdk-drawer__content">
+            <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
+                <nav class="drawer drawer--light">
 
-                        <!-- MENU -->
-                        <ul class="drawer-menu" id="userMenu" data-children=".drawer-submenu">
-                            <li class="drawer-menu-item">
-                                <a href="#">
-                                    <i class="material-icons">account_circle</i>
-                                    <span class="drawer-menu-text"> Настройки профиля</span>
-                                </a>
-                            </li>
-                            <li class="drawer-menu-item">
-                                <a href="login.html">
-                                    <i class="material-icons">exit_to_app</i>
-                                    <span class="drawer-menu-text"> Выход</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                    <!-- MENU -->
+                    <ul class="drawer-menu" id="userMenu" data-children=".drawer-submenu">
+                        <li class="drawer-menu-item">
+                            <a href="#">
+                                <i class="material-icons">account_circle</i>
+                                <span class="drawer-menu-text"> Настройки профиля</span>
+                            </a>
+                        </li>
+                        <li class="drawer-menu-item">
+                            <a href="login.html">
+                                <i class="material-icons">exit_to_app</i>
+                                <span class="drawer-menu-text"> Выход</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <!-- // END drawer -->
+    </div>
+    <!-- // END drawer -->
 
     </div>
     <!-- // END drawer-layout -->
@@ -396,6 +488,9 @@
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Button loader -->
+    <script src="assets/js/button.js"></script>
 
     <!-- Bootstrap -->
     <script src="assets/vendor/popper.js"></script>
@@ -421,7 +516,7 @@
     <script src="assets/vendor/material-design-kit.js"></script>
     <!-- MDK -->
 
-
+    <script src="assets/js/drag_drop_events.js"></script>
 
     <script>
         (function () {

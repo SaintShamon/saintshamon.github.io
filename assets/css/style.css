@@ -66,6 +66,20 @@
   text-decoration: none;
 }
 
+.tinkoff_inv {
+  padding: .75rem 1.25rem;
+}
+
+.tinkoff_inv p {
+  margin-top: 0;
+  margin-bottom: 0.5rem !important;
+}
+
+.tinkoff_inv a {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .token {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +93,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding: .75rem 1.25rem;
 }
 
 .token .token_col {
@@ -87,12 +102,10 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  margin-left: 10px;
-  margin-top: 10px;
 }
 
 .token .token_col label {
@@ -100,17 +113,35 @@
   margin: .5rem 0;
 }
 
-.token .token_col input {
-  max-width: calc(100% - 110px);
+.token .token_col .form-control {
+  display: block;
+  width: 85%;
   margin-top: 0;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin-right: 0;
+}
+
+.token .token_col .check {
+  border: none;
+  background: none;
+  background-image: url("/assets/images/check.svg");
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+}
+
+.token .token_col .check:hover {
+  background-image: url("/assets/images/check_clicked.svg");
 }
 
 .token .token_inner {
-  margin-top: 20px;
-  margin-left: .5rem;
+  margin-top: .5rem;
+  margin-bottom: 0;
+  margin-left: 0;
   font-size: small;
+}
+
+.trader {
+  padding: .75rem 1.25rem;
 }
 
 .trader .trader_col {
@@ -123,24 +154,12 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-.trader .trader_col label {
-  display: inline-block;
-  margin: .5rem 0;
-}
-
-.trader .trader_col select {
-  max-width: calc(100% - 130px);
+  margin-left: 0;
   margin-top: 0;
-  margin-left: .5rem !important;
-  margin-right: .5rem !important;
 }
 
 .trader .trader_inner {
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .trader .trader_inner .trader_inner_text {
@@ -155,12 +174,14 @@
 }
 
 .text-primary_inner {
-  margin-bottom: .2rem;
+  margin-bottom: 3px !important;
+  margin-top: 0;
 }
 
 .text-primary_inner:last-child {
   margin-bottom: 0;
   text-align: center;
+  font-size: smaller;
 }
 
 .main-page_inner_text {
@@ -185,6 +206,8 @@
 }
 
 .b-trader {
+  display: block;
+  width: 100%;
   height: 185px !important;
   padding: 13px;
   position: relative;
@@ -272,10 +295,35 @@
 }
 
 .b-trader > div:after {
-  background: #c81f1f;
-  background: linear-gradient(45deg, #c81f1f 0%, #f33333 100%);
+  background: linear-gradient(45deg, #3783b5 0%, #25364a 100%);
 }
 
-.media-body a {
+.media .media-body > a {
   font-size: 0.79375rem !important;
+}
+
+.token_col .check {
+  display: block !important;
+  margin: 10px 3px !important;
+}
+
+.spinner {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: opacity 0.25s, width 0.25s;
+  transition: opacity 0.25s, width 0.25s;
+}
+
+.has-spinner.active {
+  cursor: progress;
+}
+
+.has-spinner.active .spinner {
+  opacity: 1;
+  width: auto;
+}
+
+.has-spinner.btn.active .spinner {
+  min-width: 20px;
 }
