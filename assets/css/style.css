@@ -143,6 +143,10 @@
   font-size: small;
 }
 
+.active_trader {
+  display: none !important;
+}
+
 .trader {
   padding: .75rem 1.25rem;
 }

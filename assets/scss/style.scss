@@ -134,8 +134,13 @@
     }
 }
 
+.active_trader {
+    display: none!important;
+}
+
 .trader {
     padding: .75rem 1.25rem;
+
     .trader_col {
         display: flex;
         flex-wrap: wrap;

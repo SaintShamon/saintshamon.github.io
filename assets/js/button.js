@@ -39,6 +39,9 @@ function btn_1() {
     document.querySelector('.drawer-menu-text').textContent = name.textContent;
     document.querySelector('.percent').textContent = percent.textContent;
     document.querySelector('.money').textContent = money.textContent;
+    document.querySelector('.trader').classList.remove('active_trader');
+
+
 }
 document.querySelector('#btn_1').onclick = btn_1;
 
@@ -50,6 +53,7 @@ function btn_2() {
     document.querySelector('.drawer-menu-text').textContent = name.textContent;
     document.querySelector('.percent').textContent = percent.textContent;
     document.querySelector('.money').textContent = money.textContent;
+    document.querySelector('.trader').classList.remove('active_trader');
 }
 document.querySelector('#btn_2').onclick = btn_2;
 
@@ -61,6 +65,7 @@ function btn_3() {
     document.querySelector('.drawer-menu-text').textContent = name.textContent;
     document.querySelector('.percent').textContent = percent.textContent;
     document.querySelector('.money').textContent = money.textContent;
+    document.querySelector('.trader').classList.remove('active_trader');
 }
 document.querySelector('#btn_3').onclick = btn_3;
 
@@ -72,5 +77,6 @@ function btn_4() {
     document.querySelector('.drawer-menu-text').textContent = name.textContent;
     document.querySelector('.percent').textContent = percent.textContent;
     document.querySelector('.money').textContent = money.textContent;
+    document.querySelector('.trader').classList.remove('active_trader');
 }
 document.querySelector('#btn_4').onclick = btn_4;
