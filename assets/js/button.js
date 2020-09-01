@@ -152,6 +152,7 @@ function btn_4() {
 
             else {
                 console.log('НЕ менять' + result);
+                document.querySelector('.trader').classList.add('active_trader');
             }
         }
     });
