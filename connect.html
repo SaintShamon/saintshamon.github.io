@@ -264,7 +264,7 @@
                                         <p>Мой трейдер</p>
                                     </div>
                                     <div class="trader_inner">
-                                        <h5>
+                                        <!-- <h5>
                                             <a href="#">
                                                 <i class="material-icons align-middle">perm_contact_calendar</i>
                                                 <span class="drawer-menu-text"> Выберите трейдера</span>
@@ -281,8 +281,16 @@
                                                 <i class="material-icons align-middle text-muted ">payment</i>
                                                 Депозит:</h5>
                                             <div class="text-primary ml-auto money">До $10,000</div>
+                                        </div> -->
+                                        <div class="b-trader" style="width: 297px;">
+                                            <div class="b-trader_inner">
+                                                <h4 class="trayder-name">Михаил <br> Середин</h4>
+                                                <p class="">Средняя<br> прибыль в год</p>
+                                                <p class="percent"><strong>100%</strong></p>
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
 
                                 <div class="card">
@@ -312,12 +320,14 @@
                                                     <td class="align-middle text-center" id="money_1">$3000-$10000
                                                     </td>
                                                     <td class="align-middle text-center">
-                                                        <img src="../assets/images/avatars/person-1.jpg"
-                                                            alt="Andrew Robles" width="40" class="rounded-circle mr-2">
+                                                        <a href="#"><img src="../assets/images/avatars/person-1.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2"></a>
                                                     </td>
                                                     <td class="align-middle text-center">
                                                         <button type="button" class="btn btn-success has-spinner"
-                                                            id="btn_1">Подключиться</button>
+                                                            id="btn_1" data-toggle="modal" data-target="#myModal"
+                                                            data-bb-example-key="confirm-button-text">Подключиться</button>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -327,8 +337,10 @@
                                                     <td class="align-middle text-center" id="percent_2">180%</td>
                                                     <td class="align-middle text-center" id="money_2">$3000-$12000</td>
                                                     <td class="align-middle text-center">
-                                                        <img src="../assets/images/avatars/person-9.jpg"
-                                                            alt="Andrew Robles" width="40" class="rounded-circle mr-2">
+                                                        <a href="#"><img src="../assets/images/avatars/person-9.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2"></a>
+
                                                     </td>
                                                     <td class="align-middle text-center">
                                                         <button type="button" class="btn btn-success has-spinner"
@@ -342,8 +354,9 @@
                                                     <td class="align-middle text-center" id="percent_3">140%</td>
                                                     <td class="align-middle text-center" id="money_3">$3000-$9000</td>
                                                     <td class="align-middle text-center">
-                                                        <img src="../assets/images/avatars/person-10.jpg"
-                                                            alt="Andrew Robles" width="40" class="rounded-circle mr-2">
+                                                        <a href="#"><img src="../assets/images/avatars/person-10.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2"></a>
                                                     </td>
                                                     <td class="align-middle text-center">
                                                         <button type="button" class="btn btn-success has-spinner"
@@ -357,8 +370,9 @@
                                                     <td class="align-middle text-center" id="percent_4">100%</td>
                                                     <td class="align-middle text-center" id="money_4">$3000-$10000</td>
                                                     <td class="align-middle text-center">
-                                                        <img src="../assets/images/avatars/person-6.jpg"
-                                                            alt="Andrew Robles" width="40" class="rounded-circle mr-2">
+                                                        <a href=""><img src="../assets/images/avatars/person-6.jpg"
+                                                                alt="Andrew Robles" width="40"
+                                                                class="rounded-circle mr-2"></a>
                                                     </td>
                                                     <td class="align-middle text-center">
                                                         <button type="button" class="btn btn-success has-spinner"
@@ -571,8 +585,6 @@
     </div>
     <!-- // END drawer-layout -->
 
-
-
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>
 
@@ -603,7 +615,8 @@
     <!-- Button loader -->
     <script src="assets/js/button.js"></script>
 
-
+    <!-- Pop-up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
     <script>
         (function () {
             'use strict';
