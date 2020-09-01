@@ -156,9 +156,6 @@ function btn_4() {
             }
         }
     });
-    document.querySelector('.trayder-name').textContent = name.textContent;
-    document.querySelector('.percent').textContent = percent.textContent;
-    document.querySelector('.trader').classList.remove('active_trader');
-    document.querySelector('.b-trader_inner').style.background = "linear-gradient(45deg, #383838 0%, #000000 100%)";
+
 }
 document.querySelector('#btn_4').onclick = btn_4;
