@@ -55,7 +55,7 @@ function btn_1() {
             }
 
             else {
-                console.log('НЕ менять' + result);
+                document.querySelector('.trader').classList.add('active_trader');
             }
         }
     });
@@ -88,7 +88,7 @@ function btn_2() {
             }
 
             else {
-                console.log('НЕ менять' + result);
+                document.querySelector('.trader').classList.add('active_trader');
             }
         }
     });
@@ -119,7 +119,7 @@ function btn_3() {
             }
 
             else {
-                console.log('НЕ менять' + result);
+                document.querySelector('.trader').classList.add('active_trader');
             }
         }
     });
@@ -151,7 +151,7 @@ function btn_4() {
             }
 
             else {
-                console.log('НЕ менять' + result);
+                // console.log('НЕ менять' + result);
                 document.querySelector('.trader').classList.add('active_trader');
             }
         }
