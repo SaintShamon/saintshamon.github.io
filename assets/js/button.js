@@ -34,6 +34,7 @@ $(document).ready(function () {
 function btn_1() {
     let name = document.querySelector('#name_1');
     let percent = document.querySelector('#percent_1');
+    let money = document.querySelector('#money_1');
 
     bootbox.confirm({
         title: "Выбор трейдера!",
@@ -48,10 +49,11 @@ function btn_1() {
         },
         callback: function (result) {
             if (result == true) {
-                document.querySelector('.trayder-name').textContent = name.textContent;
+                document.querySelector('.drawer-menu-text').textContent = name.textContent;
                 document.querySelector('.percent').textContent = percent.textContent;
+                document.querySelector('.money').textContent = money.textContent;
                 document.querySelector('.trader').classList.remove('active_trader');
-                document.querySelector('.b-trader_inner').style.background = "linear-gradient(45deg, #3783b5 0%, #25364a 100%)";
+
             }
 
             else {
@@ -67,6 +69,7 @@ document.querySelector('#btn_1').onclick = btn_1;
 function btn_2() {
     let name = document.querySelector('#name_2');
     let percent = document.querySelector('#percent_2');
+    let money = document.querySelector('#money_2');
 
     bootbox.confirm({
         title: "Выбор трейдера!",
@@ -81,10 +84,10 @@ function btn_2() {
         },
         callback: function (result) {
             if (result == true) {
-                document.querySelector('.trayder-name').textContent = name.textContent;
+                document.querySelector('.drawer-menu-text').textContent = name.textContent;
                 document.querySelector('.percent').textContent = percent.textContent;
                 document.querySelector('.trader').classList.remove('active_trader');
-                document.querySelector('.b-trader_inner').style.background = "linear-gradient(45deg, #ff0000 0%, #AA0000 100%)";
+                document.querySelector('.money').textContent = money.textContent;
             }
 
             else {
@@ -99,6 +102,7 @@ document.querySelector('#btn_2').onclick = btn_2;
 function btn_3() {
     let name = document.querySelector('#name_3');
     let percent = document.querySelector('#percent_3');
+    let money = document.querySelector('#money_3');
     bootbox.confirm({
         title: "Выбор трейдера!",
         message: "Вы уверены, что хотите выбрать данного трейдера?",
@@ -112,10 +116,10 @@ function btn_3() {
         },
         callback: function (result) {
             if (result == true) {
-                document.querySelector('.trayder-name').textContent = name.textContent;
+                document.querySelector('.drawer-menu-text').textContent = name.textContent;
                 document.querySelector('.percent').textContent = percent.textContent;
                 document.querySelector('.trader').classList.remove('active_trader');
-                document.querySelector('.b-trader_inner').style.background = "linear-gradient(45deg, #007a18 0%, #002d02 100%)";
+                document.querySelector('.money').textContent = money.textContent;
             }
 
             else {
@@ -130,6 +134,7 @@ document.querySelector('#btn_3').onclick = btn_3;
 function btn_4() {
     let name = document.querySelector('#name_4');
     let percent = document.querySelector('#percent_4');
+    let money = document.querySelector('#money_4');
 
     bootbox.confirm({
         title: "Выбор трейдера!",
@@ -144,14 +149,15 @@ function btn_4() {
         },
         callback: function (result) {
             if (result == true) {
-                document.querySelector('.trayder-name').textContent = name.textContent;
-                document.querySelector('.percent').textContent = percent.textContent;
                 document.querySelector('.trader').classList.remove('active_trader');
-                document.querySelector('.b-trader_inner').style.background = "linear-gradient(45deg, #383838 0%, #000000 100%)";
+                document.querySelector('.drawer-menu-text').textContent = name.textContent;
+                document.querySelector('.percent').textContent = percent.textContent;
+                document.querySelector('.money').textContent = money.textContent;
+
             }
 
             else {
-                // console.log('НЕ менять' + result);
+                console.log('НЕ менять' + result);
                 document.querySelector('.trader').classList.add('active_trader');
             }
         }

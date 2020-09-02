@@ -166,8 +166,8 @@
 }
 
 .text-primary_inner {
-    margin-bottom: 3px !important;
-    margin-top: 0;
+    margin-bottom: 0 !important;
+    margin-top: 4px !important;
 }
 
 .text-primary_inner:last-child {
@@ -190,6 +190,7 @@
 
     .pay-button {
         display: block !important;
+        width: 100% !important;
         margin: 0 auto;
     }
 }
