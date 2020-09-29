@@ -1,562 +1,327 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Подключение</title>
-
-
-    <link type="text/css" href="assets/css/vendor-morris.css" rel="stylesheet">
-    <link type="text/css" href="assets/css/vendor-bootstrap-datepicker.css" rel="stylesheet">
-    <link type="text/css" href="assets/css/style.css" rel="stylesheet">
-    <!-- Prevent the demo from appearing in search engines -->
-    <meta name="robots" content="noindex">
-
-    <!-- App CSS -->
-    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
-    <link type="text/css" href="assets/css/app.rtl.css" rel="stylesheet">
-
-    <!-- Simplebar -->
-    <link type="text/css" href="assets/vendor/simplebar.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact-form.css">
 </head>
 
-<body>
-    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-fullbleed data-push data-responsive-width="992px"
-        data-has-scrolling-region>
+<body class="main-body">
+    <header>
+        <div class="header-block">
+            <div class="header-logo">
+                <a href="#"><img src="/img/logo.png" alt="" width="200" height=""></a>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="keytering.html">Кальянный кейтеринг</a></li>
+                    <li><a href="autsorsing.html">Кальянный аутсортинг</a></li>
+                    <li><a href="rent.html">Аренда кальяна на дом</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <div class="mdk-drawer-layout__content">
-            <!-- header-layout -->
-            <div
-                class="mdk-header-layout js-mdk-header-layout  mdk-header--fixed  mdk-header-layout__content--scrollable">
-                <!-- header -->
-                <div class="mdk-header js-mdk-header bg-primary" data-fixed>
-                    <div class="mdk-header__content">
+        <div class="mob-header-block">
 
-                        <nav class="navbar navbar-expand-md bg-primary navbar-dark d-flex-none">
-                            <button class="btn btn-link text-white pl-0" type="button" data-toggle="sidebar">
-                                <i class="material-icons align-middle md-36">short_text</i>
-                            </button>
-                            <!-- <div class="page-title m-0">Financial</div> -->
+            <input id="burger" type="checkbox" />
 
-                            <div class="collapse navbar-collapse" id="mainNavbar">
-                                <ul class="navbar-nav ml-auto align-items-center">
-                                    <li class="nav-item nav-link">
-                                        <div class="form-group m-0">
-                                            <div class="input-group input-group--inline">
-                                                <p>Активен до: 21.07.2021</p>
-                                            </div>
-                                        </div>
-                                    </li>
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-                                    <li class="nav-item dropdown notifications d-flex align-self-center align-items-center"
-                                        id="navbarNotifications">
-                                        <a href="#" class="nav-link dropdown-toggle notifications--active"
-                                            data-toggle="dropdown" aria-expanded="false">
-                                            <i class="material-icons align-middle">notifications</i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right"
-                                            aria-labelledby="notificationsDropdown" id="notificationsDropdown">
-                                            <ul class="nav nav-tabs-notifications" id="notifications-ul" role="tablist">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" id="notifications-tab" data-toggle="tab"
-                                                        href="#notifications" role="tab" aria-controls="notifications"
-                                                        aria-selected="true">
-                                                        Уведомления</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="alerts-tab" data-toggle="tab" href="#alerts"
-                                                        role="tab" aria-controls="alerts"
-                                                        aria-selected="false">Оповещения</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" id="messages-tab" data-toggle="tab"
-                                                        href="#messages" role="tab" aria-controls="messages"
-                                                        aria-selected="false">Сообщения</a>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content" id="notifications-tabs">
-                                                <div class="tab-pane fade show active" id="notifications"
-                                                    role="tabpanel" aria-labelledby="notifications-tab">
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">
-                                                            <div class="w-100">
-                                                                <a href="#">Артем</a> отправил новый ответ</div>
-                                                            <div class="w-100 text-muted">4 сек назад</div>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <div class="w-100">
-                                                                <a href="#">Играгим</a> отправил новый ответ</div>
-                                                            <div class="w-100 text-muted">25 мин назад</div>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <div class="w-100">
-                                                                <a href="#">Администратор</a> отправил новый ответ</div>
-                                                            <div class="w-100 text-muted">7 ч назад</div>
-                                                        </li>
-                                                        <li class="list-group-item text-right">
-                                                            <a href="#">
-                                                                <span class="align-middle">Посмотреть все</span>
-                                                                <i
-                                                                    class="material-icons md-18 align-middle">arrow_forward</i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="alerts" role="tabpanel"
-                                                    aria-labelledby="alerts-tab">
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">
-                                                            <div class="media align-items-center">
-                                                                <i
-                                                                    class="material-icons align-middle mr-2 text-warning">
-                                                                    info_outline
-                                                                </i>
-                                                                <div class="media-body">
-                                                                    <div class="w-100">
-                                                                        <a href="profile.html">Артем</a> отправил новый
-                                                                        <a href="#">ответ</a>
-                                                                    </div>
-                                                                    <div class="w-100 text-muted">4 сек назад</div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <div class="media align-items-center">
-                                                                <i
-                                                                    class="material-icons align-middle mr-2 text-success">
-                                                                    check_circle
-                                                                </i>
-                                                                <div class="media-body">
-                                                                    <div class="w-100">
-                                                                        <a href="profile.html">Ибрагим</a> завершил
-                                                                        <a href="#">задачу</a>
-                                                                    </div>
-                                                                    <div class="w-100 text-muted">25 мин назад</div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <div class="media align-items-center">
-                                                                <i class="material-icons align-middle mr-2 text-danger">
-                                                                    warning
-                                                                </i>
-                                                                <div class="media-body">
-                                                                    <div class="w-100">
-                                                                        <a href="profile.html">Администратор</a> удалил
-                                                                        <a href="#">задачу</a>
-                                                                    </div>
-                                                                    <div class="w-100 text-muted">7 ч назад</div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item text-right">
-                                                            <a href="#">
-                                                                <span class="align-middle">Посмотреть все</span>
-                                                                <i
-                                                                    class="material-icons md-18 align-middle">arrow_forward</i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="tab-pane fade" id="messages" role="tabpanel"
-                                                    aria-labelledby="messages-tab">
-                                                    <ul class="list-group list-group-flush">
-                                                        <li class="list-group-item">
-                                                            <div class="media align-items-center">
-                                                                <a href="profile.html">
-                                                                    <img src="assets/images/avatars/person-1.jpg"
-                                                                        class="img-fluid rounded-circle mr-2" width="35"
-                                                                        alt="">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <div class="w-100">Я начал этот проект, который мы
-                                                                        обсуждали...</div>
-                                                                    <div class="w-100 text-muted">4 сек назад</div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <div class="media align-items-center">
-                                                                <a href="profile.html">
-                                                                    <img src="assets/images/avatars/person-11.jpg"
-                                                                        class="img-fluid rounded-circle mr-2" width="35"
-                                                                        alt="">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <div class="w-100">Мы можем договориться о
-                                                                        встрече...?
-                                                                    </div>
-                                                                    <div class="w-100 text-muted">25 мин назад</div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <div class="media align-items-center">
-                                                                <a href="profile.html">
-                                                                    <img src="assets/images/avatars/person-12.jpg"
-                                                                        class="img-fluid rounded-circle mr-2" width="35"
-                                                                        alt="">
-                                                                </a>
-                                                                <div class="media-body">
-                                                                    <div class="w-100">Нам нужно исправить некоторые
-                                                                        ошибки...</div>
-                                                                    <div class="w-100 text-muted">7 ч назад</div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-group-item text-right">
-                                                            <a href="#">
-                                                                <span class="align-middle">Посмотреть все</span>
-                                                                <i
-                                                                    class="material-icons md-18 align-middle">arrow_forward</i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item nav-divider">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link dropdown-toggle dropdown-clear-caret"
-                                            data-toggle="sidebar" data-target="#user-drawer">
-                                            <i class="material-icons md-18 align-middle">settings</i>
-                                        </a>
-                                    </li>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="keytering.html">Кальянный кейтеринг</a></li>
+                    <li><a href="autsorsing.html">Кальянный аутсортинг</a></li>
+                    <li><a href="rent.html">Аренда кальяна на дом</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="first_section">
+
+        </section>
+        <section class="main-page_second-section">
+            <div class="left-col">
+                <div class="left-col_inner fade">
+                    <div class="left-col_block">
+                        <img src="/img/mp_img_1.jpg" width="100%" height="" alt="">
+                        <h3>Лаунж атмосфера на мероприятии - кальянный кейтеринг в Санкт-Петербурге</h3>
+                        <p>Кальянный кейтеринг – услуга выезда наших кальянщиков с кальянами и необходимыми атрибутами
+                            на
+                            мероприятие, для приготовления, подачи и организации всего процесса курения кальяна. </p>
+                        <p>Наша компания имеет большой опыт профессионального кальянного обслуживания мероприятий,
+                            благодоря
+                            которому предоставит всем его гостям возможность приятного проведения времени с погружением
+                            в
+                            расслабляющую атмосферу. </p>
+                        <p>Отличительная особенность работы нашей команды – это ответственный подход к делу и
+                            использование
+                            лучших кальянов и табаков. <br /></p>
+                    </div>
+                    <div class="left-col_block">
+                        <img src="/img/mp_img_1.jpg" width="100%" height="" alt="">
+                        <h3>Кальянный аутсорсинг</h3>
+                        Кальянный аутсорсинг – это актуально и выгодно для
+                        ресторанов, кафе, клубов и любых мест отдыха привлекающих большое количество людей.</p>
+                        <p>Услуга «Кальян» доставит удовольствие гостям заведения,
+                            подчеркнёт уникальность обслуживания и позволит получить прибыль без затрат.</p>
+                        <p>Стильный и современный кальян поддержит непринуждённость
+                            атмосферы в течение деловой встречи, знакового события, свадьбы.</p>
+                        <p>Вкусные безникотиновые паровые коктейли подарят положительные
+                            эмоции, станут незабываемым впечатлением и привлекут широкую аудиторию
+                            клиентов. Блогадаря многолетнему опыту работы в кальянной индустрии
+                            мастера проекта &quot;DARK LEAF&quot; способны по-настоящему удивить ваших гостей
+                            потрясающими
+                            паровыми коктейлями и кальянами.</p>
+                    </div>
+                    <div class="left-col_block">
+                        <img src="/img/mp_img_1.jpg" width="100%" height="" alt="">
+                        <h3>Кальяны на дом + кальянщик</h3>
+                        <p>Создадим атмосферу расслабленности и удовольствия.</p>
+                        <p>Привезем необходимое оборудование, забьем кальян, раскурим.</p>
+                        <p> Покурить кальян дома теперь просто. </p>
+                        <p>Позвоните и закажите кальян, доставка займет 60 ~ 80 минут.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="center-col">
+                <h1>КАЛЬЯННАЯ КОМПАНИЯ DARK LEAF</h1>
+                <p>Наша команда занимается продвижением и развитием кальянного дела. </p>
+                <p>Предоставляем услуги кальянного кейтеринга, аутсорсинга, выездных мероприятий и простой аренды
+                    кальянов с профессиональным нашим сотрудником. </p>
+                <p>За время нашей работы участвовали во многих выставках и мероприятиях. Провели не один выездной мастер
+                    класс. Мы стремимся стать лучшими и занять лидирующие позиции на рынке. </p>
+                <p>Мы ищем партнеров, с которыми могли бы сотрудничать не один год, и открывать для себя новые
+                    горизонты.</p>
+            </div>
+            <div class="right-col"></div>
+        </section>
+
+        <section class="main-page_third-section">
+            <div class="container">
+                <div class="tea_header_block">
+                    <img src="img/logo_main_tea.png" alt="">
+                    <h2 class="tea_header">Просто. Премиально. Вкусно.</h2>
+                </div>
+            </div>
+            <div class="black_bg_block">
+                <div class="container">
+                    <div class="black_bg_block-tea">
+
+                        <div class="black_bg_block-tea_inner">
+                            <img class="tea_leaf" src="img/tea_leaf.png" alt="">
+                            <div class="black_bg_block-tea-text_container">
+                                <h3>Большой выбор чая</h3>
+                                <ul>
+                                    <li>Холодный чай</li>
+                                    <li>Горячий чай</li>
+                                    <li>Алкогольный чай</li>
                                 </ul>
                             </div>
-                        </nav>
-                    </div>
-                </div>
-
-                <!-- content -->
-                <div class="mdk-header-layout__content top-navbar mdk-header-layout__content--scrollable h-100">
-                    <!-- main content -->
-
-
-
-
-                    <div class="container-fluid">
-
-                        <div class="row font-1">
-                            <div class="col-lg-8">
-                                <div class="card card-body">
-                                    <div class="main-page_inner_text">
-                                        <h5 class="">
-                                            <i class="material-icons align-middle text-muted ">date_range</i>
-                                            Последняя дата фиксации прибыли по сделкам:</h5>
-                                        <div class="text-primary ml-auto">01.11.2020</div>
-                                    </div>
-                                    <div class="main-page_inner_text">
-                                        <h5 class="">
-                                            <i class="material-icons align-middle text-muted ">trending_up</i>
-                                            Прибыль за прошедший расчетный период:</h5>
-                                        <div class="text-primary ml-auto">100 000 рублей</div>
-                                    </div>
-                                    <div class="main-page_inner_text">
-                                        <h5 class="">
-                                            <i class="material-icons align-middle text-muted ">date_range</i>
-                                            Следующая дата фиксации прибыли по сделкам:</h5>
-                                        <div class="text-primary ml-auto">01.12.2020</div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="row align-items-center">
-                                            <div class="col-lg-4">
-                                                <h4 class="card-title m-0">График доходности</h4>
-                                            </div>
-                                            <div class="col-lg-8 text-md-right">
-                                                <div class="ml-auto">
-                                                    <a href="#" class="btn btn-primary btn-sm">7 Дней</a>
-                                                    <a href="#" class="btn btn-light btn-sm">Месяц</a>
-                                                    <a href="#" class="btn btn-light btn-sm">12 месяцев</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div style="height: 220px; width: 100%;">
-                                            <canvas id="dashboard-chart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="black_bg_block-tea_inner">
+                            <img class="tea_coctail" src="img/tea_coctail.png" alt="">
+                            <div class="black_bg_block-tea-text_container">
+                                <h3>Оптимальный объем 0,5 л</h3>
                             </div>
 
-                            <div class="col-lg-4">
-                                <div class="card card-body" style="margin-bottom: 0;">
-                                    <div class="main-page_inner_text">
-                                        <h5 class="">
-                                            <i class="material-icons align-middle text-muted ">date_range</i>
-                                            Текущий баланс:</h5>
-                                        <div class="text-primary ml-auto">$12,319</div>
-                                    </div>
-                                    <div class="main-page_inner_text">
-                                        <h5 class="">
-                                            <i class="material-icons align-middle text-muted ">attach_money</i>
-                                            К оплате:</h5>
-                                        <div class="text-primary ml-auto">
-                                            <p class="text-primary_inner">30,000 руб (0,03 BTC)</p>
-                                        </div>
-                                    </div>
-                                    <div class="main-page_inner_text">
-                                        <h5 class="">
-                                            <i class="material-icons align-middle text-muted ">event_busy</i> Оплатить
-                                        </h5>
-                                        <div class="text-primary ml-auto">до 05.11.2020</div>
-
-                                    </div>
-
-                                </div>
-                                <div class="card card-body">
-                                    <div class=" main-page_inner_text align-items-center">
-                                        <button type="button" class="btn  btn-success btn-lg pay-button"
-                                            style="width: 100%;"><i class="material-icons align-middle"
-                                                style="color: #fff;">credit_card</i> Оплатить</button>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h4 class="card-title">Внимание!</h4>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="text-justify mb-0" style="font-size: small;">В первый день каждого
-                                            месяца мы фиксируем прибыль
-                                            на вашем счету по закрытым позициям, после чего вам необходимо произвести
-                                            оплату в счет системы до 5 числа каждого месяца. В случае задержки оплаты мы
-                                            будем вынуждены закрыть все текущие позиции по акциям и отключить вас от
-                                            системы. При повторном подключении необходимо будет внести недополученные
-                                            средства по предыдущим сделкам, а также 300$ за подключение к системе. В
-                                            случае форс мажора вам необходимо связаться с поддержкой.</p>
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="black_bg_block-tea_inner">
+                            <img class="tea_contract" src="img/tea_contract.png" alt="">
+                            <div class="black_bg_block-tea-text_container">
+                                <h3>Используем только натуральные компоненты</h3>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-        <!-- // END drawer-layout__content -->
-
-        <!-- drawer -->
-        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
-            <div class="mdk-drawer__content">
-                <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
-
-                    <nav class="drawer  drawer--dark">
-                        <div class="drawer-spacer">
-                            <div class="media align-items-center">
-                                <a href="index.html" class="logo_main"> <img src="assets/images/logos/Logo_puls.png"
-                                        alt="main logo" width="50" height="50">
-                                </a>
-                                <div class="media-body">
-                                    <a href="account.html" class="h5 m-0 text-link"></a>Pulse Mirror - личный
-                                    кабинет</a>
+            <div class="container">
+                <div class="tea_content-block">
+                    <div class="tea_content-block-inner">
+                        <h3>Холодные чаи</h3>
+                        <p>Основа: сенча/би ло чунь, ли джи хун ча, хуа лун джу, ассам</p>
+                        <ul>
+                            <li>Пряный апельсин</li>
+                            <li>Цитрусовая корка</li>
+                            <li>Малиновая смородина</li>
+                            <li>Клубничный личи</li>
+                        </ul>
+                    </div>
+                    <div class="tea_content-block-inner">
+                        <h3>Горячие чаи</h3>
+                        <p>Основа: ассам, лунь цзин, золотой личи, эрл грей</p>
+                        <ul>
+                            <li>Ягодный микс</li>
+                            <li>Цитрусовый имбирь</li>
+                            <li>Облепиха с грушей</li>
+                            <li>Клюквенный мандарин</li>
+                            <li>Яблочно-ванильный</li>
+                            <li>Транссибирский экспресс</li>
+                        </ul>
+                    </div>
+                    <div class="tea_content-block-inner">
+                        <h3>Алкогольные чаи</h3>
+                        <p>Основа: ассам, лунь цзин, золотой личи, эрл грей</p>
+                        <ul>
+                            <li>Груша под градусом</li>
+                            <li>Drink tea</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-block">
+            <div class="footer_left-col">
+                <h3>КОНТАКТЫ</h3>
+                <p>Свяжитесь с нами для организации вашего мероприятия</p>
+                <div class="footer_left-col-block">
+                    <div class="contacts-block">
+                        <span>
+                            <i class="fa fa-address-card-o"></i>
+                        </span>
+                        <p class="contacts-block_header">Адрес офиса</p>
+                        <p class="p-bold">Россия, Санкт-Петербург, улица Симонова, 7к1</p>
+                    </div>
+                    <div class="contacts-block">
+                        <span>
+                            <i class="fa fa-phone"></i>
+                        </span>
+                        <p class="contacts-block_header">номера</p>
+                        <p class="p-bold"><a href="tel:+79531462185">+7 (953) 146-21-85</a></p>
+                        <p class="p-bold"><a href="tel:+79818740325">+7 (981) 874-03-25</a></p>
+                    </div>
+                    <div class="contacts-block">
+                        <span>
+                            <i class="fa fa-envelope-o"></i>
+                        </span>
+                        <p class="contacts-block_header">Email</p>
+                        <p class="p-bold"><a href="mailto:darkleafspb@gmail.com">darkleafspb@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_right-col">
+                <h3>Обратная связь</h3>
+                <p>Поделитесь мнением о нашей работе или задайте нам любой интересующий вас вопрос в поле комментарий
+                </p>
+                <div class="footer_right-col-block">
+                    <div class="container-contact100">
+                        <div class="wrap-contact100">
+                            <form class="contact100-form validate-form">
+                                <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                    <input class="input100" id="name" type="text" name="name" placeholder="Имя">
+                                    <label class="label-input100" for="name">
+                                        <span class="lnr lnr-user"></span>
+                                    </label>
                                 </div>
-                            </div>
+
+                                <div class="wrap-input100 validate-input" data-validate="Surname is required">
+                                    <input class="input100" id="surname" type="text" name="surname"
+                                        placeholder="Фамилия">
+                                    <label class="label-input100" for="name">
+                                        <span class="lnr lnr-user"></span>
+                                    </label>
+                                </div>
+
+                                <div class="wrap-input100 validate-input"
+                                    data-validate="Valid email is required: ex@abc.xyz">
+                                    <input class="input100" id="email" type="text" name="email" placeholder="Email">
+                                    <label class="label-input100" for="email">
+                                        <span class="lnr lnr-envelope"></span>
+                                    </label>
+                                </div>
+
+                                <div class="wrap-input100 validate-input" data-validate="Phone is required">
+                                    <input class="input100" id="phone" type="text" name="phone" placeholder="Телефон">
+                                    <label class="label-input100" for="phone">
+                                        <span class="lnr lnr-phone-handset"></span>
+                                    </label>
+                                </div>
+
+                                <div class="wrap-input100 validate-input" data-validate="Message is required">
+                                    <textarea class="input100" name="message" placeholder="Комментарий..."></textarea>
+                                </div>
+
+                                <div class="contact100-form-checkbox">
+                                    <input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
+                                    <label class="label-checkbox100" for="ckb1">
+                                        Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
+                                        персональных данных, в
+                                        соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных
+                                        данных»,
+                                        на условиях и для целей, определенных в Согласии на обработку персональных
+                                        данных
+                                    </label>
+                                </div>
+
+                                <div class="container-contact100-form-btn">
+                                    <div class="wrap-contact100-form-btn">
+                                        <button class="form_btn">
+                                            Отправить
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-
-                        <!-- DASHBOARDS MENU -->
-                        <ul class="drawer-menu" id="dasboardMenu" data-children=".drawer-submenu">
-                            <li class="drawer-menu-item active ">
-                                <a href="index.html">
-                                    <i class="material-icons">poll</i>
-                                    <span class="drawer-menu-text"> Рабочий стол</span>
-                                </a>
-                            </li>
-                            <li class="drawer-menu-item">
-                                <a href="#">
-                                    <i class="material-icons">people</i>
-                                    <span class="drawer-menu-text"> Реферальная программа</span>
-                                </a>
-                            </li>
-                            <li class="drawer-menu-item ">
-                                <a href="connect.html">
-                                    <i class="material-icons">list</i>
-                                    <span class="drawer-menu-text"> Подключение</span>
-                                </a>
-                            </li>
-                        </ul>
-
-                        <!-- Down MENU -->
-                        <ul class="drawer-menu down_menu">
-                            <li class="down_menu-item">
-                                <!-- <h4 class=""><a href="#">О сервисе</a></h4> -->
-                            </li>
-                            <li class="down_menu-item">
-                                <h5>Поддержка:</h5>
-                                <p>Телеграмм: <a class="drawer-menu-text" href="@pulsemirror">
-                                        @pulsemirror
-                                    </a></p>
-
-                            </li>
-                        </ul>
-
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- // END drawer -->
-
-        <!-- drawer -->
-        <div class="mdk-drawer js-mdk-drawer" id="user-drawer" data-position="right" data-align="end">
-            <div class="mdk-drawer__content">
-                <div class="mdk-drawer__inner" data-simplebar data-simplebar-force-enabled="true">
-                    <nav class="drawer drawer--light">
-
-                        <!-- MENU -->
-                        <ul class="drawer-menu" id="userMenu" data-children=".drawer-submenu">
-                            <li class="drawer-menu-item">
-                                <a href="#">
-                                    <i class="material-icons">account_circle</i>
-                                    <span class="drawer-menu-text"> Настройки профиля</span>
-                                </a>
-                            </li>
-                            <li class="drawer-menu-item">
-                                <a href="login.html">
-                                    <i class="material-icons">exit_to_app</i>
-                                    <span class="drawer-menu-text"> Выход</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+        <div class="footer-map">
+            <!-- <div id="map"></div> -->
+        </div>
+        <div class="footer-social">
+            <div class="footer-social-inner instagram">
+                <a href="#">
+                    <span>
+                        <img src="img/logo/Instagram.svg" alt="" width="40px" srcset="">
+                    </span>
+                </a>
+            </div>
+            <div class="footer-social-inner whatsapp">
+                <a href="#">
+                    <span>
+                        <img src="img/logo/whatsapp.svg" alt="" width="40px" srcset="">
+                    </span>
+                </a>
+            </div>
+            <div class="footer-social-inner telegram">
+                <a href="#">
+                    <span>
+                        <img src="img/logo/telegram.svg" alt="" width="40px" srcset="">
+                    </span>
+                </a>
             </div>
         </div>
-        <!-- // END drawer -->
-
-    </div>
-    <!-- // END drawer-layout -->
-
-
-
-    <!-- jQuery -->
-    <script src="assets/vendor/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/vendor/popper.js"></script>
-    <script src="assets/vendor/bootstrap.min.js"></script>
-
-    <!-- Simplebar -->
-    <!-- Used for adding a custom scrollbar to the drawer -->
-    <script src="assets/vendor/simplebar.js"></script>
-
-
-    <!-- Vendor -->
-    <script src="../assets/vendor/Chart.min.js"></script>
-    <script src="../assets/vendor/moment.min.js"></script>
-
-
-
-    <!-- APP -->
-    <script src="assets/js/color_variables.js"></script>
-    <script src="assets/js/app.js"></script>
-
-
-    <script src="assets/vendor/dom-factory.js"></script>
-    <!-- DOM Factory -->
-    <script src="assets/vendor/material-design-kit.js"></script>
-    <!-- MDK -->
-
-
-
-    <script>
-        (function () {
-            'use strict';
-            // Self Initialize DOM Factory Components
-            domFactory.handler.autoInit()
-
-
-            // Connect button(s) to drawer(s)
-            var sidebarToggle = document.querySelectorAll('[data-toggle="sidebar"]')
-
-            sidebarToggle.forEach(function (toggle) {
-                toggle.addEventListener('click', function (e) {
-                    var selector = e.currentTarget.getAttribute('data-target') || '#default-drawer'
-                    var drawer = document.querySelector(selector)
-                    if (drawer) {
-                        if (selector == '#default-drawer') {
-                            $('.container-fluid').toggleClass('container--max');
-                        }
-                        drawer.mdkDrawer.toggle();
-                    }
-                })
-            })
-        })()
-    </script>
-    <script src="assets/vendor/Chart.min.js"></script>
-    <script src="assets/vendor/morris.min.js"></script>
-    <script src="assets/vendor/raphael.min.js"></script>
-    <script src="assets/js/charts_analytics.js"></script>
-    <script src="assets/js/charts_index.js"></script>
-    <script src="assets/vendor/bootstrap-datepicker.min.js"></script>
-    <script src="assets/js/datepicker.js"></script>
-
-    <script>
-        $(function () {
-            window.morrisDashboardChart = new Morris.Area({
-                element: 'morris-area-chart',
-                data: [{
-                    year: '2017-01',
-                    a: 6352.27
-                },
-                {
-                    year: '2017-02',
-                    a: 4309.98
-                },
-                {
-                    year: '2017-03',
-                    a: 1465.98
-                },
-                {
-                    year: '2017-04',
-                    a: 1298.25
-                },
-                {
-                    year: '2017-05',
-                    a: 3209
-                },
-                {
-                    year: '2017-06',
-                    a: 2083
-                },
-                {
-                    year: '2017-07',
-                    a: 1285.23
-                },
-                {
-                    year: '2017-08',
-                    a: 1289
-                },
-                {
-                    year: '2017-09',
-                    a: 4430
-                },
-                {
-                    year: '2017-10',
-                    a: 8921.19
-                }
-                ],
-                xkey: 'year',
-                ykeys: ['a'],
-                labels: ['Earnings'],
-                lineColors: ['#fff'],
-                fillOpacity: '0.2',
-                gridEnabled: true,
-                gridTextColor: '#ffffff',
-                resize: true
-            });
-
-        });
-    </script>
-
-
-
-
+        <div class="footer-copyrate">
+            <p>© 2020 Компания Dark Leaf <br />*Информация, размещенная на сайте, не является публичной офертой.</p>
+        </div>
+    </footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU&amp;apikey=9afbb4bc-d675-4925-9d87-8ea78e14aaef"
+    type="text/javascript"></script> -->
+<script src="../js/slick.min.js"></script>
+<script src="../js/main.js"></script>
 
 </html>
