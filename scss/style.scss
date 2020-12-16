@@ -1324,7 +1324,7 @@ footer {
              h3 {
                 font-size: 34px;
                 line-height: 36px;
-                margin: 0;
+                margin: 20px 0;
             }
         }
 
@@ -1615,4 +1615,43 @@ footer {
     }
     
 
+    #test-form input {
+        display: block;
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        border: none;
+        border-radius: 30px;
+        margin: 20px auto;
+        background-color: #f2f2f2;
+        color: #5a5a5a;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 5px 20px 5px;
+    }
+
+    #test-form .form_button {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 22px;
+        font-family: "Proxima Nova Rg";
+        background-color: #700000;
+        padding: 5px 20px 5px;
+    }
+
+}
+
+@media screen and (max-width: 361px) {
+    .second_block_section .circle_block .circle_text_block .circle_text_block_inner p {
+        font-size: 20px;
+        line-height: 1.1em;
+        max-width: 180px;
+    }
 }
