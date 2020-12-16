@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Titangel</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- slick slider -->
+
+    <link rel="stylesheet" href="/slick/slick-theme.css">
+    <link rel="stylesheet" href="/slick/slick.css">
+
+    <!-- Magnific Popup CSS  -->
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
 </head>
 
 <body>
@@ -35,30 +44,23 @@
                     </div>
                 </div>
 
-                <svg viewBox="0 0 880.06 880.06" xmlns="http://www.w3.org/2000/svg">
-                    <metadata>
-                        <x:xmpmeta x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        "
-                            xmlns:x="adobe:ns:meta/">
-                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                <rdf:Description rdf:about="" />
-                            </rdf:RDF>
-                        </x:xmpmeta>
-                    </metadata>
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                fill: #e4e4e4;
-                            }
-                        </style>
-                    </defs>
+                <svg class="desctop_svg" viewBox="0 0 880.06 880.06" xmlns="http://www.w3.org/2000/svg" fill="#e4e4e4">
+
                     <circle class="cls-1" cx="440.03" cy="440.03" r="440.03" data-name="Эллипс 1" />
                 </svg>
+
+                <svg class="mobile_svg" xmlns="http://www.w3.org/2000/svg" width="335.25" height="440.032" fill="
+                    #e4e4e4" viewBox="0 0 335.25 440.032">
+                    <circle class="cls-2" cx="220.016" cy="220.016" r="220.016" />
+                </svg>
+
+
             </div>
 
             <div class="form_block">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Имя">
-                    <input type="tel" name="" id="" placeholder="Телефон">
+                <form action="https://echo.htmlacademy.ru">
+                    <input type="text" name="name" id="name_first" placeholder="Имя">
+                    <input type="tel" name="telephone" id="telephone_first" placeholder="Телефон">
                     <button>Заказать</button>
                 </form>
             </div>
@@ -82,6 +84,7 @@
             </div>
         </div>
     </section>
+
     <section class="third_block_section">
         <div class="container">
             <h2>Haши 6 пpeимущecтв </h2>
@@ -141,9 +144,10 @@
                     </div>
                 </li>
             </ul>
-            <button>Купить со скидкой</button>
+            <a class="popup-with-form" href="#test-form">Купить со скидкой</a>
         </div>
     </section>
+
     <section class="four_block_section">
         <div class="container">
             <h2>Почему нам можно <span>доверять</span></h2>
@@ -166,6 +170,7 @@
             </ul>
         </div>
     </section>
+
     <section class="five_block_section">
         <h2>Cпeциaльнoe пpeдлoжeниЕ</h2>
         <div class="gift_block">
@@ -179,127 +184,410 @@
                         - бecплaтнaя дocтaвĸa и дoпoлнитeльнaя cĸидĸa
                     </li>
                 </ul>
-                <button>Купить со скидкой</button>
+
+                <a class="popup-with-form" href="#test-form">Купить со скидкой</a>
             </div>
         </div>
     </section>
+
     <section class="six_block_section">
         <div class="container">
             <h2>Как мы <span>работаем</span></h2>
             <div class="how_we_work">
                 <div class="how_we_work_inner one">
-                    <!-- <img src="/img/img_1.png" alt=""> -->
-                </div>
-                <div class="how_we_work_inner two"></div>
-                <div class="how_we_work_inner three"></div>
-                <div class="how_we_work_inner four"></div>
-            </div>
-            <button>Купить со скидкой</button>
-            <div class="accordion-container">
-                <h2>jQuery Accordion</h2>
-                <div class="set">
-                    <a href="#">
-                        Vestibulum
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna.</p>
+                    <div class="title_box">
+                        <svg class="" width="50" height="50" enable-background="new 0 0 512 512" version="1.1"
+                            viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#ff6a67" xmlns="http://www.w3.org/2000/svg">
+                                <path class=""
+                                    d="m121.25 21.065h-114.5a6.758 6.758 0 0 0-6.75 6.75v72.37a6.758 6.758 0 0 0 6.75 6.75h114.5a6.758 6.758 0 0 0 6.75-6.75v-72.37a6.758 6.758 0 0 0-6.75-6.75zm-114.5 3.5h114.5a3.254 3.254 0 0 1 3.25 3.25v7.253h-121v-7.253a3.254 3.254 0 0 1 3.25-3.25zm117.75 22.722h-121v-8.719h121zm-3.25 56.148h-114.5a3.254 3.254 0 0 1-3.25-3.25v-49.4h121v49.4a3.254 3.254 0 0 1-3.25 3.25z"
+                                    style="" data-original="#000000" />
+                                <path class=""
+                                    d="m107.32 72.153a6.749 6.749 0 0 0-9.545 0l-3.077 3.081-3.08-3.081a6.75 6.75 0 0 0-9.546 0l-6.629 6.63a6.758 6.758 0 0 0 0 9.545l6.629 6.63a6.75 6.75 0 0 0 9.546 0l3.08-3.081 3.08 3.081a6.749 6.749 0 0 0 9.545 0l6.63-6.63a6.758 6.758 0 0 0 0-9.545zm-18.18 20.33a3.331 3.331 0 0 1-4.6 0l-6.629-6.629a3.255 3.255 0 0 1 0-4.6l6.629-6.629a3.329 3.329 0 0 1 4.6 0l6.628 6.63a3.247 3.247 0 0 1 0 4.6l-2.311 2.311zm22.335-6.629-6.629 6.629a3.329 3.329 0 0 1-4.6 0l-3.077-3.083 1.074-1.074a6.748 6.748 0 0 0 0-9.546l-1.074-1.075 3.081-3.08a3.327 3.327 0 0 1 4.6 0l6.629 6.629a3.255 3.255 0 0 1-4e-3 4.6z"
+                                    style="" data-original="#000000" />
+                                <path class=""
+                                    d="m58.508 93.435h-46.758a1.75 1.75 0 0 0 0 3.5h46.758a1.75 1.75 0 1 0 0-3.5z"
+                                    style="" data-original="#000000" />
+                                <path class=""
+                                    d="m58.508 84.878h-46.758a1.75 1.75 0 0 0 0 3.5h46.758a1.75 1.75 0 0 0 0-3.5z"
+                                    style="" data-original="#000000" />
+                                <path class=""
+                                    d="m58.508 76.321h-46.758a1.75 1.75 0 0 0 0 3.5h46.758a1.75 1.75 0 1 0 0-3.5z"
+                                    style="" data-original="#000000" />
+                            </g>
+                        </svg>
+                        <p class="title">Сделайте заказ</p>
                     </div>
-                </div>
-                <div class="set">
-                    <a href="#">
-                        Phasellus
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <div class="content">
-                        <p> Aliquam cursus vitae nulla non rhoncus. Nunc condimentum erat nec dictum tempus. Suspendisse
-                            aliquam erat hendrerit vehicula vestibulum.</p>
-                    </div>
-                </div>
-                <div class="set">
-                    <a href="#">
-                        Praesent
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <div class="content">
-                        <p>Pellentesque aliquam ligula libero, vitae imperdiet diam porta vitae. sed do eiusmod tempor
-                            incididunt ut labore et dolore magna.</p>
-                    </div>
-                </div>
-                <div class="set">
-                    <a href="#">
-                        Curabitur
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <div class="content">
-                        <p> Donec tincidunt consectetur orci at dignissim. Proin auctor aliquam justo, vitae luctus odio
-                            pretium scelerisque. </p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- <section class="seven_block_section">
-        <div class="pay_block">
-            <h3>Оплата</h3>
-            <p>Oплaтa нaличными пpи пoлyчeнии +
-                ĸoмиccия зa ycлyгy. Oплaтa нa paccчeтный
-                cчeт ΠpивaтБaнĸa </p>
-        </div>
-        <div class="warranty_block">
-            <h3>Гарантия и Безопасность</h3>
-            <p>
-                Mы ĸoмпaния <strong>ТІТАN GЕL Уĸpaинa.</strong>
-                Πoĸyпaя y нac, Bы пoĸyпaeтe
-                opигинaльный Tитaн Гeль. Aдpec caйтa -
-                tіtаngеl.соm.uа, бyдьтe внимaтeльны.
-                Haш пpoдyĸт cepтифициpoвaн в Уĸpaинe.
-                Ha cepтифиĸaтe yĸaзaн нaш caйт -
-                tіtаngеl.соm.uа
-            </p>
-        </div>
-        <div class="delivery_block">
-            <h3>Доставка</h3>
-            <p>Aнoнимнaя дocтaвĸa
-                в тeчeнии 1-2 днeй пo вceй Уĸpaинe. </p>
-        </div>
-    </section> -->
+                    <p class="text">Сделайте заказ на сайте - и мы с вами свжемся в течении 5 минут</p>
 
-    <!-- <section class="eight_block_section">
-        <h2>Отзывы</h2>
-        <div class="reviews">
-            <div class="review_block">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut architecto sit. Commodi sunt tempora
-                    itaque nam sit! Voluptas molestias sed enim, vitae cum debitis harum quaerat? Earum, doloribus
-                    incidunt?</p>
-                <p>Игорь</p>
+                </div>
+                <div class="how_we_work_inner two">
+                    <div class="title_box">
+
+                        <svg class="" width="50" height="50"" enable-background=" new 0 0 512 512" version="1.1"
+                            viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <path d="m156 370c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10z"
+                                    fill="#ff6a67" style="" data-original="#000000" />
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m450.14 190 58.929-58.929c2.479-2.479 3.478-6.075 2.635-9.477-0.843-3.403-3.407-6.115-6.757-7.149l-143.5-44.29c-12.936-41.581-51.384-70.154-95.451-70.154-40.964 0-77.6 24.965-92.763 62.625l-166.21 51.828c-3.341 1.042-5.895 3.756-6.732 7.155-0.837 3.398 0.163 6.988 2.638 9.463l60.479 60.479-38.144 63.575c-1.561 2.601-1.856 5.77-0.804 8.615s3.339 5.058 6.217 6.017l55.323 18.44v153.8c0 4.168 2.586 7.899 6.489 9.363 33.827 12.684 159.51 59.822 160.19 60.061 1.984 0.699 4.219 0.794 6.398 0.089 0.029-0.01 0.059-0.016 0.088-0.026l180-60c4.083-1.361 6.838-5.183 6.838-9.487v-157.92l58.998-18.54c3.336-1.048 5.882-3.762 6.715-7.158 0.832-3.396-0.169-6.98-2.641-9.453l-58.928-58.929zm-84.144-89.999c0-2.541-0.107-5.076-0.298-7.603l117.49 36.265-49.897 49.896-81.528-27.173c9.232-15.431 14.229-33.237 14.229-51.385zm-175.67-26.028c11.101-32.282 41.512-53.972 75.673-53.972 36.801 0 68.719 24.892 77.618 60.532 1.581 6.333 2.382 12.883 2.382 19.468 0 18.574-6.164 35.983-17.828 50.352-15.277 18.842-37.938 29.648-62.172 29.648-26.196 0-50.767-12.858-65.733-34.404-9.333-13.406-14.267-29.174-14.267-45.596 0-8.931 1.455-17.688 4.327-26.028zm-161.56 54.651 138.3-43.124c-0.694 4.778-1.065 9.618-1.065 14.5 0 16.101 3.814 31.696 11.084 45.767l-98.383 32.792-49.936-49.935zm20.063 126.1 31.62-52.702 160.56 53.521-31.619 52.702c-17.145-5.715-142.26-47.42-160.56-53.521zm197.17 232.84-140-52.5v-140.21c110.15 36.522 104.77 35.407 107.84 35.407 3.438 0 6.73-1.779 8.577-4.856l23.585-39.311v201.47zm10-248.11-148.38-49.458 80.794-26.93c18.91 23.247 47.377 36.929 77.582 36.929 27.942 0 54.203-11.499 73.092-31.759l65.284 21.759-148.38 49.459zm170 195.33-160 53.333v-209.62l35.451 44.31c2.579 3.223 6.872 4.529 10.807 3.293l113.74-35.743v144.43zm-113.21-129.82-40.024-50.026 160.53-53.51 49.964 49.964-170.47 53.572z"
+                                    fill="#ff6a67" style="" data-original="#000000" />
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m219.51 392.2-22.24-8.34c-5.171-1.938-10.935 0.681-12.875 5.852-1.939 5.172 0.681 10.936 5.852 12.875l22.24 8.34c5.182 1.942 10.939-0.69 12.875-5.852 1.939-5.171-0.681-10.936-5.852-12.875z"
+                                    fill="#ff6a67" style="" data-original="#000000" />
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m219.51 434.92-60-22.5c-5.171-1.939-10.935 0.681-12.875 5.852s0.681 10.936 5.852 12.875l60 22.5c1.157 0.434 2.343 0.64 3.51 0.64 4.049 0 7.859-2.477 9.365-6.492 1.94-5.172-0.68-10.936-5.852-12.875z"
+                                    fill="#ff6a67" style="" data-original="#000000" />
+                            </g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m323.07 62.93c-3.905-3.906-10.237-3.905-14.143 0l-52.929 52.93-12.929-12.929c-3.905-3.905-10.237-3.905-14.143 0s-3.905 10.237 0 14.143l20.001 19.999c3.905 3.905 10.237 3.905 14.143 0l60-60c3.905-3.905 3.905-10.237 0-14.143z"
+                                    fill="#ff6a67" style="" data-original="#000000" />
+                            </g>
+
+                        </svg>
+                        <p class="title">Подтвердите заказ</p>
+                    </div>
+                    <p class="text">Уточните детали Вашего заказа и подтвердите его менеджеру</p>
+                </div>
+                <div class="how_we_work_inner three">
+                    <div class="title_box">
+
+                        <svg class="" width="50" height="50" enable-background="new 0 0 512 512" version="1.1"
+                            viewBox="0 0 74 74" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#ff6a67">
+                                <path
+                                    d="m46.69 53.1h-20.28a1 1 0 0 1 0-2h19.28v-36.44h-9.25a1 1 0 0 1 0-2h9.25a2 2 0 0 1 2 2v37.44a1 1 0 0 1-1 1z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path d="m19.47 14.66h-2.91a1 1 0 1 1 0-2h2.91a1 1 0 0 1 0 2z" style=""
+                                    data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path
+                                    d="m12.65 53.1h-8.65a1 1 0 0 1-1-1v-37.44a2 2 0 0 1 2-2h4.56a1 1 0 0 1 0 2h-4.56v36.44h7.65a1 1 0 0 1 0 2z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path d="m29.44 14.66h-2.97a1 1 0 0 1 0-2h2.97a1 1 0 0 1 0 2z" style=""
+                                    data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path
+                                    d="m70 53.1h-6.45a1 1 0 0 1 0-2h5.45v-18.843l-7.98-9.971h-13.33v28.814h2.1a1 1 0 0 1 0 2h-3.1a1 1 0 0 1 -1-1v-30.814a1 1 0 0 1 1-1h14.81a1 1 0 0 1 .781.375l8.5 10.62a1 1 0 0 1 .219.625v20.194a1 1 0 0 1 -1 1z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path
+                                    d="m70 37.815h-14.842a2.41 2.41 0 0 1 -2.408-2.407v-7.065a2.41 2.41 0 0 1 2.408-2.407h10.862a1 1 0 0 1 0 2h-10.862a.408.408 0 0 0 -.408.407v7.065a.408.408 0 0 0 .408.407h14.842a1 1 0 0 1 0 2z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path
+                                    d="m19.531 61.344a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8zm0-14a6 6 0 1 0 6 6 6.007 6.007 0 0 0-6-6z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path
+                                    d="m19.531 57.057a3.713 3.713 0 1 1 3.713-3.713 3.717 3.717 0 0 1-3.713 3.713zm0-5.426a1.713 1.713 0 1 0 1.713 1.713 1.716 1.716 0 0 0-1.713-1.713z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path d="m46.69 40.875h-42.69a1 1 0 0 1 0-2h42.69a1 1 0 0 1 0 2z" style=""
+                                    data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path
+                                    d="m56.667 61.344a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8zm0-14a6 6 0 1 0 6 6 6.007 6.007 0 0 0-6-6z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path
+                                    d="m56.667 57.057a3.713 3.713 0 1 1 3.712-3.713 3.716 3.716 0 0 1-3.712 3.713zm0-5.426a1.713 1.713 0 1 0 1.712 1.713 1.715 1.715 0 0 0-1.712-1.713z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                            </g>
+                        </svg>
+
+                        <p class="title">Выполнение заказа</p>
+                    </div>
+                    <p class="text">Мы отправляем Ваш заказ анонимно и удобным для Вас способом</p>
+                </div>
+                <div class="how_we_work_inner four">
+                    <div class="title_box">
+
+                        <svg class="" width="50" height="50" enable-background="new 0 0 512 512" version="1.1"
+                            viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#ff6a67">
+                                <path class=""
+                                    d="M73.4,454.1a16.436,16.436,0,1,0,16.436-16.436A16.454,16.454,0,0,0,73.4,454.1Zm20.872,0a4.436,4.436,0,1,1-4.436-4.436A4.441,4.441,0,0,1,94.267,454.1Z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path class=""
+                                    d="M451.824,30.312A5.977,5.977,0,0,0,446.447,27H176.956a5.977,5.977,0,0,0-5.377,3.312L136.521,101.12A6.061,6.061,0,0,0,135,105.128V317.714A38.974,38.974,0,0,0,116.268,348.2a35.98,35.98,0,0,1-11.165,5.757l-.019-.148A9.594,9.594,0,0,0,95.956,347H33.286a9.6,9.6,0,0,0-9.209,12.171L57.189,478.025A9.572,9.572,0,0,0,66.4,485H132.71a9.523,9.523,0,0,0,9.144-12.307l-8.632-28.3,31.26-19.758a18.147,18.147,0,0,1,13.2-1.694c.18.045.362.083.545.111l55.194,8.535a65.96,65.96,0,0,0,45.592-9.59L387.115,353h95.16A5.725,5.725,0,0,0,488,347.275V107.105a5.977,5.977,0,0,0-.347-4.442ZM318,39H442.722l29.727,60H318Zm-6.3,72.325a5.988,5.988,0,0,0,1.935-.325H354v43H273V111h36.766A5.989,5.989,0,0,0,311.7,111.325ZM68.252,473,36.5,359H94l35,114Zm204.305-60.916a53.924,53.924,0,0,1-37.3,7.743l-54.934-8.546a30.1,30.1,0,0,0-21.828,2.979c-.093.053-.186.1-.277.152l-28.659,18.111L108.663,365.3a48.306,48.306,0,0,0,17.489-9.942,5.535,5.535,0,0,0,2.01-4.258A27.165,27.165,0,0,1,155.486,324h1.874a39.374,39.374,0,0,0,30.462-14.688l23.771-29.256a14.589,14.589,0,0,1,19.522-2.954l.4.239a15.327,15.327,0,0,1,5.2,19.56c-9.5,18.885-23.627,47-23.627,47a6.4,6.4,0,0,0,.255,6.045A6.2,6.2,0,0,0,218.448,353h147.01ZM276,341V283.7l3.969,4.152a6.038,6.038,0,0,0,4.316,1.869,6.1,6.1,0,0,0,4.34-1.8l10.465-10.665L309.419,287.9a6,6,0,0,0,8.613,0l10.328-10.642,10.462,10.665a6.049,6.049,0,0,0,4.333,1.8,5.568,5.568,0,0,0,4.1-1.869L351,283.7V341Zm200,0H363V268.662a5.789,5.789,0,0,0-10.053-4.131l-9.962,10.546L332.6,264.63a5.788,5.788,0,0,0-4.258-1.63h-.016a5.831,5.831,0,0,0-4.29,1.652l-10.3,10.535-10.3-10.492a5.864,5.864,0,0,0-4.29-1.695h-.016a5.845,5.845,0,0,0-4.283,1.63l-10.415,10.532-10.011-10.589A6.028,6.028,0,0,0,264,268.662V341H228.177c4.933-10,13.076-26.225,19.256-38.516a27.5,27.5,0,0,0-9.225-35.027l-.4-.318a26.522,26.522,0,0,0-35.518,5.246l-23.77,29.355A27.408,27.408,0,0,1,157.36,312h-1.874a39.806,39.806,0,0,0-8.486.921V111h37a6,6,0,0,0,0-12H150.954l29.727-60H306V99H224a6,6,0,0,0,0,12h37v48.784A6.172,6.172,0,0,0,266.981,166h93.492c3.313,0,5.527-2.9,5.527-6.216V111H476Z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path class="" d="m176 133.76a6 6 0 0 0-6 6v6.3a6 6 0 0 0 12 0v-6.3a6 6 0 0 0-6-6z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                                <path class="" d="m176 159.06a6 6 0 0 0-6 6v66a6 6 0 0 0 12 0v-66a6 6 0 0 0-6-6z"
+                                    style="" data-original="#000000" xmlns="http://www.w3.org/2000/svg" />
+                            </g>
+                        </svg>
+
+                        <p class="title">Получение товара</p>
+                    </div>
+                    <p class="text">Заказ доставляется в ближайшее отделение Нова пошта или лично в руки наложенным
+                        платежом</p>
+                </div>
             </div>
         </div>
-    </section> -->
-    <!-- <section class="nine_block_section">
-        <div class="form_block">
-            <div class="form_block_inner">
-                <p>Хочешь такой же результат?</p>
-                <p>Оформите заказ и мы обязательно свяжемся с Вами</p>
+
+        <div class="pop_up_block">
+            <a class="popup-with-form" href="#test-form">Купить со скидкой</a>
+        </div>
+
+        <div class="accordion-container">
+            <div class="container">
+                <h3>Найдите <span>ответы</span> нa вoлнyющиe вoпpocы</h3>
+                <div id="accordion" class="accordion-container_inner">
+                    <article class="content-entry">
+                        <h4 class="article-title"><i></i>Kaĸ пoльзoвaтьcя ĸpeмoм ?</h4>
+                        <div class="accordion-content">
+                            <p>Πpeпapaт нyжнo иcпoльзoвaть coглacнo инcтpyĸции и нaнocить 1-2 paзa в дeнь в тeчeниe 30
+                                днeй</p>
+                        </div>
+                        <!--/.accordion-content-->
+                    </article>
+
+                    <article class="content-entry">
+                        <h4 class="article-title"><i></i>He мoгy нaйти инcтpyĸцию, чтo дeлaть ?</h4>
+                        <div class="accordion-content">
+                            <p>Accordion content 2</p>
+                        </div>
+                        <!--/.accordion-content-->
+                    </article>
+
+                    <article class="content-entry">
+                        <h4 class="article-title"><i></i>Когда будет результат ?</h4>
+                        <div class="accordion-content">
+                            <p>Accordion content 3</p>
+                        </div>
+                        <!--/.accordion-content-->
+                    </article>
+
+                    <article class="content-entry">
+                        <h4 class="article-title"><i></i>Покупал в другом магазине - не работает. Почему ?</h4>
+                        <div class="accordion-content">
+                            <p>Accordion content 4</p>
+                        </div>
+                        <!--/.accordion-content-->
+                    </article>
+
+                </div>
             </div>
-            <div class="form_block_inner">
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Имя">
-                    <input type="tel" name="" id="" placeholder="Телефон">
-                    <input type="email" name="" id="" placeholder="E-mail">
-                    <button>Купить</button>
-                </form>
+            <!--/#accordion-->
+
+        </div>
+
+    </section>
+
+    <section class="seven_block_section">
+        <div class="container">
+            <div class="seven_block_section_inner">
+                <div class="pay_block">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        width="50" height="50" x="0" y="0" viewBox="0 0 74 74" style="enable-background:new 0 0 512 512"
+                        xml:space="preserve" class="">
+                        <g>
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="m67 61h-60a5.006 5.006 0 0 1 -5-5v-13h2v13a3 3 0 0 0 3 3h60a3 3 0 0 0 3-3v-38a3 3 0 0 0 -3-3h-60a3 3 0 0 0 -3 3v21h-2v-21a5.006 5.006 0 0 1 5-5h60a5.006 5.006 0 0 1 5 5v38a5.006 5.006 0 0 1 -5 5z"
+                                fill="#ff6a67" data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg" d="m62 22h9v2h-9z" fill="#ff6a67"
+                                data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg" d="m3 22h55v2h-55z" fill="#ff6a67"
+                                data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg" d="m3 31h68v2h-68z" fill="#ff6a67"
+                                data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg" d="m8 54h21v2h-21z" fill="#ff6a67"
+                                data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg" d="m8 49h11v2h-11z" fill="#ff6a67"
+                                data-original="#000000" style="" class="" />
+                        </g>
+                    </svg>
+                    <h3>Оплата</h3>
+                    <p>Oплaтa нaличными пpи пoлyчeнии +
+                        ĸoмиccия зa ycлyгy. Oплaтa нa paccчeтный
+                        cчeт ΠpивaтБaнĸa </p>
+                </div>
+                <div class="warranty_block">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        width="75" height="75" x="0" y="0" viewBox="0 0 74 74" style="enable-background:new 0 0 512 512"
+                        xml:space="preserve" class="">
+                        <g>
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="m58.979 51.36a1 1 0 0 1 -.887-1.46c.453-.876.845-1.712 1.2-2.554a1 1 0 0 1 1.846.768c-.371.894-.785 1.779-1.265 2.706a1 1 0 0 1 -.894.54z"
+                                fill="#ff6a67" data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="m37 72a1.01 1.01 0 0 1 -.451-.107c-16.63-8.393-26.559-22.472-26.559-37.663v-20.23a1 1 0 0 1 .33-.742 1.01 1.01 0 0 1 .772-.253c9.889 1.018 18.349-2.566 25.142-10.649a1 1 0 0 1 .756-.356.986.986 0 0 1 .763.342c5.967 6.825 14.472 10.41 25.28 10.658a1 1 0 0 1 .977 1v16.47a1 1 0 0 1 -2 0v-15.5c-10.483-.435-18.881-3.95-24.992-10.461-6.86 7.72-15.271 11.272-25.028 10.582v19.139c0 14.284 9.339 27.579 25.01 35.647a51.5 51.5 0 0 0 17.375-14.134 1 1 0 0 1 1.589 1.215 53.7 53.7 0 0 1 -18.513 14.935 1.01 1.01 0 0 1 -.451.107z"
+                                fill="#ff6a67" data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="m62.321 42.02a.948.948 0 0 1 -.2-.02 1 1 0 0 1 -.785-1.176c.2-.971.352-1.963.468-2.95a1 1 0 1 1 1.986.233c-.122 1.04-.288 2.086-.493 3.109a1 1 0 0 1 -.976.804z"
+                                fill="#ff6a67" data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="m37 65.454a.994.994 0 0 1 -.49-.129c-13.052-7.336-20.843-18.916-20.843-30.978v-14.609a1 1 0 0 1 .955-1 30.542 30.542 0 0 0 19.819-8.472 1 1 0 0 1 1.325-.031 36.221 36.221 0 0 0 19.681 8.055 1 1 0 0 1 .887.993v15.063c0 12.062-7.792 23.643-20.844 30.979a.994.994 0 0 1 -.49.129zm-19.333-44.773v13.666c0 11.179 7.216 21.968 19.333 28.953 12.118-6.987 19.334-17.778 19.334-28.957v-14.176a38.117 38.117 0 0 1 -19.182-7.846 32.37 32.37 0 0 1 -19.485 8.36z"
+                                fill="#ff6a67" data-original="#000000" style="" class="" />
+                            <path xmlns="http://www.w3.org/2000/svg"
+                                d="m32.631 45.912a1 1 0 0 1 -.707-.293l-5.631-5.631a1 1 0 0 1 1.414-1.414l4.924 4.926 13.662-13.665a1 1 0 1 1 1.415 1.414l-14.37 14.37a1 1 0 0 1 -.707.293z"
+                                fill="#ff6a67" data-original="#000000" style="" class="" />
+                        </g>
+                    </svg>
+                    <h3>Гарантия и Безопасность</h3>
+                    <p>
+                        Mы ĸoмпaния <strong>ТІТАN GЕL Уĸpaинa.</strong>
+                        Πoĸyпaя y нac, Bы пoĸyпaeтe
+                        opигинaльный Tитaн Гeль. Aдpec caйтa -
+                        tіtаngеl.соm.uа, бyдьтe внимaтeльны.
+                        Haш пpoдyĸт cepтифициpoвaн в Уĸpaинe.
+                        Ha cepтифиĸaтe yĸaзaн нaш caйт -
+                        tіtаngеl.соm.uа
+                    </p>
+                </div>
+                <div class="delivery_block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 512 512" fill="#ff6a67">
+
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M491.7 113L259.3 0.7c-2.1-1-4.5-1-6.5 0L20.3 113c-2.6 1.3-4.2 3.9-4.2 6.8v272.5c0 2.9 1.6 5.5 4.2 6.8l232.5 112.2c1 0.5 2.1 0.7 3.3 0.7s2.2-0.2 3.3-0.7l232.5-112.2c2.6-1.3 4.2-3.9 4.2-6.8V119.7C496 116.8 494.3 114.2 491.7 113zM256 15.8l215.2 103.9 -62.4 30.1c-0.4-0.3-0.8-0.6-1.3-0.8L193.8 45.9 256 15.8zM176.9 54.3l214.9 103.7 -44 21.2L132.9 75.6 176.9 54.3zM396.8 172.3v78.5l-41.1 19.8v-78.5L396.8 172.3zM481 387.6L263.5 492.6V236.7l51.9-25c3.7-1.8 5.3-6.3 3.5-10 -1.8-3.7-6.3-5.3-10-3.5L256 223.6l-20.8-10c-3.7-1.8-8.2-0.2-10 3.5 -1.8 3.7-0.2 8.2 3.5 10l19.8 9.6V492.6L31 387.6V131.7l165.6 79.9c1.1 0.5 2.2 0.7 3.3 0.7 2.8 0 5.5-1.6 6.8-4.2 1.8-3.7 0.2-8.2-3.5-10l-162.4-78.4 74.5-36L340.6 192.5c0 0 0.1 0.1 0.1 0.1v90c0 2.6 1.3 5 3.5 6.4 1.2 0.8 2.6 1.1 4 1.1 1.1 0 2.2-0.2 3.3-0.7l56.1-27.1c2.6-1.3 4.2-3.9 4.2-6.8v-90.5l69.2-33.4V387.6z"
+                                data-original="#000000" class="a" />
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M92.9 358.5L58.8 342c-3.7-1.8-8.2-0.2-10 3.5 -1.8 3.7-0.2 8.2 3.5 10l34.1 16.5c1.1 0.5 2.2 0.7 3.3 0.7 2.8 0 5.5-1.6 6.8-4.2C98.2 364.8 96.7 360.3 92.9 358.5z"
+                                data-original="#000000" class="a" />
+                        </g>
+                        <g xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M124.3 338l-65.5-31.6c-3.7-1.8-8.2-0.2-10 3.5 -1.8 3.7-0.2 8.2 3.5 10l65.5 31.6c1.1 0.5 2.2 0.7 3.3 0.7 2.8 0 5.5-1.6 6.8-4.2C129.6 344.3 128.1 339.8 124.3 338z"
+                                data-original="#000000" class="a" />
+                        </g>
+                    </svg>
+                    <h3>Доставка</h3>
+                    <p>Aнoнимнaя дocтaвĸa
+                        в тeчeнии 1-2 днeй пo вceй Уĸpaинe. </p>
+                </div>
+
             </div>
         </div>
-    </section> -->
-    <!-- <footer>
-        <div class="footer_logo_block">
-            <img src="" alt="">
+    </section>
+
+    <section class="eight_block_section">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="reviews">
+                <div class="review_img_block">
+                    <img src="/img/Forma.png" alt="">
+                </div>
+                <div class="review_block">
+                    <div class="review_block_slider">
+                        <p class="review_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut
+                            architecto
+                            sit. Commodi sunt
+                            tempora itaque nam sit! Voluptas molestias sed enim, vitae cum debitis harum quaerat? Earum,
+                            doloribus
+                            incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut architecto sit.
+                            Commodi sunt
+                            tempora itaque nam sit! Voluptas molestias sed enim, vitae cum debitis harum quaerat? Earum,
+                            doloribus
+                            incidunt?</p>
+                        <p class="author">Игорь</p>
+                    </div>
+                    <div class="review_block_slider">
+                        <p class="review_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut
+                            architecto
+                            sit. Commodi sunt
+                            tempora itaque nam sit! Voluptas molestias sed enim, vitae cum debitis harum quaerat? Earum,
+                            doloribus
+                            incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut architecto sit.
+                            Commodi sunt
+                            tempora itaque nam sit! Voluptas molestias sed enim, vitae cum debitis harum quaerat? Earum,
+                            doloribus
+                            incidunt?</p>
+                        <p class="author">Игорь</p>
+                    </div>
+                    <div class="review_block_slider">
+                        <p class="review_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut
+                            architecto
+                            sit. Commodi sunt
+                            tempora itaque nam sit! Voluptas molestias sed enim, vitae cum debitis harum quaerat? Earum,
+                            doloribus
+                            incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut architecto sit.
+                            Commodi sunt
+                            tempora itaque nam sit! Voluptas molestias sed enim, vitae cum debitis harum quaerat? Earum,
+                            doloribus
+                            incidunt?</p>
+                        <p class="author">Игорь</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer_tel_block"></div>
-        <div class="footer_social_block"></div>
-    </footer> -->
+        <svg class="divider" viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="50px">
+            <path d="M0 0 L50 100 L100 0 Z"></path>
+        </svg>
+    </section>
+
+    <section class="nine_block_section">
+        <div class="container">
+            <div class="form_block">
+                <div class="form_block_inner">
+                    <h2>Хочешь<br>такой же результат?</h2>
+                    <p>Оформите заказ и мы обязательно<br> свяжемся с Вами</p>
+                </div>
+                <div class="form_block_inner">
+                    <form action="https://echo.htmlacademy.ru" class="bottom_form">
+                        <input type="text" name="name" id="footer_name" placeholder="Имя">
+                        <input type="tel" name="telephone" id="footer_telephone" placeholder="Телефон">
+                        <input type="email" name="email" id="footer_email" placeholder="E-mail">
+                        <button>Купить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <svg class="divider" viewBox="0 0 100 100" preserveAspectRatio="none" width="100%" height="50px">
+            <path d="M0 0 L50 100 L100 0 Z"></path>
+        </svg>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer_main_block">
+                <div class="footer_logo_block">
+                    <img src="img/logo_img.png" alt="">
+                </div>
+                <div class="footer_tel_block">
+                    <div class="adress">
+                        г. Львов
+                    </div>
+                    <div class="tel">
+                        <a href="tel:+380501002211">+38 (050) 100-22-11</a>
+                        <a href="tel:+380501002211">+38 (050) 100-22-11</a>
+                    </div>
+                </div>
+                <div class="footer_social_block">
+                    <div class="email">
+                        <a href="mailto:іnfо@tіtаngеl.соm.uа">іnfо@tіtаngеl.соm.uа</a>
+                    </div>
+                    <div class="site">
+                        <a href="#">tіtаngеl.соm.uа</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="/img/icons/whatsapp_icon.png" alt="whatsapp"></a>
+                        <a href="#"><img src="img/icons/viber_icon.png" alt="viber"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- popup -->
+
+    <!-- form itself -->
+    <form action="https://echo.htmlacademy.ru" id="test-form" class="mfp-hide white-popup-block">
+        <p>Оформите заказ и мы с вами обязательно свяжемся!</p>
+        <fieldset style="border:0;">
+            <input type="text" name="name" id="form_name" placeholder="Имя">
+            <input type="tel" name="telephone" id="form_telephone" placeholder="Телефон">
+            <input type="email" name="email" id="form_email" placeholder="E-mail">
+            <button class="form_button">Купить</button>
+        </fieldset>
+    </form>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 
