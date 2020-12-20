@@ -68,7 +68,21 @@ $(document).ready(function () {
 // mobile_menu
 
 $(document).ready(function () {
-    $('#nav-menu').click(function () {
-        $('ul.nav-list').addClass('nav-open').slideToggle('300');
+
+    $(".cross").hide();
+    $(".menu").hide();
+    $(".hamburger").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".hamburger").hide();
+            $(".cross").show();
+        });
     });
+
+    $(".cross").click(function () {
+        $(".menu").slideToggle("slow", function () {
+            $(".cross").hide();
+            $(".hamburger").show();
+        });
+    });
+
 });

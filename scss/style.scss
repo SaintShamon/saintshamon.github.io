@@ -121,53 +121,6 @@ header {
 
     }
 
-
-    .nav-bar {
-        display: none;
-        width: 100%;
-    }
-    
-    .nav-container {
-        overflow: hidden;
-    }
-    
-    .nav-logo {
-        float: left;
-        display: block;
-        padding: 15px 10px;
-        color: #757575;
-        font-weight: 600;
-        font-size: 1.2em;
-    }
-    
-    .nav-logo:hover {
-        color: #424242;
-    }
-    
-    .nav-list {
-        float: right;
-      list-style:none;
-    }
-    
-    .nav-list li {
-        float: left;
-    }
-    
-    .nav-list li a {
-        display: block;
-        color: #f9f9f9;
-        padding: 20px 10px;
-        font-size: 1em;
-    }
-    
-    .nav-list li a:hover {
-        color: #f9f9f9;
-        background: #757575;
-    }
-    
-    .nav-menu{
-      display: none;
-    }
 }
 
 .first_block_section {
@@ -1141,47 +1094,7 @@ footer {
             display: none;
         }
 
-        .nav-container {
-            width: 100%;
-            max-width: 1024px;
-            margin: 0 auto;
-            background: #000;
-            max-height: 70px;
-        }
-
-        .nav-bar {
-            display: block;
-        }
-
-        .nav-menu{
-            color: #fff;
-            float: right;
-            display: block;
-            padding: 20px 20px;
-            cursor: pointer;
-        }
-        
-        .nav-list{
-        float: left; 
-        width: 100%;
-        overflow: hidden;
-        height: 0;
-        
-        }
-        
-        .nav-open{ 
-            position: relative;
-            height: 100vh;
-            background-color: #000;
-            opacity: 0.9;
-            z-index: 999;
-            margin: 0;
-            transition: 0.5s;
-         }
-        
-        .nav-list li {
-            width: 100%;
-        }
+       
     }     
 
     .container {
@@ -1792,3 +1705,67 @@ footer {
         max-width: 180px;
     }
 }
+
+
+.mobile_menu{
+	width:100%; 
+	// background:#ffffff; 
+	height:70px; 
+    border-bottom:1px solid #dddddd;
+    display: flex;
+    .header_logo {
+        max-width: 150px;
+        img {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:7px;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:5px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+mobile_menu{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
