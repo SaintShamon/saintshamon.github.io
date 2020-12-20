@@ -69,26 +69,120 @@ p {
     margin: 0 auto;
 }
 
+header {
+    background-color: black;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+    .main_menu_block {
+        display: flex;
+        justify-content: space-between;
+        .header_logo {
+            max-width: 300px;
+            display: flex;
+            img {
+                max-width: 250px;
+                margin-top: 10px;
+            }
+    
+        }
+
+        .header_menu {
+            width: 100%;
+            max-width: 600px;
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    align-self: center;
+                    padding-top: 25px;
+    
+                    a {           
+                        margin: 5px 0;
+                        font-size: 20px;
+                        line-height: 1.1em;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+    
+                li:focus a, li:hover a {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+
+
+    }
+
+
+    .nav-bar {
+        display: none;
+        width: 100%;
+    }
+    
+    .nav-container {
+        overflow: hidden;
+    }
+    
+    .nav-logo {
+        float: left;
+        display: block;
+        padding: 15px 10px;
+        color: #757575;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+    
+    .nav-logo:hover {
+        color: #424242;
+    }
+    
+    .nav-list {
+        float: right;
+      list-style:none;
+    }
+    
+    .nav-list li {
+        float: left;
+    }
+    
+    .nav-list li a {
+        display: block;
+        color: #f9f9f9;
+        padding: 20px 10px;
+        font-size: 1em;
+    }
+    
+    .nav-list li a:hover {
+        color: #f9f9f9;
+        background: #757575;
+    }
+    
+    .nav-menu{
+      display: none;
+    }
+}
+
 .first_block_section {
     background: linear-gradient( rgba(0,0,0,0.4)), url("/img/background_img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 950px;
+    min-height: 100vh;
     background-position: center center;
     border-bottom-left-radius: 50% 5%;
     border-bottom-right-radius: 50% 5%;
-    .header_logo {
-        max-width: 300px;
-        padding-top: 50px;
-        img {
-            max-width: 300px;
-        }
 
-    }
 
     .header_text_block {
         color: white;
-        margin-top: 128px;
+        padding-top: 120px;
         h2 {
             font-size: 140px;
             line-height: 1.1em;
@@ -1040,6 +1134,55 @@ footer {
 }
 
 @media screen and (max-width:1024px) {
+
+    header {
+
+        .main_menu_block {
+            display: none;
+        }
+
+        .nav-container {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            background: #000;
+        }
+
+        .nav-bar {
+            display: block;
+        }
+
+        .nav-menu{
+            color: #fff;
+            float: right;
+            display: block;
+            padding: 20px 10px;
+            cursor: pointer;
+        }
+        
+        .nav-list{
+        float: left; 
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        
+        }
+        
+        .nav-open{ 
+            position: relative;
+            height: 100vh;
+            background-color: #000;
+            opacity: 0.9;
+            z-index: 999;
+            margin: 0;
+            transition: 0.5s;
+         }
+        
+        .nav-list li {
+            width: 100%;
+        }
+    }     
+
     .container {
         max-width: 960px;
     }
@@ -1386,13 +1529,6 @@ footer {
     }
 
     .first_block_section {
-        .header_logo {
-            padding-left: 15px;
-            padding-right: 15px;
-            img {
-                max-width: 200px;
-            }
-        }
         
         .header_text_block {
             h2 {
