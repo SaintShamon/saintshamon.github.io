@@ -1236,6 +1236,7 @@ footer .footer_main_block .footer_social_block .social a img {
     max-width: 1024px;
     margin: 0 auto;
     background: #000;
+    max-height: 70px;
   }
   header .nav-bar {
     display: block;
