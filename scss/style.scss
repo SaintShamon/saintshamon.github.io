@@ -1686,9 +1686,6 @@ footer {
     }
 }
 
-
-
-
 @media screen and (max-width:1600px) {
 
     body {
@@ -1921,8 +1918,6 @@ footer {
         }
     }
 
-
-
     .second_section {
         .subheader_text {
             font-size: 16px;
@@ -2136,4 +2131,300 @@ footer {
         }
     }
 
+}
+
+@media screen and (max-width:1024px) {
+
+    body {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .container {
+        max-width: 970px;
+    }
+
+    .first_section .first_section_block {
+        max-width: 970px;
+
+        .first_section .first_section_block h1 {
+            font-size: 72px;
+            line-height: 86px;
+        }
+    }
+
+    .second_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .second_section_block ul {
+
+            max-width: 620px;
+
+            li {
+                width: 100%;
+                max-width: 300px;
+
+                .inner_block p {
+                    width: 100%;
+                    max-width: 225px;
+                }
+
+                .inner_block svg {
+                    width: 70px !important;
+                    height: 71px !important;
+                }
+            }
+        }
+
+        .second_section_block .inner_block_right {
+            max-width: 300px;
+
+            svg {
+                width: 70px !important;
+                height: 71px !important;
+            }
+
+            p {
+                width: 100%;
+                max-width: 225px;
+            }
+        }
+
+
+    }
+
+    .third_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .subheader_text {
+            font-size: 14px;
+            line-height: 18px;
+            max-width: 900px;
+        }
+
+        .inner_block .text_block_top {
+            margin: 40px 0;
+        }
+
+        .inner_block .text_block_top ul li {
+            width: 100%;
+            max-width: 270px;
+
+            .text_block_inner svg {
+                width: 70px !important;
+                height: 71px !important;
+            }
+
+            .text_block_inner p {
+                max-width: 200px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        .inner_block .text_block_top ul li:last-of-type {
+            width: 100%;
+            max-width: 270px;
+
+            .text_block_inner svg {
+                width: 70px !important;
+                height: 71px !important;
+            }
+
+            .text_block_inner p {
+                max-width: 200px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        .inner_block .video1 {
+            height: 479px;
+            background: url('../img/video_1_1024.jpg');
+        }
+
+        .inner_block iframe {
+            min-height: 479px;
+        }
+
+        .inner_block .text_block_bottom ul li {
+            width: 100%;
+            max-width: 300px;
+
+            .text_block_inner svg {
+                width: 70px !important;
+                height: 71px !important;
+            }
+
+            .text_block_inner p {
+                max-width: 220px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .text_block_inner .dol_icon {
+                width: 70px !important;
+                height: 71px !important;
+            }
+        }
+
+    }
+
+    .four_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .four_section_block .inner_block:last-of-type {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .four_section_block .video2 {
+            height: 302px;
+            background: url('../img/video_2_1024.jpg');
+        }
+
+        .four_section_block iframe {
+            min-height: 302px;
+        }
+    }
+
+    .five_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .top_block .top_block_inner {
+            width: 100%;
+            max-width: 400px;
+
+            svg {
+                width: 70px !important;
+                height: 71px !important;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+                max-width: 320px;
+            }
+        }
+
+        .bottom_block .inner_block {
+            max-width: 400px;
+
+            .header_text_command {
+                font-size: 22px;
+                line-height: 28px;
+                height: 71px;
+            }
+
+            .text_command {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .six_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .subheader_text {
+            font-size: 14px;
+            line-height: 18px;
+            max-width: 726px;
+        }
+    }
+
+    .seven_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .seven_section_block ul li {
+            width: 100%;
+            max-width: 370px;
+
+            .header_text_what_do {
+                height: 75px;
+            }
+
+            .text_what_do {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        .seven_section_block ul .first_step,
+        .seven_section_block ul .second_step {
+            margin-bottom: 80px;
+        }
+
+        .seven_section_block ul .first_step,
+        .seven_section_block ul .third_step {
+            margin-left: 30px;
+        }
+    }
+
+    .eight_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .eight_section_block ul li {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .eight_section_block ul li .header_what_you_need {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        .eight_section_block ul li .text_what_you_need {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .eight_section_block .center_text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    .nine_section {
+        h2 {
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .center_text {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    footer h2 {
+        font-size: 50px;
+        line-height: 58px;
+    }
+
+    footer .footer_block p {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
