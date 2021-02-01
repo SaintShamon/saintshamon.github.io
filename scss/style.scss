@@ -65,8 +65,9 @@ header {
         margin-top: 30px;
 
         .header_logo {
-            max-width: 155px;
-            height: 70px;
+            max-width: 255px;
+            height: 40px;
+            align-self: flex-end;
         }
 
         .header_menu {
@@ -78,7 +79,7 @@ header {
                 justify-content: space-between;
 
                 li {
-                    margin-top: 20px;
+                    margin-top: 10px;
                     margin-right: 20px;
 
                     a {

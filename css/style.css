@@ -411,8 +411,10 @@ header .header_block {
 }
 
 header .header_block .header_logo {
-  max-width: 155px;
-  height: 70px;
+  max-width: 255px;
+  height: 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 header .header_block .header_menu ul {
@@ -428,7 +430,7 @@ header .header_block .header_menu ul {
 }
 
 header .header_block .header_menu ul li {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 20px;
 }
 
