@@ -155,12 +155,13 @@ header {
             line-height: 24px;
             font-weight: 700;
             box-shadow: 0px 5px 0px 0px #951928;
-            animation-duration: 300ms;
+            animation-duration: 600ms;
         }
 
         a:hover,
         a:focus {
             box-shadow: 0px 4px 29px 0px #E41A32;
+            animation-duration: 600ms;
         }
 
     }
@@ -279,12 +280,13 @@ header {
                 line-height: 24px;
                 font-weight: 700;
                 box-shadow: 0px 5px 0px 0px #951928;
-                animation-duration: 300ms;
+                animation-duration: 600ms;
             }
 
             a:hover,
             a:focus {
                 box-shadow: 0px 4px 29px 0px #E41A32;
+                animation-duration: 600ms;
             }
         }
 
@@ -472,12 +474,13 @@ header {
                         line-height: 24px;
                         font-weight: 700;
                         box-shadow: 0px 5px 0px 0px #951928;
-                        animation-duration: 300ms;
+                        animation-duration: 600ms;
                     }
 
                     a:hover,
                     a:focus {
                         box-shadow: 0px 4px 29px 0px #E41A32;
+                        animation-duration: 600ms;
                     }
                 }
 
@@ -558,9 +561,6 @@ header {
             height: 100%;
             min-height: 816px;
         }
-
-
-
 
         @keyframes pulse {
             0% {
@@ -690,9 +690,6 @@ header {
             height: 100%;
             min-height: 472px;
         }
-
-
-
 
         @keyframes pulse {
             0% {
@@ -841,12 +838,13 @@ header {
                 line-height: 24px;
                 font-weight: 700;
                 box-shadow: 0px 5px 0px 0px #951928;
-                animation-duration: 300ms;
+                animation-duration: 600ms;
             }
 
             a:hover,
             a:focus {
                 box-shadow: 0px 4px 29px 0px #E41A32;
+                animation-duration: 600ms;
             }
         }
 
@@ -881,7 +879,7 @@ header {
     }
 
     .six_section_block {
-        max-width: 900px;
+        max-width: 840px;
         margin: 10px auto;
 
         h3 {
@@ -901,6 +899,73 @@ header {
                 line-height: 30px;
                 font-weight: 600;
                 text-align: center;
+
+                // svg {
+                //     opacity: 0;
+                //     animation: 30.0s opacity infinite;
+                // }
+
+                // @keyframes opacity {
+                //     15% {
+                //         opacity: 1
+                //     }
+
+                //     35% {
+                //         opacity: 1
+                //     }
+
+                //     65% {
+                //         opacity: 1
+                //     }
+
+                //     85% {
+                //         opacity: 0
+                //     }
+
+                // }
+
+                // #hg1 {
+                //     animation-delay: 0.5s
+                // }
+
+                // #hg2 {
+                //     animation-delay: 1.5s
+                // }
+
+                // #hg3 {
+                //     animation-delay: 2.5s
+                // }
+
+                svg {
+                    opacity: 0;
+                    // transition: opacity 0.3s ease;
+                    transition: opacity 0.3s 1.8s ease;
+                    max-width: 100%;
+
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        opacity: 1 !important;
+                    }
+                }
+
+                .in-view {
+
+                    &.svgFile {
+                        opacity: 1;
+
+                        path {
+                            stroke-dasharray: 600;
+                            stroke-dashoffset: 600;
+                            animation: strokeanim 6s both;
+                        }
+                    }
+                }
+
+                @keyframes strokeanim {
+                    to {
+                        stroke-dashoffset: 0;
+                    }
+                }
             }
 
             .first_advantage {
@@ -910,6 +975,12 @@ header {
                 margin-right: auto;
                 margin-top: 65px;
                 margin-bottom: 85px;
+
+                .first_advantage_arrow {
+                    position: absolute;
+                    top: calc(100% + 25px);
+                    right: -30%;
+                }
             }
 
             .first_advantage::before {
@@ -930,6 +1001,12 @@ header {
                 margin-left: auto;
                 margin-right: 0;
                 margin-bottom: 85px;
+
+                .second_advantage_arrow {
+                    position: absolute;
+                    top: 100%;
+                    left: -100%;
+                }
             }
 
             .second_advantage::before {
@@ -950,6 +1027,12 @@ header {
                 margin-left: 0;
                 margin-right: auto;
                 margin-bottom: 160px;
+
+                .third_advantage_arrow {
+                    position: absolute;
+                    top: calc(100% + 25px);
+                    left: calc(100% - 240px);
+                }
             }
 
             .third_advantage::before {
@@ -964,6 +1047,7 @@ header {
                 left: calc(50% - 231px);
             }
         }
+
     }
 
     .button_block {
@@ -997,12 +1081,13 @@ header {
                 line-height: 24px;
                 font-weight: 700;
                 box-shadow: 0px 5px 0px 0px #951928;
-                animation-duration: 300ms;
+                animation-duration: 600ms;
             }
 
             a:hover,
             a:focus {
                 box-shadow: 0px 4px 29px 0px #E41A32;
+                animation-duration: 600ms;
             }
         }
 
@@ -1147,12 +1232,13 @@ header {
                 line-height: 24px;
                 font-weight: 700;
                 box-shadow: 0px 5px 0px 0px #951928;
-                animation-duration: 300ms;
+                animation-duration: 600ms;
             }
 
             a:hover,
             a:focus {
                 box-shadow: 0px 4px 29px 0px #E41A32;
+                animation-duration: 600ms;
             }
         }
 
@@ -1262,12 +1348,13 @@ header {
                 line-height: 24px;
                 font-weight: 700;
                 box-shadow: 0px 5px 0px 0px #951928;
-                animation-duration: 300ms;
+                animation-duration: 600ms;
             }
 
             a:hover,
             a:focus {
                 box-shadow: 0px 4px 29px 0px #E41A32;
+                animation-duration: 600ms;
             }
         }
 
@@ -1356,42 +1443,42 @@ header {
             width: 120px;
         }
 
-        .bar-graph-two .bar-one .bar {
+        .bar-graph-two .bar-one .bar.in-viewbar {
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             -webkit-animation: show-bar-one-vertical 1.2s 0.1s forwards;
             -moz-animation: show-bar-one-vertical 1.2s 0.1s forwards;
             animation: show-bar-one-vertical 1.2s 0.1s forwards;
         }
 
-        .bar-graph-two .bar-two .bar {
+        .bar-graph-two .bar-two .bar.in-viewbar {
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             -webkit-animation: show-bar-two-vertical 1.2s 0.2s forwards;
             -moz-animation: show-bar-two-vertical 1.2s 0.2s forwards;
             animation: show-bar-two-vertical 1.2s 0.2s forwards;
         }
 
-        .bar-graph-two .bar-three .bar {
+        .bar-graph-two .bar-three .bar.in-viewbar {
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             -webkit-animation: show-bar-three-vertical 1.2s 0.3s forwards;
             -moz-animation: show-bar-three-vertical 1.2s 0.3s forwards;
             animation: show-bar-three-vertical 1.2s 0.3s forwards;
         }
 
-        .bar-graph-two .bar-four .bar {
+        .bar-graph-two .bar-four .bar.in-viewbar {
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             -webkit-animation: show-bar-four-vertical 1.2s 0.4s forwards;
             -moz-animation: show-bar-four-vertical 1.2s 0.4s forwards;
             animation: show-bar-four-vertical 1.2s 0.4s forwards;
         }
 
-        .bar-graph-two .bar-five .bar {
+        .bar-graph-two .bar-five .bar.in-viewbar {
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             -webkit-animation: show-bar-five-vertical 1.2s 0.4s forwards;
             -moz-animation: show-bar-five-vertical 1.2s 0.4s forwards;
             animation: show-bar-five-vertical 1.2s 0.4s forwards;
         }
 
-        .bar-graph-two .bar-six .bar {
+        .bar-graph-two .bar-six .bar.in-viewbar {
             background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
             -webkit-animation: show-bar-six-vertical 1.2s 0.4s forwards;
             -moz-animation: show-bar-six-vertical 1.2s 0.4s forwards;
@@ -1515,12 +1602,13 @@ header {
                 line-height: 24px;
                 font-weight: 700;
                 box-shadow: 0px 5px 0px 0px #951928;
-                animation-duration: 300ms;
+                animation-duration: 600ms;
             }
 
             a:hover,
             a:focus {
                 box-shadow: 0px 4px 29px 0px #E41A32;
+                animation-duration: 600ms;
             }
         }
 
@@ -1585,17 +1673,21 @@ footer {
                 line-height: 24px;
                 font-weight: 700;
                 box-shadow: 0px 5px 0px 0px #951928;
-                animation-duration: 300ms;
+                animation-duration: 600ms;
             }
 
             a:hover,
             a:focus {
                 box-shadow: 0px 4px 29px 0px #E41A32;
+                animation-duration: 600ms;
             }
         }
 
     }
 }
+
+
+
 
 @media screen and (max-width:1600px) {
 
