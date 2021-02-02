@@ -108,7 +108,6 @@ header {
 }
 
 .first_section {
-    // background-image: url('../img/background_img_1.jpg');
     background-image: url('../img/test.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,7 +202,6 @@ header {
         margin: 0 auto;
         padding-top: 70px;
         padding-bottom: 20px;
-        // margin: 70px auto 20px;
     }
 
     .subheader_text {
@@ -390,7 +388,7 @@ header {
                 li::after {
                     position: absolute;
                     content: '';
-                    background-image: url(../img/Arrow.png);
+                    background-image: url('../img/Arrow.png');
                     background-size: contain;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -517,7 +515,7 @@ header {
         .video1 {
             display: block;
             width: 100%;
-            height: 816px;
+            height: 815px;
             position: relative;
             border: none;
             border-radius: 10px;
@@ -536,6 +534,7 @@ header {
                 position: absolute;
                 border-radius: 50%;
                 cursor: pointer;
+                box-shadow: 0 0 12px 0 #000;
             }
 
             .video1-play svg {
@@ -546,11 +545,8 @@ header {
                 left: calc(50% - 28px);
             }
 
-            .video1-play:hover {
-                box-shadow: 0 0 12px 0 #000;
-            }
 
-            .video1-play:hover::before {
+            .video1-play::before {
                 content: '';
                 position: absolute;
                 border: 1px solid $red;
@@ -563,7 +559,7 @@ header {
                 opacity: 0;
             }
 
-            .video1-play:hover::after {
+            .video1-play::after {
                 content: '';
                 position: absolute;
                 border: 1px solid #333333;
@@ -574,13 +570,8 @@ header {
                 border-radius: 50%;
                 animation: pulse 1.8s linear infinite;
                 opacity: 0;
-            }
-
-            .video1-play:hover::after {
                 animation-delay: .5s;
             }
-
-
         }
 
         iframe {
@@ -665,6 +656,7 @@ header {
                 position: absolute;
                 border-radius: 50%;
                 cursor: pointer;
+                box-shadow: 0 0 12px 0 #000;
             }
 
             .video2-play svg {
@@ -675,11 +667,7 @@ header {
                 left: calc(50% - 28px);
             }
 
-            .video2-play:hover {
-                box-shadow: 0 0 12px 0 #000;
-            }
-
-            .video2-play:hover::before {
+            .video2-play::before {
                 content: '';
                 position: absolute;
                 border: 1px solid $red;
@@ -692,7 +680,7 @@ header {
                 opacity: 0;
             }
 
-            .video2-play:hover::after {
+            .video2-play::after {
                 content: '';
                 position: absolute;
                 border: 1px solid #333333;
@@ -703,12 +691,8 @@ header {
                 border-radius: 50%;
                 animation: pulse 1.8s linear infinite;
                 opacity: 0;
-            }
-
-            .video2-play:hover::after {
                 animation-delay: .5s;
             }
-
 
         }
 
@@ -973,36 +957,63 @@ header {
                 // }
 
 
-                svg {
+                // вариант Sambanis
+
+                // svg {
+                //     opacity: 0;
+
+                //     transition: opacity 0.3s 1.8s;
+                //     max-width: 100%;
+
+                //     @media screen and (-ms-high-contrast: active),
+                //     (-ms-high-contrast: none) {
+                //         opacity: 1 !important;
+                //     }
+                // }
+
+                // .in-view {
+
+                //     &.svgFile {
+                //         opacity: 1;
+
+                //         path {
+                //             stroke-dasharray: 600;
+                //             stroke-dashoffset: 600;
+                //             animation: strokeanim 6s both;
+                //         }
+                //     }
+                // }
+
+                // @keyframes strokeanim {
+                //     to {
+                //         stroke-dashoffset: 0;
+                //     }
+                // }
+
+                .show-on-scroll {
                     opacity: 0;
-
-                    transition: opacity 0.3s 1.8s;
-                    max-width: 100%;
-
-                    @media screen and (-ms-high-contrast: active),
-                    (-ms-high-contrast: none) {
-                        opacity: 1 !important;
-                    }
+                    transition: all 0.5s ease-in-out;
                 }
 
-                .in-view {
-
-                    &.svgFile {
-                        opacity: 1;
-
-                        path {
-                            stroke-dasharray: 600;
-                            stroke-dashoffset: 600;
-                            animation: strokeanim 6s both;
-                        }
-                    }
+                .show-on-scroll.is-visible,
+                .show-on-scroll_2.is-visible,
+                .show-on-scroll_3.is-visible {
+                    opacity: 1;
                 }
 
-                @keyframes strokeanim {
-                    to {
-                        stroke-dashoffset: 0;
-                    }
+                .show-on-scroll_2 {
+                    opacity: 0;
+                    transition: all 3s ease-in-out;
+                    transition-delay: 0.5s;
                 }
+
+                .show-on-scroll_3 {
+                    opacity: 0;
+                    transition: all 4.5s ease-in-out;
+                    transition-delay: 0.5s;
+                }
+
+
 
             }
 
@@ -1671,7 +1682,7 @@ footer {
         text-align: center;
         font-weight: 700;
         padding-top: 100px;
-        max-width: 900px;
+        max-width: 1100px;
         margin: 0 auto 40px;
     }
 
@@ -1734,8 +1745,8 @@ footer {
 }
 
 .big_button {
-    -webkit-animation: mover 6s infinite alternate;
-    animation: mover 6s infinite alternate;
+    -webkit-animation: mover 3s infinite alternate;
+    animation: mover 3s infinite alternate;
     animation-iteration-count: 1;
 }
 
@@ -1747,11 +1758,11 @@ footer {
     }
 
     50% {
-        transform: translateY(-120px);
-        animation-delay: 2.5s;
-        width: 400px;
-        height: 90px;
-        padding: 33px 60px;
+        transform: translateY(-50px);
+        animation-delay: 1.5s;
+        width: 330px;
+        height: 80px;
+        padding: 27px 60px;
     }
 
     100% {
