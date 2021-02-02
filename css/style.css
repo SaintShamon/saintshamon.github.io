@@ -1358,10 +1358,10 @@ header .header_block .header_menu ul li:last-of-type {
 
 .six_section .six_section_block ul li .show-on-scroll_3 {
   opacity: 0;
-  -webkit-transition: all 4.5s ease-in-out;
-  transition: all 4.5s ease-in-out;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition: all 2.5s ease-in-out;
+  transition: all 2.5s ease-in-out;
+  -webkit-transition-delay: 2.5s;
+          transition-delay: 2.5s;
 }
 
 .six_section .six_section_block ul .first_advantage {
