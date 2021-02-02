@@ -2076,6 +2076,51 @@ footer .button_block .button_block_inner a:focus {
           animation-duration: 600ms;
 }
 
+.bottom {
+  -webkit-animation-duration: 1600ms !important;
+          animation-duration: 1600ms !important;
+}
+
+.big_button {
+  display: block;
+  -webkit-transition: 4s ease-in;
+  transition: 4s ease-in;
+  -webkit-animation: blink;
+          animation: blink;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 @media screen and (max-width: 1600px) {
   body {
     font-size: 14px;

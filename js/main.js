@@ -70,6 +70,34 @@ $(document).ready(function () {
     $window_bar.on('scroll resize', check_if_in_view_bar);
     $window_bar.trigger('scroll');
 
+    var $animation_elements_bottom = $('.bottom');
+    var $window_bottom = $(window);
+
+    function check_if_in_view_bottom() {
+        var window_height = $window_bottom.height();
+        var window_top_position = $window_bottom.scrollTop() - 200;
+        var window_bottom_position = (window_top_position + window_height);
+
+
+
+        $.each($animation_elements_bottom, function () {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.addClass('big_button');
+
+            }
+        }
+
+        );
+    }
+
+    $window_bottom.on('scroll resize', check_if_in_view_bottom);
+    $window_bottom.trigger('scroll');
+
 }
 
 );

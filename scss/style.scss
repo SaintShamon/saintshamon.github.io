@@ -1684,6 +1684,37 @@ footer {
         }
 
     }
+
+}
+
+.bottom {
+    animation-duration: 1600ms !important;
+}
+
+.big_button {
+    display: block;
+    transition: 4s ease-in;
+    animation: blink;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes blink {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 @media screen and (max-width:1600px) {
