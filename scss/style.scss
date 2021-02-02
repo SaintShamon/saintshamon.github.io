@@ -929,11 +929,15 @@ header {
 
                 // svg {
                 //     opacity: 0;
-                //     animation: 3.0s opacity infinite;
+                //     animation: 6.0s opacity-t infinite alternate;
                 //     animation-iteration-count: 1;
                 // }
 
-                // @keyframes opacity {
+                // @keyframes opacity-t {
+                //     0% {
+                //         opacity: 0;
+                //     }
+
                 //     15% {
                 //         opacity: 1
                 //     }
@@ -947,6 +951,10 @@ header {
                 //     }
 
                 //     85% {
+                //         opacity: 1
+                //     }
+
+                //     100% {
                 //         opacity: 0
                 //     }
 
@@ -964,36 +972,38 @@ header {
                 //     animation-delay: 3.0s
                 // }
 
-                // svg {
-                //     opacity: 0;
-                //     // transition: opacity 0.3s ease;
-                //     transition: opacity 0.3s 1.8s;
-                //     max-width: 100%;
 
-                //     @media screen and (-ms-high-contrast: active),
-                //     (-ms-high-contrast: none) {
-                //         opacity: 1 !important;
-                //     }
-                // }
+                svg {
+                    opacity: 0;
 
-                // .in-view {
+                    transition: opacity 0.3s 1.8s;
+                    max-width: 100%;
 
-                //     &.svgFile {
-                //         opacity: 1;
+                    @media screen and (-ms-high-contrast: active),
+                    (-ms-high-contrast: none) {
+                        opacity: 1 !important;
+                    }
+                }
 
-                //         path {
-                //             stroke-dasharray: 600;
-                //             stroke-dashoffset: 600;
-                //             animation: strokeanim 6s both;
-                //         }
-                //     }
-                // }
+                .in-view {
 
-                // @keyframes strokeanim {
-                //     to {
-                //         stroke-dashoffset: 0;
-                //     }
-                // }
+                    &.svgFile {
+                        opacity: 1;
+
+                        path {
+                            stroke-dasharray: 600;
+                            stroke-dashoffset: 600;
+                            animation: strokeanim 6s both;
+                        }
+                    }
+                }
+
+                @keyframes strokeanim {
+                    to {
+                        stroke-dashoffset: 0;
+                    }
+                }
+
             }
 
             .first_advantage {
@@ -1002,11 +1012,11 @@ header {
                 margin-left: 0;
                 margin-right: auto;
                 margin-top: 65px;
-                margin-bottom: 85px;
+                margin-bottom: 125px;
 
                 .first_advantage_arrow {
                     position: absolute;
-                    top: calc(100% + 25px);
+                    top: calc(100% + 20px);
                     right: -30%;
                 }
             }
@@ -1028,7 +1038,7 @@ header {
                 width: 278px;
                 margin-left: auto;
                 margin-right: 0;
-                margin-bottom: 85px;
+                margin-bottom: 125px;
 
                 .second_advantage_arrow {
                     position: absolute;
@@ -1054,7 +1064,7 @@ header {
                 width: 410px;
                 margin-left: 0;
                 margin-right: auto;
-                margin-bottom: 160px;
+                margin-bottom: 125px;
 
                 .third_advantage_arrow {
                     position: absolute;
@@ -1750,23 +1760,6 @@ footer {
     }
 }
 
-
-@keyframes blink {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
 
 @media screen and (max-width:1600px) {
 

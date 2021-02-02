@@ -22,8 +22,6 @@ $(document).ready(function () {
         var window_top_position = $window.scrollTop() - 200;
         var window_bottom_position = (window_top_position + window_height);
 
-
-
         $.each($animation_elements, function () {
             var $element = $(this);
             var element_height = $element.outerHeight();
@@ -32,7 +30,6 @@ $(document).ready(function () {
 
             if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
                 $element.addClass('in-view');
-
             }
         }
 
@@ -104,9 +101,14 @@ $(document).ready(function () {
 
 
 var $page = $('html, body');
+
 $('a[href*="#"]').click(function () {
     $page.animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 800);
+    }
+
+        , 800);
     return false;
-});
+}
+
+);
