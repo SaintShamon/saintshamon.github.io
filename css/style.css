@@ -398,6 +398,7 @@ header {
   position: absolute;
   width: 100%;
   top: 0;
+  z-index: 3;
 }
 
 header .header_block {
@@ -411,8 +412,8 @@ header .header_block {
 }
 
 header .header_block .header_logo {
-  max-width: 305px;
-  height: 40px;
+  max-width: 400px;
+  height: 57px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -453,18 +454,23 @@ header .header_block .header_menu ul li:last-of-type {
 }
 
 .first_section {
-  background-image: url("../img/background_img_1.jpg");
+  background-image: url("../img/test.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
   height: 100vh;
+  max-height: 960px;
+  position: relative;
+  z-index: 1;
 }
 
 .first_section .first_section_block {
   padding-top: 200px;
   max-width: 1010px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .first_section .first_section_block h1 {
@@ -522,14 +528,28 @@ header .header_block .header_menu ul li:last-of-type {
   height: 961px;
 }
 
+.second_section {
+  position: relative;
+}
+
+.second_section .svg_2 {
+  position: absolute;
+  top: -150px;
+  z-index: 1;
+}
+
 .second_section h2 {
+  position: relative;
+  z-index: 2;
   font-size: 68px;
   color: #333333;
   line-height: 83px;
   text-align: center;
   font-weight: 700;
   max-width: 730px;
-  margin: 70px auto 20px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
 
 .second_section .subheader_text {
@@ -541,6 +561,8 @@ header .header_block .header_menu ul li:last-of-type {
   width: 100%;
   max-width: 730px;
   margin: 10px auto;
+  position: relative;
+  z-index: 2;
 }
 
 .second_section .second_section_block {
@@ -552,6 +574,8 @@ header .header_block .header_menu ul li:last-of-type {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
 .second_section .second_section_block ul {
@@ -619,6 +643,8 @@ header .header_block .header_menu ul li:last-of-type {
 .second_section .button_block {
   margin: 40px auto 100px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .second_section .button_block p {
@@ -1322,42 +1348,6 @@ header .header_block .header_menu ul li:last-of-type {
   text-align: center;
 }
 
-.six_section .six_section_block ul li svg {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s 1.8s ease;
-  transition: opacity 0.3s 1.8s ease;
-  max-width: 100%;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .six_section .six_section_block ul li svg {
-    opacity: 1 !important;
-  }
-}
-
-.six_section .six_section_block ul li .in-view.svgFile {
-  opacity: 1;
-}
-
-.six_section .six_section_block ul li .in-view.svgFile path {
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-  -webkit-animation: strokeanim 6s both;
-          animation: strokeanim 6s both;
-}
-
-@-webkit-keyframes strokeanim {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes strokeanim {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 .six_section .six_section_block ul .first_advantage {
   position: relative;
   width: 361px;
@@ -1503,6 +1493,9 @@ header .header_block .header_menu ul li:last-of-type {
 
 .seven_section .seven_section_block {
   margin-top: 130px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .seven_section .seven_section_block ul {
@@ -2041,14 +2034,18 @@ footer .footer_block p {
 }
 
 footer .button_block {
-  margin: 100px auto 400px;
+  margin: 0 auto 400px;
   width: 100%;
 }
 
 footer .button_block .button_block_inner {
   width: 100%;
   max-width: 300px;
-  margin: 40px auto;
+  height: 300px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer .button_block .button_block_inner a {
@@ -2064,31 +2061,64 @@ footer .button_block .button_block_inner a {
   font-weight: 700;
   -webkit-box-shadow: 0px 5px 0px 0px #951928;
           box-shadow: 0px 5px 0px 0px #951928;
-  -webkit-animation-duration: 600ms;
-          animation-duration: 600ms;
 }
 
 footer .button_block .button_block_inner a:hover,
 footer .button_block .button_block_inner a:focus {
   -webkit-box-shadow: 0px 4px 29px 0px #E41A32;
           box-shadow: 0px 4px 29px 0px #E41A32;
-  -webkit-animation-duration: 600ms;
-          animation-duration: 600ms;
 }
 
 .bottom {
-  -webkit-animation-duration: 1600ms !important;
-          animation-duration: 1600ms !important;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .big_button {
-  display: block;
-  -webkit-transition: 4s ease-in;
-  transition: 4s ease-in;
-  -webkit-animation: blink;
-          animation: blink;
+  -webkit-animation: mover 6s infinite alternate;
+  animation: mover 6s infinite alternate;
   -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+    width: 400px;
+    height: 90px;
+    padding: 33px 60px;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+    -webkit-animation-delay: 2.5s;
+            animation-delay: 2.5s;
+    width: 400px;
+    height: 90px;
+    padding: 33px 60px;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @-webkit-keyframes blink {
@@ -2132,7 +2162,7 @@ footer .button_block .button_block_inner a:focus {
     margin: 0 auto;
   }
   .first_section {
-    background-image: url("../img/background_img_1_1600px.jpg");
+    background-image: url("../img/test.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -2218,6 +2248,9 @@ footer .button_block .button_block_inner a:focus {
     line-height: 34px;
     height: 101px;
   }
+  .seven_section .seven_section_block {
+    max-width: 1240px;
+  }
   .seven_section .seven_section_block ul li {
     width: 100%;
     max-width: 514px;
@@ -2263,7 +2296,7 @@ footer .button_block .button_block_inner a:focus {
     margin: 0 auto;
   }
   .first_section {
-    background-image: url("../img/background_img_1_1440px.jpg");
+    background-image: url("../img/test.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

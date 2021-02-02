@@ -75,7 +75,7 @@ $(document).ready(function () {
 
     function check_if_in_view_bottom() {
         var window_height = $window_bottom.height();
-        var window_top_position = $window_bottom.scrollTop() - 200;
+        var window_top_position = $window_bottom.scrollTop() - 100;
         var window_bottom_position = (window_top_position + window_height);
 
 
@@ -101,3 +101,12 @@ $(document).ready(function () {
 }
 
 );
+
+
+var $page = $('html, body');
+$('a[href*="#"]').click(function () {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 800);
+    return false;
+});
