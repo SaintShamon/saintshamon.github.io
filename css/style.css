@@ -3228,6 +3228,9 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     font-size: 35px;
     line-height: 43px;
   }
+  .six_section {
+    background-image: none;
+  }
   .six_section h2 {
     font-size: 35px;
     line-height: 43px;
@@ -3514,6 +3517,42 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .five_section .bottom_block .inner_block {
     max-width: 260px;
     margin: 0 auto 30px;
+  }
+  .six_section .six_section_block ul .second_advantage {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+    max-width: 320px;
+  }
+  .six_section .six_section_block ul .second_advantage::before {
+    width: 180px;
+    height: 53px;
+    top: -35px;
+    left: calc(50% - 90px);
+  }
+  .six_section .six_section_block ul .first_advantage {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+    max-width: 320px;
+  }
+  .six_section .six_section_block ul .first_advantage::before {
+    width: 100px;
+    height: 53px;
+    top: -35px;
+    left: calc(50% - 50px);
+  }
+  .six_section .six_section_block ul .third_advantage {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+    max-width: 320px;
+  }
+  .six_section .six_section_block ul .third_advantage::before {
+    width: 250px;
+    height: 53px;
+    top: -35px;
+    left: calc(50% - 125px);
   }
   .seven_section .seven_section_block ul li {
     width: 100%;
