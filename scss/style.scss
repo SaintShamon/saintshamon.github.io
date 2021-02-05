@@ -2981,6 +2981,13 @@ footer {
                 max-width: 400px;
             }
         }
+
+        .svg_2 {
+            position: absolute;
+            top: -100px;
+            z-index: 1;
+            height: 210px;
+        }
     }
 
     .third_section {
@@ -3170,6 +3177,7 @@ footer {
                         top: 100%;
                         right: 150px;
                         width: 120px;
+                        transform: scale(1, 0.85);
                     }
                 }
 
@@ -3181,7 +3189,7 @@ footer {
                     .second_advantage_arrow {
                         top: 100%;
                         left: 50px;
-                        transform: scale(-1, 1);
+                        transform: scale(-1, 0.8);
                         width: 120px;
                     }
                 }
@@ -3198,6 +3206,7 @@ footer {
                         top: 100%;
                         left: 70px;
                         width: 120px;
+                        transform: scale(1, 0.85);
                     }
                 }
 
@@ -3218,11 +3227,7 @@ footer {
 
         }
 
-
-
     }
-
-
 
     .seven_section {
         h2 {
@@ -3508,6 +3513,10 @@ footer {
                 line-height: 30px;
                 width: 100%;
                 max-width: 320px;
+
+                .second_advantage_arrow {
+                    left: 60px;
+                }
             }
 
             .second_advantage::before {
@@ -3524,6 +3533,13 @@ footer {
                 width: 100%;
                 max-width: 320px;
 
+                .first_advantage_arrow {
+                    top: 100%;
+                    right: 130px;
+                    width: 120px;
+                    transform: scale(1, 1);
+                }
+
             }
 
             .first_advantage::before {
@@ -3538,6 +3554,15 @@ footer {
                 line-height: 30px;
                 width: 100%;
                 max-width: 320px;
+
+                .third_advantage_arrow {
+                    position: absolute;
+                    top: 100%;
+                    left: 70px;
+                    width: 120px;
+
+                    transform: scale(1, 1);
+                }
 
             }
 
@@ -3591,6 +3616,12 @@ footer {
     .nine_section .nine_section_block .bar-graph-horizontal {
         max-width: 250px;
         display: block;
+    }
+
+    .ten_section::before {
+        width: 375px;
+        height: 250px;
+
     }
 
 }

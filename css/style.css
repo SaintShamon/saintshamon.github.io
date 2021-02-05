@@ -3107,6 +3107,12 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .second_section .second_section_block ul .item4 .inner_block p {
     max-width: 400px;
   }
+  .second_section .svg_2 {
+    position: absolute;
+    top: -100px;
+    z-index: 1;
+    height: 210px;
+  }
   .third_section {
     background-image: url("../img/background_img_2_480.jpg");
   }
@@ -3257,6 +3263,8 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     top: 100%;
     right: 150px;
     width: 120px;
+    -webkit-transform: scale(1, 0.85);
+            transform: scale(1, 0.85);
   }
   .six_section .six_section_block ul .second_advantage {
     margin-left: auto;
@@ -3266,8 +3274,8 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .six_section .six_section_block ul .second_advantage .second_advantage_arrow {
     top: 100%;
     left: 50px;
-    -webkit-transform: scale(-1, 1);
-            transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 0.8);
+            transform: scale(-1, 0.8);
     width: 120px;
   }
   .six_section .six_section_block ul .third_advantage {
@@ -3282,6 +3290,8 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     top: 100%;
     left: 70px;
     width: 120px;
+    -webkit-transform: scale(1, 0.85);
+            transform: scale(1, 0.85);
   }
   .six_section .six_section_block ul .third_advantage::before {
     position: absolute;
@@ -3524,6 +3534,9 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     width: 100%;
     max-width: 320px;
   }
+  .six_section .six_section_block ul .second_advantage .second_advantage_arrow {
+    left: 60px;
+  }
   .six_section .six_section_block ul .second_advantage::before {
     width: 180px;
     height: 53px;
@@ -3536,6 +3549,13 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     width: 100%;
     max-width: 320px;
   }
+  .six_section .six_section_block ul .first_advantage .first_advantage_arrow {
+    top: 100%;
+    right: 130px;
+    width: 120px;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
   .six_section .six_section_block ul .first_advantage::before {
     width: 100px;
     height: 53px;
@@ -3547,6 +3567,14 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     line-height: 30px;
     width: 100%;
     max-width: 320px;
+  }
+  .six_section .six_section_block ul .third_advantage .third_advantage_arrow {
+    position: absolute;
+    top: 100%;
+    left: 70px;
+    width: 120px;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   .six_section .six_section_block ul .third_advantage::before {
     width: 250px;
@@ -3586,6 +3614,10 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .nine_section .nine_section_block .bar-graph-horizontal {
     max-width: 250px;
     display: block;
+  }
+  .ten_section::before {
+    width: 375px;
+    height: 250px;
   }
 }
 
