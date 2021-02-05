@@ -2966,6 +2966,15 @@ footer {
             li {
                 width: 100%;
                 max-width: 400px;
+
+                .inner_block p {
+                    width: 100%;
+                    max-width: 300px;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
             }
 
             .item4 .inner_block p {
@@ -2973,7 +2982,6 @@ footer {
             }
         }
     }
-
 
     .third_section {
         background-image: url('../img/background_img_2_480.jpg');
@@ -3235,6 +3243,8 @@ footer {
 
 
     .eight_section {
+        background-image: none;
+
         h2 {
             font-size: 35px;
             line-height: 43px;
@@ -3461,6 +3471,25 @@ footer {
 
 }
 
+@media screen and (max-width:376px) {
+    .five_section .bottom_block .inner_block {
+        max-width: 260px;
+        margin: 0 auto 30px;
+    }
+
+    .seven_section .seven_section_block ul li {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto 80px !important;
+    }
+
+    .nine_section .nine_section_block .bar-graph-horizontal {
+        max-width: 250px;
+        display: block;
+    }
+
+}
+
 @media screen and (max-width:321px) {
 
     header .header_block .header_logo {
@@ -3581,6 +3610,266 @@ footer {
             max-width: 300px;
         }
 
+    }
+
+    .five_section {
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+        }
+
+        .bottom_block .one::before {
+            left: -20px;
+        }
+
+        .bottom_block .second::before {
+            left: -20px;
+        }
+
+        .button_block .button_block_inner a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 240px;
+            height: 60px;
+            padding: 20px 10px;
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+
+
+    .six_section {
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+        }
+
+        .subheader_text {
+            font-size: 14px;
+            line-height: 18px;
+            max-width: 280px;
+        }
+
+        .six_section_block h3 {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+        }
+
+        .six_section_block ul {
+            .second_advantage {
+                font-size: 25px;
+                line-height: 30px;
+                width: 100%;
+                max-width: 280px;
+
+                .second_advantage_arrow {
+                    top: 100%;
+                    left: 70px;
+                    -webkit-transform: scale(-1, 1);
+                    transform: scale(-1, 1);
+                    width: 100px;
+                }
+            }
+
+            .second_advantage::before {
+
+                width: 150px;
+                height: 53px;
+                top: -35px;
+                left: calc(50% - 75px);
+            }
+
+            .first_advantage {
+                font-size: 25px;
+                line-height: 30px;
+                width: 100%;
+                max-width: 280px;
+
+                .first_advantage_arrow {
+                    top: 100%;
+                    right: 110px;
+                    width: 100px;
+                }
+
+            }
+
+            .first_advantage::before {
+                width: 100px;
+                height: 53px;
+                top: -35px;
+                left: calc(50% - 50px);
+            }
+
+            .third_advantage {
+                font-size: 25px;
+                line-height: 30px;
+                width: 100%;
+                max-width: 280px;
+
+                .third_advantage_arrow {
+                    position: absolute;
+                    top: 100%;
+                    left: 70px;
+                    width: 100px;
+                }
+            }
+
+            .third_advantage::before {
+
+                width: 250px;
+                height: 53px;
+                top: -35px;
+                left: calc(50% - 125px);
+            }
+        }
+
+        .button_block .button_block_inner a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 240px;
+            height: 60px;
+            padding: 20px 10px;
+            font-size: 17px;
+            line-height: 21px;
+        }
+
+    }
+
+    .seven_section {
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+        }
+
+        .seven_section_block ul li .header_text_what_do {
+            height: 50px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        .seven_section_block ul li .text_what_do {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .seven_section_block ul .first_step:before {
+            width: 87px;
+            height: 211px;
+            top: 0;
+            left: -25px;
+        }
+
+        .seven_section_block ul .second_step:before {
+
+            width: 134px;
+            height: 163px;
+            top: 0;
+            left: -25px;
+        }
+
+        .seven_section_block ul .third_step:before {
+            width: 134px;
+            height: 163px;
+            top: 0;
+            left: -25px;
+        }
+
+        .seven_section_block ul .four_step:before {
+            width: 134px;
+            height: 163px;
+            top: 0;
+            left: -25px;
+        }
+
+        .button_block .button_block_inner a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 240px;
+            height: 60px;
+            padding: 20px 10px;
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+
+    .eight_section {
+        background-image: none;
+
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+        }
+
+        .eight_section_block ul li .header_what_you_need {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+            text-shadow: none;
+        }
+
+        .button_block .button_block_inner a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 240px;
+            height: 60px;
+            padding: 20px 10px;
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+
+    .nine_section {
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+        }
+
+        .nine_section_block .bar-graph-horizontal {
+            max-width: 220px;
+            display: block;
+        }
+
+        .button_block .button_block_inner a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 240px;
+            height: 60px;
+            padding: 20px 10px;
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+
+    .ten_section {
+        min-height: 600px;
+
+        h2 {
+            font-size: 25px;
+            line-height: 30px;
+            max-width: 300px;
+        }
+
+        .button_block .button_block_inner a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 240px;
+            height: 60px;
+            padding: 20px 10px;
+            font-size: 17px;
+            line-height: 21px;
+        }
     }
 
 
