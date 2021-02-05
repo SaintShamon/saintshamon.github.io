@@ -3239,6 +3239,27 @@ footer {
                 line-height: 36px;
             }
         }
+
+        .seven_section_block ul .first_step:before {
+
+            left: -30px;
+        }
+
+        .seven_section_block ul .second_step:before {
+
+
+            left: -30px;
+        }
+
+        .seven_section_block ul .third_step:before {
+
+            left: -30px;
+        }
+
+        .seven_section_block ul .four_step:before {
+
+            left: -30px;
+        }
     }
 
 
@@ -3481,6 +3502,37 @@ footer {
         width: 100%;
         max-width: 260px;
         margin: 0 auto 80px !important;
+    }
+
+    .seven_section {
+        .seven_section_block ul .first_step:before {
+            width: 87px;
+            height: 211px;
+            top: 0;
+            left: -45px;
+        }
+
+        .seven_section_block ul .second_step:before {
+
+            width: 134px;
+            height: 163px;
+            top: 0;
+            left: -45px;
+        }
+
+        .seven_section_block ul .third_step:before {
+            width: 134px;
+            height: 163px;
+            top: 0;
+            left: -45px;
+        }
+
+        .seven_section_block ul .four_step:before {
+            width: 134px;
+            height: 163px;
+            top: 0;
+            left: -45px;
+        }
     }
 
     .nine_section .nine_section_block .bar-graph-horizontal {
@@ -3759,33 +3811,22 @@ footer {
         }
 
         .seven_section_block ul .first_step:before {
-            width: 87px;
-            height: 211px;
-            top: 0;
             left: -25px;
         }
 
         .seven_section_block ul .second_step:before {
-
-            width: 134px;
-            height: 163px;
-            top: 0;
             left: -25px;
         }
 
         .seven_section_block ul .third_step:before {
-            width: 134px;
-            height: 163px;
-            top: 0;
             left: -25px;
         }
 
         .seven_section_block ul .four_step:before {
-            width: 134px;
-            height: 163px;
-            top: 0;
             left: -25px;
         }
+
+
 
         .button_block .button_block_inner a {
             display: block;
