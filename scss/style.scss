@@ -3500,8 +3500,51 @@ footer {
 }
 
 @media screen and (max-width:376px) {
+
+
+    .first_section {
+
+        .button_block {
+            margin: 20px auto 280px;
+
+            a {
+                padding: 23px 23px;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+
+    }
+
+    .second_section .button_block .button_block_inner a {
+        padding: 23px 23px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .third_section .inner_block .text_block_bottom .button_block .button_block_inner a {
+        padding: 23px 23px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+    }
+
     .five_section .bottom_block .inner_block {
-        max-width: 260px;
+        padding: 23px 23px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
         margin: 0 auto 30px;
     }
 
@@ -3574,6 +3617,15 @@ footer {
             }
         }
 
+        .button_block .button_block_inner a {
+            padding: 23px 23px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 40px auto 0;
+        }
     }
 
     .seven_section .seven_section_block ul li {
@@ -3611,11 +3663,52 @@ footer {
             top: 0;
             left: -45px;
         }
+
+        .button_block .button_block_inner a {
+            padding: 23px 23px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            margin: 40px auto 0;
+        }
+    }
+
+    .eight_section .button_block .button_block_inner a {
+        padding: 23px 23px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 40px auto 0;
     }
 
     .nine_section .nine_section_block .bar-graph-horizontal {
         max-width: 250px;
         display: block;
+    }
+
+    .nine_section .button_block .button_block_inner a {
+        padding: 23px 23px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 40px auto 0;
+    }
+
+    .ten_section .button_block .button_block_inner a {
+        position: relative;
+        padding: 23px 23px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        margin: 40px auto 0;
     }
 
     .ten_section::before {
@@ -3625,6 +3718,10 @@ footer {
     }
 
 }
+
+
+
+
 
 @media screen and (max-width:321px) {
 
