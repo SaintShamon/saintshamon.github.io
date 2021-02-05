@@ -39,8 +39,8 @@ $(document).ready(function () {
     window.addEventListener('scroll', scrollHandler);
 
     /* 
-    Call the scroll handler function at first load to 
-    show elements that is already in the viewport 
+Call the scroll handler function at first load to 
+show elements that is already in the viewport 
 */
     scrollHandler();
 
@@ -69,8 +69,8 @@ $(document).ready(function () {
     window.addEventListener('scroll', scrollHandler_2);
 
     /* 
-    Call the scroll handler function at first load to 
-    show elements that is already in the viewport 
+Call the scroll handler function at first load to 
+show elements that is already in the viewport 
 */
     scrollHandler_2();
 
@@ -99,36 +99,10 @@ $(document).ready(function () {
     window.addEventListener('scroll', scrollHandler_3);
 
     /* 
-    Call the scroll handler function at first load to 
-    show elements that is already in the viewport 
-    */
+Call the scroll handler function at first load to 
+show elements that is already in the viewport 
+*/
     scrollHandler_3();
-
-
-    // var $animation_elements = $('.animate');
-    // var $window = $(window);
-
-    // function check_if_in_view() {
-    //     var window_height = $window.height();
-    //     var window_top_position = $window.scrollTop() - 200;
-    //     var window_bottom_position = (window_top_position + window_height);
-
-    //     $.each($animation_elements, function () {
-    //         var $element = $(this);
-    //         var element_height = $element.outerHeight();
-    //         var element_top_position = $element.offset().top;
-    //         var element_bottom_position = (element_top_position + element_height);
-
-    //         if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-    //             $element.addClass('in-view');
-    //         }
-    //     }
-
-    //     );
-    // }
-
-    // $window.on('scroll resize', check_if_in_view);
-    // $window.trigger('scroll');
 
     var $animation_elements_bar = $('.bar');
     var $window_bar = $(window);
@@ -203,3 +177,14 @@ $('a[href*="#"]').click(function () {
 }
 
 );
+
+(function () {
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+
+    burger.onclick = function () {
+        header.classList.toggle('menu-opened');
+    }
+}
+
+    ());
