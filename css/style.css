@@ -4334,5 +4334,6 @@ header .header_block .header .header_logo {
   }
   .window .header {
     position: fixed;
+    background: rgba(23, 23, 26, 0.95);
   }
 }
