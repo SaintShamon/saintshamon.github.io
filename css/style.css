@@ -2559,7 +2559,9 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .second_section .second_section_block ul {
     grid-gap: 30px;
     display: inline-grid;
-    grid-template-areas: "header header2" "footer sidebar" "main sidebar";
+    grid-template-areas: "header header2"
+ "footer sidebar"
+ "main sidebar";
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -4331,6 +4333,6 @@ header .header_block .header .header_logo {
     border-radius: 0px;
   }
   .window .header {
-    position: absolute;
+    position: fixed;
   }
 }
