@@ -3895,8 +3895,7 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     font-size: 25px;
     line-height: 30px;
     max-width: 300px;
-    margin-bottom: 30px;
-    padding-top: 100px;
+    margin: 0 auto 30px;
   }
   .six_section .subheader_text {
     font-size: 14px;
