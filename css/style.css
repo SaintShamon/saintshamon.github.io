@@ -3618,6 +3618,10 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .five_section .bottom_block .second::before {
     left: -30px;
   }
+
+  .six_section h2{ 
+    margin: 0 auto 30px;
+  }
   .six_section .six_section_block ul .second_advantage {
     font-size: 25px;
     line-height: 30px;
