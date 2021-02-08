@@ -2559,9 +2559,7 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .second_section .second_section_block ul {
     grid-gap: 30px;
     display: inline-grid;
-    grid-template-areas: "header header2"
- "footer sidebar"
- "main sidebar";
+    grid-template-areas: "header header2" "footer sidebar" "main sidebar";
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2588,7 +2586,7 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .third_section h2 {
     font-size: 68px;
     line-height: 83px;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .third_section .subheader_text {
     font-size: 14px;
@@ -3358,7 +3356,7 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     margin: 0 auto 80px !important;
   }
   .seven_section .seven_section_block ul li .header_text_what_do {
-    height: 75px;
+    height: auto;
     font-size: 30px;
     line-height: 36px;
   }
@@ -3613,13 +3611,12 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     margin: 0 auto 30px;
   }
   .five_section .bottom_block .one::before {
-    left: -30px;
+    left: 0;
   }
   .five_section .bottom_block .second::before {
-    left: -30px;
+    left: 0;
   }
-
-  .six_section h2{ 
+  .six_section h2 {
     margin: 0 auto 30px;
   }
   .six_section .six_section_block ul .second_advantage {

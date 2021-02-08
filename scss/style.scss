@@ -2302,7 +2302,7 @@ footer {
         h2 {
             font-size: 68px;
             line-height: 83px;
-            padding-top: 50px;
+            padding-top: 100px;
         }
 
         .subheader_text {
@@ -3289,7 +3289,7 @@ footer {
             margin: 0 auto 80px !important;
 
             .header_text_what_do {
-                height: 75px;
+                height: auto;
                 font-size: 30px;
                 line-height: 36px;
             }
@@ -3606,11 +3606,11 @@ footer {
             }
 
             .one::before {
-                left: -30px;
+                left: 0;
             }
 
             .second::before {
-                left: -30px;
+                left: 0;
             }
         }
     }
