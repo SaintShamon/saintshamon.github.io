@@ -4166,6 +4166,17 @@ footer {
 
     }
 
+    .window .header .menu_btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 230px !important;
+        height: 60px !important;
+        padding: 20px 20px !important;
+        font-size: 17px !important;
+        line-height: 21px !important;
+    }
+
 }
 
 // Mobile menu
@@ -4261,7 +4272,7 @@ header .header_block .header .header_logo {
             list-style: none;
 
             li.menu-item {
-                border-bottom: 1px solid #333;
+                // border-bottom: 1px solid #333;
                 margin-top: 5px;
                 transform: scale(1.15) translateY(-30px);
                 opacity: 0;
