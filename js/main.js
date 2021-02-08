@@ -188,3 +188,23 @@ $('a[href*="#"]').click(function () {
 }
 
     ());
+
+    let list = document.querySelectorAll(".menu > .menu-item > a");
+list.forEach(i => {
+    i.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('.header.menu-opened').classList.remove("menu-opened");
+
+      
+    })
+});
+
+let btn = document.querySelectorAll(".header .menu_btn");
+btn.forEach(i => {
+    i.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('.header.menu-opened').classList.remove("menu-opened");
+
+      
+    })
+});

@@ -2559,7 +2559,9 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .second_section .second_section_block ul {
     grid-gap: 30px;
     display: inline-grid;
-    grid-template-areas: "header header2" "footer sidebar" "main sidebar";
+    grid-template-areas: "header header2"
+ "footer sidebar"
+ "main sidebar";
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3616,6 +3618,10 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
   .five_section .bottom_block .second::before {
     left: -30px;
   }
+
+  .six_section h2{ 
+    margin: 0 auto 30px;
+  }
   .six_section .six_section_block ul .second_advantage {
     font-size: 25px;
     line-height: 30px;
@@ -3893,6 +3899,7 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     font-size: 25px;
     line-height: 30px;
     max-width: 300px;
+    margin: 0 auto 30px;
   }
   .six_section .subheader_text {
     font-size: 14px;
@@ -4340,6 +4347,7 @@ header .header_block .header .header_logo {
     border-radius: 0px;
   }
   .window .header {
-    position: absolute;
+    position: fixed;
+    background: rgba(23, 23, 26, 0.95);
   }
 }

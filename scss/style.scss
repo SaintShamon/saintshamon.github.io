@@ -3617,6 +3617,10 @@ footer {
 
     .six_section {
 
+        h2 {
+            margin: 0 auto 30px;
+        }
+
         .six_section_block ul {
             .second_advantage {
                 font-size: 25px;
@@ -3959,6 +3963,7 @@ footer {
             font-size: 25px;
             line-height: 30px;
             max-width: 300px;
+            margin: 0 auto 30px;
         }
 
         .subheader_text {
@@ -4387,7 +4392,8 @@ header .header_block .header .header_logo {
         border-radius: 0px;
 
         .header {
-            position: absolute;
+            position: fixed;
+            background: rgba(23, 23, 26, 0.95);
         }
     }
 }
