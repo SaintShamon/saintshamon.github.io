@@ -3605,7 +3605,6 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
     padding: 23px 23px;
     display: block;
     margin: 0 auto;
-    text-align: center;
     width: 100%;
     max-width: 300px;
     margin: 0 auto 30px;
