@@ -2565,6 +2565,9 @@ footer .footer_text_block .right_menu ul li:last-of-type::after {
             justify-content: space-between;
     margin: 30px auto;
   }
+  .second_section .second_section_block ul li .inner_block p {
+    margin-left: 10px;
+  }
   .second_section .second_section_block ul .item1 {
     grid-area: header;
   }

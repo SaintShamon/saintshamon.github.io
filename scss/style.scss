@@ -2266,6 +2266,10 @@ footer {
             justify-content: space-between;
             margin: 30px auto;
 
+            li .inner_block p {
+                margin-left: 10px;
+            }
+
             .item1 {
                 grid-area: header;
 
@@ -2295,6 +2299,7 @@ footer {
             display: none;
 
         }
+
 
     }
 
