@@ -3603,7 +3603,7 @@ footer {
     .five_section {
         .bottom_block {
             .inner_block {
-                padding: 23px 23px;
+                padding: 23px 13px;
                 display: block;
                 margin: 0 auto;
                 width: 100%;
@@ -3618,6 +3618,15 @@ footer {
             .second::before {
                 left: 0;
             }
+        }
+
+        .button_block .button_block_inner a {
+            padding: 23px 20px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
         }
     }
 
