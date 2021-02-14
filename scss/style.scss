@@ -2637,6 +2637,8 @@ footer {
     }
 
     .second_section {
+        padding-top: 50px;
+
         h2 {
             font-size: 55px;
             line-height: 67px;
@@ -4391,7 +4393,7 @@ header .header_block .header .header_logo {
     @media(max-width: 768px) {
         display: block;
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0;
         border-radius: 0px;
 
