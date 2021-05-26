@@ -80,7 +80,7 @@ header .main_header_block {
 
 header .main_header_block .header_logo {
   width: 100%;
-  max-width: 120px;
+  max-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,14 +94,16 @@ header .main_header_block .header_logo {
 header .main_header_block .header_logo svg {
   -ms-flex-item-align: center;
       align-self: center;
+  margin-right: 10px;
 }
 
 header .main_header_block .header_logo span {
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -1337,7 +1339,7 @@ header .main_header_block .button_block .button a:focus {
 .our_suppliers .our_suppliers_block {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 20px 100px;
 }
 
 .our_suppliers .our_suppliers_block .our_suppliers_inner .image_block_inner {
@@ -1355,7 +1357,7 @@ header .main_header_block .button_block .button a:focus {
 .our_suppliers .our_suppliers_block .our_suppliers_inner p {
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 100%;
   color: #222222;
   margin-bottom: 12px;
@@ -1364,8 +1366,8 @@ header .main_header_block .button_block .button a:focus {
 .our_suppliers .our_suppliers_block .our_suppliers_inner a {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 18px;
+  line-height: 20px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #333333;
