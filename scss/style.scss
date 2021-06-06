@@ -1358,6 +1358,39 @@ header .header .header_logo {
                 }
             }
         }
+
+        .button_block {
+            width: 100%;
+            max-width: 200px;
+            height: 50px;
+            margin: 40px auto;
+            align-self: center;
+
+            a {
+                display: block;
+                width: 200px;
+                height: 50px;
+                padding: 15px 28px;
+                border-radius: 50px;
+                background: $yellow;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            a:hover,
+            a:focus {
+                background: $hover;
+            }
+
+            a:focus {
+                outline: none;
+                box-shadow: 0 0 0 5px rgba(21, 156, 228, 0.4);
+            }
+        }
     }
 
     @media(max-width: 1024px) {
@@ -1649,6 +1682,10 @@ header .header .header_logo {
         padding: 0 10px;
     }
 
+    header .header .container {
+        padding: 0 10px;
+    }
+
     .first_section {
         min-height: 1050px;
     }
@@ -1782,4 +1819,42 @@ header .header .header_logo {
             margin-bottom: 40px;
         }
     }
+
+    .work_steps .work_steps_block .arrows_block .icon_block {
+        min-height: 90px;
+    }
+
+    .work_steps .work_steps_block .arrows_block .step {
+        height: auto;
+    }
+
+    .work_steps .work_steps_block .arrows_block p {
+        width: 100%;
+        max-width: 250px;
+        margin: 30px auto 0;
+    }
+
+    .work_steps .work_steps_block .arrows_block a {
+        margin-top: 10px;
+    }
+
+    .work_steps .work_steps_block .arrows_block .step:nth-of-type(2) {
+        margin: 0 auto 67px;
+    }
+
+    .review_section .review_block .carousel .carousel-item {
+        width: 200px;
+        border-radius: 10px;
+    }
+
+    .review_section .arrows {
+        position: absolute;
+        width: 100%;
+        max-width: 320px;
+        top: 50%;
+        left: calc(50% - 160px);
+        z-index: 1001;
+    }
 }
+
+@media screen and (max-width:360px) {}
