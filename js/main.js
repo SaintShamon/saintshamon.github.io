@@ -1,109 +1,94 @@
-$('.slider_block').slick({
-    infinite: false,
-    dots: true,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1
-});
-
-$('.partners_slider').slick({
-    infinite: true,
-    dots: false,
-    arrows: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
+$(document).ready(function () {
+    $('.modal').modal(
         {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+            // startingTop: '40%',
+            endingTop: '40%'
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
+    );
 });
 
-// init Isotope
-var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    getSortData: {
-        category: '[data-category]',
-        weight: function (itemElem) {
-            var weight = $(itemElem).find('.weight').text();
-            return parseFloat(weight.replace(/[\(\)]/g, ''));
-        }
-    }
-});
-
-// filter functions
-var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function () {
-        var number = $(this).find('.number').text();
-        return parseInt(number, 10) > 50;
-    },
-    // show if name ends with -ium
-    ium: function () {
-        var name = $(this).find('.name').text();
-        return name.match(/ium$/);
-    }
-};
-
-// bind filter button click
-$('#filters').on('click', 'button', function () {
-    var filterValue = $(this).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[filterValue] || filterValue;
-    $grid.isotope({ filter: filterValue });
-});
-
-// bind sort button click
-$('#sorts').on('click', 'button', function () {
-    var sortByValue = $(this).attr('data-sort-by');
-    $grid.isotope({ sortBy: sortByValue });
-});
-
-// change is-checked class on buttons
-$('.button-group').each(function (i, buttonGroup) {
-    var $buttonGroup = $(buttonGroup);
-    $buttonGroup.on('click', 'button', function () {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-    });
-});
-
-
-
-var $page = $('html, body');
-
-$('a[href*="#"]').click(function () {
-    $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
+// для ютуба
+$(document).ready(function () {
+    $('.video1-play').click(function () {
+        video = '<iframe src="' + $(this).attr('data-video') + '"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $(this).replaceWith(video);
     }
 
-        , 800);
-    return false;
+    );
 }
 
 );
+
+$(document).ready(function () {
+    $('.carousel').carousel({
+        // Transition duration in milliseconds.
+        duration: 200,
+
+        // Perspective zoom. If 0, all items are the same size.
+        dist: -100,
+
+        // Set the spacing of the center item.
+        shift: 50,
+
+        // Set the padding between non center items.
+        padding: 0,
+
+        // Set the number of visible items.
+        numVisible: 3,
+
+        // Make the carousel a full width slider
+        fullWidth: false,
+
+        // Set to true to show indicators.
+        indicators: true,
+
+        // Don't wrap around and cycle through items.
+        noWrap: false,
+
+        // Callback for when a new slide is cycled to.
+        onCycleTo: null
+    }
+
+    );
+
+    // move next carousel
+    $('.moveNextCarousel').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('next');
+    }
+
+    );
+
+    // move prev carousel
+    $('.movePrevCarousel').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.carousel').carousel('prev');
+    }
+
+    );
+
+});
+
+
+
+
+// // Плавная прокрутка
+// var $page = $('html, body');
+
+// $('a[href*="#"]').click(function () {
+//     $page.animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }
+
+//         , 800);
+//     return false;
+// }
+
+// );
+
+// моб меню
 
 (function () {
     var burger = document.querySelector('.burger-container'),
@@ -117,21 +102,44 @@ $('a[href*="#"]').click(function () {
     ());
 
 let list = document.querySelectorAll(".menu_mobile > .menu-item > a");
+
 list.forEach(i => {
     i.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector('.header.menu-opened').classList.remove("menu-opened");
 
 
-    })
-});
+    }
+
+    )
+}
+
+);
 
 let btn = document.querySelectorAll(".header .menu_btn");
+
 btn.forEach(i => {
     i.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector('.header.menu-opened').classList.remove("menu-opened");
+    }
 
+    )
+}
 
-    })
-});
+);
+
+var plus = '/img/mobile_logo.png';
+var minus = '/img/Logo.png';
+
+$('.burger-container').click(function () {
+    if ($('.header_logo img').attr('src') === plus) {
+        $('.header_logo img').attr('src', minus);
+    }
+
+    else {
+        $('.header_logo img').attr('src', plus)
+    }
+}
+
+)
