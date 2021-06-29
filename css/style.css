@@ -988,6 +988,12 @@ footer .main_block .footer_main .footer_inner.adres a {
   text-decoration: none;
 }
 
+footer .main_block .footer_main .footer_inner.adres a:hover,
+footer .main_block .footer_main .footer_inner.adres a:focus,
+footer .main_block .footer_main .footer_inner.adres a:active {
+  color: #FF5000;
+}
+
 footer .main_block .footer_main .menu,
 footer .main_block .footer_main .second_menu {
   max-width: 134px;
@@ -1007,6 +1013,18 @@ footer .main_block .footer_main .menu li a {
   line-height: 150%;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+footer .main_block .footer_main .menu li a:hover,
+footer .main_block .footer_main .menu li a:focus,
+footer .main_block .footer_main .menu li a:active {
+  color: #FF5000;
+}
+
+footer .main_block .footer_main .second_menu li a:hover,
+footer .main_block .footer_main .second_menu li a:focus,
+footer .main_block .footer_main .second_menu li a:active {
+  color: #FF5000;
 }
 
 footer .main_block .footer_main .second_menu li a {

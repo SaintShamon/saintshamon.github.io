@@ -897,6 +897,12 @@ footer {
                     color: #FFFFFF;
                     text-decoration: none;
                 }
+
+                a:hover,
+                a:focus,
+                a:active {
+                    color: $orange;
+                }
             }
 
             .menu,
@@ -910,24 +916,42 @@ footer {
                 }
             }
 
-            .menu li a {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 150%;
-                color: #FFFFFF;
-                text-decoration: none;
+            .menu li {
+                a {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+
+                a:hover,
+                a:focus,
+                a:active {
+                    color: $orange;
+                }
             }
 
-            .second_menu li a {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 150%;
-                color: #FFFFFF;
-                opacity: 0.8;
-                text-decoration: none;
+            .second_menu li {
+
+                a:hover,
+                a:focus,
+                a:active {
+                    color: $orange;
+                }
+
+                a {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                    opacity: 0.8;
+                    text-decoration: none;
+                }
             }
+
 
             .social {
                 max-width: 442px;
