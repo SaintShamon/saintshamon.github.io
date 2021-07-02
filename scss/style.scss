@@ -44,8 +44,13 @@ img {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: $font1;
+}
+
+.orange {
+    color: $orange;
 }
 
 /* Скрывает ненужные блоки */
@@ -1450,11 +1455,151 @@ $menuItems: 7;
 
         .tabs__content {
             display: none;
+
+            .table {
+                display: flex;
+                flex-direction: column;
+
+                .table_row {
+                    display: flex;
+                    justify-content: space-between;
+                    min-height: 52px;
+                    margin-bottom: 20px;
+                }
+
+                .table_row:last-of-type {
+                    margin-bottom: 0;
+                }
+
+                .table_col {
+                    width: 100%;
+
+                    .name {
+                        font-family: $font3;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: #252525;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    .consist {
+                        margin: 0;
+                        font-family: $font3;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: #252525;
+                    }
+                }
+
+                .table_col.first {
+                    max-width: 322px;
+                }
+
+                .table_col.second {
+                    max-width: 45px;
+                    align-self: center;
+
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: #252525;
+                        opacity: 0.5;
+                    }
+                }
+
+                .table_col.third {
+                    max-width: 70px;
+                    align-self: center;
+
+                    span {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 30px;
+                        line-height: 100%;
+                        display: flex;
+                        align-items: center;
+                        color: $orange;
+                    }
+                }
+            }
         }
 
         .tabs__content.active {
             display: block;
         }
+    }
+
+    .form_section.delivery {
+        background-image: url('/img/delivery_form_bg.jpg');
+
+        .text_block {
+            padding: 35px 50px;
+            background: rgba(37, 37, 37, 0.8);
+            backdrop-filter: blur(10px);
+            height: 100%;
+        }
+    }
+
+    // банкетный зал
+
+    .first_section.zal {
+        background-image: url('/img/zal_bg.jpg');
+    }
+
+    .text_section {
+        .text_block {
+            max-width: 482px;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: $font1;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 65px;
+            line-height: 110%;
+            color: #252525;
+            margin: 0;
+        }
+
+        h3 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 35px;
+            line-height: 95%;
+            margin-top: 37px;
+            margin-bottom: 26px;
+        }
+    }
+
+    .form_section.zal {
+        background-image: url('/img/zal_form_bg.jpg');
+
+        .text_block {
+            padding: 35px 50px;
+            background: rgba(37, 37, 37, 0.8);
+            backdrop-filter: blur(10px);
+            height: 100%;
+        }
+    }
+
+    // о нас
+
+    .first_section.about {
+        background-image: url('/img/about_bg.jpg');
     }
 }
 
@@ -2085,6 +2230,20 @@ $menuItems: 7;
         }
     }
 
+    .revert {
+        .inner_block.first {
+            order: 2;
+        }
+
+        .inner_block.second {
+            order: 1;
+        }
+    }
+
+    .inner_pages .menu_section .tabs__caption {
+        justify-content: center;
+    }
+
 }
 
 @media screen and (max-width: 426px) {
@@ -2119,5 +2278,34 @@ $menuItems: 7;
         margin: 0 auto;
         width: 90%;
         max-width: none;
+    }
+
+    .inner_pages .menu_section .tabs__caption {
+        flex-direction: column;
+        margin-left: 10px;
+
+        li {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+
+        .active {
+            width: max-content;
+            padding: 12px 24px;
+            font-weight: normal;
+        }
+    }
+
+    .inner_pages .menu_section .content_block {
+        background-image: none;
+        background: #F7F0F0;
+        overflow: scroll;
+
+    }
+
+    .inner_pages .menu_section .menu_table {
+        padding: 33px 10px;
+        width: 100%;
+        width: 691px;
     }
 }
