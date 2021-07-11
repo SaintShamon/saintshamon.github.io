@@ -1,280 +1,389 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secret Garden - О нас</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <title>Document</title>
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 
-    <!-- slick -->
     <link rel="stylesheet" href="/slick/slick-theme.css">
     <link rel="stylesheet" href="/slick/slick.css">
+
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header_block">
+        <div class="container_header">
+            <div class="main_block_desctop">
                 <div class="logo_block">
-                    <a href="/"><img src="/img/logo.png" alt="Лого"></a>
+                    <a href="/">
+                        <img src="/img/logo.png" alt="">
+                    </a>
                 </div>
-                <nav class="main_menu">
+                <div class="trust_block">
+                    <a href="#">
+                        <img src="/img/trust_pilot.svg" alt="">
+                    </a>
+                </div>
+                <nav class="main-menu">
                     <ul>
-                        <li><a href="/zal.html">Банкетный зал</a></li>
-                        <li><a href="/delivery.html">Доставка еды</a></li>
-                        <li><a href="/about.html">О нас</a></li>
-                        <li><a href="/#contacts">Контакты</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">FRAMES</a></li>
+                        <li><a href="#">REVIEWS</a></li>
+                        <li><a href="#">PRICES</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </nav>
-
-                <div class="contact_block">
-                    <a href="#">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="button_block">
+                    <a href="#" class="btn">BUY IT NOW</a>
+                </div>
+                <div class="social_block">
+                    <a href="#" target="_blank">
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M9.99731 6.66525C8.16111 6.66525 6.66262 8.16376 6.66262 10C6.66262 11.8362 8.16111 13.3348 9.99731 13.3348C11.8335 13.3348 13.332 11.8362 13.332 10C13.332 8.16376 11.8335 6.66525 9.99731 6.66525ZM19.9989 10C19.9989 8.61907 20.0114 7.25064 19.9338 5.87221C19.8563 4.27113 19.4911 2.85017 18.3203 1.67938C17.147 0.506085 15.7286 0.14334 14.1275 0.065788C12.7466 -0.0117644 11.3782 0.000744113 9.99981 0.000744113C8.61891 0.000744113 7.25051 -0.0117644 5.8721 0.065788C4.27105 0.14334 2.85012 0.508587 1.67935 1.67938C0.506076 2.85267 0.143338 4.27113 0.0657868 5.87221C-0.0117642 7.25314 0.000744099 8.62157 0.000744099 10C0.000744099 11.3784 -0.0117642 12.7494 0.0657868 14.1278C0.143338 15.7289 0.508578 17.1498 1.67935 18.3206C2.85262 19.4939 4.27105 19.8567 5.8721 19.9342C7.25301 20.0118 8.62141 19.9993 9.99981 19.9993C11.3807 19.9993 12.7491 20.0118 14.1275 19.9342C15.7286 19.8567 17.1495 19.4914 18.3203 18.3206C19.4936 17.1473 19.8563 15.7289 19.9338 14.1278C20.0139 12.7494 19.9989 11.3809 19.9989 10ZM9.99731 15.131C7.15795 15.131 4.86644 12.8394 4.86644 10C4.86644 7.16058 7.15795 4.86903 9.99731 4.86903C12.8367 4.86903 15.1282 7.16058 15.1282 10C15.1282 12.8394 12.8367 15.131 9.99731 15.131ZM15.3383 5.8572C14.6754 5.8572 14.14 5.32184 14.14 4.65889C14.14 3.99594 14.6754 3.46058 15.3383 3.46058C16.0013 3.46058 16.5366 3.99594 16.5366 4.65889C16.5368 4.81631 16.5059 4.97222 16.4458 5.1177C16.3856 5.26317 16.2974 5.39535 16.1861 5.50666C16.0748 5.61798 15.9426 5.70624 15.7971 5.76639C15.6516 5.82654 15.4957 5.8574 15.3383 5.8572Z"
-                                fill="white" />
+                                d="M28.7642 0H2.23575C1.0009 0 0 1.0009 0 2.23575V28.7642C0 29.9991 1.0009 31 2.23575 31H28.7642C29.9991 31 31 29.9991 31 28.7642V2.23575C31 1.0009 29.9991 0 28.7642 0V0ZM23.265 11.8647V13.9604C22.2767 13.9608 21.3165 13.7671 20.411 13.385C19.8287 13.1392 19.2862 12.8224 18.79 12.4397L18.8049 18.8905C18.7987 20.3431 18.224 21.7079 17.1839 22.7358C16.3375 23.5726 15.2649 24.1047 14.1024 24.2769C13.8292 24.3174 13.5512 24.3381 13.2701 24.3381C12.0257 24.3381 10.8442 23.935 9.87774 23.1912C9.69586 23.0512 9.52197 22.8994 9.35631 22.7358C8.22911 21.6218 7.64786 20.1117 7.7457 18.5233C7.82042 17.3141 8.30449 16.1609 9.11152 15.2571C10.1793 14.061 11.673 13.3971 13.2701 13.3971C13.5512 13.3971 13.8292 13.4182 14.1024 13.4587V14.2336V16.3891C13.8434 16.3037 13.5668 16.2567 13.2788 16.2567C11.8196 16.2567 10.6391 17.4472 10.6609 18.9074C10.6747 19.8417 11.1851 20.6584 11.9378 21.1086C12.2916 21.3202 12.6986 21.4512 13.1329 21.4751C13.4731 21.4937 13.7998 21.4464 14.1024 21.3465C15.1449 21.0021 15.8969 20.0229 15.8969 18.868L15.9004 14.5482V6.66185H18.7865C18.7893 6.94781 18.8183 7.22687 18.8723 7.49722C19.0901 8.5916 19.707 9.5411 20.5655 10.1884C21.3141 10.7531 22.2463 11.0878 23.2567 11.0878C23.2574 11.0878 23.2657 11.0878 23.265 11.0871V11.8647H23.265Z"
+                                fill="#404040" />
                         </svg>
                     </a>
-                    <a href="tel:+79057628868">+7 (905) 762 88 68</a>
+                    <a href="#" target="_blank">
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.2254 0H7.75C3.49365 0 0 3.49365 0 7.7746V23.25C0 27.5063 3.49365 31 7.75 31H23.2254C27.5063 31 31 27.5063 31 23.2254V7.7746C31 3.49365 27.5063 0 23.2254 0ZM17.05 19.8056C15.8198 19.8056 14.6389 19.1659 14.2452 18.4278C14.2452 18.4278 13.581 20.9865 13.4333 21.4786C12.9413 23.2254 11.4651 24.9722 11.3667 25.1198C11.2929 25.2183 11.1206 25.1937 11.096 25.046C11.0714 24.8246 10.7024 22.6103 11.1206 20.8143C11.3421 19.904 12.5968 14.7619 12.5968 14.7619C12.5968 14.7619 12.2278 14.0484 12.2278 13.0151C12.2278 11.3667 13.2119 10.1365 14.4421 10.1365C15.4754 10.1365 15.9921 10.8992 15.9921 11.8095C15.9921 12.8183 15.3278 14.3437 14.9833 15.746C14.6881 16.927 15.5984 17.8865 16.804 17.8865C18.969 17.8865 20.4452 15.1802 20.4452 11.9817C20.4452 9.54603 18.7476 7.7254 15.6722 7.7254C12.2032 7.7254 10.0135 10.2349 10.0135 13.0397C10.0135 13.9992 10.3087 14.6881 10.7762 15.2294C10.9976 15.4754 11.0222 15.5738 10.9484 15.8444C10.8992 16.0413 10.7762 16.5333 10.7024 16.7302C10.6286 17.0008 10.3825 17.1238 10.1365 17.0008C8.5373 16.3611 7.79921 14.6635 7.79921 12.7444C7.79921 9.59524 10.5548 5.80635 15.9921 5.80635C20.3714 5.80635 23.25 8.88175 23.25 12.1786C23.2254 16.5579 20.7405 19.8056 17.05 19.8056Z"
+                                fill="#404040" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.6086 0H8.39142C3.76431 0 0 3.76431 0 8.39142V22.6088C0 27.2357 3.76431 31 8.39142 31H22.6088C27.2357 31 31 27.2357 31 22.6088V8.39142C31 3.76431 27.2357 0 22.6086 0V0ZM15.5 23.9763C10.8261 23.9763 7.02367 20.1739 7.02367 15.5C7.02367 10.8261 10.8261 7.02367 15.5 7.02367C20.1739 7.02367 23.9763 10.8261 23.9763 15.5C23.9763 20.1739 20.1739 23.9763 15.5 23.9763ZM24.179 9.02267C22.7978 9.02267 21.6744 7.89924 21.6744 6.51801C21.6744 5.13679 22.7978 4.01312 24.179 4.01312C25.5602 4.01312 26.6839 5.13679 26.6839 6.51801C26.6839 7.89924 25.5602 9.02267 24.179 9.02267Z"
+                                fill="#404040" />
+                            <path
+                                d="M15.5008 8.84106C11.8292 8.84106 8.8418 11.8282 8.8418 15.5C8.8418 19.1716 11.8292 22.159 15.5008 22.159C19.1726 22.159 22.1598 19.1716 22.1598 15.5C22.1598 11.8282 19.1726 8.84106 15.5008 8.84106Z"
+                                fill="#404040" />
+                            <path
+                                d="M24.1795 5.83057C23.8006 5.83057 23.4922 6.13898 23.4922 6.51787C23.4922 6.89676 23.8006 7.20517 24.1795 7.20517C24.5586 7.20517 24.867 6.897 24.867 6.51787C24.867 6.13874 24.5586 5.83057 24.1795 5.83057Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg width="40" height="31" viewBox="0 0 40 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M39.1759 4.85076C38.7149 2.95396 37.3638 1.45874 35.6505 0.947992C32.5203 0 19.9995 0 19.9995 0C19.9995 0 7.47926 0 4.34913 0.912051C2.66871 1.42226 1.28467 2.95423 0.823732 4.85076C0 8.3152 0 15.5 0 15.5C0 15.5 0 22.721 0.823732 26.1492C1.28516 28.0458 2.63575 29.541 4.34937 30.0517C7.51222 31 20 31 20 31C20 31 32.5203 31 35.6505 30.0879C37.3641 29.5775 38.7149 28.0822 39.1763 26.1857C39.9998 22.721 39.9998 15.5365 39.9998 15.5365C39.9998 15.5365 40.0328 8.3152 39.1759 4.85076ZM16.0132 22.1376V8.86243L26.4249 15.5L16.0132 22.1376Z"
+                                fill="#404040" />
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.459 0H4.54102C2.03731 0 0 2.03731 0 4.54102V26.459C0 28.9627 2.03731 31 4.54102 31H13.6836V20.041H10.0508V14.5918H13.6836V10.8984C13.6836 7.89356 16.1279 5.44922 19.1328 5.44922H24.6426V10.8984H19.1328V14.5918H24.6426L23.7344 20.041H19.1328V31H26.459C28.9627 31 31 28.9627 31 26.459V4.54102C31 2.03731 28.9627 0 26.459 0Z"
+                                fill="#404040" />
+                        </svg>
+                    </a>
                 </div>
-            </div>
-            <div class="window">
-                <div class="header">
-                    <div class="header_logo"><img src="img/logo.png" alt="header logo">
-                    </div>
-                    <div class="burger-container">
-                        <div id="burger">
-                            <div class="bar topBar"></div>
-                            <div class="bar cntrBar"></div>
-                            <div class="bar btmBar"></div>
-                        </div>
-                    </div>
-
-                    <ul class="menu">
-                        <li class="menu-item"><a href="/">Главная</a></li>
-                        <li class="menu-item"><a href="/zal.html">Банкетный зал</a></li>
-                        <li class="menu-item"><a href="/delivery.html">Доставка еды</a></li>
-                        <li class="menu-item"><a href="/about.html">О нас</a></li>
-                        <li class="menu-item"><a href="/#contacts">Контакты</a></li>
-                    </ul>
-                    <div class="contact_block">
-                        <a href="#">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.99731 6.66525C8.16111 6.66525 6.66262 8.16376 6.66262 10C6.66262 11.8362 8.16111 13.3348 9.99731 13.3348C11.8335 13.3348 13.332 11.8362 13.332 10C13.332 8.16376 11.8335 6.66525 9.99731 6.66525ZM19.9989 10C19.9989 8.61907 20.0114 7.25064 19.9338 5.87221C19.8563 4.27113 19.4911 2.85017 18.3203 1.67938C17.147 0.506085 15.7286 0.14334 14.1275 0.065788C12.7466 -0.0117644 11.3782 0.000744113 9.99981 0.000744113C8.61891 0.000744113 7.25051 -0.0117644 5.8721 0.065788C4.27105 0.14334 2.85012 0.508587 1.67935 1.67938C0.506076 2.85267 0.143338 4.27113 0.0657868 5.87221C-0.0117642 7.25314 0.000744099 8.62157 0.000744099 10C0.000744099 11.3784 -0.0117642 12.7494 0.0657868 14.1278C0.143338 15.7289 0.508578 17.1498 1.67935 18.3206C2.85262 19.4939 4.27105 19.8567 5.8721 19.9342C7.25301 20.0118 8.62141 19.9993 9.99981 19.9993C11.3807 19.9993 12.7491 20.0118 14.1275 19.9342C15.7286 19.8567 17.1495 19.4914 18.3203 18.3206C19.4936 17.1473 19.8563 15.7289 19.9338 14.1278C20.0139 12.7494 19.9989 11.3809 19.9989 10ZM9.99731 15.131C7.15795 15.131 4.86644 12.8394 4.86644 10C4.86644 7.16058 7.15795 4.86903 9.99731 4.86903C12.8367 4.86903 15.1282 7.16058 15.1282 10C15.1282 12.8394 12.8367 15.131 9.99731 15.131ZM15.3383 5.8572C14.6754 5.8572 14.14 5.32184 14.14 4.65889C14.14 3.99594 14.6754 3.46058 15.3383 3.46058C16.0013 3.46058 16.5366 3.99594 16.5366 4.65889C16.5368 4.81631 16.5059 4.97222 16.4458 5.1177C16.3856 5.26317 16.2974 5.39535 16.1861 5.50666C16.0748 5.61798 15.9426 5.70624 15.7971 5.76639C15.6516 5.82654 15.4957 5.8574 15.3383 5.8572Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                        <a href="tel:+79057628868">+7 (905) 762 88 68</a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </header>
     <main class="inner_pages">
-        <section class="first_section about">
-
-        </section>
         <section class="text_section">
             <div class="container">
-                <h1>Вас приветствует ресторан <span class="orange">Secret Garden</span></h1>
-                <div class="main_block" style="margin-top: 40px;">
-                    <div class="inner_block">
-                        <div class="text_block">
-                            <p>Наш банкетный зал Secret Garden таит в себе комфорт и солидность, домашний уют и передает
-                                атмосферу таинственного сада, располагающую к размышлениям, романтическому настроению.
-                                Основное место в оформлении помещения играет камин, согревающий все и всех своим
-                                теплом.Чем неприветливей и пасмурней погода на улице - тем уютнее Вы себя ощущаете в
-                                нашем банкетном зале. Сюда хочется приходить и получать удовольствие. Весь персонал
-                                заботится о Вашем удобстве и старается предусмотреть все Ваши желания.</p>
-                        </div>
-                    </div>
-                    <div class="inner_block">
-                        <img src="/img/about_img_1.jpg" alt="Банкетный зал">
-                    </div>
+                <div class="text_block">
+                    <h1>About us</h1>
+                    <p class="subtitle">
+                        Greetings!
+                    </p>
+                    <p>We are <b>Sambanis.ART</b>, an independent community of artists created by a professional art
+                        dealer
+                        with
+                        a degree in Art Management.</p>
+                    <p><b>Aleksandr Sambanis</b> is the leader and ideologist of our community. He has developed an
+                        author's
+                        system for checking the quality of each picture released under the <b>Sambanis.ART</b>
+                        trademark. This
+                        system includes checking key elements, such as facial features, color dynamics, coloring, and
+                        other components that distinguish an average painting from a work of art.</p>
+                    <p>Thanks to a clear understanding of tasks and high requirements for the quality of each painter’s
+                        work, Alexander managed to unite a large community of artists, which has provided customers with
+                        delight and joy through their work for five years</p>
+                    <p>All paintings that we create are made fully by hand without using a printer or any other
+                        auxiliary tools.</p>
+                    <p class="subtitle">What is the advantage of working with an art dealer?</p>
+                    <p>When the painting is ordered, the task of the artist is to finish it as soon as possible and move
+                        on to the next one. At the 20th hour of work, eyes become tired, vision begins to blur, and
+                        important features disappear (the human factor).
+                    </p>
+                    <p>The art dealer's task is to objectively check each work to ensure perfection. Thanks to this
+                        cooperation, we guarantee the quality of each painting written by our artists. Our 100%
+                        satisfied customer reviews confirm this.</p>
                 </div>
-            </div>
-        </section>
-        <section class="text_section revert">
-            <div class="container">
-                <div class="main_block">
-                    <div class="inner_block first">
-                        <img src="/img/about_img_2.jpg" alt="">
-                    </div>
-                    <div class="inner_block second">
-                        <div class="text_block">
-                            <p>При заказе свадебного торжества мы можем взять на себя оформление зала, которое включает
-                                в себя оформление цветочных композиций, оформление интерьера и входа в ресторан тканью
-                                по желанию заказчика. Предлагаем услуги ведущего и фотографа, сотрудничающего с нами 10
-                                лет. Мы не настаиваем на своих услугах. Вы в праве выбирать. Просто за 15 лет своей
-                                работы мы получили опыт в организации праздников и хотим поделиться им с Вами. Также мы
-                                оформляем праздничный стол и блюда орхидеями по желанию заказчика. Изготавливаем по
-                                индивидуальным заказам праздничные торты. Поводим выездные банкеты и фуршеты "под ключ".
-                                Имеется уютная летняя веранда - зеленый уголок в Марьино.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="third_section">
-            <div class="container">
-                <div class="third_section_main_block">
-                    <div class="text_block">
-                        <h2>Почему к нам возвращаются</h2>
-                        <ul>
-                            <li>
-                                <div>
-                                    <h3>Качественные блюда</h3>
-                                    <p class="description">Мы уже несколько лет подряд работаем с проверенными
-                                        поставщиками, качеству продукции которых полностью доверяем</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Приветливый персонал</h3>
-                                    <p class="description">В нашем зале Вас встретят официанты, которые любят свою
-                                        работу и стараются приложить максимум усилий, чтобы каждый клиент остался
-                                        доволен</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <h3>Летняя терраса</h3>
-                                    <p class="description">Уютная летняя веранда — настоящая изюминка нашего заведения.
-                                        Здесь можно провести восхитительные вечера в компании лучших друзей или любимого
-                                        человека</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="img_block">
-                        <img src="/img/zal_img_4.jpg" alt="">
-                        <div>
-                            <img src="/img/zal_img_5.jpg" alt="">
-                            <img src="img/zal_img_6.jpg" alt="">
+                <div class="down_block">
+                    <div class="inner_block">
+                        <div class="title">
+                            <img src="/img/icon/about_icon_1.svg" alt="">
+                            <h3>Price Benefit</h3>
                         </div>
+                        <p>Since most of our performers
+                            are located in Eastern Europe,
+                            we can provide high-quality services at a great price (in the
+                            US market, this kind of work is estimated to be four times
+                            more expensive).</p>
+                    </div>
+                    <div class="inner_block">
+                        <div class="title">
+                            <img src="/img/icon/about_icon_2.svg" alt="">
+                            <h3>Quality Control</h3>
+                        </div>
+                        <p>Our community has been on the market for over five years. We value our clients and strictly
+                            monitor compliance with internal quality standards while honoring an individual approach to
+                            each client.</p>
+                    </div>
+                    <div class="inner_block">
+                        <div class="title">
+                            <img src="/img/icon/about_icon_3.svg" alt="">
+                            <h3>We put our soul into each painting</h3>
+                        </div>
+                        <p>After all, we know for sure that each painting hand-drawn by our artists is not just
+                            decoration for your home, but a representation of warm memories that will remain with you
+                            and your loved ones for many years!</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="form_section">
+        <section class="author_section">
             <div class="container">
-                <div class="main_block">
-                    <div class="form_block">
-                        <h2>Закажи столик прямо сейчас</h2>
-                        <form action="">
-                            <div class="form_field">
-                                <label for="your_name">Имя</label>
-                                <input type="text" id="your_name" name="name" placeholder="Имя">
-                            </div>
-                            <div class="form_field">
-                                <label for="your_phone">Номер телефона</label>
-                                <input type="tel" id="your_phone" name="tel" placeholder="+7 (___) ___ __ __">
-                            </div>
-                            <div class="form_field">
-                                <label for="your_email">E-mail</label>
-                                <input type="email" name="your_email" id="your_email" placeholder="ivan_ivan@gmail.com">
-                            </div>
-
-                            <input class="form_btn" type="submit" value="Забронировать стол">
-                        </form>
+                <div class="author_block">
+                    <div class="img">
+                        <img src="/img/photo_author.jpg" alt="">
                     </div>
-                    <div class="text_block">
-                        <p>Оставьте свои данные и в ближайшее время с вами свяжится наш администратор для уточнения
-                            свободных дат и времени.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="reviews">
-            <div class="container">
-                <div class="review_block">
-                    <h2>Отзывы наших клиентов</h2>
-                    <div class="review_inner_block">
-                        <div class="review">
-                            <p class="main_text">“Отличное заведение! Отдыхали большой компанией... Все остались
-                                довольны кухней и обслуживанием)) Интерьер тоже на высоте! Особая благодарность
-                                шеф-повару за необыкновенный шашлык!”</p>
-                            <p class="author">Анатолий Митияш</p>
-                            <p class="date">20 июля 2020 г.</p>
-                        </div>
-                        <div class="review">
-                            <p class="main_text">“Отличное заведение! Отдыхали большой компанией... Все остались
-                                довольны кухней и обслуживанием)) Интерьер тоже на высоте! Особая благодарность
-                                шеф-повару за необыкновенный шашлык!”</p>
-                            <p class="author">Анатолий Митияш</p>
-                            <p class="date">20 июля 2020 г.</p>
-                        </div>
-                        <div class="review">
-                            <p class="main_text">“Отличное заведение! Отдыхали большой компанией... Все остались
-                                довольны кухней и обслуживанием)) Интерьер тоже на высоте! Особая благодарность
-                                шеф-повару за необыкновенный шашлык!”</p>
-                            <p class="author">Анатолий Митияш</p>
-                            <p class="date">20 июля 2020 г.</p>
-                        </div>
+                    <div class="text">
+                        <p>Yours faithfully,<br>
+                            Aleksandr and the Sambanis.ART<br> Community</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="main_block">
-                <div class="footer_logo">
-                    <img src="/img/logo.png" alt="">
-                </div>
-                <div class="footer_main">
-                    <div class="footer_inner adres">
-                        <p>г. Москва, ул. Братиславская, 32
-                            (вход со двора) </p>
-                        <a class="mail" href="mailto:secretgarden@gmail.com">secretgarden@gmail.com</a>
-                        <a href="tel:+79057628868" class="tel">+7 (905) 762 88 68</a>
-                        <a href="tel:+74953479912" class="tel">+7 (495) 347 99 12</a>
-                    </div>
-                    <div class="footer_inner menu">
-                        <nav>
-                            <ul>
-                                <li><a href="#">Банкетный зал
-                                    </a></li>
-                                <li><a href="#">Сауна</a></li>
-                                <li><a href="#">Доставка еды</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer_inner second_menu">
-                        <nav>
-                            <ul>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer_inner social">
-                        <p><span>Подписывайтесь</span> на нас в социальных
-                            сетях, чтобы быть в курсе наших акций</p>
-                        <div>
-                            <a href="">
-                                <svg width="65" height="65" viewBox="0 0 65 65" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="32.5" cy="32.5" r="32.5" fill="#FF5000" />
-                                    <path
-                                        d="M32.9973 29.6652C31.1611 29.6652 29.6626 31.1638 29.6626 33C29.6626 34.8362 31.1611 36.3348 32.9973 36.3348C34.8335 36.3348 36.332 34.8362 36.332 33C36.332 31.1638 34.8335 29.6652 32.9973 29.6652ZM42.9989 33C42.9989 31.6191 43.0114 30.2506 42.9338 28.8722C42.8563 27.2711 42.4911 25.8502 41.3203 24.6794C40.147 23.5061 38.7286 23.1433 37.1275 23.0658C35.7466 22.9882 34.3782 23.0007 32.9998 23.0007C31.6189 23.0007 30.2505 22.9882 28.8721 23.0658C27.271 23.1433 25.8501 23.5086 24.6793 24.6794C23.5061 25.8527 23.1433 27.2711 23.0658 28.8722C22.9882 30.2531 23.0007 31.6216 23.0007 33C23.0007 34.3784 22.9882 35.7494 23.0658 37.1278C23.1433 38.7289 23.5086 40.1498 24.6793 41.3206C25.8526 42.4939 27.271 42.8567 28.8721 42.9342C30.253 43.0118 31.6214 42.9993 32.9998 42.9993C34.3807 42.9993 35.7491 43.0118 37.1275 42.9342C38.7286 42.8567 40.1495 42.4914 41.3203 41.3206C42.4936 40.1473 42.8563 38.7289 42.9338 37.1278C43.0139 35.7494 42.9989 34.3809 42.9989 33ZM32.9973 38.131C30.1579 38.131 27.8664 35.8394 27.8664 33C27.8664 30.1606 30.1579 27.869 32.9973 27.869C35.8367 27.869 38.1282 30.1606 38.1282 33C38.1282 35.8394 35.8367 38.131 32.9973 38.131ZM38.3383 28.8572C37.6754 28.8572 37.14 28.3218 37.14 27.6589C37.14 26.9959 37.6754 26.4606 38.3383 26.4606C39.0013 26.4606 39.5366 26.9959 39.5366 27.6589C39.5368 27.8163 39.5059 27.9722 39.4458 28.1177C39.3856 28.2632 39.2974 28.3954 39.1861 28.5067C39.0748 28.618 38.9426 28.7062 38.7971 28.7664C38.6516 28.8265 38.4957 28.8574 38.3383 28.8572Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
+        <div class="container_footer">
+            <div class="block">
+                <div class="footer-row_desctop">
+                    <div class="footer-row_inner_block">
+                        <div class="title font18px">
+                            <h3>Help</h3>
                         </div>
+                        <div class="menu-footer-left-menu-container">
+                            <ul id="desctop-left-footer-menu" class="menu">
+                                <li id="menu-item-1674"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1674"><a
+                                        href="https://sambanis.art/contacts/">Contacts</a></li>
+                                <li id="menu-item-1673"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1673">
+                                    <a href="https://sambanis.art/policy/">Policy</a>
+                                </li>
+                                <li id="menu-item-1752"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1752"><a
+                                        href="https://sambanis.art/guarantee/">Guarantee</a></li>
+                                <li id="menu-item-1753"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1753"><a
+                                        href="https://sambanis.art/abous-us/">Abous us</a></li>
+                                <li id="menu-item-1675"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1675"><a
+                                        href="https://sambanis.art/faq/">FAQ</a></li>
+                                <li id="menu-item-1676"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1676"><a
+                                        href="https://sambanis.art/frames/">Frames</a></li>
+                                <li id="menu-item-3694"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3694"><a
+                                        target="_blank" rel="noopener"
+                                        href="https://www.trustpilot.com/review/sambanis.art">Reviews</a></li>
+                                <li id="menu-item-1828"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1828">
+                                    <a href="/#menu_price" aria-current="page">Prices</a>
+                                </li>
+                                <li id="menu-item-3695"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3695"><a
+                                        target="_blank" rel="noopener"
+                                        href="https://etsy.com/listing/879458660/">Etsy</a></li>
+                                <li id="menu-item-3843"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3843"><a
+                                        href="https://sambanis.art/get-a-quote">Get a quote</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-row_inner_block">
+                        <div class="title font18px">
+                            <h3>Gallery</h3>
+                        </div>
+                        <div class="menu-footer-right-menu-container">
+                            <ul id="desctop-right-footer-menu" class="menu">
+                                <li id="menu-item-1731"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1731">
+                                    <a href="https://sambanis.art/category/anniversary-portrait/">Anniversary
+                                        portrait</a>
+                                </li>
+                                <li id="menu-item-1732"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1732">
+                                    <a href="https://sambanis.art/category/child-portrait-painting/">Child portrait
+                                        painting</a>
+                                </li>
+                                <li id="menu-item-1733"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1733">
+                                    <a href="https://sambanis.art/category/custom-family-portrait/">Custom family
+                                        portrait</a>
+                                </li>
+                                <li id="menu-item-1734"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1734">
+                                    <a href="https://sambanis.art/category/custom-pet-portrait/">Custom pet portrait</a>
+                                </li>
+                                <li id="menu-item-1735"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1735">
+                                    <a href="https://sambanis.art/category/landscapes-naturmorts/">Landscapes &amp;
+                                        Naturmorts</a>
+                                </li>
+                                <li id="menu-item-1736"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1736">
+                                    <a href="https://sambanis.art/category/male-portrait-painting/">Male portrait
+                                        painting</a>
+                                </li>
+                                <li id="menu-item-1738"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1738">
+                                    <a href="https://sambanis.art/category/paintings-from-old-photo/">Paintings from old
+                                        photo</a>
+                                </li>
+                                <li id="menu-item-1739"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1739">
+                                    <a href="https://sambanis.art/category/renessaince-oil-painting/">Renaissance oil
+                                        painting</a>
+                                </li>
+                                <li id="menu-item-1740"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1740">
+                                    <a href="https://sambanis.art/category/wedding-portrait/">Wedding portrait</a>
+                                </li>
+                                <li id="menu-item-1741"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1741">
+                                    <a href="https://sambanis.art/category/woman-portrait-painting/">Woman portrait
+                                        painting</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-row_inner_block">
+                        <div class="title font18px">
+                            <h3>Let’s stay in touch</h3>
+                        </div>
+                        <div class="links">
+                            <div class="soc">
+                                <a href="#" target="_blank">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M28.7642 0H2.23575C1.0009 0 0 1.0009 0 2.23575V28.7642C0 29.9991 1.0009 31 2.23575 31H28.7642C29.9991 31 31 29.9991 31 28.7642V2.23575C31 1.0009 29.9991 0 28.7642 0V0ZM23.265 11.8647V13.9604C22.2767 13.9608 21.3165 13.7671 20.411 13.385C19.8287 13.1392 19.2862 12.8224 18.79 12.4397L18.8049 18.8905C18.7987 20.3431 18.224 21.7079 17.1839 22.7358C16.3375 23.5726 15.2649 24.1047 14.1024 24.2769C13.8292 24.3174 13.5512 24.3381 13.2701 24.3381C12.0257 24.3381 10.8442 23.935 9.87774 23.1912C9.69586 23.0512 9.52197 22.8994 9.35631 22.7358C8.22911 21.6218 7.64786 20.1117 7.7457 18.5233C7.82042 17.3141 8.30449 16.1609 9.11152 15.2571C10.1793 14.061 11.673 13.3971 13.2701 13.3971C13.5512 13.3971 13.8292 13.4182 14.1024 13.4587V14.2336V16.3891C13.8434 16.3037 13.5668 16.2567 13.2788 16.2567C11.8196 16.2567 10.6391 17.4472 10.6609 18.9074C10.6747 19.8417 11.1851 20.6584 11.9378 21.1086C12.2916 21.3202 12.6986 21.4512 13.1329 21.4751C13.4731 21.4937 13.7998 21.4464 14.1024 21.3465C15.1449 21.0021 15.8969 20.0229 15.8969 18.868L15.9004 14.5482V6.66185H18.7865C18.7893 6.94781 18.8183 7.22687 18.8723 7.49722C19.0901 8.5916 19.707 9.5411 20.5655 10.1884C21.3141 10.7531 22.2463 11.0878 23.2567 11.0878C23.2574 11.0878 23.2657 11.0878 23.265 11.0871V11.8647H23.265Z"
+                                            fill="#404040" />
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M23.2254 0H7.75C3.49365 0 0 3.49365 0 7.7746V23.25C0 27.5063 3.49365 31 7.75 31H23.2254C27.5063 31 31 27.5063 31 23.2254V7.7746C31 3.49365 27.5063 0 23.2254 0ZM17.05 19.8056C15.8198 19.8056 14.6389 19.1659 14.2452 18.4278C14.2452 18.4278 13.581 20.9865 13.4333 21.4786C12.9413 23.2254 11.4651 24.9722 11.3667 25.1198C11.2929 25.2183 11.1206 25.1937 11.096 25.046C11.0714 24.8246 10.7024 22.6103 11.1206 20.8143C11.3421 19.904 12.5968 14.7619 12.5968 14.7619C12.5968 14.7619 12.2278 14.0484 12.2278 13.0151C12.2278 11.3667 13.2119 10.1365 14.4421 10.1365C15.4754 10.1365 15.9921 10.8992 15.9921 11.8095C15.9921 12.8183 15.3278 14.3437 14.9833 15.746C14.6881 16.927 15.5984 17.8865 16.804 17.8865C18.969 17.8865 20.4452 15.1802 20.4452 11.9817C20.4452 9.54603 18.7476 7.7254 15.6722 7.7254C12.2032 7.7254 10.0135 10.2349 10.0135 13.0397C10.0135 13.9992 10.3087 14.6881 10.7762 15.2294C10.9976 15.4754 11.0222 15.5738 10.9484 15.8444C10.8992 16.0413 10.7762 16.5333 10.7024 16.7302C10.6286 17.0008 10.3825 17.1238 10.1365 17.0008C8.5373 16.3611 7.79921 14.6635 7.79921 12.7444C7.79921 9.59524 10.5548 5.80635 15.9921 5.80635C20.3714 5.80635 23.25 8.88175 23.25 12.1786C23.2254 16.5579 20.7405 19.8056 17.05 19.8056Z"
+                                            fill="#404040" />
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.6086 0H8.39142C3.76431 0 0 3.76431 0 8.39142V22.6088C0 27.2357 3.76431 31 8.39142 31H22.6088C27.2357 31 31 27.2357 31 22.6088V8.39142C31 3.76431 27.2357 0 22.6086 0V0ZM15.5 23.9763C10.8261 23.9763 7.02367 20.1739 7.02367 15.5C7.02367 10.8261 10.8261 7.02367 15.5 7.02367C20.1739 7.02367 23.9763 10.8261 23.9763 15.5C23.9763 20.1739 20.1739 23.9763 15.5 23.9763ZM24.179 9.02267C22.7978 9.02267 21.6744 7.89924 21.6744 6.51801C21.6744 5.13679 22.7978 4.01312 24.179 4.01312C25.5602 4.01312 26.6839 5.13679 26.6839 6.51801C26.6839 7.89924 25.5602 9.02267 24.179 9.02267Z"
+                                            fill="#404040" />
+                                        <path
+                                            d="M15.5008 8.84106C11.8292 8.84106 8.8418 11.8282 8.8418 15.5C8.8418 19.1716 11.8292 22.159 15.5008 22.159C19.1726 22.159 22.1598 19.1716 22.1598 15.5C22.1598 11.8282 19.1726 8.84106 15.5008 8.84106Z"
+                                            fill="#404040" />
+                                        <path
+                                            d="M24.1795 5.83057C23.8006 5.83057 23.4922 6.13898 23.4922 6.51787C23.4922 6.89676 23.8006 7.20517 24.1795 7.20517C24.5586 7.20517 24.867 6.897 24.867 6.51787C24.867 6.13874 24.5586 5.83057 24.1795 5.83057Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg width="40" height="31" viewBox="0 0 40 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M39.1759 4.85076C38.7149 2.95396 37.3638 1.45874 35.6505 0.947992C32.5203 0 19.9995 0 19.9995 0C19.9995 0 7.47926 0 4.34913 0.912051C2.66871 1.42226 1.28467 2.95423 0.823732 4.85076C0 8.3152 0 15.5 0 15.5C0 15.5 0 22.721 0.823732 26.1492C1.28516 28.0458 2.63575 29.541 4.34937 30.0517C7.51222 31 20 31 20 31C20 31 32.5203 31 35.6505 30.0879C37.3641 29.5775 38.7149 28.0822 39.1763 26.1857C39.9998 22.721 39.9998 15.5365 39.9998 15.5365C39.9998 15.5365 40.0328 8.3152 39.1759 4.85076ZM16.0132 22.1376V8.86243L26.4249 15.5L16.0132 22.1376Z"
+                                            fill="#404040" />
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.459 0H4.54102C2.03731 0 0 2.03731 0 4.54102V26.459C0 28.9627 2.03731 31 4.54102 31H13.6836V20.041H10.0508V14.5918H13.6836V10.8984C13.6836 7.89356 16.1279 5.44922 19.1328 5.44922H24.6426V10.8984H19.1328V14.5918H24.6426L23.7344 20.041H19.1328V31H26.459C28.9627 31 31 28.9627 31 26.459V4.54102C31 2.03731 28.9627 0 26.459 0Z"
+                                            fill="#404040" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-row_inner_block">
+                        <div class="title font18px">
+                            <h3>Contacts</h3>
+                        </div>
+                        <div class="contacts_block">
 
+                            <div class="text">
+                                <div class="mail">
+                                    <svg width="27" height="20" viewBox="0 0 27 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.562898 1.62271C4.26854 4.72224 10.7708 10.1753 12.6819 11.8755C12.9384 12.105 13.2136 12.2217 13.4993 12.2217C13.7844 12.2217 14.059 12.1061 14.315 11.8777C16.2277 10.1758 22.73 4.72224 26.4357 1.62271C26.6664 1.43011 26.7016 1.09156 26.5148 0.856094C26.083 0.311979 25.4392 0 24.7493 0H2.24929C1.55937 0 0.915532 0.31198 0.483796 0.856147C0.297011 1.09156 0.332185 1.43011 0.562898 1.62271Z"
+                                            fill="white" />
+                                        <path
+                                            d="M26.6737 3.30277C26.4743 3.2111 26.2398 3.24308 26.0739 3.38308C21.9644 6.82381 16.7195 11.2341 15.0694 12.7027C14.1432 13.5285 12.8578 13.5285 11.9295 12.7016C10.1706 11.1364 4.28077 6.19121 0.926121 3.38303C0.759111 3.24303 0.524021 3.21215 0.326268 3.30272C0.127459 3.39392 0 3.59032 0 3.80678V17.7781C0 19.0038 1.00907 20.0004 2.25002 20.0004H24.75C25.9909 20.0004 27 19.0038 27 17.7781V3.80678C27 3.59032 26.8725 3.3934 26.6737 3.30277Z"
+                                            fill="white" />
+                                    </svg>
+                                    <a href="mailto:Info@sambanis.art" type="email">Info@sambanis.art</a>
+                                </div>
+                                <div class="contacts">
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/icon/whatsapp.svg" alt="">
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/icon/telegram.svg" alt="">
+                                    </a>
+                                    <a href="tel:+380 63 718 5094 " class="tel">+380 63 718 5094 </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer_black">
+            <div class="container_footer">
+                <div class="col_secured">
+                    <div class="left">
+                        <p>Copyright © sambanis.art</p>
+                    </div>
+                    <div class="right">
+                        <p>Secured by:</p>
+                        <div class="mfes-trustmark loaded lazyloaded" data-type="102" data-width="74" data-height="30"
+                            tabindex="0"
+                            data-bg="https://mlr6mvz81hlu.i.optimole.com/HiqKDtc.Ix4k~d83e/w:auto/h:auto/q:auto/https://sambanis.art/wp-content/themes/sambanis-child/img/mcafee.jpg"
+                            style="width: 74px; height: 30px; display: inline-block; background-image: url(&quot;https://mlr6mvz81hlu.i.optimole.com/HiqKDtc.Ix4k~d83e/w:auto/h:auto/q:auto/https://sambanis.art/wp-content/themes/sambanis-child/img/mcafee.jpg&quot;); background-size: contain; background-position: center top; background-repeat: no-repeat; cursor: pointer;">
+                        </div>
+                        <div class="trustedsite-trustmark loaded lazyloaded" data-type="202" data-width="74"
+                            dataheight="30" tabindex="0"
+                            data-bg="https://mlr6mvz81hlu.i.optimole.com/HiqKDtc.Ix4k~d83e/w:auto/h:auto/q:auto/https://sambanis.art/wp-content/themes/sambanis-child/img/trusted.jpg"
+                            style="width: 74px; height: 30px; display: inline-block; background-image: url(&quot;https://mlr6mvz81hlu.i.optimole.com/HiqKDtc.Ix4k~d83e/w:auto/h:auto/q:auto/https://sambanis.art/wp-content/themes/sambanis-child/img/trusted.jpg&quot;); background-size: contain; background-position: center top; background-repeat: no-repeat; cursor: pointer;">
+                        </div>
+                        <div class="paypal loaded lazyloaded" data-type="202" data-width="74" dataheight="30"
+                            tabindex="0"
+                            data-bg="https://mlr6mvz81hlu.i.optimole.com/HiqKDtc.Ix4k~d83e/w:auto/h:auto/q:auto/https://sambanis.art/wp-content/themes/sambanis-child/img/paypal.jpg"
+                            style="width: 74px; height: 30px; display: inline-block; background-image: url(&quot;https://mlr6mvz81hlu.i.optimole.com/HiqKDtc.Ix4k~d83e/w:auto/h:auto/q:auto/https://sambanis.art/wp-content/themes/sambanis-child/img/paypal.jpg&quot;); background-size: contain; background-position: center top; background-repeat: no-repeat; cursor: pointer;">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,6 +391,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/modernizr-custom.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>

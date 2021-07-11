@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    border: 0;
+    border-spacing: 0;
+}
+td, tr, th {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-appearance: none;
+}
+
+img {
+    border-style: none;
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner {
+    border: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[hidden] {
+    display: none;
+}
+
+[type="search"] {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,99 @@
+footer {
+    background: $lightBlack;
+    padding: 30px 0;
+
+    .block {
+        @extend .flex;
+        align-items: flex-start;
+        width: 100%;
+
+        @include respond-to($tablet-portrait) {
+            flex-direction: column;
+        }
+
+        .text {
+            @extend .flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 22%;
+
+            a {
+                @extend p;
+                color: $white;
+                text-transform: lowercase;
+            }
+
+            @include respond-to($tablet-portrait) {
+                width: 100%;
+            }
+        }
+
+        .menu {
+            width: 54%;
+
+            ul {
+                @extend .flex;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $action;
+                    }
+                }
+
+                @include respond-to($tablet-portrait) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+
+            @include respond-to($tablet-portrait) {
+                width: 100%;
+                margin: 30px 0;
+            }
+        }
+
+        .links {
+            @extend .flex;
+            width: 15%;
+            align-items: flex-end;
+            flex-direction: column;
+
+            .soc {
+                @extend .flex;
+                justify-content: flex-end;
+
+                a {
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                @include respond-to($tablet-portrait) {
+                    justify-content: flex-start;
+                }
+            }
+
+            .madeBy {
+                margin-top: 35px;
+                
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: $action;
+                    }
+                }
+            }
+
+            @include respond-to($tablet-portrait) {
+                width: 100%;
+                align-items: flex-start;
+            }
+        }
+    }
+}
