@@ -22,8 +22,8 @@ $(document).ready(function () {
             {
                 breakpoint: 961,
                 settings: {
-                    prevArrow: $('.prev.comp'),
-                    nextArrow: $('.next.comp')
+                    prevArrow: $('.prev_comp'),
+                    nextArrow: $('.next_comp')
                 }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -45,8 +45,8 @@ $(document).ready(function () {
             {
                 breakpoint: 961,
                 settings: {
-                    prevArrow: $('.prev.rev'),
-                    nextArrow: $('.next.rev')
+                    prevArrow: $('.prev_rev'),
+                    nextArrow: $('.next_rev')
                 }
             }
             // You can unslick at a given breakpoint now by adding:
