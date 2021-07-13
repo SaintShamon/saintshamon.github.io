@@ -3384,4 +3384,13 @@ footer {
     .container {
         max-width: 720px;
     }
+
+    .video_section .painting_text span,
+    .review_section .review_text span {
+        display: none;
+    }
+
+    .video_section .video {
+        padding: 100px 0;
+    }
 }
