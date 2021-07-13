@@ -18,6 +18,18 @@ $(document).ready(function () {
         dots: false,
         arrows: true,
         draggable: false,
+        responsive: [
+            {
+                breakpoint: 961,
+                settings: {
+                    prevArrow: $('.prev'),
+                    nextArrow: $('.next')
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 });
 
@@ -29,6 +41,18 @@ $(document).ready(function () {
         dots: false,
         arrows: true,
         draggable: true,
+        responsive: [
+            {
+                breakpoint: 961,
+                settings: {
+                    prevArrow: $('.prev'),
+                    nextArrow: $('.next')
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 });
 
@@ -164,3 +188,9 @@ jQuery(document).ready(function ($) {
 });
 
 
+// mobile menu
+
+$('.blockMenu .burgerButton').on('click', function () {
+    $(this).toggleClass('active');
+    $('.blockMenu .menu').toggleClass('active');
+});
