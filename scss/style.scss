@@ -3651,14 +3651,6 @@ footer {
     .webgl .banner {
         background-image: url('/img/mob/banner_bg.webp');
     }
-}
-
-@media screen and (max-width:426px) {
-
-    h2 {
-        font-size: 32px;
-        line-height: 40px;
-    }
 
     .looking_block .main_block {
         padding-top: 0;
@@ -3675,6 +3667,16 @@ footer {
             line-height: 56px;
         }
     }
+}
+
+@media screen and (max-width:426px) {
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+
 
     // .looking_block::after {
     //     display: none;

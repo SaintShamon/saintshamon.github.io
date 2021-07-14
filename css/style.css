@@ -3723,13 +3723,6 @@ footer .block .contacts a.tel {
   .webgl .banner {
     background-image: url("/img/mob/banner_bg.webp");
   }
-}
-
-@media screen and (max-width: 426px) {
-  h2 {
-    font-size: 32px;
-    line-height: 40px;
-  }
   .looking_block .main_block {
     padding-top: 0;
   }
@@ -3742,6 +3735,13 @@ footer .block .contacts a.tel {
   .looking_block .main_block p.color_text {
     font-size: 18px;
     line-height: 56px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
   }
   .video_section .block .text p.color_text {
     font-size: 18px;
