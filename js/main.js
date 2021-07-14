@@ -19,7 +19,7 @@ $(document).ready(function () {
         draggable: false,
         responsive: [
             {
-                breakpoint: 961,
+                breakpoint: 1023,
                 settings: {
                     prevArrow: $('.prev_comp'),
                     nextArrow: $('.next_comp')
@@ -42,7 +42,7 @@ $(document).ready(function () {
         draggable: true,
         responsive: [
             {
-                breakpoint: 961,
+                breakpoint: 1023,
                 settings: {
                     prevArrow: $('.prev_rev'),
                     nextArrow: $('.next_rev')
