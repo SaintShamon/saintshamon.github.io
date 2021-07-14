@@ -3615,13 +3615,7 @@ footer {
     }
 }
 
-@media screen and (max-width:426px) {
-
-    h2 {
-        font-size: 32px;
-        line-height: 40px;
-    }
-
+@media screen and (max-width:600px) {
     .banner {
         min-height: 768px;
 
@@ -3656,6 +3650,14 @@ footer {
 
     .webgl .banner {
         background-image: url('/img/mob/banner_bg.webp');
+    }
+}
+
+@media screen and (max-width:426px) {
+
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
     }
 
     .looking_block .main_block {
