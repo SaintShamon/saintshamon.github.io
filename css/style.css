@@ -1208,6 +1208,7 @@ header .main_block_mobile .menu .links .soc {
   background-repeat: no-repeat;
   background-position: bottom center;
   opacity: 0.8;
+  z-index: -1;
 }
 
 .example_section {
