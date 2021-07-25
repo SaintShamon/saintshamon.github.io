@@ -22,7 +22,8 @@ $(document).ready(function () {
                 breakpoint: 1023,
                 settings: {
                     prevArrow: $('.prev_comp'),
-                    nextArrow: $('.next_comp')
+                    nextArrow: $('.next_comp'),
+                    // swipe: false,
                 }
             }
             // You can unslick at a given breakpoint now by adding:
