@@ -322,7 +322,17 @@ img {
     background-image: url('/img/last_img.webp');
 }
 
-@media screen and (max-width:1360px) {
+@media (min-width:1367px) and (max-width:1439px) {
+
+    .main_section .economy_block .inner_block_img,
+    .main_section .quality_block .inner_block_img,
+    .main_section .vote_block .inner_block_img,
+    .main_section .habit_block .inner_block_img {
+        max-width: 40vw;
+    }
+}
+
+@media screen and (max-width:1367px) {
 
     .main_section .economy_block .inner_block_text,
     .main_section .quality_block .inner_block_text,
@@ -331,9 +341,20 @@ img {
         width: 100%;
         max-width: 690px;
     }
+
+    .main_section .economy_block .inner_block_img,
+    .main_section .quality_block .inner_block_img,
+    .main_section .vote_block .inner_block_img,
+    .main_section .habit_block .inner_block_img {
+        max-width: 40vw;
+    }
 }
 
 @media screen and (max-width:1280px) {
+
+    .container {
+        max-width: 1200px;
+    }
 
     .main_section .economy_block .inner_block_text,
     .main_section .quality_block .inner_block_text,
@@ -345,6 +366,9 @@ img {
 }
 
 @media screen and (max-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
 
     .main_section .economy_block .inner_block_text,
     .main_section .quality_block .inner_block_text,
@@ -363,6 +387,10 @@ img {
 }
 
 @media screen and (max-width:1024px) {
+
+    .container {
+        max-width: 960px;
+    }
 
     .main_section .economy_block .inner_block_text,
     .main_section .quality_block .inner_block_text,
