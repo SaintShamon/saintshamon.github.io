@@ -361,7 +361,7 @@ img {
   .main_section .vote_block .inner_block_text,
   .main_section .habit_block .inner_block_text {
     width: 100%;
-    max-width: 600px;
+    max-width: 630px;
   }
 }
 
