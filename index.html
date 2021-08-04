@@ -4,119 +4,885 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Academy home page</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- slick slider -->
+
+    <link rel="stylesheet" href="/slick/slick-theme.css">
+    <link rel="stylesheet" href="/slick/slick.css">
+
+    <script src="/js/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </head>
 <body>
-    <main>
-        <section class="first_section">
+    <header>
+        <div class="top_header">
             <div class="container">
-                <div class="first_section_block">
-                    <h1>MINUS<span>50</span>.ru</h1>
-                    <p>Дискаунтер товаров для жизни</p>
+                <div class="main_block">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/img/header_logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="center_block">
+                        <div class="our_curses">
+                            <a href="#">Наши курсы</a>
+                        </div>
+                        <div class="briefcase">
+                            <button class="btn">Портфель знаний</button>
+                        </div>
+                        <div class="search">
+                            <button class="search_btn">
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5.60673" cy="5.60673" r="4.60673" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M9.5 8.50006L13 11.5859" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="right_block">
+                        <div class="open">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.33612 23.1153C7.43453 20.9049 8.00439 18.4695 8.00077 16.0012C7.99964 14.8017 8.26874 13.6174 8.7881 12.5362C9.30746 11.455 10.0637 10.5047 11.0007 9.75586"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16.0007 16.0012C16.007 20.0673 14.9755 24.0677 13.0038 27.6238"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12.0008 16.0012C12.0008 14.9404 12.4222 13.9229 13.1724 13.1728C13.9225 12.4226 14.9399 12.0012 16.0008 12.0012C17.0617 12.0012 18.0791 12.4226 18.8292 13.1728C19.5794 13.9229 20.0008 14.9404 20.0008 16.0012C20.0066 20.1242 19.0984 24.1972 17.3414 27.927"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M27.3206 23.001C27.7741 20.6953 28.0019 18.3509 28.0007 16.001C28.0007 12.8184 26.7364 9.76613 24.486 7.5157C22.2355 5.26526 19.1833 4.00098 16.0007 4.00098C12.8181 4.00098 9.76586 5.26526 7.51542 7.5157C5.26499 9.76613 4.0007 12.8184 4.0007 16.001C4.0022 17.3634 3.77127 18.7162 3.31787 20.001"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M11.6007 20.001C11.1738 22.1037 10.4091 24.1234 9.33636 25.9816"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M15.0008 8.06312C16.1268 7.92229 17.2698 8.02242 18.3542 8.35688C19.4386 8.69134 20.4394 9.25248 21.2905 10.0031C22.1415 10.7537 22.8232 11.6767 23.2905 12.7108C23.7578 13.7449 23.9999 14.8665 24.0008 16.0012C24.0011 17.3384 23.9184 18.6743 23.7532 20.0012"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22.9927 24.001C22.8023 24.7408 22.5864 25.47 22.345 26.1885"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <p>Войти</p>
+                            </a>
+                        </div>
+                        <div class="lang">
+                            <a href="#">EN</a>
+                        </div>
+                        <div class="menu_icon">
+                            <svg width="19" height="10" viewBox="0 0 19 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="7" y1="1" x2="18" y2="1" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <path d="M1 5H18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                                <line x1="7" y1="9" x2="18" y2="9" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_block">
+                    <div class="inner_block">
+                        <div class="input_field">
+                            <input type="search" name="search_input" id="search_input" placeholder="Что ищем?">
+                            <i class="seach_icon">
+                                <svg width="26" height="25" viewBox="0 0 15 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5.60673" cy="5.60673" r="4.60673" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M9.5 8.50006L13 11.5859" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="briefcase_block">
+                    <div class="inner_block">
+                        <div class="category_block">
+                            <a href="#" class="btn">Весь портфель</a>
+                            <ul class="list_menu">
+                                <li><a href="#">Статьи</a></li>
+                                <li class="current_item">
+                                    <a href="#">Видео</a>
+                                </li>
+                                <li>
+                                    <a href="#">Подкасты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Книги и материалы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list_block">
+
+                            <div class="article">
+                                <a href="#">
+                                    <img src="/img/top_article_1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <a href="#">
+                                    <img src="/img/top_article_2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <a href="#">
+                                    <img src="/img/top_article_3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <a href="#">
+                                    <img src="/img/top_article_4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <a href="#">
+                                    <img src="/img/top_article_5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <a href="#">
+                                    <img src="/img/top_article_6.png" alt="">
+                                </a>
+                            </div>
+                            <a href="#" class="link">Больше видео <i>
+                                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.2183 5.9009C10.8645 6.28949 10.8645 7.22629 10.2183 7.61488L1.98585 12.5652C1.31934 12.966 0.470521 12.486 0.470521 11.7082L0.470522 1.80755C0.470522 1.02982 1.31934 0.549776 1.98585 0.950562L10.2183 5.9009Z"
+                                            fill="#3EC9FE" />
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="rectangle"></div>
-            <div class="orange_divider"></div>
-            <div class="right_img"></div>
+        </div>
+    </header>
+    <main class="main_page">
+        <section class="first_block">
+            <div class="container">
+                <div class="main_block">
+                    <div class="bg_block">
+                    </div>
+                    <h1>Онлайн-школа<br>
+                        Top Traders Academy</h1>
+                    <p class="subtitle">Профессиональное обучение от практикующих экспертов для начинающих и опытных
+                        трейдеров, инвесторов и управляющих активами.
+                    </p>
+                    <p class="bottom_text">Через нас прошло <b>более 900 учеников.</b></p>
+                    <p class="right_text">Уже <b>4 года</b> мы занимаемся обучением.</p>
+                </div>
+            </div>
+            <div class="right_button">
+                <p class="text">#dreamtteam</p>
+                <div class="inner_block">
+                    <div class="block">
+                        <a href="#">
+                            <img src="/img/icons/student_icon.svg" alt="">
+                            <p>студенту</p>
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="#">
+                            <img src="/img/icons/partner_icon.svg" alt="">
+                            <p>партнеру</p>
+                        </a>
+                    </div>
+                    <div class="block">
+                        <a href="#">
+                            <img src="/img/icons/teacher_icon.svg" alt="">
+                            <p>ПРЕПОДОВАТЕЛЮ</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="counter_block">
+            <div class="container">
+                <div class="main_block">
+                    <div class="inner_block">
+                        <p class="persent">98%</p>
+                        <p>Учеников рекомендуют
+                            нас своим друзьям</p>
+                    </div>
+                    <div class="inner_block">
+                        <p class="persent">74%</p>
+                        <p>Учеников стали торговать
+                            более системно</p>
+                    </div>
+                    <div class="inner_block">
+                        <p class="persent">91%</p>
+                        <p>Учеников увеличили
+                            свои результатыо</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="cooperation_section">
+            <div class="container">
+                <div class="main_block">
+                    <div class="press_block wow fadeInLeft">
+                        <div class="top_block">
+                            <img src="/img/smi/smi_1.png" alt="">
+                            <img src="/img/smi/smi_2.png" alt="">
+                            <img src="/img/smi/smi_3.png" alt="">
+                            <img src="/img/smi/smi_4.png" alt="">
+                        </div>
+                        <div class="center_block">
+                            <img src="/img/smi/smi_5.png" alt="">
+                            <img src="/img/smi/smi_6.png" alt="">
+                            <img src="/img/smi/smi_7.png" alt="">
+                            <img src="/img/smi/smi_8.png" alt="">
+                        </div>
+                        <div class="down_block">
+                            <img src="/img/smi/smi_9.png" alt="">
+                            <img src="/img/smi/smi_10.png" alt="">
+                            <img src="/img/smi/smi_11.png" alt="">
+                        </div>
+                        <div class="orange_square wow fadeInDownBig">
+                        </div>
 
-        <section class="main_section">
-            <div class="main_section_block">
-                <div class="container">
+                    </div>
+
+                    <div class="text_block">
+                        <h2 class="title">Мы сотрудничаем
+                            с лидерами!</h2>
+                        <div class="blue_square wow fadeInRightBig"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="we_are_in_block">
+                <div class="phone_block">
+                    <img src="/img/phone.png" alt="" class="we_are_in_img">
+                    <div class="group_block">
+                        <div class="item">
+                            <a href="#">
+                                <p class="first">Доходность до 466%. Сколько заработали инвесторы в криптовалюту с
+                                    начала
+                                    года</p>
+                                <div>
+                                    <p class="date">30.05.2019 07:23</p>
+                                    <img src="/img/forbes.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <p class="first">Биткоин рухнул – кто поддался панике, а кто «снял сливки»</p>
+                                <div>
+                                    <p class="date">09.01.2018 07:23</p>
+                                    <img src="/img/RB.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <p class="first">Рынок криптовалют имеет все признаки пузыря. Обвалить его может любая
+                                    негативная
+                                    информация</p>
+                                <div>
+                                    <p class="date">30.05.2019 07:23</p>
+                                    <img src="/img/expert.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <p class="first">Что такое ICO? Как работает новая форма сбора денег с помощью блокчейна
+                                </p>
+                                <div>
+                                    <p class="date">19.01.2018 07:23</p>
+                                    <img src="/img/buro.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="text">Мы в СМИ</div>
+                </div>
+                <div class="open_block">
+
+                </div>
+            </div>
+        </section>
+        <section class="popular_courses">
+            <div class="container">
+                <div class="main_block">
                     <div class="top_block">
-                        <p>Входит ли в ваши потребительские привычки сравнение цен и качества товаров и услуг?<br>
-                            Очевидно, что выбор купить тот или иной товар, воспользоваться той или иной услугой,
-                            формируется
-                            под влиянием многих факторов, но одним из них должна быть информация, полученная в процессе
-                            сравнения. Зачем это делать, и какие преимущества это может принести?</p>
+                        <h2>Популярные курсы</h2>
+                        <a href="#" class="btn">Смотреть все курсы</a>
+                    </div>
+                    <div class="courses_block">
+                        <div class="course">
+                            <div class="course_left">
+                                <img src="/img/course_author_1.png" alt="" class="author_img">
+                            </div>
+                            <div class="course_right">
+                                <span class="meta">#трейдинг</span>
+                                <div class="course_img">
+                                    <img src="/img/course_img_1.png" alt="">
+                                </div>
+                                <p class="course_title">Антихаос</p>
+                                <p class="course_date">10-21 января</p>
+                                <div class="down_text">
+                                    <p>Для практикующих трейдеров.
+                                        Знания и стратегии для стабильного заработка на крипторынке.
+                                    </p>
+                                    <p>Преподаватель: <b>Данияр Дака</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course_left">
+                                <img src="/img/course_author_2.png" alt="" class="author_img">
+                            </div>
+                            <div class="course_right">
+                                <span class="meta">#DeFi</span>
+                                <div class="course_img">
+                                    <img src="/img/course_img_2.png" alt="">
+                                </div>
+                                <p class="course_title">DeFinance</p>
+                                <p class="course_date">25-31 октября</p>
+                                <div class="down_text">
+                                    <p>Практические комплексные знания по децентрализованным финансам.
+                                    </p>
+                                    <p>Преподаватель: <b>Денис Смирнов
+                                        </b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course_left">
+                                <img src="/img/course_author_3.png" alt="" class="author_img">
+                            </div>
+                            <div class="course_right">
+                                <span class="meta">#фьючерсы</span>
+                                <div class="course_img">
+                                    <img src="/img/course_img_3.png" alt="">
+                                </div>
+                                <p class="course_title">Фьючерсы</p>
+                                <p class="course_date">17-30 мая</p>
+                                <div class="down_text">
+                                    <p>Комплексный, практический онлайн-курс по торговле фьючерсами. Торговля внутри
+                                        дня.
+                                    </p>
+                                    <p>Преподаватель: <b>Алекс Зукутоке</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course_left">
+                                <img src="/img/course_author_4.png" alt="" class="author_img">
+                            </div>
+                            <div class="course_right">
+                                <span class="meta">#трейдинг</span>
+                                <div class="course_img">
+                                    <img src="/img/course_img_4.png" alt="">
+                                </div>
+                                <p class="course_title">Crypto Camp</p>
+                                <p class="course_date">в записи</p>
+                                <div class="down_text">
+                                    <p>База трейдера и структуризация знаний.
+                                        Подготовка трейдера к выходу на серьезные проекты.
+                                    </p>
+                                    <p>Преподаватель: <b>Данияр Дака</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course">
+                            <div class="course_left">
+                                <img src="/img/course_author_1.png" alt="" class="author_img">
+                            </div>
+                            <div class="course_right">
+                                <span class="meta">#психология</span>
+                                <div class="course_img">
+                                    <img src="/img/course_img_1.png" alt="">
+                                </div>
+                                <p class="course_title">Инсайт</p>
+                                <p class="course_date">10-21 января</p>
+                                <div class="down_text">
+                                    <p>Полное погружение в себя и трейдинг. Преодоление убеждений, стереотипов и
+                                        системных причин неудач в торговле. Структурный путь развития для
+                                        профессионалов.
+                                    </p>
+                                    <p>Преподаватель: <b>Данияр Дака</b></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="economy_block">
+        </section>
+        <section class="how_we_learn">
+            <div class="main_block">
                 <div class="container">
-                    <div class="inner_block_text">
-                        <h2>Экономьте свои деньги</h2>
-                        <p>Сравнение цен на товары и услуги может сэкономить ваши деньги. Даже если вы можете назвать
-                            себя состоятельным человеком, это не значит, что нужно переплачивать, если вы можете
-                            получить то же самое дешевле.</p>
-                        <p>Конечно, всегда следует учитывать, будет ли небольшая разница в цене на самом деле экономией,
-                            ведь вам, возможно, придется вернуться за вторым товаром или оплатить более высокую
-                            стоимость доставки. Но сравнение – это процесс, который позволяет вам держать момент
-                            потребления на расстоянии и с ясной головой оценивать ситуацию, варианты и преимущества
-                            каждого выбора. Выбор под воздействием эмоций может обойтись вам гораздо дороже.</p>
-                        <p>Сравнение цен и качества особенно важно, если вы ищете долгосрочную услугу, например,
-                            провайдера телевидения и интернета, оператора мобильной связи, банк для открытия счета,
-                            страховые услуги и, конечно, кредитные услуги. В этих случаях контракты являются
-                            долгосрочными, поэтому переплата или экономия будет действовать в течение более длительного
-                            периода и на более крупные суммы денег.</p>
-                        <p>Например, сравнение ипотечных кредитов и выбор оптимального для вас варианта может сэкономить
-                            вам тысячи евро.</p>
-                    </div>
+                    <h2>Как мы учим</h2>
                 </div>
 
-                <div class="inner_block_img"></div>
-            </div>
-
-            <div class="quality_block">
-                <div class="inner_block_img"></div>
-                <div class="container">
-                    <div class="inner_block_text">
-                        <h2>Получите лучшее качество</h2>
-                        <p>Сравнивая цены, вы неизбежно обратите внимание и на качество, которое является одним из
-                            факторов, взаимодействующих с ценой. Более низкая цена во многих случаях может означать и
-                            более низкое качество, но не всегда. Во многих группах товаров и услуг можно найти
-                            аналогичные по качеству альтернативы по более выгодной цене. Это скорее вопрос престижа и
-                            брендов, которые часто объясняют рост цен.</p>
-                        <p>Качество очень важно для современного потребителя, который готов платить за него больше, но,
-                            конечно, не переплачивать. В этом нет необходимости. Поэтому всегда лучше сравнить цены на
-                            один и тот же товар или услугу в разных местах.</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container-general">
+                                <div class="gallery-wrap wrap-effect-1">
+                                    <div class="item active">
+                                        <div class="label">
+                                            <div class="text">Все ваши курсы в одном личном кабинете </div>
+                                            <div class="number">1</div>
+                                        </div>
+                                        <div class="main_text">
+                                            <p>Все ваши курсы в одном личном кабинете </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="label">
+                                            <div class="text">Живые
+                                                вебинары и трансляции</div>
+                                            <div class="number">2</div>
+                                        </div>
+                                        <div class="main_text">
+                                            <p>Живые вебинары и трансляции </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="label">
+                                            <div class="text">Чат
+                                                потока</div>
+                                            <div class="number">3</div>
+                                        </div>
+                                        <div class="main_text">
+                                            <p>Чат
+                                                потока</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="label">
+                                            <div class="text">Постоянное общение с преподавателями и кураторами </div>
+                                            <div class="number">4</div>
+                                        </div>
+                                        <div class="main_text">
+                                            <p>Постоянное общение с преподавателями и кураторами </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="label">
+                                            <div class="text">Техническая поддержка 24/7 </div>
+                                            <div class="number">5</div>
+                                        </div>
+                                        <div class="main_text">
+                                            <p>Техническая поддержка 24/7</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="label">
+                                            <div class="text">Домашние задания и практика в лайф режиме</div>
+                                            <div class="number">6</div>
+                                        </div>
+                                        <div class="main_text">
+                                            <p>Домашние задания и практика в лайф режиме</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="teachers_section">
+            <div class="container">
+                <div class="main_block">
+                    <div class="text_block">
+                        <h2>Наши преподаватели</h2>
+                        <p>Практикующие эксперты в своей нише. Абсолютно каждый из них прошел настоящую школу жизни в
+                            криптоиндустрии и уже многие года на полное время занимается трейдингом, работает в
+                            криптопроектах или создает и ведет свои.
+                        </p>
+                    </div>
+                    <div class="teachers_block">
+                        <div class="teacher">
+                            <img src="/img/teacher_1.png" alt="" class="spiker_img">
+                            <div class="teacher_bg">
+                                <p class="spiker">Данияр Дака</p>
+                                <p class="description">Крипто-энтузиаст, трейдер,
+                                    преподаватель.</p>
+                                <div class="main_text">
+                                    <p>Full-time криптотрейдер
+                                        с 2017 года.
+                                    </p>
+                                    <ul>
+                                        <li>Партнер и академический директор в Top Traders Academy</li>
+                                        <li>Методист и автор курсов теории и практики трейдинга.</li>
+                                        <li>Спикер Binance Academy,
+                                            Digital Summit 2020.</li>
+                                        <li>Обучил 750 трейдеров.</li>
+                                        <li>Партнер в сети криптообменников TT Exchange (tt.exchange)</li>
+                                    </ul>
+                                </div>
 
-            <div class="vote_block">
-                <div class="container">
-                    <div class="inner_block_text">
-                        <h2>Голосуйте своим кошельком</h2>
-                        <p>Выбирая товар или услугу, потребители выражают свое мнение и посылают сигналы
-                            предпринимателям. Потребители голосуют своими кошельками и показывают, какие цены и качество
-                            им нравятся. Каждый ваш выбор как покупателя и клиента также формирует экономику, влияет на
-                            прибыль компаний, принимаемые ими решения и проводимую ими политику.</p>
-                        <p>Отказываясь от товаров и услуг по необоснованным ценам, плохого обслуживания клиентов и
-                            других вещей, которые неприемлемы для вас как потребителя, предприниматели получают сигналы
-                            о том, что если они хотят остаться в бизнесе, им нужно измениться, адаптироваться и
-                            предлагать то, что хочет клиент.</p>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/icons/tel_teacher_icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="teacher">
+                            <img src="/img/teacher_2.png" alt="" class="spiker_img">
+                            <div class="teacher_bg">
+                                <p class="spiker">Теймур Муслим</p>
+                                <p class="description">Крипто-анархист, экономист, серийный предприниматель.</p>
+                                <div class="main_text">
+                                    <ul>
+                                        <li>Стаж на валютном рынке и крипто-анализе – более 9 лет.</li>
+                                        <li>Экс-председатель Ассоциации Asia Blockchain.
+                                        </li>
+                                        <li>Успел попасть в топ-3 по версии сайта tradingview.com (русская версия за
+                                            2017 год).</li>
+                                        <li>Идейный вдохновитель школы TT Academy.</li>
+                                    </ul>
+                                </div>
+
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/icons/tel_teacher_icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="teacher">
+                            <img src="/img/teacher_3.png" alt="" class="spiker_img">
+                            <div class="teacher_bg">
+                                <p class="spiker">Алекс Зукутоке</p>
+                                <p class="description">Дейтрейдер, программист,
+                                    музыкант.</p>
+                                <div class="main_text">
+                                    <ul>
+                                        <li>Первый миллион рублей заработал в 22 года.</li>
+                                        <li>Автор курса по внутридневной торговле фьючерсами.</li>
+                                        <li>Максимальный дневной профит 29554$ UPD (15.02.21)</li>
+                                        <li>Из альткоин холдера в альткоин шортера.</li>
+                                    </ul>
+                                </div>
+
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/icons/tel_teacher_icon.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="teacher">
+                            <img src="/img/teacher_4.png" alt="" class="spiker_img">
+                            <div class="teacher_bg">
+                                <p class="spiker">Денис Смирнов</p>
+                                <p class="description">Блокчейн-консультант, исследователь криптовалют.</p>
+                                <div class="main_text">
+                                    <ul>
+                                        <li>Консультант по теме внедрения децентрализованных технологий.</li>
+                                        <li>Принимал участие в нескольких проектах в качестве фаундера, разработчика и
+                                            консультанта: 2018 децентрализованный инвест-фонд Tokenspot Capital, UniDAO
+                                            и другие.
+                                        </li>
+                                        <li>Разрабатывал курс по блокчейну для Национального расчетного депозитария,
+                                            Нетологии и Высшей Школы Экономики.</li>
+                                    </ul>
+                                </div>
+                                <div class="many_icons">
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/icons/tel_teacher_icon.svg" alt="">
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/icons/fb_teacher_icon.svg" alt="">
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/icons/l_teacher_icon.svg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="inner_block_img"></div>
             </div>
-
-            <div class="habit_block">
-                <div class="inner_block_img"></div>
-                <div class="container">
-                    <div class="inner_block_text">
-                        <h2>Привычки сильны, но не неизменны</h2>
-                        <p>Ваш повседневный потребительский выбор обусловлен привычками, традициями, давлением общества,
-                            маркетинговым влиянием и т.д. Однако каждый должен ответственно и критически взглянуть на
-                            свои расходы и на то, куда он фактически отдает заработанные деньги. Стоит пересмотреть свои
-                            привычки и выйти из зоны комфорта, которая, возможно, уже не так удобна.</p>
-                        <p>Например, вы давно догадались, что платите за телевизионные услуги гораздо больше, чем
-                            соседи, но вам этого не хочется, и стыдно и лень расторгать контракт и искать нового
-                            поставщика. Да, процесс может быть нелегким, он может занять время, но если вы сделаете это
-                            в одной ситуации, то в следующей будет легче. Почему бы, наконец, не поменять банк или
-                            парикмахера, если вас больше не устраивает качество и стоимость услуг? Вы даже можете
-                            сменить кредитора, если кажется, что кредит слишком дорогой. В результате переаккредитации
-                            вы получите другого кредитора и новые условия кредитования.</p>
+        </section>
+        <section class="blog_section">
+            <div class="container">
+                <div class="main_block">
+                    <div class="text_block">
+                        <h2>Блог</h2>
+                        <p>Постоянные, свежие и уникальные статьи от команды ТТА. Материалы, проработанные нами, не
+                            найти нигде на просторах интернета. Мы публикуем только качественные, живые и практические
+                            статьи. </p>
+                        <a href="#" class="btn">Перейти</a>
+                        <div class="big_square wow fadeInLeftBig"></div>
+                        <div class="littel_square wow fadeInRightBig"></div>
+                    </div>
+                    <div class="blog_block">
+                        <div class="article_block">
+                            <a href="#">
+                                <div class="img_block">
+                                </div>
+                                <h3>Стейблкоины на рынке
+                                    криптовалют</h3>
+                            </a>
+                        </div>
+                        <div class="article_block">
+                            <a href="#">
+                                <div class="img_block">
+                                </div>
+                                <h3>Что такое пиринговое
+                                    кредитование</h3>
+                            </a>
+                        </div>
+                        <div class="article_block">
+                            <a href="#">
+                                <div class="img_block">
+                                </div>
+                                <h3>Обзор механизмов упраления в блокчейнах</h3>
+                            </a>
+                        </div>
+                        <div class="article_block">
+                            <a href="#">
+                                <div class="img_block">
+                                </div>
+                                <h3>Обзор платформы
+                                    KickPadv</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <div class="container">
+                <div class="main_block">
+                    <div class="form_block">
+                        <div class="left_part">
+                            <h2>Ответим на любой вопрос!</h2>
+                            <div class="socials">
+                                <a href="#">
+                                    <img src="/img/icons/tel_form_icon.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/icons/Messenger_form_icon.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/icons/WhatsApp_form_icon.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="phone_block">
+                                <a href="tel:+">+7 (499) 404 06 87</a>
+                                <a href="tel:+">+380 (44) 300 28 20</a>
+                            </div>
+                        </div>
+                        <div class="right_block">
+                            <form action="">
+                                <input type="text" name="your_name" id="your_name" placeholder="Имя">
+                                <input type="email" name="your_email" id="your_email" placeholder="E-mail">
+                                <input type="tel" name="your_tel" id="your_tel" placeholder="Телефон">
+                                <textarea name="your_message" id="your_message" cols="30" rows="10"
+                                    placeholder="Ваш вопрос"></textarea>
+                                <input type="submit" value="Отправить" class="btn">
+                            </form>
+                        </div>
+                        <div class="orange_square wow fadeInDownBig">
+                        </div>
+                        <div class="blue_square wow fadeInRightBig"></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <script src="/js/modernizr-custom.js"></script>
+    <footer>
+        <div class="main_part">
+            <div class="container">
+                <div class="main_block">
+                    <div class="col first">
+                        <div class="top_block">
+                            <div>
+                                <img src="/img/logo/logo_shop.svg" alt="">
+                                <img src="/img/logo/trade_logo.svg" alt="">
+                                <img src="/img/logo/top_traders_logo.svg" alt="">
+                            </div>
+                            <img src="/img/logo/top_traders_academy.svg" alt="">
+                        </div>
+                        <div class="bottom_block">
+                            <h3>Наши медиа</h3>
+                            <div>
+                                <a href="">
+                                    <img src="/img/logo/tel_academy.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/tel_analytics.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/tel_defi.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/wifi_logo.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/vc_logo.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/yandex_logo.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/youtube_logo.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/fb_logo.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/m_logo.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/inst_logo.svg" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="/img/logo/twitter_logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col second">
+                        <div class="top_menu">
+                            <h3>НАВИГАЦИЯ</h3>
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Курсы</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Портфель знаний</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom_menu">
+                            <h3>ПОЗВОНИТЬ</h3>
+                            <ul>
+                                <li><a href="tel:+">+7 (499) 404 06 87</a></li>
+                                <li><a href="tel:+">+380 (44) 300 28 20</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col third">
+                        <div class="top_menu">
+                            <h3>КУРСЫ</h3>
+                            <ul>
+                                <li><a href="#">Трейдинг</a></li>
+                                <li><a href="#">Психология</a></li>
+                                <li><a href="#">Инвестирование</a></li>
+                                <li><a href="#">DeFi</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom_menu">
+                            <h3>НАПИСАТЬ</h3>
+                            <ul>
+                                <li><a href="mailto:info@tt.academy">info@tt.academy</a></li>
+                                <li><a href="mailto:support@tt.academy">support@tt.academy</a></li>
+                            </ul>
+                            <div class="social_block">
+                                <a href="#">
+                                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="19.1176" cy="19.1506" r="19.1176" fill="white" />
+                                        <path
+                                            d="M6.44101 19.4681C8.63148 18.3234 11.0767 17.3681 13.3613 16.4078C17.2918 14.835 21.2379 13.2895 25.2238 11.8506C25.9993 11.6054 27.3927 11.3656 27.5294 12.4559C27.4546 13.9993 27.1468 15.5336 26.9357 17.0679C26.3999 20.4419 25.7806 23.8044 25.1766 27.1674C24.9686 28.2876 23.4894 28.8675 22.543 28.1506C20.2685 26.693 17.9765 25.2497 15.7311 23.7584C14.9955 23.0493 15.6776 22.031 16.3345 21.5247C18.2078 19.7732 20.1946 18.2851 21.97 16.4432C22.4489 15.3459 21.0339 16.2706 20.5671 16.554C18.0025 18.2306 15.5007 20.0097 12.7967 21.4832C11.4156 22.2045 9.80582 21.5881 8.42528 21.1856C7.18746 20.6994 5.37359 20.2096 6.44088 19.4682L6.44101 19.4681Z"
+                                            fill="#3EC9FE" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="39" height="40" viewBox="0 0 39 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.27724 32.0968V39.0518L13.6934 35.3546C15.482 35.8771 17.3831 36.1591 19.3529 36.1591C29.912 36.1591 38.4706 28.0639 38.4706 18.0795C38.4706 8.09444 29.912 0 19.3529 0C8.79453 0 0.235291 8.09444 0.235291 18.0795C0.235291 23.7335 2.9797 28.7819 7.27724 32.0968Z"
+                                            fill="url(#paint0_linear)" />
+                                        <path
+                                            d="M17.3114 13.1277L7.0014 24.192L16.3844 18.974L21.2869 24.192L31.5387 13.1277L22.2598 18.2543L17.3114 13.1277Z"
+                                            fill="#3EC9FE" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear" x1="2.36882" y1="2.6399" x2="2.36882"
+                                                y2="37.3335" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white" />
+                                                <stop offset="1" stop-color="white" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.6802 37.8917C29.6999 37.8917 37.8226 29.6589 37.8226 19.5031C37.8226 9.34736 29.6999 1.1145 19.6802 1.1145C9.66041 1.1145 1.53778 9.34736 1.53778 19.5031C1.53778 24.5695 4.73938 28.1566 3.67223 34.6467C6.87371 33.565 14.659 37.8917 19.6802 37.8917Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19.6604 38.6387H19.6683C30.1647 38.6344 38.7017 29.9795 38.7059 19.3428C38.7079 14.187 36.7295 9.339 33.1352 5.69183C29.5409 2.04446 24.7609 0.0349426 19.6681 0.0327148C9.17469 0.0327148 0.63437 8.68848 0.630194 19.3276C0.628765 22.7284 1.50541 26.0479 3.17142 28.9743L0.470581 38.9733L10.5628 36.29C13.3434 37.8273 16.4742 38.6376 19.6604 38.6387ZM11.6083 33.1444L11.0304 32.7969L5.04161 34.3892L6.64012 28.4709L6.26389 27.864C4.67994 25.3106 3.84338 22.3593 3.84461 19.3288C3.84807 10.4861 10.9465 3.29199 19.6746 3.29199C23.901 3.29347 27.8739 4.96381 30.8614 7.99536C33.8489 11.0269 35.4932 15.0563 35.4916 19.3418C35.4881 28.1852 28.3898 35.38 19.6684 35.38H19.662C16.8226 35.3789 14.0377 34.6057 11.6083 33.1444Z"
+                                            fill="white" />
+                                        <path
+                                            d="M29.2593 23.9315C29.1405 23.7304 28.8234 23.6098 28.3477 23.3683C27.872 23.127 25.5333 21.9608 25.0972 21.7997C24.6613 21.6389 24.344 21.5585 24.0269 22.041C23.7099 22.5236 22.7982 23.6098 22.5207 23.9315C22.2432 24.2532 21.9657 24.2936 21.4902 24.0522C21.0146 23.8109 19.4818 23.3018 17.6648 21.6591C16.2507 20.3806 15.296 18.8018 15.0185 18.3191C14.7411 17.8364 14.989 17.5756 15.2271 17.3352C15.4411 17.1191 15.7028 16.7719 15.9406 16.4904C16.1785 16.209 16.2577 16.0077 16.4163 15.6862C16.5749 15.3642 16.4956 15.0828 16.3767 14.8414C16.2577 14.6001 15.3064 12.2269 14.91 11.2615C14.5239 10.3213 14.1317 10.4487 13.8398 10.4338C13.5626 10.4197 13.2451 10.4167 12.9281 10.4167C12.611 10.4167 12.0956 10.5374 11.6596 11.0201C11.2235 11.5028 9.99469 12.6693 9.99469 15.0423C9.99469 17.4155 11.6992 19.7082 11.937 20.0299C12.1749 20.3518 15.2913 25.2217 20.0632 27.3101C21.1981 27.8069 22.0841 28.1036 22.775 28.3257C23.9145 28.6928 24.9516 28.641 25.7711 28.5168C26.6851 28.3784 28.5855 27.3505 28.982 26.2243C29.3782 25.0979 29.3782 24.1326 29.2593 23.9315Z"
+                                            fill="#3EC9FE" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col four">
+                        <div class="menu_right">
+                            <h3>ИНФОРМАЦИЯ</h3>
+                            <ul>
+                                <li><a href="#">Об академии</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="#">Маркетинговые материалы</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Политика конфиденциальности </a></li>
+                                <li><a href="#">Карта сайта</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom_part">
+            <div class="container">
+                <div class="main_block">
+                    <div class="adres">
+                        <a href="#">
+                            <p>ул. Минская 2ж, 121096 Москва</p>
+                        </a>
+                    </div>
+                    <div class="copyrate">
+                        <p>Copyright © 2020-2021<br>
+                            Top Traders Academy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
+
 </body>
 </html>
