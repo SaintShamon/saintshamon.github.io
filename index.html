@@ -31,7 +31,7 @@
                 <div class="main_block">
                     <div class="logo">
                         <a href="/">
-                            <img src="/img/header_logo.png" alt="">
+                            <img src="/img/logo.svg" alt="">
                         </a>
                     </div>
                     <div class="center_block">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="right_block">
                         <div class="open">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
+                            <a href="https://study.tt.academy/" target="_blank" rel="noopener noreferrer">
                                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -91,14 +91,19 @@
                             <a href="#">EN</a>
                         </div>
                         <div class="menu_icon">
-                            <svg width="19" height="10" viewBox="0 0 19 10" fill="none"
+                            <!-- <svg width="19" height="10" viewBox="0 0 19 10" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <line x1="7" y1="1" x2="18" y2="1" stroke="black" stroke-width="2"
                                     stroke-linecap="round" />
                                 <path d="M1 5H18" stroke="black" stroke-width="2" stroke-linecap="round" />
                                 <line x1="7" y1="9" x2="18" y2="9" stroke="black" stroke-width="2"
                                     stroke-linecap="round" />
-                            </svg>
+                            </svg> -->
+                            <div class="icon_container">
+                                <div class="bar bar1"></div>
+                                <div class="bar bar2"></div>
+                                <div class="bar bar3"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,60 +127,268 @@
                     <div class="inner_block">
                         <div class="category_block">
                             <a href="#" class="btn">Весь портфель</a>
-                            <ul class="list_menu">
-                                <li><a href="#">Статьи</a></li>
-                                <li class="current_item">
+                            <ul class="list_menu ">
+                                <li class="articles active"><a href="#">Статьи</a></li>
+                                <li class="videos">
                                     <a href="#">Видео</a>
                                 </li>
-                                <li>
+                                <li class="podcasts">
                                     <a href="#">Подкасты</a>
                                 </li>
-                                <li>
+                                <li class="books">
                                     <a href="#">Книги и материалы</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="list_block">
+                        <div class="content_block">
+                            <div class="list_block articles show">
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/article_category/article_1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/article_category/article_2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/article_category/article_3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/article_category/article_4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/article_category/article_5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/article_category/article_6.png" alt="">
+                                    </a>
+                                </div>
+                                <a href="#" class="link">Больше статей <i>
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.2183 5.9009C10.8645 6.28949 10.8645 7.22629 10.2183 7.61488L1.98585 12.5652C1.31934 12.966 0.470521 12.486 0.470521 11.7082L0.470522 1.80755C0.470522 1.02982 1.31934 0.549776 1.98585 0.950562L10.2183 5.9009Z"
+                                                fill="#3EC9FE" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="list_block videos">
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/top_article_1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/top_article_2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/top_article_3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/top_article_4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/top_article_5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="article">
+                                    <a href="#">
+                                        <img src="/img/top_article_6.png" alt="">
+                                    </a>
+                                </div>
+                                <a href="#" class="link">Больше видео <i>
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.2183 5.9009C10.8645 6.28949 10.8645 7.22629 10.2183 7.61488L1.98585 12.5652C1.31934 12.966 0.470521 12.486 0.470521 11.7082L0.470522 1.80755C0.470522 1.02982 1.31934 0.549776 1.98585 0.950562L10.2183 5.9009Z"
+                                                fill="#3EC9FE" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="list_block podcasts">
+                                <div class="podcast">
+                                    <a href="#">
+                                        <div class="img_block">
+                                            <img src="/img/podcasts/image_1.png" alt="">
+                                        </div>
+                                        <div class="description">
+                                            <h3>О криптотрейдинге</h3>
+                                            <p>Что такое крипто-трейдинг? Очередная финансовая пирамида, лёгкие деньги
+                                                или реальная профессия со своими плюсами...</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="podcast">
+                                    <a href="#">
+                                        <div class="img_block">
+                                            <img src="/img/podcasts/image_1.png" alt="">
+                                        </div>
+                                        <div class="description">
+                                            <h3>Компетенции трейдера</h3>
+                                            <p>Хочу торговать, с чего начать? Зарегистрироваться на бирже, копировать
+                                                чужие
+                                                сделки, или создавать собственную </p>
+                                        </div>
+                                    </a>
+                                </div>
 
-                            <div class="article">
-                                <a href="#">
-                                    <img src="/img/top_article_1.jpg" alt="">
+                                <a href="#" class="link">Больше подкастов<i>
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.2183 5.9009C10.8645 6.28949 10.8645 7.22629 10.2183 7.61488L1.98585 12.5652C1.31934 12.966 0.470521 12.486 0.470521 11.7082L0.470522 1.80755C0.470522 1.02982 1.31934 0.549776 1.98585 0.950562L10.2183 5.9009Z"
+                                                fill="#3EC9FE" />
+                                        </svg>
+                                    </i>
                                 </a>
                             </div>
-                            <div class="article">
-                                <a href="#">
-                                    <img src="/img/top_article_2.png" alt="">
+                            <div class="list_block books"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_menu_block">
+                    <div class="left_part">
+                        <div class="col">
+                            <h3>РАЗДЕЛЫ</h3>
+                            <ul>
+                                <li><a href="/">Главная</a></li>
+                                <li><a href="#">Курсы</a></li>
+                                <li><a href="#">Портфель знаний</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>ОБУЧЕНИЕ</h3>
+                            <ul>
+                                <li><a href="#">Трейдинг</a></li>
+                                <li><a href="#">Психология</a></li>
+                                <li><a href="#">Инвестирование</a></li>
+                                <li><a href="#">DeFi</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>ИНФОРМАЦИЯ</h3>
+                            <ul>
+                                <li><a href="#">Об академии</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Наши медиа</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://t.me/toptradingview" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/logo/tel_academy.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/tt_academy" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/logo/tel_analytics.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/DeFiLoG" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/logo/tel_defi.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://anchor.fm/dakacrypto" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/logo/wifi_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://vc.ru/u/642470-teimur-muslim" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="/img/logo/vc_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://bit.ly/3t5E9JJ" target="_blank" rel="noopener noreferrer">
+                                        <img src="/img/logo/yandex_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/c/TopTradersAcademy/featured" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="/img/logo/youtube_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/toptradersacademy" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="/img/logo/fb_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://medium.com/@toptradersico" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="/img/logo/m_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <a href="https://www.instagram.com/toptraders_academy/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="/img/logo/inst_logo.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/TopTradersbyTV" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img src="/img/logo/twitter_logo.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right_part">
+                        <div class="top">
+                            <h3>ПОЗВОНИТЬ</h3>
+                            <ul>
+                                <li><a href="tel:+74994040687">+7 (499) 404 06 87</a></li>
+                                <li><a href="tel:+380443002820">+380 (44) 300 28 20</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <h3>НАПИСАТЬ</h3>
+                            <ul>
+                                <li><a href="mailto:info@tt.academy">info@tt.academy</a></li>
+                                <li><a href="mailto:support@tt.academy">support@tt.academy</a></li>
+                            </ul>
+                            <div class="social_block">
+                                <a href="https://t.me/dariya_ttacademy" target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/logo/Telegram_header.svg" alt="">
+                                </a>
+                                <a href="https://m.me/toptradersacademy" target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/logo/Messenger_header.svg" alt="">
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=77777822888" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="/img/logo/WhatsApp_header.svg" alt="">
                                 </a>
                             </div>
-                            <div class="article">
-                                <a href="#">
-                                    <img src="/img/top_article_3.png" alt="">
-                                </a>
-                            </div>
-                            <div class="article">
-                                <a href="#">
-                                    <img src="/img/top_article_4.png" alt="">
-                                </a>
-                            </div>
-                            <div class="article">
-                                <a href="#">
-                                    <img src="/img/top_article_5.png" alt="">
-                                </a>
-                            </div>
-                            <div class="article">
-                                <a href="#">
-                                    <img src="/img/top_article_6.png" alt="">
-                                </a>
-                            </div>
-                            <a href="#" class="link">Больше видео <i>
-                                    <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M10.2183 5.9009C10.8645 6.28949 10.8645 7.22629 10.2183 7.61488L1.98585 12.5652C1.31934 12.966 0.470521 12.486 0.470521 11.7082L0.470522 1.80755C0.470522 1.02982 1.31934 0.549776 1.98585 0.950562L10.2183 5.9009Z"
-                                            fill="#3EC9FE" />
-                                    </svg>
-                                </i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -247,27 +460,40 @@
                 <div class="main_block">
                     <div class="press_block wow fadeInLeft">
                         <div class="top_block">
-                            <img src="/img/smi/smi_1.png" alt="">
-                            <img src="/img/smi/smi_2.png" alt="">
-                            <img src="/img/smi/smi_3.png" alt="">
-                            <img src="/img/smi/smi_4.png" alt="">
+                            <a href="https://t.me/ttex_bot" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_1.svg" alt="" width="100">
+                            </a>
+                            <a href="https://bit.ly/3l4nhPR" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_2.png" alt="" width="98">
+                            </a>
+                            <a href="https://bit.ly/3p6eLC0" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_3.png" alt="" width="82">
+                            </a>
+                            <a href="https://bit.ly/3l4Ca4z" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/ftx.png" alt="" width="100">
+                            </a>
                         </div>
                         <div class="center_block">
-                            <img src="/img/smi/smi_5.png" alt="">
-                            <img src="/img/smi/smi_6.png" alt="">
-                            <img src="/img/smi/smi_7.png" alt="">
-                            <img src="/img/smi/smi_8.png" alt="">
+                            <a href="https://bit.ly/36c2hAo" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_5.png" alt="" width="100"></a>
+                            <a href="https://bit.ly/3i0iQ5X" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_6.png" alt="" width="100"></a>
+                            <a href="https://bit.ly/2TZo2O5" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_7.png" alt="" width="100"></a>
+                            <a href="https://cutt.ly/BinanceTT" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_8.png" alt="" width="100"></a>
                         </div>
                         <div class="down_block">
-                            <img src="/img/smi/smi_9.png" alt="">
-                            <img src="/img/smi/smi_10.png" alt="">
-                            <img src="/img/smi/smi_11.png" alt="">
+                            <a href="https://bit.ly/2FJrGZ5" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_9.png" alt="" width="155"></a>
+                            <a href="https://bit.ly/3f82tTq" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_10.png" alt="" width="89"></a>
+                            <a href="https://bit.ly/3l4dd9f" target="_blank" rel="noopener noreferrer">
+                                <img src="/img/smi/smi_11.png" alt="" width="100"></a>
                         </div>
                         <div class="orange_square wow fadeInDownBig">
                         </div>
-
                     </div>
-
                     <div class="text_block">
                         <h2 class="title">Мы сотрудничаем
                             с лидерами!</h2>
@@ -280,7 +506,8 @@
                     <img src="/img/phone.png" alt="" class="we_are_in_img">
                     <div class="group_block">
                         <div class="item">
-                            <a href="#">
+                            <a href="https://www.forbes.ru/finansy-i-investicii/376833-dohodnost-do-466-skolko-zarabotali-investory-v-kriptovalyutu-s-nachala"
+                                target="_blank" rel="noopener noreferrer">
                                 <p class="first">Доходность до 466%. Сколько заработали инвесторы в криптовалюту с
                                     начала
                                     года</p>
@@ -291,7 +518,8 @@
                             </a>
                         </div>
                         <div class="item">
-                            <a href="#">
+                            <a href="https://rb.ru/opinion/padenie-bitkoina-2018/" target="_blank"
+                                rel="noopener noreferrer">
                                 <p class="first">Биткоин рухнул – кто поддался панике, а кто «снял сливки»</p>
                                 <div>
                                     <p class="date">09.01.2018 07:23</p>
@@ -300,7 +528,7 @@
                             </a>
                         </div>
                         <div class="item">
-                            <a href="#">
+                            <a href="http://expertonline.kz/a15297/" target="_blank" rel="noopener noreferrer">
                                 <p class="first">Рынок криптовалют имеет все признаки пузыря. Обвалить его может любая
                                     негативная
                                     информация</p>
@@ -311,7 +539,8 @@
                             </a>
                         </div>
                         <div class="item">
-                            <a href="#">
+                            <a href="https://informburo.kz/cards/chto-takoe-ico-kak-rabotaet-novaya-forma-sbora-deneg-s-pomoshchyu-blokcheyna.html"
+                                target="_blank" rel="noopener noreferrer">
                                 <p class="first">Что такое ICO? Как работает новая форма сбора денег с помощью блокчейна
                                 </p>
                                 <div>
@@ -426,8 +655,7 @@
                                 <p class="course_date">10-21 января</p>
                                 <div class="down_text">
                                     <p>Полное погружение в себя и трейдинг. Преодоление убеждений, стереотипов и
-                                        системных причин неудач в торговле. Структурный путь развития для
-                                        профессионалов.
+                                        системных причин неудач в торговле.
                                     </p>
                                     <p>Преподаватель: <b>Данияр Дака</b></p>
                                 </div>
@@ -456,6 +684,9 @@
                                         <div class="main_text">
                                             <p>Все ваши курсы в одном личном кабинете </p>
                                         </div>
+                                        <div class="bg_img">
+                                            <img src="/img/cabinet.png" alt="">
+                                        </div>
                                     </div>
                                     <div class="item">
                                         <div class="label">
@@ -465,6 +696,9 @@
                                         </div>
                                         <div class="main_text">
                                             <p>Живые вебинары и трансляции </p>
+                                        </div>
+                                        <div class="bg_img">
+                                            <img src="/img//phone_course.png" alt="">
                                         </div>
                                     </div>
                                     <div class="item">
@@ -477,6 +711,9 @@
                                             <p>Чат
                                                 потока</p>
                                         </div>
+                                        <div class="bg_img">
+                                            <img src="/img/phones_course.png" alt="">
+                                        </div>
                                     </div>
                                     <div class="item">
                                         <div class="label">
@@ -485,6 +722,9 @@
                                         </div>
                                         <div class="main_text">
                                             <p>Постоянное общение с преподавателями и кураторами </p>
+                                        </div>
+                                        <div class="bg_img">
+                                            <img src="/img/mac_course.png" alt="">
                                         </div>
                                     </div>
                                     <div class="item">
@@ -495,6 +735,9 @@
                                         <div class="main_text">
                                             <p>Техническая поддержка 24/7</p>
                                         </div>
+                                        <div class="bg_img">
+                                            <img src="/img/mechanic.png" alt="">
+                                        </div>
                                     </div>
                                     <div class="item">
                                         <div class="label">
@@ -503,6 +746,9 @@
                                         </div>
                                         <div class="main_text">
                                             <p>Домашние задания и практика в лайф режиме</p>
+                                        </div>
+                                        <div class="bg_img">
+                                            <img src="/img/ipad.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -524,7 +770,7 @@
                     </div>
                     <div class="teachers_block">
                         <div class="teacher">
-                            <img src="/img/teacher_1.png" alt="" class="spiker_img">
+                            <img src="/img/teachers/teacher_1.png" alt="" class="spiker_img">
                             <div class="teacher_bg">
                                 <p class="spiker">Данияр Дака</p>
                                 <p class="description">Крипто-энтузиаст, трейдер,
@@ -543,13 +789,13 @@
                                     </ul>
                                 </div>
 
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="https://t.me/daka_ttacademy" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/icons/tel_teacher_icon.svg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="teacher">
-                            <img src="/img/teacher_2.png" alt="" class="spiker_img">
+                            <img src="/img/teachers/teacher_2.png" alt="" class="spiker_img">
                             <div class="teacher_bg">
                                 <p class="spiker">Теймур Муслим</p>
                                 <p class="description">Крипто-анархист, экономист, серийный предприниматель.</p>
@@ -564,13 +810,13 @@
                                     </ul>
                                 </div>
 
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="https://t.me/tmuslim" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/icons/tel_teacher_icon.svg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="teacher">
-                            <img src="/img/teacher_3.png" alt="" class="spiker_img">
+                            <img src="/img/teachers/teacher_3.png" alt="" class="spiker_img">
                             <div class="teacher_bg">
                                 <p class="spiker">Алекс Зукутоке</p>
                                 <p class="description">Дейтрейдер, программист,
@@ -584,13 +830,13 @@
                                     </ul>
                                 </div>
 
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="https://t.me/alex_ttacademy" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/icons/tel_teacher_icon.svg" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="teacher">
-                            <img src="/img/teacher_4.png" alt="" class="spiker_img">
+                            <img src="/img/teachers/teacher_4.png" alt="" class="spiker_img">
                             <div class="teacher_bg">
                                 <p class="spiker">Денис Смирнов</p>
                                 <p class="description">Блокчейн-консультант, исследователь криптовалют.</p>
@@ -606,17 +852,18 @@
                                     </ul>
                                 </div>
                                 <div class="many_icons">
-                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://t.me/densmirnov" target="_blank" rel="noopener noreferrer">
                                         <img src="/img/icons/tel_teacher_icon.svg" alt="">
                                     </a>
-                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.facebook.com/densmirnov" target="_blank"
+                                        rel="noopener noreferrer">
                                         <img src="/img/icons/fb_teacher_icon.svg" alt="">
                                     </a>
-                                    <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.linkedin.com/in/densmirnov" target="_blank"
+                                        rel="noopener noreferrer">
                                         <img src="/img/icons/l_teacher_icon.svg" alt="">
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -636,7 +883,8 @@
                         <div class="littel_square wow fadeInRightBig"></div>
                     </div>
                     <div class="blog_block">
-                        <div class="article_block">
+                        <img src="/img/blog_bg.svg" alt="">
+                        <!-- <div class="article_block">
                             <a href="#">
                                 <div class="img_block">
                                 </div>
@@ -666,7 +914,7 @@
                                 <h3>Обзор платформы
                                     KickPadv</h3>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -678,19 +926,20 @@
                         <div class="left_part">
                             <h2>Ответим на любой вопрос!</h2>
                             <div class="socials">
-                                <a href="#">
+                                <a href="https://t.me/dariya_ttacademy" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/icons/tel_form_icon.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://m.me/toptradersacademy" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/icons/Messenger_form_icon.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://api.whatsapp.com/send?phone=77777822888" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/img/icons/WhatsApp_form_icon.svg" alt="">
                                 </a>
                             </div>
                             <div class="phone_block">
-                                <a href="tel:+">+7 (499) 404 06 87</a>
-                                <a href="tel:+">+380 (44) 300 28 20</a>
+                                <a href="tel:+74994040687">+7 (499) 404 06 87</a>
+                                <a href="tel:+380443002820">+380 (44) 300 28 20</a>
                             </div>
                         </div>
                         <div class="right_block">
@@ -718,46 +967,58 @@
                     <div class="col first">
                         <div class="top_block">
                             <div>
-                                <img src="/img/logo/logo_shop.svg" alt="">
-                                <img src="/img/logo/trade_logo.svg" alt="">
-                                <img src="/img/logo/top_traders_logo.svg" alt="">
+                                <a href="https://t.me/toptradingview" target="_blank" rel="noopener noreferrer">
+                                    <img src="/img/logo/logo_shop.svg" alt="">
+                                </a>
+                                <a href="https://tt.academy/?utm_source=ttexchange" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="/img/logo/trade_logo.svg" alt="">
+                                </a>
+                                <a href="https://tt.academy/shop?utm_source=ttexchange" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="/img/logo/top_traders_logo.svg" alt="">
+                                </a>
                             </div>
                             <img src="/img/logo/top_traders_academy.svg" alt="">
                         </div>
                         <div class="bottom_block">
                             <h3>Наши медиа</h3>
                             <div>
-                                <a href="">
+                                <a href="https://t.me/toptradingview" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/logo/tel_academy.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://t.me/tt_academy" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/logo/tel_analytics.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://t.me/DeFiLoG" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/logo/tel_defi.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://anchor.fm/dakacrypto" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/logo/wifi_logo.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://vc.ru/u/642470-teimur-muslim" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/img/logo/vc_logo.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://bit.ly/3t5E9JJ" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/logo/yandex_logo.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://www.youtube.com/c/TopTradersAcademy/featured" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/img/logo/youtube_logo.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://www.facebook.com/toptradersacademy" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/img/logo/fb_logo.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://medium.com/@toptradersico" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/logo/m_logo.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://www.instagram.com/toptraders_academy/" target="_blank"
+                                    rel="noopener noreferrer">
                                     <img src="/img/logo/inst_logo.svg" alt="">
                                 </a>
-                                <a href="#">
+                                <a href="https://twitter.com/TopTradersbyTV" target="_blank" rel="noopener noreferrer">
                                     <img src="/img/logo/twitter_logo.svg" alt="">
                                 </a>
                             </div>
@@ -776,8 +1037,8 @@
                         <div class="bottom_menu">
                             <h3>ПОЗВОНИТЬ</h3>
                             <ul>
-                                <li><a href="tel:+">+7 (499) 404 06 87</a></li>
-                                <li><a href="tel:+">+380 (44) 300 28 20</a></li>
+                                <li><a href="tel:+74994040687">+7 (499) 404 06 87</a></li>
+                                <li><a href="tel:+380443002820">+380 (44) 300 28 20</a></li>
                             </ul>
                         </div>
                     </div>
@@ -798,7 +1059,7 @@
                                 <li><a href="mailto:support@tt.academy">support@tt.academy</a></li>
                             </ul>
                             <div class="social_block">
-                                <a href="#">
+                                <a href="https://t.me/dariya_ttacademy" target="_blank" rel="noopener noreferrer">
                                     <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="19.1176" cy="19.1506" r="19.1176" fill="white" />
@@ -807,7 +1068,7 @@
                                             fill="#3EC9FE" />
                                     </svg>
                                 </a>
-                                <a href="#">
+                                <a href="https://m.me/toptradersacademy" target="_blank" rel="noopener noreferrer">
                                     <svg width="39" height="40" viewBox="0 0 39 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -825,7 +1086,8 @@
                                         </defs>
                                     </svg>
                                 </a>
-                                <a href="#">
+                                <a href="https://api.whatsapp.com/send?phone=77777822888" target="_blank"
+                                    rel="noopener noreferrer">
                                     <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -867,7 +1129,7 @@
             <div class="container">
                 <div class="main_block">
                     <div class="adres">
-                        <a href="#">
+                        <a href="https://yandex.ru/maps/-/CCUi6MsqTA" target="_blank" rel="noopener noreferrer">
                             <p>ул. Минская 2ж, 121096 Москва</p>
                         </a>
                     </div>
@@ -879,10 +1141,10 @@
             </div>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
-
 </body>
 </html>
