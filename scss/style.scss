@@ -1323,51 +1323,33 @@ header {
                 display: flex;
                 margin: 0 15px;
                 cursor: pointer;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: -2px;
+                    width: 100%;
+                    height: 70%;
+                    background-position: top center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    z-index: -1;
+                    transition: .5s;
+                }
             }
 
+
             .course:nth-child(3n+1)::before {
-                position: absolute;
-                content: '';
-                width: 308px;
-                height: 166px;
-                bottom: 0;
-                left: -2px;
                 background-image: url('/img/red_course_bg.svg');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: -1;
-                transition: .5s;
             }
 
             .course:nth-child(3n)::before {
-                position: absolute;
-                content: '';
-                width: 308px;
-                height: 166px;
-                bottom: 0;
-                left: -2px;
                 background-image: url('/img/blue_course_bg.svg');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: -1;
-                transition: .5s;
             }
 
             .course:nth-child(3n-1)::before {
-                position: absolute;
-                content: '';
-                width: 308px;
-                height: 166px;
-                bottom: 0;
-                left: -2px;
                 background-image: url('/img/yellow_course_bg.svg');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: -1;
-                transition: .5s;
             }
 
             .course:hover:nth-child(3n+1) {
@@ -2459,4 +2441,890 @@ footer {
             }
         }
     }
+}
+
+@media screen and (max-width:1366px) {
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    header .top_header .briefcase_block .inner_block .list_block .article {
+        width: 100%;
+        max-width: 220px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    .cooperation_section .main_block .text_block h2,
+    .popular_courses .main_block .top_block h2,
+    .how_we_learn h2,
+    .teachers_section .main_block .text_block h2 {
+        font-size: 44px;
+        line-height: 120%;
+    }
+
+    .teachers_section .main_block .teachers_block {
+        max-width: 758px;
+
+        .teacher {
+            width: 150px;
+            height: 150px;
+
+            img.spiker_img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .form .form_block {
+        width: 100%;
+        max-width: 1000px;
+
+        .left_part {
+            padding: 42px 25px 49px;
+            width: 100%;
+            max-width: 523px;
+
+            h2 {
+                font-size: 44px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+    header .top_header .briefcase_block .inner_block .list_block .article {
+        width: 100%;
+        max-width: 220px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+
+    .first_block .main_block .bottom_text {
+        left: 55%;
+    }
+
+    .first_block .main_block .right_text {
+
+        max-width: 260px;
+    }
+
+    .popular_courses .main_block .courses_block {
+        .course_right {
+            .course_title {
+
+                font-size: 18px;
+                line-height: 24px;
+
+            }
+
+            .course_img {
+                width: 100px;
+                height: 72.08px;
+            }
+        }
+
+
+        .course {
+            height: 185px;
+        }
+    }
+
+    .how_we_learn .container-general .gallery-wrap .item .main_text p {
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .how_we_learn .container-general .gallery-wrap .item .label .text {
+        font-size: 8px;
+        line-height: 120%;
+    }
+
+    .form .form_block {
+        max-width: 950px;
+
+        .right_block {
+            width: 100%;
+            max-width: 404px;
+            height: auto;
+
+            form {
+                max-width: 322px;
+
+                input.btn {
+                    padding: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    header .top_header .briefcase_block {
+        height: auto;
+
+        .inner_block .list_block.show {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            width: 100%;
+            max-height: none;
+        }
+
+        .inner_block .list_block.podcasts.show {
+            display: block;
+        }
+
+        .inner_block .category_block {
+            margin-top: auto;
+        }
+
+        .inner_block .content_block {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    header .top_header .main_menu_block {
+        .left_part {
+            max-width: 750px;
+            padding-top: 27px;
+        }
+
+        .right_part {
+            width: 100%;
+            max-width: 285px;
+            padding: 27px 24px;
+        }
+    }
+
+    .first_block .main_block .bg_block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 900px;
+        min-height: calc(100vh - 182px);
+    }
+
+    .first_block .main_block .bottom_text {
+        left: 50%;
+    }
+
+    .first_block .main_block .right_text {
+        right: 7%;
+    }
+
+    .counter_block .main_block .inner_block {
+        width: 100%;
+        max-width: 312px;
+    }
+
+    .popular_courses .main_block .courses_block {
+        .course_left img {
+            position: absolute;
+            height: 100%;
+            bottom: 0;
+            width: 127px;
+        }
+
+        .course {
+            max-width: none !important;
+        }
+    }
+
+    .cooperation_section .main_block .text_block h2,
+    .popular_courses .main_block .top_block h2,
+    .how_we_learn h2,
+    .teachers_section .main_block .text_block h2,
+    .form .form_block .left_part h2 {
+        font-size: 34px;
+        line-height: 120%;
+    }
+
+    .cooperation_section .main_block .press_block {
+        max-width: 600px;
+        padding: 26px 88px 40px 58px;
+
+    }
+
+    .cooperation_section .main_block .orange_square {
+        right: -228px;
+    }
+
+    .cooperation_section .main_block .blue_square {
+        bottom: 90px;
+    }
+
+    .cooperation_section .main_block .text_block {
+        position: relative;
+        width: 100%;
+        max-width: 308px;
+        margin-left: 20px;
+
+    }
+
+    .teachers_section .main_block .teachers_block {
+        max-width: 658px;
+    }
+
+    .how_we_learn .container-general {
+        width: 100%;
+        max-width: 1000px;
+
+        .gallery-wrap {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            min-height: 100vh;
+
+            .item {
+                flex: auto;
+                min-height: 150px;
+                margin-bottom: 10px;
+
+                .bg_img img {
+                    position: relative;
+                    -ms-flex-item-align: center;
+                    align-self: flex-end;
+                    bottom: auto;
+                    z-index: 3;
+                    max-width: 50vw;
+                    margin-left: auto;
+                }
+
+                .label .text {
+                    font-size: 12px;
+                    line-height: 120%;
+                    max-width: 250px;
+                }
+            }
+
+            .item.active {
+                min-height: 70vh;
+            }
+        }
+    }
+
+    .form .form_block {
+        max-width: 850px;
+
+        .right_block {
+            width: 100%;
+            max-width: 404px;
+            height: auto;
+
+            form {
+                max-width: 322px;
+
+                input.btn {
+                    padding: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .blog_section .main_block .blog_block {
+        width: 100%;
+        max-width: 602px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .form .form_block .blue_square {
+        top: -40px;
+        right: 50px;
+        z-index: -1;
+    }
+
+}
+
+@media screen and (max-width:1140px) {
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .first_block .main_block .bg_block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 900px;
+        min-height: calc(100vh - 82px);
+    }
+
+    .first_block .main_block .bottom_text {
+        left: 55%;
+        bottom: 10%;
+    }
+
+    .first_block .main_block .right_text {
+        right: 0;
+        max-width: 200px;
+        bottom: 26%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .first_block {
+        height: auto;
+        min-height: auto;
+
+        .main_block {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-width: none;
+            min-height: auto;
+            margin: 200px 0;
+
+            .bg_block {
+                display: none;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 300px;
+            background-image: url('/img/mob/first_bg_top.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 300px;
+            background-image: url('/img/mob/first_bg_bottom.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .right_button {
+        display: none;
+    }
+
+    .first_block .main_block .bottom_text,
+    .first_block .main_block .right_text {
+        display: none;
+    }
+
+    .how_we_learn .container-general .gallery-wrap .item.active {
+        min-height: 500px;
+    }
+
+
+    .popular_courses .main_block .courses_block {
+        margin-top: 72px;
+        max-width: 700px;
+        margin: 72px auto 0;
+    }
+
+    .cooperation_section {
+        display: flex;
+        flex-direction: column;
+
+        .container {
+            order: 2;
+        }
+
+        .we_are_in_block {
+            position: relative;
+            top: auto;
+            width: 100%;
+            left: auto;
+            order: 1;
+            z-index: 1;
+
+            .phone_block {
+                width: 100%;
+                max-width: 254px;
+                margin: 50px auto 50px;
+                height: 531px;
+                background-image: url('/img/mob/phone.svg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                img {
+                    display: none;
+
+                }
+
+                .text {
+                    font-size: 30px;
+                    line-height: 37px;
+                    right: -12%;
+                    top: -100px;
+                    width: 100%;
+                    height: auto;
+                    font-weight: bold;
+                }
+
+                .text::before {
+                    display: none;
+                }
+
+                .group_block {
+                    right: 0;
+                    transform: rotate(0);
+                    opacity: 1;
+                    width: 214.26px;
+                    height: auto;
+
+                    .item {
+                        z-index: 5;
+                        width: 214.26px;
+                        height: 118.06px;
+
+                        div {
+                            bottom: 0px;
+
+                            img {
+                                display: flex;
+                                max-width: 80px;
+                            }
+                        }
+
+                        &:first-of-type {
+                            position: absolute;
+                            top: 20px;
+                            left: -110px;
+                        }
+
+                        &:nth-of-type(2) {
+                            position: absolute;
+                            top: 170px;
+                            right: -30px;
+                        }
+
+                        &:nth-of-type(3) {
+                            position: absolute;
+                            top: 310px;
+                            left: -110px;
+                        }
+
+                        &:last-of-type {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .cooperation_section .main_block .blue_square,
+    .cooperation_section .main_block .orange_square {
+        display: none;
+    }
+
+    .cooperation_section {
+        position: relative;
+        margin: 100px 0;
+
+        .main_block {
+            flex-direction: column;
+            padding: 200px 0;
+
+            .press_block {
+                max-width: 600px;
+                margin: 30px auto;
+                background: none;
+                box-shadow: none;
+                order: 2;
+                padding: 0;
+
+                .top_block {
+                    justify-content: space-between;
+
+                    img {
+                        margin-left: 0;
+                    }
+                }
+
+                .center_block {
+                    justify-content: space-between;
+
+                    img {
+                        margin-right: 0;
+                    }
+                }
+
+                .down_block {
+                    justify-content: space-between;
+
+                    a {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .text_block {
+                max-width: none;
+                order: 1;
+
+                h2 {
+                    text-align: center;
+                    display: block;
+                    margin-top: 0;
+                }
+            }
+
+            &::before {
+                content: '';
+                // background-image: url('/img/mob/Rectangle.svg');
+                // background-position: center;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+                background-color: #E9E9E9;
+                width: 100vw;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: calc(-1*(100vw/2));
+                z-index: -1;
+
+            }
+        }
+
+        &::before {
+            background-color: #fff;
+            bottom: -202px;
+            content: "";
+            height: 270px;
+            position: absolute;
+            transform: skewY(-8deg) scaleY(1.5);
+            width: 100%;
+            z-index: 0;
+        }
+
+        &::after {
+            background-color: #fff;
+            top: 380px;
+            content: "";
+            height: 270px;
+            position: absolute;
+            transform: skewY(-8deg) scaleY(1.5);
+            width: 100%;
+            z-index: 0;
+        }
+    }
+
+    .popular_courses {
+        margin: 100px 0;
+        z-index: 1;
+
+        .main_block {
+            position: relative;
+
+            .top_block {
+                max-width: none;
+
+                h2 {
+                    text-align: center;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                a {
+                    position: absolute;
+                    bottom: -70px;
+                    left: calc(50% - 92px);
+                }
+            }
+
+        }
+    }
+
+    .how_we_learn {
+        margin: 100px 0;
+
+        h2 {
+            text-align: center;
+            display: block;
+        }
+    }
+
+    .how_we_learn .container-general {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .how_we_learn .container-general .gallery-wrap .item .label {
+        left: 0;
+        right: auto;
+        width: 100%;
+
+        .text {
+            left: 10px;
+            right: auto;
+            top: 20px;
+            font-size: 17px;
+            line-height: 120%;
+            text-transform: none;
+            text-align: left;
+        }
+    }
+
+    .how_we_learn .container-general .gallery-wrap .item.active {
+        min-height: 400px;
+        flex: auto;
+    }
+
+    .teachers_section {
+        display: none;
+    }
+
+    .teachers_section.mob {
+        display: block;
+        margin: 100px 0;
+        position: relative;
+        z-index: 2;
+
+        .main_block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .text_block {
+                width: 100%;
+                max-width: none;
+
+                h2 {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 44px;
+                    line-height: 100%;
+                    display: block;
+                    text-align: center;
+                    color: #000000;
+                    margin: 0;
+                }
+
+            }
+
+            .teachers_block_mob {
+                width: 100%;
+                max-width: 700px;
+                height: auto;
+                margin: 100px auto 0;
+
+                .teacher {
+                    position: relative;
+                    // width: 150px;
+                    // height: 150px;
+                    transition: 1s;
+                    cursor: pointer;
+                    align-self: center;
+                    // margin: 0 -150px;
+
+
+                    img.spiker_img {
+                        height: auto;
+                        border: 1px solid $blue;
+                        box-sizing: border-box;
+                        border-radius: 50%;
+                    }
+
+                    .teacher_bg {
+                        display: none;
+                        position: absolute;
+                        width: 370px;
+                        height: 446px;
+                        bottom: -446px;
+                        transition: .5s;
+                        padding: 70px 40px 32px;
+                        left: calc(50% - 185px);
+                        z-index: 2;
+
+                        p.spiker {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 22px;
+                            line-height: 27px;
+                            color: #000000;
+                            margin: 0;
+                            position: relative;
+                            z-index: 2;
+                        }
+
+                        p.description {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #3EC9FE;
+                            margin: 10px 0;
+                            position: relative;
+                            z-index: 2;
+                        }
+
+                        .main_text {
+                            position: relative;
+                            z-index: 2;
+
+                            p {
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 15px;
+                                color: #000000;
+                                margin-bottom: 15px;
+                            }
+
+                            ul {
+                                padding: 0;
+                                margin: 0;
+                                padding-left: 15px;
+
+                                li {
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 12px;
+                                    line-height: 15px;
+                                    color: #000000;
+                                    margin-bottom: 15px;
+                                }
+                            }
+                        }
+
+                        .many_icons {
+                            position: absolute;
+                            z-index: 2;
+                            width: 71px;
+                            height: 20px;
+                            bottom: 40px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            a {
+                                position: relative;
+                                bottom: auto;
+                            }
+                        }
+
+                        a {
+                            position: absolute;
+                            z-index: 2;
+                            bottom: 40px;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+
+                            }
+                        }
+                    }
+
+                    .teacher_bg::before {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 416px;
+                        left: 0;
+                        bottom: 0;
+                        background-image: url('/img/teacher_bg.svg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        z-index: 1;
+                    }
+                }
+
+                // .teacher:hover,
+                // .teacher:focus,
+                // .teachers:focus-within {
+                //     margin-top: -80px;
+                //     transition: 1s;
+
+                //     >.teacher_bg {
+                //         display: block;
+                //         animation-name: slideUp;
+                //         -webkit-animation-name: slideUp;
+                //         animation-duration: 3s;
+                //         -webkit-animation-duration: 3s;
+                //         animation-timing-function: ease;
+                //         -webkit-animation-timing-function: ease;
+                //         visibility: visible !important;
+                //     }
+
+                //     @keyframes slideUp {
+                //         0% {
+                //             transform: translateY(100%);
+                //         }
+
+                //         50% {
+                //             transform: translateY(-8%);
+                //         }
+
+                //         65% {
+                //             transform: translateY(4%);
+                //         }
+
+                //         80% {
+                //             transform: translateY(-4%);
+                //         }
+
+                //         95% {
+                //             transform: translateY(2%);
+                //         }
+
+                //         100% {
+                //             transform: translateY(0%);
+                //         }
+                //     }
+                // }
+            }
+
+            // .slick-list {
+            //     padding: 0 20% 0 0 !important;
+            // }
+
+            .slick-center {
+                -webkit-transform: scale(1.25);
+                -moz-transform: scale(1.25);
+                transform: scale(1.25);
+            }
+
+
+        }
+
+    }
+
 }

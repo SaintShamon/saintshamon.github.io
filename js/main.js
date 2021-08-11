@@ -21,6 +21,42 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
+        responsive: [
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    $('.teachers_block_mob').slick({
+        slidesToShow: 1,
+        // centerPadding: '50px',
+        infinite: true,
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        adaptiveHeight: true
     });
 
     $(".item").click(function () {
