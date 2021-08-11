@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    $('.search_btn').on('click', function () {
+    $('header .top_header .search_btn').on('click', function () {
         $('header .top_header .input_block').slideToggle(500);
     });
 
-    $('.briefcase .btn').on('click', function () {
+    $('header .top_header .briefcase .btn').on('click', function () {
         $('header .top_header .briefcase_block').slideToggle(1000);
         $('header .top_header .main_block .center_block .our_curses a').toggleClass('clicked');
     });
 
-    $('.menu_icon').on('click', function () {
+    $('header .top_header .menu_icon').on('click', function () {
         $('header .top_header .main_menu_block').slideToggle(1000, function () {
             if ($(this).is(':visible'))
                 $(this).css('display', 'flex');
@@ -37,7 +37,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 769,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -47,16 +47,6 @@ $(document).ready(function () {
             // settings: "unslick"
             // instead of a settings object
         ]
-    });
-
-    $('.teachers_block_mob').slick({
-        slidesToShow: 1,
-        // centerPadding: '50px',
-        infinite: true,
-        arrows: false,
-        dots: false,
-        centerMode: true,
-        adaptiveHeight: true
     });
 
     $(".item").click(function () {
@@ -102,4 +92,43 @@ $(document).ready(function () {
         $('.list_menu li').removeClass('active');
         $(this).addClass('active');
     })
+});
+
+
+$('#slide-testimonal').owlCarousel({
+    margin: 0,
+    center: true,
+    loop: true,
+    nav: false,
+    items: 3
+    // responsive: {
+    //     0: {
+    //         items: 1
+    //     },
+    //     768: {
+    //         items: 2,
+    //         margin: 15,
+    //     },
+    //     1000: {
+    //         items: 3,
+    //     }
+    // }
+});
+
+
+$('header .bottom_header .search_btn').on('click', function () {
+    $('header .bottom_header .input_block').slideToggle(500);
+});
+
+$('header .bottom_header .briefcase .btn').on('click', function () {
+    $('header .bottom_header .briefcase_block').slideToggle(1000);
+    $('header .bottom_header .main_block .center_block .our_curses a').toggleClass('clicked');
+});
+
+$('header .bottom_header .menu_icon').on('click', function () {
+    $('header .bottom_header .main_menu_block').slideToggle(1000, function () {
+        if ($(this).is(':visible'))
+            $(this).css('display', 'block');
+    });
+    $('header .bottom_header .main_block .right_block .menu_icon .icon_container').toggleClass('open_menu');
 });
