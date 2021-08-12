@@ -1255,6 +1255,7 @@ header {
                     }
 
                     &.podcasts {
+
                         .podcast {
                             position: relative;
                             width: 419px;
@@ -4372,8 +4373,70 @@ footer {
                 margin: 0 auto;
                 max-width: 272px;
             }
-        }
 
+            &.podcasts.show {
+                display: block;
+
+                .podcast {
+                    position: relative;
+                    width: 100%;
+                    max-width: 419px;
+                    height: auto;
+                    border: 1px solid #C4C4C4;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    padding: 2px;
+                    margin-bottom: 20px;
+
+                    a {
+                        display: flex;
+                        text-decoration: none;
+                    }
+
+                    .img_block {
+                        width: 49px;
+                        height: 49px;
+                        display: flex;
+                        align-self: center;
+
+                        img {
+                            border-radius: 3px;
+                            align-self: center;
+                        }
+                    }
+
+                    .description {
+                        width: 100%;
+                        max-width: 229px;
+                        margin-left: 10px;
+                        align-self: center;
+                    }
+
+                    h3 {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 111.4%;
+                        display: flex;
+                        align-items: center;
+                        color: #000000;
+                        margin: 0 0 8px;
+                    }
+
+                    p {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 111.4%;
+                        display: flex;
+                        align-items: center;
+                        color: #8F8F8F;
+                        margin: 0 0 0;
+                    }
+
+                }
+            }
+        }
 
         .folder_main_img {
             position: absolute;
