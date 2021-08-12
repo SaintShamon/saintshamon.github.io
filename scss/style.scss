@@ -4339,6 +4339,11 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .popular_courses .main_block .courses_block .slick-next:before {
+        right: 0;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -4423,8 +4428,6 @@ footer {
             background-repeat: no-repeat;
             z-index: 1;
         }
-
-
     }
 }
 
@@ -4600,6 +4603,11 @@ footer {
 
 @media screen and (max-width:400px) {
 
+    header .bottom_header .main_menu_block .col_bottom a {
+        width: 25px;
+        height: 25px;
+    }
+
     .container {
         position: relative;
         width: 100%;
@@ -4637,9 +4645,27 @@ footer {
         position: absolute;
         left: -30px;
     }
+
+    .cooperation_section::after {
+        top: 280px;
+    }
+
+    footer .main_part .main_block .first .bottom_block div a {
+        width: 28px;
+        height: 28px;
+    }
+
+    footer .main_part .main_block .third .social_block {
+        width: 130px;
+    }
 }
 
 @media screen and (max-width:350px) {
+
+    header .bottom_header .main_menu_block .col_bottom ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .teachers_section.mob .main_block .testimonials .teacher_bg {
         width: 100%;

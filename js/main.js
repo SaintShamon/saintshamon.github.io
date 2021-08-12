@@ -100,19 +100,20 @@ $('#slide-testimonal').owlCarousel({
     center: true,
     loop: true,
     nav: false,
-    items: 3
-    // responsive: {
-    //     0: {
-    //         items: 1
-    //     },
-    //     768: {
-    //         items: 2,
-    //         margin: 15,
-    //     },
-    //     1000: {
-    //         items: 3,
-    //     }
-    // }
+    items: 3,
+    responsive: {
+        0: {
+            items: 3,
+            margin: 25,
+        },
+        768: {
+            items: 2,
+            margin: 15,
+        },
+        1000: {
+            items: 3,
+        }
+    }
 });
 
 
