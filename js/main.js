@@ -7,7 +7,7 @@ $(document).ready(function () {
     });
 
     $('header .top_header .briefcase .btn').on('click', function () {
-        $('header .top_header .briefcase_block').slideToggle(1000);
+        $('header .top_header .briefcase_block').slideToggle(500);
         $('header .top_header .main_block .center_block .our_curses a').toggleClass('clicked');
         $('header .top_header .main_menu_block').hide(500);
         $('header .top_header .main_block .right_block .menu_icon .icon_container').removeClass('open_menu');
@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
 
     $('header .top_header .menu_icon').on('click', function () {
-        $('header .top_header .main_menu_block').slideToggle(1000, function () {
+        $('header .top_header .main_menu_block').slideToggle(500, function () {
             if ($(this).is(':visible'))
                 $(this).css('display', 'flex');
         });

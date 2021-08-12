@@ -339,11 +339,11 @@ header .top_header .main_block .right_block .menu_icon .icon_container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 header .top_header .main_block .right_block .menu_icon .icon_container.open_menu {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 header .top_header .main_block .right_block .menu_icon .icon_container.open_menu .bar {
@@ -403,6 +403,7 @@ header .top_header .main_block .right_block .menu_icon svg {
 }
 
 header .top_header .input_block {
+  width: 100%;
   display: none;
   overflow: hidden;
   max-height: 129px;
@@ -479,6 +480,7 @@ header .top_header .input_block .inner_block .seach_icon {
 }
 
 header .top_header .briefcase_block {
+  width: 100%;
   display: none;
   height: 459px;
 }
@@ -2139,6 +2141,13 @@ header .bottom_header .main_menu_block .col_bottom a:hover {
   padding: 26px 128px 40px 58px;
 }
 
+.cooperation_section .main_block .press_block img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .cooperation_section .main_block .press_block .top_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2152,6 +2161,13 @@ header .bottom_header .main_menu_block .col_bottom a:hover {
 .cooperation_section .main_block .press_block .top_block a {
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.cooperation_section .main_block .press_block .top_block a:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .cooperation_section .main_block .press_block .top_block img {
@@ -2176,6 +2192,13 @@ header .bottom_header .main_menu_block .col_bottom a:hover {
       align-self: center;
 }
 
+.cooperation_section .main_block .press_block .center_block a:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .cooperation_section .main_block .press_block .center_block img {
   -ms-flex-item-align: center;
       align-self: center;
@@ -2196,6 +2219,13 @@ header .bottom_header .main_menu_block .col_bottom a:hover {
   -ms-flex-item-align: center;
       align-self: center;
   margin-left: auto;
+}
+
+.cooperation_section .main_block .press_block .down_block a:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .cooperation_section .main_block .press_block .down_block img {
@@ -2463,25 +2493,27 @@ header .bottom_header .main_menu_block .col_bottom a:hover {
   border: 1px solid #E5E5E5;
   border-radius: 10px;
   overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 15px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .popular_courses .main_block .courses_block .course::before {
   position: absolute;
   content: '';
   bottom: 0;
-  left: -2px;
-  width: 100%;
+  left: 0;
+  right: -2px;
+  width: 326px;
   height: 70%;
+  border: none;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-clip: content-box;
   z-index: -1;
   -webkit-transition: .5s;
   transition: .5s;

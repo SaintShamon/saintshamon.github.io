@@ -272,10 +272,10 @@ header {
                     .icon_container {
                         display: flex;
                         flex-direction: column;
-                        margin-top: 5px;
+                        margin-top: 4px;
 
                         &.open_menu {
-                            margin-top: 5px;
+                            margin-top: 4px;
 
                             .bar {
                                 transition: all 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -335,6 +335,7 @@ header {
         }
 
         .input_block {
+            width: 100%;
             display: none;
             overflow: hidden;
             max-height: 129px;
@@ -392,6 +393,7 @@ header {
         }
 
         .briefcase_block {
+            width: 100%;
             display: none;
             height: 459px;
 
@@ -1828,6 +1830,11 @@ header {
             max-width: 700px;
             padding: 26px 128px 40px 58px;
 
+            img {
+                filter: grayscale(100%);
+                transition: .5s;
+            }
+
             .top_block {
                 display: flex;
                 justify-content: flex-end;
@@ -1835,6 +1842,13 @@ header {
 
                 a {
                     align-self: center;
+
+                    &:hover {
+                        img {
+                            filter: grayscale(0);
+                            transition: .5s;
+                        }
+                    }
                 }
 
                 img {
@@ -1851,6 +1865,13 @@ header {
 
                 a {
                     align-self: center;
+
+                    &:hover {
+                        img {
+                            filter: grayscale(0);
+                            transition: .5s;
+                        }
+                    }
                 }
 
                 img {
@@ -1867,6 +1888,13 @@ header {
                 a {
                     align-self: center;
                     margin-left: auto;
+
+                    &:hover {
+                        img {
+                            filter: grayscale(0);
+                            transition: .5s;
+                        }
+                    }
                 }
 
                 img {
@@ -2098,21 +2126,24 @@ header {
                 border: 1px solid #E5E5E5;
                 border-radius: 10px;
                 overflow: hidden;
-                box-sizing: border-box;
                 display: flex;
                 margin: 0 15px;
                 cursor: pointer;
+                z-index: 1;
 
                 &::before {
                     position: absolute;
                     content: '';
                     bottom: 0;
-                    left: -2px;
-                    width: 100%;
+                    left: 0;
+                    right: -2px;
+                    width: 326px;
                     height: 70%;
+                    border: none;
                     background-position: top center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    background-clip: content-box;
                     z-index: -1;
                     transition: .5s;
                 }
