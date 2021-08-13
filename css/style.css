@@ -5195,8 +5195,82 @@ footer .bottom_part .main_block div {
     margin-top: 5px;
     border-bottom-left-radius: 15px;
   }
+  footer .main_part .main_block {
+    position: relative;
+  }
+  footer .main_part .main_block .first .bottom_block div {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 5px;
+  }
+  footer .main_part .main_block .first .bottom_block div a {
+    width: 26px;
+    height: 26px;
+  }
+  footer .main_part .main_block .second a,
+  footer .main_part .main_block .third a,
+  footer .main_part .main_block .four a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer .main_part .main_block .col h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  footer .main_part .main_block .second {
+    max-width: 150px;
+  }
+  footer .main_part .main_block .second .bottom_menu {
+    position: absolute;
+    right: 15px;
+  }
+  footer .main_part .main_block .second h3 {
+    margin-bottom: 30px;
+  }
+  footer .main_part .main_block .third {
+    max-width: 150px;
+  }
+  footer .main_part .main_block .third .top_menu {
+    margin-bottom: 160px;
+  }
+  footer .main_part .main_block .third h3 {
+    margin-bottom: 30px;
+  }
+  footer .main_part .main_block .four {
+    position: absolute;
+    bottom: 90px;
+    max-width: 180px;
+  }
+  footer .main_part .main_block .four h3 {
+    margin-bottom: 30px;
+  }
+  footer .main_part .main_block .four ul:first-of-type::before {
+    display: none;
+  }
+  footer .main_part .main_block .four ul:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    width: 90vw;
+    bottom: -80px;
+  }
+  footer .main_part .main_block .four ul:last-of-type li {
+    max-width: 100px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  footer .bottom_part .main_block p {
+    font-size: 12px;
+    line-height: 20px;
+  }
   footer .main_part .main_block .second .top_menu,
-  footer .main_part .main_block .third .top_menu,
   footer .main_part .main_block .third .bottom_menu {
     margin-bottom: 40px;
   }
@@ -5303,78 +5377,6 @@ footer .bottom_part .main_block div {
   }
   .how_we_learn .container-general .gallery-wrap .item .bg_img img {
     max-width: 100%;
-  }
-  footer .main_part .main_block .first .bottom_block div {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 5px;
-  }
-  footer .main_part .main_block .first .bottom_block div a {
-    width: 26px;
-    height: 26px;
-  }
-  footer .main_part .main_block .second a,
-  footer .main_part .main_block .third a,
-  footer .main_part .main_block .four a {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  footer .main_part .main_block .col h3 {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  footer .main_part .main_block .second {
-    max-width: 150px;
-  }
-  footer .main_part .main_block .second .bottom_menu {
-    position: absolute;
-    right: 30px;
-  }
-  footer .main_part .main_block .second h3 {
-    margin-bottom: 30px;
-  }
-  footer .main_part .main_block .third {
-    max-width: 150px;
-  }
-  footer .main_part .main_block .third .top_menu {
-    margin-bottom: 160px;
-  }
-  footer .main_part .main_block .third h3 {
-    margin-bottom: 30px;
-  }
-  footer .main_part .main_block .four {
-    position: absolute;
-    bottom: 90px;
-    max-width: 180px;
-  }
-  footer .main_part .main_block .four h3 {
-    margin-bottom: 30px;
-  }
-  footer .main_part .main_block .four ul:first-of-type::before {
-    display: none;
-  }
-  footer .main_part .main_block .four ul:last-of-type {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    position: absolute;
-    width: 90vw;
-    bottom: -80px;
-  }
-  footer .main_part .main_block .four ul:last-of-type li {
-    max-width: 100px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  footer .bottom_part .main_block p {
-    font-size: 12px;
-    line-height: 20px;
   }
 }
 
