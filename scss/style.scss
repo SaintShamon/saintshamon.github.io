@@ -5252,21 +5252,12 @@ footer {
         text-align: left;
     }
 
-    // .teachers_section.mob .main_block .testimonial_detail {
-    //     width: 300px;
-    //     left: calc(50% - 150px);
-    // }
-
     .form .form_block .right_block form {
         max-width: 282px;
     }
-}
 
-@media screen and (max-width:320px) {
-    // .teachers_section.mob .main_block .testimonials .teacher_bg {
-    //     width: 100%;
-    //     max-width: 300px;
-    //     padding: 50px 20px 32px;
-    //     height: 380px;
-    // }
+    footer .bottom_part .main_block p {
+        font-size: 10px;
+        line-height: 14px;
+    }
 }

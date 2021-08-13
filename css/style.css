@@ -5466,4 +5466,8 @@ footer .bottom_part .main_block div {
   .form .form_block .right_block form {
     max-width: 282px;
   }
+  footer .bottom_part .main_block p {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
