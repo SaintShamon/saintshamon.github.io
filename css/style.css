@@ -946,7 +946,7 @@ header .bottom_header .main_block .center_block .our_curses {
 }
 
 header .bottom_header .main_block .center_block .our_curses a {
-  padding: 5px 14px;
+  padding: 10px 18px;
   background: #3EC9FE;
   -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
@@ -989,10 +989,6 @@ header .bottom_header .main_block .center_block .briefcase {
 
 header .bottom_header .main_block .center_block .briefcase button {
   position: relative;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1149,8 +1145,6 @@ header .bottom_header .briefcase_block {
   display: none;
   height: 459px;
   overflow: hidden;
-  -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
 }
 
 header .bottom_header .briefcase_block .inner_block {
@@ -2081,8 +2075,8 @@ header .bottom_header.open {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .cooperation_section .main_block .press_block {
@@ -2221,6 +2215,7 @@ header .bottom_header.open {
 }
 
 .cooperation_section .main_block .text_block h2 {
+  position: relative;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -2230,16 +2225,14 @@ header .bottom_header.open {
   display: flex;
   color: #000000;
   margin-top: -20px;
+  z-index: 5;
 }
 
 .cooperation_section .main_block.right {
   -webkit-transform: translateX(200px);
           transform: translateX(200px);
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .cooperation_section .we_are_in_block {
@@ -2380,6 +2373,15 @@ header .bottom_header.open {
   opacity: 1;
   -webkit-transition: 2s;
   transition: 2s;
+}
+
+.cooperation_section .we_are_in_block::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -50px;
+  width: 200px;
+  height: 100%;
 }
 
 .popular_courses {
@@ -4067,15 +4069,13 @@ footer .bottom_part .main_block div {
   .first_block .main_block .right_text {
     display: none;
   }
-  .how_we_learn .container-general .gallery-wrap .item.active {
-    min-height: 500px;
-  }
-  .popular_courses .main_block .courses_block {
-    margin-top: 72px;
-    max-width: 700px;
-    margin: 72px auto 0;
+  .cooperation_section .main_block .blue_square,
+  .cooperation_section .main_block .orange_square {
+    display: none;
   }
   .cooperation_section {
+    position: relative;
+    margin: 100px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4088,89 +4088,6 @@ footer .bottom_part .main_block div {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-  }
-  .cooperation_section .we_are_in_block {
-    position: relative;
-    top: auto;
-    width: 100%;
-    left: auto;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    z-index: 1;
-  }
-  .cooperation_section .we_are_in_block .phone_block {
-    width: 100%;
-    max-width: 254px;
-    margin: 50px auto 50px;
-    height: 531px;
-    background-image: url("/img/mob/phone.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .cooperation_section .we_are_in_block .phone_block img {
-    display: none;
-  }
-  .cooperation_section .we_are_in_block .phone_block .text {
-    font-size: 30px;
-    line-height: 37px;
-    right: -12%;
-    top: -100px;
-    width: 100%;
-    height: auto;
-    font-weight: bold;
-  }
-  .cooperation_section .we_are_in_block .phone_block .text::before {
-    display: none;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block {
-    right: 0;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-    opacity: 1;
-    width: 214.26px;
-    height: auto;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block .item {
-    z-index: 5;
-    width: 214.26px;
-    height: 118.06px;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block .item div {
-    bottom: 0px;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block .item div img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 80px;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block .item:first-of-type {
-    position: absolute;
-    top: 20px;
-    left: -110px;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block .item:nth-of-type(2) {
-    position: absolute;
-    top: 170px;
-    right: -30px;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block .item:nth-of-type(3) {
-    position: absolute;
-    top: 310px;
-    left: -110px;
-  }
-  .cooperation_section .we_are_in_block .phone_block .group_block .item:last-of-type {
-    display: none;
-  }
-  .cooperation_section .main_block .blue_square,
-  .cooperation_section .main_block .orange_square {
-    display: none;
-  }
-  .cooperation_section {
-    position: relative;
-    margin: 100px 0;
   }
   .cooperation_section .main_block {
     -webkit-box-orient: vertical;
@@ -4258,12 +4175,108 @@ footer .bottom_part .main_block div {
     width: 100%;
     z-index: 0;
   }
+  .cooperation_section.right {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .cooperation_section .we_are_in_block {
+    position: relative;
+    top: auto;
+    width: 100%;
+    left: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    z-index: 1;
+  }
+  .cooperation_section .we_are_in_block .phone_block {
+    width: 100%;
+    max-width: 254px;
+    margin: 50px auto 50px;
+    height: 531px;
+    background-image: url("/img/mob/phone.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cooperation_section .we_are_in_block .phone_block img {
+    display: none;
+  }
+  .cooperation_section .we_are_in_block .phone_block .text {
+    font-size: 30px;
+    line-height: 37px;
+    right: -12%;
+    top: -100px;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+  }
+  .cooperation_section .we_are_in_block .phone_block .text::before {
+    display: none;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block {
+    right: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+    width: 214.26px;
+    height: auto;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block .item {
+    z-index: 5;
+    width: 214.26px;
+    height: 118.06px;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block .item div {
+    bottom: 0px;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block .item div img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 80px;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block .item:first-of-type {
+    position: absolute;
+    top: 20px;
+    left: -110px;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block .item:nth-of-type(2) {
+    position: absolute;
+    top: 170px;
+    right: -30px;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block .item:nth-of-type(3) {
+    position: absolute;
+    top: 310px;
+    left: -110px;
+  }
+  .cooperation_section .we_are_in_block .phone_block .group_block .item:last-of-type {
+    display: none;
+  }
+  .cooperation_section .we_are_in_block:hover {
+    left: auto;
+  }
+  .cooperation_section .we_are_in_block:hover .phone_block {
+    position: relative;
+  }
+  .cooperation_section .we_are_in_block:hover .phone_block .group_block {
+    opacity: 1;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
   .popular_courses {
     margin: 100px 0;
     z-index: 1;
   }
   .popular_courses .main_block {
     position: relative;
+  }
+  .popular_courses .main_block .courses_block {
+    max-width: 900px;
+    margin: 72px auto 0;
   }
   .popular_courses .main_block .top_block {
     max-width: none;
@@ -4280,7 +4293,7 @@ footer .bottom_part .main_block div {
     margin-left: 0;
   }
   .how_we_learn {
-    margin: 150px 0 100px;
+    margin: 250px 0 100px;
   }
   .how_we_learn h2 {
     text-align: center;
@@ -4293,6 +4306,7 @@ footer .bottom_part .main_block div {
   .how_we_learn .container-general .gallery-wrap .item .label {
     left: 0;
     right: auto;
+    height: 100%;
     width: 100%;
   }
   .how_we_learn .container-general .gallery-wrap .item .label .text {
@@ -4303,6 +4317,7 @@ footer .bottom_part .main_block div {
     line-height: 120%;
     text-transform: none;
     text-align: left;
+    font-weight: 600;
   }
   .how_we_learn .container-general .gallery-wrap .item.active {
     min-height: 400px;
@@ -4598,6 +4613,7 @@ footer .bottom_part .main_block div {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 500px;
   }
   .form .form_block .left_part {
     max-width: none;
@@ -4607,6 +4623,8 @@ footer .bottom_part .main_block div {
     background-image: url("/img/mob/form_bg.svg");
     border-top-right-radius: 0;
     background-position: top;
+    margin-top: 5px;
+    border-radius: 15px;
   }
   .form .form_block .right_block form {
     margin: 100px auto 0;
@@ -4682,8 +4700,8 @@ footer .bottom_part .main_block div {
   header .bottom_header .main_block .center_block .briefcase button {
     -ms-flex-item-align: center;
         align-self: center;
-    width: 22px;
-    height: 22px;
+    width: 32px;
+    height: 32px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
@@ -4691,6 +4709,8 @@ footer .bottom_part .main_block div {
   }
   header .bottom_header .main_block .center_block .briefcase button svg {
     margin: 0 auto;
+    width: 16px;
+    height: 15px;
   }
   header .bottom_header .main_block .center_block .briefcase button::before {
     display: none;
@@ -4713,12 +4733,34 @@ footer .bottom_part .main_block div {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .popular_courses .main_block {
+    position: relative;
+  }
+  .popular_courses .main_block .courses_block {
+    max-width: 700px;
+  }
   .popular_courses .main_block .courses_block .slick-next:before {
     right: 0;
+  }
+  .blog_section .main_block .blog_block .mob_text a {
+    padding: 12px 18px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .popular_courses .main_block .top_block h2 {
+    text-align: left;
+    display: block;
+    margin-left: calc(50% - 339px);
   }
 }
 
 @media screen and (max-width: 768px) {
+  header .bottom_header.open .mob_container.course {
+    -webkit-box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
   header .bottom_header .briefcase_block {
     height: auto;
   }
@@ -4926,6 +4968,21 @@ footer .bottom_part .main_block div {
     background-repeat: no-repeat;
     z-index: 1;
   }
+  .first_block {
+    margin-top: 59px;
+  }
+  .first_block .main_block {
+    z-index: 4;
+  }
+  .first_block::after {
+    width: 64%;
+    height: 400px;
+  }
+  .first_block::before {
+    width: 100%;
+    left: 0;
+    top: -100px;
+  }
   .popular_courses .main_block .courses_block {
     max-width: 350px;
     margin: 72px auto 0;
@@ -4933,19 +4990,279 @@ footer .bottom_part .main_block div {
   .how_we_learn .container-general .gallery-wrap .item .bg_img img {
     max-width: 70vw;
   }
+  .teachers_section.mob .main_block .testimonials {
+    position: relative;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg {
+    display: block;
+    position: relative;
+    width: 320px;
+    border: 1px solid #FFC536;
+    border-radius: 10px;
+    height: 447px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 32px 40px 32px;
+    z-index: 2;
+    margin-top: 70px;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg p.spiker {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg p.description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #3EC9FE;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text {
+    position: relative;
+    z-index: 2;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text ul li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .many_icons {
+    position: absolute;
+    z-index: 2;
+    width: 71px;
+    height: 20px;
+    bottom: 40px;
+    left: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .many_icons a {
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg a {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    left: 40px;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg a img {
+    width: 20px;
+    height: 20px;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg::before {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 40px;
+    left: calc(50% - 45px);
+    top: -38.5px;
+    background-image: url("/img/mob/Slice.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .teachers_section.mob .main_block .inner-testimonials .owl-dots {
+    display: none;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center .main-reviewimage {
+    border: 1px solid #3EC9FE;
+    background-color: #3EC9FE;
+    margin: 0 auto;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active:first-of-type .main-reviewimage {
+    margin-left: auto;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active:last-of-type .main-reviewimage {
+    margin-right: auto;
+  }
+  .teachers_section.mob .main_block .main-reviewimage {
+    border: 1px solid #3EC9FE;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+  }
+  .teachers_section.mob .main_block .main-reviewimage img {
+    opacity: 0.9;
+  }
+  .teachers_section.mob .main_block #slide-testimonal .active.center .main-reviewimage img {
+    opacity: 1;
+  }
+  .teachers_section.mob .main_block .test_img {
+    position: relative;
+    opacity: 1;
+    -webkit-transition: .4s ease all;
+    transition: .4s ease all;
+    margin: 0 -48px;
+  }
+  .teachers_section.mob .main_block .inner-testimonials {
+    width: 100%;
+    max-width: 440px;
+  }
+  .teachers_section.mob .main_block #slide-testimonal .center .test_img:before {
+    content: none;
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
+  }
+  .teachers_section.mob .main_block .test_img img {
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 999;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center .testimonial_detail {
+    display: block;
+    text-align: center;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    padding: 10px 0px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .teachers_section.mob .main_block .testimonial_detail {
+    display: none;
+  }
+  .teachers_section.mob .main_block .testimonial_detail {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+    width: 320px;
+    position: relative;
+    left: calc(50% - 150px);
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .active .testimonial_detail {
+    display: none;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .active.center .testimonial_detail {
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  header .bottom_header .main_menu_block .right_part {
+  header .bottom_header .main_block .main_menu_block .right_part {
     max-width: none;
   }
-  .first_block::after,
-  .first_block::before {
-    width: 100%;
+  header .bottom_header .main_block .center_block .briefcase button {
+    width: 22px;
+    height: 22px;
+  }
+  header .bottom_header .main_block .center_block .briefcase button svg {
+    width: 12px;
+    height: 11px;
+  }
+  header .bottom_header .main_block .center_block .our_curses a {
+    padding: 5px 14px;
+  }
+  .first_block .main_block {
+    margin: 175px auto 300px;
   }
   .first_block .main_block h1 {
+    font-style: normal;
+    font-weight: 800;
     font-size: 40px;
     line-height: 49px;
+    max-width: 400px;
+    margin-top: 0;
+  }
+  .first_block .main_block h1 span {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .first_block .main_block p.subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 400px;
+  }
+  .first_block::after {
+    width: 100%;
+  }
+  .first_block::before {
+    width: 100%;
+    top: -100px;
+  }
+  .counter_block {
+    margin: 100px 0 0;
+  }
+  .counter_block .main_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 584px;
+    margin: 0 auto;
+  }
+  .counter_block .main_block .inner_block {
+    max-width: 212px;
+    margin-bottom: 38px;
+  }
+  .counter_block .main_block .inner_block:last-of-type {
+    margin-bottom: 0;
+  }
+  .counter_block .main_block .inner_block p.persent {
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #000000;
+  }
+  .counter_block .main_block .inner_block p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
   }
   .teachers_section.mob .main_block .testimonials {
     position: relative;
@@ -5167,6 +5484,9 @@ footer .bottom_part .main_block div {
   .blog_section .main_block {
     padding: 150px 0 300px;
   }
+  .blog_section .main_block .blog_block .mob_text a {
+    padding: 7px 12px;
+  }
   .blog_section::before {
     display: none;
   }
@@ -5190,10 +5510,6 @@ footer .bottom_part .main_block div {
     z-index: 3;
     background-color: #fff;
     border-radius: 15px;
-  }
-  .form .form_block .right_block {
-    margin-top: 5px;
-    border-bottom-left-radius: 15px;
   }
   footer .main_part .main_block {
     position: relative;
@@ -5313,27 +5629,6 @@ footer .bottom_part .main_block div {
   header .bottom_header .main_menu_block .left_part .col a {
     font-size: 14px;
     line-height: 20px;
-  }
-  .first_block .main_block {
-    position: relative;
-  }
-  .first_block .main_block h1 {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 49px;
-    max-width: 400px;
-  }
-  .first_block .main_block h1 span {
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .first_block .main_block p.subtitle {
-    font-size: 14px;
-    line-height: 17px;
-    max-width: 400px;
   }
   .cooperation_section .main_block .text_block h2,
   .popular_courses .main_block .top_block h2,

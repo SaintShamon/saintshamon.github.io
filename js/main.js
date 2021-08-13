@@ -138,13 +138,13 @@ $('header .bottom_header .briefcase .btn').on('click', function () {
     $('header .bottom_header .briefcase_block').slideToggle(1000);
     $('header .bottom_header .main_block .center_block .our_curses a').toggleClass('clicked');
     $('header .bottom_header .main_menu_block').hide(500);
-    $('header .bottom_header .input_block').hide(500);
-    check_open();
     $('header .bottom_header').toggleClass('open');
+    $('header .bottom_header .mob_container').toggleClass('course');
 });
 
 $('header .bottom_header .main_menu_block .input_field label').on('click', function () {
     $('header .bottom_header .main_menu_block').hide(500);
+    check_open();
     $('header .bottom_header').removeClass('open');
 });
 
@@ -153,8 +153,6 @@ $('header .bottom_header .menu_icon').on('click', function () {
         if ($(this).is(':visible'))
             $(this).css('display', 'block');
     });
-    $('header .bottom_header .input_block').hide(500);
     $('header .bottom_header .briefcase_block').hide(500);
-    check_open();
     $('header .bottom_header').toggleClass('open');
 });
