@@ -4462,6 +4462,226 @@ footer {
         right: 0;
     }
 
+    .teachers_section.mob .main_block {
+        .testimonials {
+            margin-top: 50px;
+            position: relative;
+
+            .teacher_bg {
+                display: block;
+                position: relative;
+                width: 320px;
+                border: 1px solid $yellow;
+                border-radius: 10px;
+                height: 447px;
+                transition: .5s;
+                padding: 32px 40px 32px;
+                z-index: 2;
+                margin-top: 70px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+                p.spiker {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #000000;
+                    margin: 0;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                p.description {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #3EC9FE;
+                    margin: 10px 0;
+                    position: relative;
+
+                    z-index: 2;
+                }
+
+                .main_text {
+                    position: relative;
+                    z-index: 2;
+
+                    p {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #000000;
+                        margin-bottom: 15px;
+                        text-align: left;
+                    }
+
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                        padding-left: 15px;
+
+                        li {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #000000;
+                            margin-bottom: 15px;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .many_icons {
+                    position: absolute;
+                    z-index: 2;
+                    width: 71px;
+                    height: 20px;
+                    bottom: 40px;
+                    left: 40px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        position: relative;
+                        bottom: auto;
+                        left: auto;
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    z-index: 2;
+                    bottom: 40px;
+                    left: 40px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+
+                    }
+                }
+            }
+
+            .teacher_bg::before {
+                position: absolute;
+                content: '';
+                width: 90px;
+                height: 40px;
+                left: calc(50% - 45px);
+                top: -38.5px;
+                background-image: url('/img/mob/Slice.svg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+        }
+
+        .inner-testimonials .owl-dots {
+            display: none;
+        }
+
+        .custome_slide.owl-carousel .owl-item.active.center .main-reviewimage {
+            border: 1px solid $blue;
+            background-color: $blue;
+            margin: 0 auto;
+        }
+
+        .custome_slide.owl-carousel .owl-item.active:first-of-type .main-reviewimage {
+            margin-left: auto;
+        }
+
+        .custome_slide.owl-carousel .owl-item.active:last-of-type .main-reviewimage {
+            margin-right: auto;
+        }
+
+        .main-reviewimage {
+            border: 1px solid $blue;
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+            // background: #000;
+        }
+
+        .main-reviewimage img {
+            opacity: 0.9;
+        }
+
+        #slide-testimonal .active.center .main-reviewimage img {
+            opacity: 1;
+        }
+
+        .test_img {
+            position: relative;
+            opacity: 1;
+            -webkit-transition: .4s ease all;
+            transition: .4s ease all;
+            margin: 0 -48px;
+
+        }
+
+        .inner-testimonials {
+            width: 100%;
+            max-width: 440px;
+            // margin: 0 auto;
+        }
+
+        #slide-testimonal .center .test_img:before {
+            content: none;
+            transition: 0.7s ease-in-out;
+        }
+
+        .test_img img {
+            border-radius: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .custome_slide.owl-carousel .owl-item.active.center {
+            transform: scale(1.5);
+            margin-top: 0 !important;
+            position: relative;
+            z-index: 999;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+
+            .testimonial_detail {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .custome_slide.owl-carousel .owl-item {
+            transform: scale(0.4);
+            padding: 10px 0px;
+            transition: all 0.5s;
+        }
+
+        .testimonial_detail {
+            display: none;
+        }
+
+        .testimonial_detail {
+            transform: scale(1) !important;
+            width: 320px;
+            position: relative;
+            left: calc(50% - 150px);
+        }
+
+        .custome_slide.owl-carousel .active .testimonial_detail {
+            display: none;
+        }
+
+        .custome_slide.owl-carousel .active.center .testimonial_detail {
+            display: block !important;
+        }
+    }
+
     .blog_section .main_block .blog_block .mob_text a {
         padding: 12px 18px;
     }
@@ -4725,225 +4945,6 @@ footer {
 
     .how_we_learn .container-general .gallery-wrap .item .bg_img img {
         max-width: 70vw;
-    }
-
-    .teachers_section.mob .main_block {
-        .testimonials {
-            position: relative;
-
-            .teacher_bg {
-                display: block;
-                position: relative;
-                width: 320px;
-                border: 1px solid $yellow;
-                border-radius: 10px;
-                height: 447px;
-                transition: .5s;
-                padding: 32px 40px 32px;
-                z-index: 2;
-                margin-top: 70px;
-                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-
-                p.spiker {
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 22px;
-                    line-height: 27px;
-                    color: #000000;
-                    margin: 0;
-                    position: relative;
-                    z-index: 2;
-                }
-
-                p.description {
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 15px;
-                    color: #3EC9FE;
-                    margin: 10px 0;
-                    position: relative;
-
-                    z-index: 2;
-                }
-
-                .main_text {
-                    position: relative;
-                    z-index: 2;
-
-                    p {
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 12px;
-                        line-height: 15px;
-                        color: #000000;
-                        margin-bottom: 15px;
-                        text-align: left;
-                    }
-
-                    ul {
-                        padding: 0;
-                        margin: 0;
-                        padding-left: 15px;
-
-                        li {
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 12px;
-                            line-height: 15px;
-                            color: #000000;
-                            margin-bottom: 15px;
-                            text-align: left;
-                        }
-                    }
-                }
-
-                .many_icons {
-                    position: absolute;
-                    z-index: 2;
-                    width: 71px;
-                    height: 20px;
-                    bottom: 40px;
-                    left: 40px;
-                    display: flex;
-                    justify-content: space-between;
-
-                    a {
-                        position: relative;
-                        bottom: auto;
-                        left: auto;
-                    }
-                }
-
-                a {
-                    position: absolute;
-                    z-index: 2;
-                    bottom: 40px;
-                    left: 40px;
-
-                    img {
-                        width: 20px;
-                        height: 20px;
-
-                    }
-                }
-            }
-
-            .teacher_bg::before {
-                position: absolute;
-                content: '';
-                width: 90px;
-                height: 40px;
-                left: calc(50% - 45px);
-                top: -38.5px;
-                background-image: url('/img/mob/Slice.svg');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                z-index: 1;
-            }
-        }
-
-        .inner-testimonials .owl-dots {
-            display: none;
-        }
-
-        .custome_slide.owl-carousel .owl-item.active.center .main-reviewimage {
-            border: 1px solid $blue;
-            background-color: $blue;
-            margin: 0 auto;
-        }
-
-        .custome_slide.owl-carousel .owl-item.active:first-of-type .main-reviewimage {
-            margin-left: auto;
-        }
-
-        .custome_slide.owl-carousel .owl-item.active:last-of-type .main-reviewimage {
-            margin-right: auto;
-        }
-
-        .main-reviewimage {
-            border: 1px solid $blue;
-            border-radius: 50%;
-            height: 250px;
-            width: 250px;
-            // background: #000;
-        }
-
-        .main-reviewimage img {
-            opacity: 0.9;
-        }
-
-        #slide-testimonal .active.center .main-reviewimage img {
-            opacity: 1;
-        }
-
-        .test_img {
-            position: relative;
-            opacity: 1;
-            -webkit-transition: .4s ease all;
-            transition: .4s ease all;
-            margin: 0 -48px;
-
-        }
-
-        .inner-testimonials {
-            width: 100%;
-            max-width: 440px;
-            // margin: 0 auto;
-        }
-
-        #slide-testimonal .center .test_img:before {
-            content: none;
-            transition: 0.7s ease-in-out;
-        }
-
-        .test_img img {
-            border-radius: 100%;
-            overflow: hidden;
-            margin: 0 auto;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .custome_slide.owl-carousel .owl-item.active.center {
-            transform: scale(1.5);
-            margin-top: 0 !important;
-            position: relative;
-            z-index: 999;
-            -webkit-transform: scale(1);
-            transform: scale(1);
-
-            .testimonial_detail {
-                display: block;
-                text-align: center;
-            }
-        }
-
-        .custome_slide.owl-carousel .owl-item {
-            transform: scale(0.4);
-            padding: 10px 0px;
-            transition: all 0.5s;
-        }
-
-        .testimonial_detail {
-            display: none;
-        }
-
-        .testimonial_detail {
-            transform: scale(1) !important;
-            width: 320px;
-            position: relative;
-            left: calc(50% - 150px);
-        }
-
-        .custome_slide.owl-carousel .active .testimonial_detail {
-            display: none;
-        }
-
-        .custome_slide.owl-carousel .active.center .testimonial_detail {
-            display: block !important;
-        }
     }
 }
 

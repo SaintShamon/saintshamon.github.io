@@ -4742,6 +4742,200 @@ footer .bottom_part .main_block div {
   .popular_courses .main_block .courses_block .slick-next:before {
     right: 0;
   }
+  .teachers_section.mob .main_block .testimonials {
+    margin-top: 50px;
+    position: relative;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg {
+    display: block;
+    position: relative;
+    width: 320px;
+    border: 1px solid #FFC536;
+    border-radius: 10px;
+    height: 447px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 32px 40px 32px;
+    z-index: 2;
+    margin-top: 70px;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg p.spiker {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg p.description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #3EC9FE;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text {
+    position: relative;
+    z-index: 2;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text ul {
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text ul li {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .many_icons {
+    position: absolute;
+    z-index: 2;
+    width: 71px;
+    height: 20px;
+    bottom: 40px;
+    left: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg .many_icons a {
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg a {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    left: 40px;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg a img {
+    width: 20px;
+    height: 20px;
+  }
+  .teachers_section.mob .main_block .testimonials .teacher_bg::before {
+    position: absolute;
+    content: '';
+    width: 90px;
+    height: 40px;
+    left: calc(50% - 45px);
+    top: -38.5px;
+    background-image: url("/img/mob/Slice.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .teachers_section.mob .main_block .inner-testimonials .owl-dots {
+    display: none;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center .main-reviewimage {
+    border: 1px solid #3EC9FE;
+    background-color: #3EC9FE;
+    margin: 0 auto;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active:first-of-type .main-reviewimage {
+    margin-left: auto;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active:last-of-type .main-reviewimage {
+    margin-right: auto;
+  }
+  .teachers_section.mob .main_block .main-reviewimage {
+    border: 1px solid #3EC9FE;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+  }
+  .teachers_section.mob .main_block .main-reviewimage img {
+    opacity: 0.9;
+  }
+  .teachers_section.mob .main_block #slide-testimonal .active.center .main-reviewimage img {
+    opacity: 1;
+  }
+  .teachers_section.mob .main_block .test_img {
+    position: relative;
+    opacity: 1;
+    -webkit-transition: .4s ease all;
+    transition: .4s ease all;
+    margin: 0 -48px;
+  }
+  .teachers_section.mob .main_block .inner-testimonials {
+    width: 100%;
+    max-width: 440px;
+  }
+  .teachers_section.mob .main_block #slide-testimonal .center .test_img:before {
+    content: none;
+    -webkit-transition: 0.7s ease-in-out;
+    transition: 0.7s ease-in-out;
+  }
+  .teachers_section.mob .main_block .test_img img {
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 999;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center .testimonial_detail {
+    display: block;
+    text-align: center;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    padding: 10px 0px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .teachers_section.mob .main_block .testimonial_detail {
+    display: none;
+  }
+  .teachers_section.mob .main_block .testimonial_detail {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+    width: 320px;
+    position: relative;
+    left: calc(50% - 150px);
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .active .testimonial_detail {
+    display: none;
+  }
+  .teachers_section.mob .main_block .custome_slide.owl-carousel .active.center .testimonial_detail {
+    display: block !important;
+  }
   .blog_section .main_block .blog_block .mob_text a {
     padding: 12px 18px;
   }
@@ -4989,199 +5183,6 @@ footer .bottom_part .main_block div {
   }
   .how_we_learn .container-general .gallery-wrap .item .bg_img img {
     max-width: 70vw;
-  }
-  .teachers_section.mob .main_block .testimonials {
-    position: relative;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg {
-    display: block;
-    position: relative;
-    width: 320px;
-    border: 1px solid #FFC536;
-    border-radius: 10px;
-    height: 447px;
-    -webkit-transition: .5s;
-    transition: .5s;
-    padding: 32px 40px 32px;
-    z-index: 2;
-    margin-top: 70px;
-    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg p.spiker {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
-    color: #000000;
-    margin: 0;
-    position: relative;
-    z-index: 2;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg p.description {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    color: #3EC9FE;
-    margin: 10px 0;
-    position: relative;
-    z-index: 2;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text {
-    position: relative;
-    z-index: 2;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 15px;
-    color: #000000;
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text ul {
-    padding: 0;
-    margin: 0;
-    padding-left: 15px;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg .main_text ul li {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 15px;
-    color: #000000;
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg .many_icons {
-    position: absolute;
-    z-index: 2;
-    width: 71px;
-    height: 20px;
-    bottom: 40px;
-    left: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg .many_icons a {
-    position: relative;
-    bottom: auto;
-    left: auto;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg a {
-    position: absolute;
-    z-index: 2;
-    bottom: 40px;
-    left: 40px;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg a img {
-    width: 20px;
-    height: 20px;
-  }
-  .teachers_section.mob .main_block .testimonials .teacher_bg::before {
-    position: absolute;
-    content: '';
-    width: 90px;
-    height: 40px;
-    left: calc(50% - 45px);
-    top: -38.5px;
-    background-image: url("/img/mob/Slice.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  .teachers_section.mob .main_block .inner-testimonials .owl-dots {
-    display: none;
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center .main-reviewimage {
-    border: 1px solid #3EC9FE;
-    background-color: #3EC9FE;
-    margin: 0 auto;
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active:first-of-type .main-reviewimage {
-    margin-left: auto;
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active:last-of-type .main-reviewimage {
-    margin-right: auto;
-  }
-  .teachers_section.mob .main_block .main-reviewimage {
-    border: 1px solid #3EC9FE;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-  }
-  .teachers_section.mob .main_block .main-reviewimage img {
-    opacity: 0.9;
-  }
-  .teachers_section.mob .main_block #slide-testimonal .active.center .main-reviewimage img {
-    opacity: 1;
-  }
-  .teachers_section.mob .main_block .test_img {
-    position: relative;
-    opacity: 1;
-    -webkit-transition: .4s ease all;
-    transition: .4s ease all;
-    margin: 0 -48px;
-  }
-  .teachers_section.mob .main_block .inner-testimonials {
-    width: 100%;
-    max-width: 440px;
-  }
-  .teachers_section.mob .main_block #slide-testimonal .center .test_img:before {
-    content: none;
-    -webkit-transition: 0.7s ease-in-out;
-    transition: 0.7s ease-in-out;
-  }
-  .teachers_section.mob .main_block .test_img img {
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    margin-top: 0 !important;
-    position: relative;
-    z-index: 999;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item.active.center .testimonial_detail {
-    display: block;
-    text-align: center;
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .owl-item {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-    padding: 10px 0px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .teachers_section.mob .main_block .testimonial_detail {
-    display: none;
-  }
-  .teachers_section.mob .main_block .testimonial_detail {
-    -webkit-transform: scale(1) !important;
-            transform: scale(1) !important;
-    width: 320px;
-    position: relative;
-    left: calc(50% - 150px);
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .active .testimonial_detail {
-    display: none;
-  }
-  .teachers_section.mob .main_block .custome_slide.owl-carousel .active.center .testimonial_detail {
-    display: block !important;
   }
 }
 
