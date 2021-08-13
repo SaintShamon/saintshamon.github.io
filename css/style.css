@@ -4956,7 +4956,7 @@ footer .bottom_part .main_block div {
     width: 320px;
     border: 1px solid #FFC536;
     border-radius: 10px;
-    height: 504px;
+    height: 447px;
     -webkit-transition: .5s;
     transition: .5s;
     padding: 32px 40px 32px;
@@ -5362,9 +5362,9 @@ footer .bottom_part .main_block div {
   }
   .popular_courses .main_block .courses_block .course_left img {
     position: absolute;
-    height: 80%;
+    height: auto;
     bottom: 0;
-    width: 107px;
+    width: 127px;
   }
   .popular_courses .main_block .courses_block .course:hover .course_right .down_text {
     margin-top: 15px;

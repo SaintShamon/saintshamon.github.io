@@ -4672,7 +4672,7 @@ footer {
                 width: 320px;
                 border: 1px solid $yellow;
                 border-radius: 10px;
-                height: 504px;
+                height: 447px;
                 transition: .5s;
                 padding: 32px 40px 32px;
                 z-index: 2;
@@ -5136,9 +5136,9 @@ footer {
 
     .popular_courses .main_block .courses_block .course_left img {
         position: absolute;
-        height: 80%;
+        height: auto;
         bottom: 0;
-        width: 107px;
+        width: 127px;
     }
 
     .popular_courses .main_block .courses_block .course:hover .course_right .down_text {
