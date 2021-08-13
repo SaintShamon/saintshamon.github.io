@@ -5233,6 +5233,10 @@ footer {
         height: 190px;
         width: 190px;
     }
+
+    .form .form_block .right_block form {
+        max-width: 282px;
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -5253,7 +5257,7 @@ footer {
     }
 
     .form .form_block .right_block form {
-        max-width: 282px;
+        max-width: 272px;
     }
 
     footer .bottom_part .main_block p {
