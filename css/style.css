@@ -5631,6 +5631,9 @@ footer .bottom_part .main_block div {
     font-size: 14px;
     line-height: 20px;
   }
+  .counter_block .main_block .inner_block {
+    max-width: 166px;
+  }
   .cooperation_section .main_block .text_block h2,
   .popular_courses .main_block .top_block h2,
   .how_we_learn h2,
