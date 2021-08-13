@@ -4972,7 +4972,6 @@ footer {
     }
 
     .first_block {
-
         .main_block {
             margin: 175px auto 300px;
 
@@ -5001,6 +5000,7 @@ footer {
 
         &::after {
             width: 100%;
+            height: 300px;
         }
 
         &::before {

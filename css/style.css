@@ -5224,6 +5224,7 @@ footer .bottom_part .main_block div {
   }
   .first_block::after {
     width: 100%;
+    height: 300px;
   }
   .first_block::before {
     width: 100%;
