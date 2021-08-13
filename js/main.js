@@ -129,8 +129,8 @@ $('#slide-testimonal').owlCarousel({
 });
 
 let check_open = function () {
-    if ($('.header .bottom_header').hasClass('open')) {
-        $('.header .bottom_header').removeClass('open');
+    if ($('header .bottom_header').hasClass('open')) {
+        $('header .bottom_header').removeClass('open');
     }
 };
 
@@ -141,6 +141,11 @@ $('header .bottom_header .briefcase .btn').on('click', function () {
     $('header .bottom_header .input_block').hide(500);
     check_open();
     $('header .bottom_header').toggleClass('open');
+});
+
+$('header .bottom_header .main_menu_block .input_field label').on('click', function () {
+    $('header .bottom_header .main_menu_block').hide(500);
+    $('header .bottom_header').removeClass('open');
 });
 
 $('header .bottom_header .menu_icon').on('click', function () {
