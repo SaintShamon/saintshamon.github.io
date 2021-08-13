@@ -4803,7 +4803,7 @@ footer .bottom_part .main_block div {
             box-sizing: border-box;
     border-radius: 5px;
     padding: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   header .bottom_header .briefcase_block .inner_block .list_block.podcasts.show .podcast a {
     display: -webkit-box;
