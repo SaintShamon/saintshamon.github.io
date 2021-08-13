@@ -1734,15 +1734,20 @@ header .bottom_header .main_menu_block .col_bottom ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
-  gap: 6px;
+  gap: 0;
   width: 100%;
   list-style: none;
 }
 
 header .bottom_header .main_menu_block .col_bottom ul li {
-  margin: 0;
+  margin: 0 10px 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4652,8 +4657,14 @@ footer .bottom_part .main_block div {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    gap: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-bottom: 35px;
+    gap: 0;
+  }
+  footer .main_part .main_block .first .bottom_block div a {
+    margin-right: 10px;
   }
 }
 
@@ -5519,14 +5530,13 @@ footer .bottom_part .main_block div {
   footer .main_part .main_block .first .bottom_block div {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 5px;
+    margin-bottom: 30px;
   }
   footer .main_part .main_block .first .bottom_block div a {
     width: 26px;
     height: 26px;
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
   footer .main_part .main_block .second a,
   footer .main_part .main_block .third a,
