@@ -1769,6 +1769,12 @@ footer .footer_main .col:last-of-type::after {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+  .shop_section .main_block .shop_block .tabak {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+  }
   .shop_section .main_block .shop_block .tabak .text {
     max-height: calc(100% - 50px);
   }
