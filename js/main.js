@@ -7,25 +7,16 @@ Modernizr.on('webp', function (result) {
     }
 });
 
-var btn = $('.btn');
+(function () {
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
 
-btn.on('click', function () {
-    $(this).toggleClass('active');
-    $(this).toggleClass('not-active');
-});
+    burger.onclick = function () {
+        header.classList.toggle('menu-opened');
+    }
+}
 
-var btn2 = $('.show');
-
-btn2.on('click', function () {
-    $(this).toggleClass('background');
-});
-
-$(function () {
-    $('.show').on('click', function () {
-        $('.navigation').hasClass('open') ? $('.navigation').removeClass('open') : $('.navigation').addClass('open');
-        $('.toggle').next().slideUp(350);
-    });
-});
+    ());
 
 const tabs = document.querySelectorAll('.title_tabs_block .tab_top');
 
