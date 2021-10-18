@@ -543,6 +543,10 @@ header .header_block_mobile {
   margin-right: 0;
 }
 
+.tabs_section .content_tabs_block #three .accordion_block.dez .link_block {
+  width: 100%;
+}
+
 .tabs_section .content_tabs_block #three li.bird {
   position: relative;
   list-style: none;
@@ -1274,6 +1278,54 @@ footer .copyrate_block p {
   color: #FFFFFF;
   opacity: 0.5;
   margin: 0;
+}
+
+.link_block {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.link_block .description {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.link_block .color_text {
+  color: #FC9B20;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.link_block h3 {
+  margin: 10px 0;
+}
+
+.link_block .youtube a {
+  color: transparent;
+  margin-right: 10px;
+}
+
+.link_block .text_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.link_block .text_links a {
+  color: #FC9B20;
 }
 
 /*--------------------------------------------------------------

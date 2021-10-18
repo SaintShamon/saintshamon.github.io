@@ -528,6 +528,10 @@ header {
                         }
                     }
                 }
+
+                .link_block {
+                    width: 100%;
+                }
             }
 
             li.bird {
@@ -1164,6 +1168,49 @@ footer {
         }
     }
 }
+
+.link_block {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .description {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+    }
+
+    .color_text {
+        color: #FC9B20;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+    }
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    .youtube {
+
+        a {
+            color: transparent;
+            margin-right: 10px;
+        }
+    }
+
+    .text_links {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            color: #FC9B20;
+        }
+    }
+}
+
+
 
 /*--------------------------------------------------------------
 # media
@@ -1804,6 +1851,7 @@ footer {
                     .col {
                         width: 100%;
                         max-width: none;
+
                         &:last-of-type {
                             display: flex;
                             justify-content: space-between;
