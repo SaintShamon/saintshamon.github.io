@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header_desc {
+    width: 100%;
+    background: $black;
+    min-height: 100px;
+
+    .main_block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo_block {
+        width: 100%;
+        max-width: 77px;
+        align-self: center;
+        margin-right: 66px;
+
+        img {
+            width: 100%;
+            max-width: 77px;
+        }
+    }
+
+    .menu_block {
+        align-self: center;
+        margin-right: 66px;
+        width: 100%;
+        max-width: 670px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-right: 28px;
+        }
+
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $gold;
+        }
+    }
+
+
+}
+
+.phone_block_desc {
+    width: 100%;
+    max-width: 325px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+
+    .tel {
+        width: 100%;
+        max-width: 178px;
+        margin-top: 25px;
+
+        a {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $gold;
+        }
+    }
+
+    .btn_block {
+        width: 100%;
+        max-width: 125px;
+        margin-top: 25px;
+
+        a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration-line: underline;
+            color: $gold;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+    }
+
+    .email {
+        width: 100%;
+
+        a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            font-feature-settings: 'pnum'on, 'lnum'on;
+            color: #FFFFFF;
+            text-align: right;
+            display: block;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $gold;
+        }
+    }
+
+
+}
