@@ -167,3 +167,32 @@ footer {
         }
     }
 }
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {
+    footer {
+        .main_block {
+            flex-wrap: wrap;
+
+            &>div {
+                max-width: 100%;
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            .phone_block_footer {
+                max-width: 247px;
+            }
+        }
+
+        .right_block a {
+            text-align: left;
+        }
+    }
+}

@@ -13,8 +13,6 @@
         h1 {
             font-style: normal;
             font-weight: normal;
-            font-size: 50px;
-            line-height: 58px;
             text-align: center;
             margin: 0;
         }
@@ -99,5 +97,41 @@
                 background-image: url('/img/button_line_2.svg');
             }
         }
+    }
+}
+
+@media screen and (max-width:1368px) {
+    .blog_section {
+
+        .blog_container {
+            p.title {
+                font-size: 20px;
+                line-height: 20px;
+                margin-top: 20px;
+            }
+
+            p.desc {
+                font-size: 16px;
+                line-height: 120%;
+            }
+
+            a {
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:586px) {
+    .blog_section {
+        margin-bottom: 50px;
     }
 }

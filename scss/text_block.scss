@@ -1,0 +1,154 @@
+/*--------------------------------------------------------------
+# О производстве
+--------------------------------------------------------------*/
+
+.video {
+    .section-bg {
+        background-image: url('/img/video_bg.jpg');
+    }
+
+    .main_block {
+        width: 100%;
+        max-width: 219px;
+        margin: 0 auto;
+        padding: 160px 0;
+    }
+}
+
+.text_content {
+    margin-top: 0;
+    padding-top: 80px;
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+        .col {
+            width: 100%;
+
+            &:first-of-type {
+                max-width: 600px;
+            }
+
+            &:last-of-type {
+                max-width: 514px;
+            }
+        }
+    }
+
+    h1,
+    h2 {
+        margin: 0 0 30px;
+        font-size: 50px;
+        line-height: 120%;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #2C2C2C;
+        margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .text_content {
+        margin-top: 0;
+        padding-top: 80px;
+
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            .col {
+                width: 100%;
+
+                &:first-of-type {
+                    max-width: 600px;
+                }
+
+                &:last-of-type {
+                    margin-left: 30px;
+                    max-width: 514px;
+                }
+            }
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 20px;
+            font-size: 40px;
+            line-height: 120%;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: #2C2C2C;
+            margin: 0 0 15px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {
+    .text_content {
+        margin-top: 0;
+        padding-top: 30px;
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            .col {
+                width: 100%;
+
+                &:first-of-type {
+                    max-width: none;
+                }
+
+                &:last-of-type {
+                    margin-left: 0;
+                    max-width: none;
+                }
+            }
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 20px;
+            font-size: 40px;
+            line-height: 120%;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: #2C2C2C;
+            margin: 0 0 15px;
+        }
+    }
+}
+
+@media screen and (max-width:586px) {
+    .video {
+
+        .main_block {
+            width: 100%;
+            max-width: 119px;
+            margin: 0 auto;
+            padding: 100px 0;
+        }
+    }
+}

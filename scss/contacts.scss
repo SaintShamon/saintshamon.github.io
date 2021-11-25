@@ -50,8 +50,6 @@
 
         h1 {
             margin: 0 0 30px;
-            font-size: 50px;
-            line-height: 58px;
         }
     }
 
@@ -196,5 +194,62 @@
             bottom: 15px;
             background-image: url('/img/button_line_2.svg');
         }
+    }
+}
+
+@media screen and (max-width:1368px) {
+
+    .contact .section-bg {
+        background-size: cover;
+        background-position: center -150px;
+    }
+}
+
+@media screen and (max-width:1200px) {}
+
+@media screen and (max-width:1024px) {
+    .contact {
+        .main_block {
+            flex-direction: column;
+        }
+
+        .text_block {
+            margin: 0 auto 30px;
+        }
+
+        .form_block {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width:586px) {
+    .contact {
+        .form_block {
+            padding: 30px 50px;
+        }
+
+        .input_inner {
+            width: 100%;
+            max-width: none;
+        }
+
+        .input_submit {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+
+            &::before,
+            &::after {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:356px) {
+
+    .text_block .col:last-of-type {
+        display: none;
     }
 }
