@@ -1,689 +1,394 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <title>Main page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway:wght@400;500;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700&family=Outfit:wght@300&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+
 </head>
 <body>
     <div class="site">
         <header>
-            <div class="header_desc">
-                <div class="container">
-                    <div class="main_block">
-                        <div class="logo_block">
-                            <a href="/index.html">
-                                <img src="/img/logo_white.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="menu_block">
-                            <nav>
-                                <ul>
-                                    <li><a href="/catalog.html">Каталог</a></li>
-                                    <li><a href="/new_products.html">Новинки</a></li>
-                                    <li><a href="/production.html">Производство</a></li>
-                                    <li><a href="/blog.html">Блог</a></li>
-                                    <li><a href="/contacts.html">Контакты</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="phone_block_desc">
-                            <div class="tel">
-                                <a href="tel:+">+38(099) 485 71 92</a>
-                            </div>
-                            <div class="btn_block">
-                                <a href="#" class="url">Заказать звонок</a>
-                            </div>
-                            <div class="email">
-                                <a href="mailto:ekaterinakolesnik858@gmail.com">ekaterinakolesnik858@gmail.com</a>
-                            </div>
+            <div class="container">
+                <div class="header_desctop">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/img/logo_main.svg" alt="">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="menu">
+                            <li class="active"><a href="#">Services</a></li>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn_block">
+                        <a href="#" class="btn">Contact us</a>
+                    </div>
+                </div>
+                <div class="header_mob">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/img/logo_main.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="burger-container">
+                        <div id="burger">
+                            <div class="bar topBar"></div>
+                            <div class="bar cntrBar"></div>
+                            <div class="bar btmBar"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="header_mobile">
+            <div class="inner_block" id="menu_box-panel">
                 <div class="container">
-                    <div class="header_block">
-                        <div class="logo_block">
-                            <a href="/">
-                                <img src="/img/logo_white.svg" alt="">
-                            </a>
-                        </div>
-                        <div class="burger_block">
-                            <div id="burger_button">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                        </div>
-                        <div id="side-panel" class="side-panel custom-scrollbar">
-
-                            <div class="side-inner">
-                                <div class="white_bg">
-                                    <div class="side-header">
-                                        <div class="side-logo">
-                                            <a href="/">
-                                                <img src="/img/logo_black.svg" alt="">
-                                            </a>
-                                        </div>
-
-                                        <div id="side-close-btn" class="side-close-btn">
-                                            <button>
-                                                <span></span>
-                                                <span></span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-
-                                    <nav class="side-nav">
-                                        <ul>
-                                            <li><a href="/catalog.html">Каталог</a></li>
-                                            <li><a href="/new_products.html">Новинки</a></li>
-                                            <li><a href="/production.html">Производство</a></li>
-                                            <li><a href="/blog.html">Блог</a></li>
-                                            <li><a href="/contacts.html">Контакты</a></li>
-                                        </ul>
-                                    </nav>
-
-                                    <div class="side_time">
-                                    </div>
-
-                                    <div class="side-messengers">
-                                        <div class="side-messengers-title">
-                                            <p>Связаться с нами:</p>
-                                        </div>
-                                        <div class="socials_block">
-                                            <!-- <a href="http://" target="_blank" rel="noopener noreferrer">
-                                                <img src="/img/logo/facebook_wh.svg" alt=""></a>
-                                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                                <img src="/img/logo/instagram_wh.svg" alt=""></a>
-                                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                                <img src="/img/logo/youtube_wh.svg" alt=""></a>
-                                            <a href="http://" target="_blank" rel="noopener noreferrer">
-                                                <img src="/img/logo/telegram_wh.svg" alt=""> -->
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="side-media">
-                                    </div>
-                                </div>
-
-                            </div>
-
+                    <div class="menu_block_mobile">
+                        <nav>
+                            <ul class="menu">
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </nav>
+                        <div class="btn_block">
+                            <a href="#" class="btn">Contact us</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main-page">
-            <div class="section-bg_top"></div>
-            <div class="section-bg_bottom"></div>
-            <section class="first_section">
-                <div class="container">
-                    <div class="main_block">
-                        <div class="swiper-container mySwiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <div class="inner_block swiper-slide">
-                                    <div class="slide">
-                                        <div class="content_block">
-                                            <p class="title">Славянские волосы для наращивания</p>
-                                            <p class="subtitle">Гарантируем качество<br> каждого волоса</p>
-                                            <div class="btn_block">
-                                                <a href="/catalog.html" class="catalog btn">Открыть каталог</a>
-                                            </div>
-                                        </div>
-                                        <div class="img_block">
-                                            <div class="img_inner">
-                                                <img src="/img/first_block_1.jpg" alt="">
-                                                <img class="second" src="/img/first_block_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="inner_block swiper-slide">
-                                    <div class="slide">
-                                        <div class="content_block">
-                                            <p class="title">Технология отбеливания волос </p>
-                                            <p class="subtitle">Применяем особую технологию отбеливания волос</p>
-                                            <div class="btn_block">
-                                                <a href="/catalog.html" class="catalog btn">Открыть каталог</a>
-                                            </div>
-                                        </div>
-                                        <div class="img_block">
-                                            <div class="img_inner">
-                                                <img src="/img/second_block_1.jpg" alt="">
-                                                <img class="second" src="/img/second_block_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="inner_block swiper-slide">
-                                    <div class="slide">
-                                        <div class="content_block">
-                                            <p class="title">Новинки </p>
-                                            <p class="subtitle">Представляем новинки от Star hair</p>
-                                            <div class="btn_block">
-                                                <a href="/catalog.html" class="catalog btn">Открыть каталог</a>
-                                            </div>
-                                        </div>
-                                        <div class="img_block">
-                                            <div class="img_inner">
-                                                <img src="/img/third_block_1.jpg" alt="">
-                                                <img class="second" src="/img/third_block_2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
+            <div class="decor_top">
+                <div class="decor_left">
+                    <img src="/img/top_left_decor.svg" alt="">
                 </div>
-            </section>
-            <section class="catalog section">
-                <div class="container">
-                    <div class="main_block">
-                        <div class="top_block">
-                            <div class="title_block">
-                                <h2>Каталог продукции</h2>
-                            </div>
-                            <div class="url_block">
-                                <a href="/catalog.html">Открыть каталог</a>
-                            </div>
-                        </div>
-                        <div class="catalog_block">
-                            <div class="category_block">
-                                <a href="#">
-                                    <img src="/img/catalog_1.jpg" alt="">
-                                    <p class="description">Волосы на тресах</p>
-                                </a>
-                            </div>
-                            <div class="category_block">
-                                <a href="#">
-                                    <img src="/img/catalog_2.jpg" alt="">
-                                    <p class="description">Волосы на лентах</p>
-                                </a>
-                            </div>
-                            <div class="category_block">
-                                <a href="#">
-                                    <img src="/img/catalog_3.jpg" alt="">
-                                    <p class="description">Аксессуары для снятия и наращивания волос</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="decor_right">
+                    <img src="/img/top_right_decor.svg" alt="">
                 </div>
-            </section>
-            <section class="about_production section">
-                <div class="container">
-                    <div class="main_block">
-                        <div class="img_block">
-                            <img src="/img/about_1.jpg" alt="">
-                        </div>
-                        <div class="text_block">
-                            <h2>О производстве</h2>
-                            <p>За долгое время работы (10 лет) магазин Star hair обзавелся огромной клиентской базой из
-                                постоянных клиенток и мастеров по наращиванию, которые по достоинству оценили высокое
-                                качество предлагаемой нами продукции. Более того, мы даем гарантию на каждый волос.
-                            </p>
-                            <p>Мы не работаем с искусственными материалами и применяем только натуральные славянские
-                                волосы
-                                высочайшего качества (волосы выдерживают до 1000 коррекций). В процессе работы с
-                                естественным продуктом не используем опасные материалы и агрессивные вещества.</p>
-                            <a href="/production.html">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="new_products section">
-                <div class="container">
-                    <div class="main_block ">
-                        <div class="tabs_block">
-                            <div class="title_block">
-                                <h2>Новинки</h2>
-                            </div>
-                            <div class="tabs">
-                                <ul>
-                                    <li><a href="#">Волосы на тресах</a></li>
-                                    <li><a href="#">Волосы на лентах</a></li>
-                                    <li><a class="active" href="#">Аксессуары</a></li>
-                                </ul>
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination-product"></div>
-                        </div>
-
-                        <div class="products_block swiper-container">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_1.jpg" alt="">
-                                        <p>Палитра из натуральных волос</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_2.jpg" alt="">
-                                        <p>Щипцы для горячего наращивания</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_1.jpg" alt="">
-                                        <p>Палитра из натуральных волос</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_2.jpg" alt="">
-                                        <p>Щипцы для горячего наращивания</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_1.jpg" alt="">
-                                        <p>Палитра из натуральных волос</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_2.jpg" alt="">
-                                        <p>Щипцы для горячего наращивания</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_1.jpg" alt="">
-                                        <p>Палитра из натуральных волос</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_2.jpg" alt="">
-                                        <p>Щипцы для горячего наращивания</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_1.jpg" alt="">
-                                        <p>Палитра из натуральных волос</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slide swiper-slide">
-                                    <div class="product">
-                                        <img src="/img/new_product_2.jpg" alt="">
-                                        <p>Щипцы для горячего наращивания</p>
-                                        <a href="/product.html"></a>
-                                        <div class="new_text">
-                                            <span>New</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="actions section">
+            </div>
+            <section class="first_section section">
                 <div class="section-bg"></div>
                 <div class="container">
                     <div class="main_block">
-                        <p>Акционные предложения на определенную длину</p>
+                        <div class="title_block">
+                            <div class="title">
+                                <h1>augmented reality</h1>
+                            </div>
+                            <div class="subtitle">
+                                <p>Digital art company</p>
+                            </div>
+                        </div>
+                        <div class="technologies_block">
+                            <div class="inner_block">
+                                <img src="/img/main_page/technology_1.svg" alt="">
+                            </div>
+                            <div class="inner_block">
+                                <img src="/img/main_page/technology_2.svg" alt="">
+                            </div>
+                            <div class="inner_block">
+                                <img src="/img/main_page/technology_3.svg" alt="">
+                            </div>
+                            <div class="inner_block">
+                                <img src="/img/main_page/technology_4.svg" alt="">
+                            </div>
+                            <div class="inner_block">
+                                <img src="/img/main_page/technology_5.png" alt="">
+                            </div>
+                            <div class="inner_block">
+                                <img src="/img/main_page/technology_6.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="services section">
+            <section class="production_section section">
+                <div class="section-bg"></div>
                 <div class="container">
                     <div class="main_block">
-                        <div class="title_block">
-                            <h2>Предоставляем такие виды услуг</h2>
-                        </div>
-                        <div class="tabs_block">
-                            <ul>
-                                <li><a href="#">Трессовка и пошив</a></li>
-                                <li class="active"><a href="#">Осветление волос
-                                    </a></li>
-                                <li><a href="#">Наращивание волос</a></li>
-                                <li><a href="#">Капсулирование волос
-                                    </a></li>
-                            </ul>
-                        </div>
-                        <div class="content_block">
-                            <div class="content second">
-                                <div class="img_block">
-                                    <img src="/img/service_img_1.jpg" alt="">
+                        <div class="production_block">
+                            <div class="inner_block">
+                                <div class="title_block">
+                                    <h3>Game art production from your thinking
+                                    </h3>
                                 </div>
                                 <div class="text_block">
-                                    <p>Получить красивые и ухоженные натуральные осветленные волосы, заказать
-                                        промышленное
-                                        осветление можно в компании Star hair</p>
-                                    <a href="#">Подробнее</a>
-                                    <img src="/img/service_img_2.jpg" alt="">
+                                    <ul>
+                                        <li>Environment</li>
+                                        <li>Characters</li>
+                                        <li>Weapons</li>
+                                        <li>Vehicles</li>
+                                    </ul>
                                 </div>
+                                <div class="url_block">
+                                    <a href="#">
+                                        <img src="/img/main_page/arrow_production.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="hover_block"></div>
                             </div>
+                            <div class="production_block_before"></div>
+                        </div>
+                        <div class="production_block">
+                            <div class="inner_block">
+                                <div class="title_block">
+                                    <h3>Making your own Virtual or Argument reality
+                                    </h3>
+                                </div>
+                                <div class="text_block">
+                                    <ul>
+                                        <li>Environment</li>
+                                        <li>Characters</li>
+                                        <li>Weapons</li>
+                                        <li>Vehicles</li>
+                                    </ul>
+                                </div>
+                                <div class="url_block">
+                                    <a href="#">
+                                        <img src="/img/main_page/arrow_production.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="hover_block"></div>
+                            </div>
+                            <div class="production_block_before"></div>
+                        </div>
+                        <div class="production_block">
+                            <div class="inner_block">
+                                <div class="title_block">
+                                    <h3>Art for marketplaces selling
+                                    </h3>
+                                </div>
+                                <div class="text_block">
+                                    <ul>
+                                        <li>Environment</li>
+                                        <li>Characters</li>
+                                        <li>Weapons</li>
+                                        <li>Vehicles</li>
+                                    </ul>
+                                </div>
+                                <div class="url_block">
+                                    <a href="#">
+                                        <img src="/img/main_page/arrow_production.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="hover_block"></div>
+                            </div>
+                            <div class="production_block_before"></div>
+                        </div>
+                        <div class="production_block">
+                            <div class="inner_block">
+                                <div class="title_block">
+                                    <h3>Converting your real product to digital markets
+                                    </h3>
+                                </div>
+                                <div class="text_block">
+                                    <ul>
+                                        <li>Environment</li>
+                                        <li>Characters</li>
+                                        <li>Weapons</li>
+                                        <li>Vehicles</li>
+                                    </ul>
+                                </div>
+                                <div class="url_block">
+                                    <a href="#">
+                                        <img src="/img/main_page/arrow_production.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="hover_block"></div>
+                            </div>
+                            <div class="production_block_before"></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="types section">
-                <div class="container">
-                    <div class="main_block">
-                        <div class="title_block">
-                            <h2>Виды наращивания волос</h2>
-                        </div>
-                        <div class="accordion_block">
-                            <div class="accordion">
-                                <div class="title">
-                                    <p>Капсульное</p>
-                                    <div class="arrow">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.10526 2.03467H31.2105M31.2105 2.03467V23.7588M31.2105 2.03467L9.10526 23.7588L2 30.7416"
-                                                stroke="#DCC29D" stroke-width="3" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/img/type_img_1.jpg" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p> Капсульное наращивание волос проходит предельно просто. Первый шаг, который
-                                            потребуется сделать — это подобрать те пряди, которые бы по своей текстуре
-                                            и...
-                                        </p>
-                                        <a href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion">
-                                <div class="title">
-                                    <p>Горячее</p>
-                                    <div class="arrow">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.10526 2.03467H31.2105M31.2105 2.03467V23.7588M31.2105 2.03467L9.10526 23.7588L2 30.7416"
-                                                stroke="#DCC29D" stroke-width="3" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/img/type_img_1.jpg" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p> Капсульное наращивание волос проходит предельно просто. Первый шаг, который
-                                            потребуется сделать — это подобрать те пряди, которые бы по своей текстуре
-                                            и...
-                                        </p>
-                                        <a href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion">
-                                <div class="title">
-                                    <p>Холодное</p>
-                                    <div class="arrow">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.10526 2.03467H31.2105M31.2105 2.03467V23.7588M31.2105 2.03467L9.10526 23.7588L2 30.7416"
-                                                stroke="#DCC29D" stroke-width="3" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/img/type_img_1.jpg" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p> Капсульное наращивание волос проходит предельно просто. Первый шаг, который
-                                            потребуется сделать — это подобрать те пряди, которые бы по своей текстуре
-                                            и...
-                                        </p>
-                                        <a href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion">
-                                <div class="title">
-                                    <p>Ленточное</p>
-                                    <div class="arrow">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.10526 2.03467H31.2105M31.2105 2.03467V23.7588M31.2105 2.03467L9.10526 23.7588L2 30.7416"
-                                                stroke="#DCC29D" stroke-width="3" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/img/type_img_1.jpg" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p> Капсульное наращивание волос проходит предельно просто. Первый шаг, который
-                                            потребуется сделать — это подобрать те пряди, которые бы по своей текстуре
-                                            и...
-                                        </p>
-                                        <a href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion">
-                                <div class="title">
-                                    <p>Микрокапсульное</p>
-                                    <div class="arrow">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.10526 2.03467H31.2105M31.2105 2.03467V23.7588M31.2105 2.03467L9.10526 23.7588L2 30.7416"
-                                                stroke="#DCC29D" stroke-width="3" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/img/type_img_1.jpg" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p> Капсульное наращивание волос проходит предельно просто. Первый шаг, который
-                                            потребуется сделать — это подобрать те пряди, которые бы по своей текстуре
-                                            и...
-                                        </p>
-                                        <a href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion">
-                                <div class="title">
-                                    <p>Голивудское</p>
-                                    <div class="arrow">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M9.10526 2.03467H31.2105M31.2105 2.03467V23.7588M31.2105 2.03467L9.10526 23.7588L2 30.7416"
-                                                stroke="#DCC29D" stroke-width="3" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="img">
-                                        <img src="/img/type_img_1.jpg" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <p> Капсульное наращивание волос проходит предельно просто. Первый шаг, который
-                                            потребуется сделать — это подобрать те пряди, которые бы по своей текстуре
-                                            и...
-                                        </p>
-                                        <a href="">Подробнее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="last_news section">
-                <div class="container">
-                    <div class="title_block">
-                        <h2>Будьте в курсе последних новостей с Star hair </h2>
-                    </div>
-                </div>
+            <section class="portfolio_section section">
+                <div class="section-bg"></div>
                 <div class="main_block">
-                    <div class="news swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <div class="inner_block swiper-slide">
-                                <img src="/img/blog_1.jpg" alt="">
-                                <p class="title">Можно ли красить нарощеные волосы?</p>
-                                <p class="desc">Покрасить волосы качественно и безопасно можно только в том случае,
-                                    если...
-                                </p>
-                                <a href="#">Читать полностью</a>
+                    <div class="title_block">
+                        <h2>Portfolio</h2><span>125 works</span>
+                    </div>
+                    <div class="gallery">
+                        <div class="gallery_row">
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_1.jpg" alt="">
+                                </a>
                             </div>
-                            <div class="inner_block swiper-slide">
-                                <img src="/img/blog_2.jpg" alt="">
-                                <p class="title"> Правила ухода за нарощеными волосами</p>
-                                <p class="desc">Главной особенностью донорских волос является то, что они не получают
-                                    дополнительной подпитки, как это происходит с натуральными волосами. Поэтому уход за
-                                    нарощенными волосами является обязательным моментом для любой девушки...</p>
-                                <a href="#">Читать полностью</a>
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_2.jpg" alt="">
+                                </a>
                             </div>
-                            <div class="inner_block swiper-slide">
-                                <img src="/img/blog_1.jpg" alt="">
-                                <p class="title">Можно ли красить нарощеные волосы?</p>
-                                <p class="desc">Покрасить волосы качественно и безопасно можно только в том случае,
-                                    если...
-                                </p>
-                                <a href="#">Читать полностью</a>
+                        </div>
+                        <div class="gallery_row">
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_3.jpg" alt="">
+                                </a>
                             </div>
-                            <div class="inner_block swiper-slide">
-                                <img src="/img/blog_2.jpg" alt="">
-                                <p class="title"> Правила ухода за нарощеными волосами</p>
-                                <p class="desc">Главной особенностью донорских волос является то, что они не получают
-                                    дополнительной подпитки, как это происходит с натуральными волосами. Поэтому уход за
-                                    нарощенными волосами является обязательным моментом для любой девушки...</p>
-                                <a href="#">Читать полностью</a>
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery_row">
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_6.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery_row">
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="gallery_block">
+                                <a href="#">
+                                    <img src="/img/main_page/work_8.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>
+                    <a href="#" class="btn">more works</a>
                 </div>
             </section>
-            <section class="help section">
+            <section class="blog_section section">
+                <div class="decor_left_blog">
+                    <img src="/img/blog_left_decor.svg" alt="">
+                </div>
+                <div class="decor_right_blog">
+                    <img src="/img/blog_right_decor.svg" alt="">
+                </div>
                 <div class="section-bg"></div>
                 <div class="container">
                     <div class="main_block">
-                        <div class="heart_block">
-                            <p class="main">Присоединяйтесь!</p>
-                            <p class="subtitle">Делаем пожертвования части волос<br> для людей больных раком</p>
+                        <div class="title_block">
+                            <h2>blog</h2><span>54 articles</span>
+                        </div>
+                        <div class="blog_block">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="article_block">
+                                            <a href="#">
+                                                <img src="/img/main_page/article_1.jpg" alt="">
+                                                <h3>Article title</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                                    commodo
+                                                    ligula
+                                                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                                    parturient
+                                                    montes.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="article_block">
+                                            <a href="#">
+                                                <img src="/img/main_page/article_2.jpg" alt="">
+                                                <h3>Article title</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                                    commodo
+                                                    ligula
+                                                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                                    parturient
+                                                    montes.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="article_block">
+                                            <a href="#">
+                                                <img src="https://loremflickr.com/540/318" alt="">
+                                                <h3>Article title</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                                    commodo
+                                                    ligula
+                                                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                                    parturient
+                                                    montes.</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow_block">
+                                <div class="swiper-button-prev-unique"></div>
+                                <div class="swiper-button-next-unique"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
+            <div class="section-bg"></div>
             <div class="container">
                 <div class="main_block">
-                    <div class="logo_block">
-                        <a href="/index.html">
-                            <img src="/img/logo_white.svg" alt="">
-                        </a>
-                        <div class="site_text">
-                            <p>Славянские волосы для наращивания</p>
+                    <div class="top_block">
+                        <div class="logo_block">
+                            <a href="#">
+                                <img src="/img/logo_main.svg" alt="">
+                            </a>
+                            <div class="social_block">
+                                <a href="mailto:digital—stick@gmail.com">digital—stick@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="footer_menu">
+                            <nav>
+                                <ul class="menu">
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    <div class="phone_block_footer">
-                        <div class="tel">
-                            <a href="tel:+">+38(099) 485 71 92</a>
+                    <div class="bottom_block">
+                        <div class="copyright">
+                            <p>© 2022 Digital—stick. All Rights Reserved</p>
                         </div>
-                        <div class="btn_block">
-                            <a href="#" class="url">Заказать звонок</a>
-                        </div>
-                        <div class="email">
-                            <a href="mailto:ekaterinakolesnik858@gmail.com">ekaterinakolesnik858@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="menu_block">
-                        <nav>
+                        <div class="bottom_footer_menu">
                             <ul>
-                                <li><a href="/catalog.html">Каталог</a></li>
-                                <li><a href="/new_products.html">Новинки</a></li>
-                                <li><a href="/production.html">Производство</a></li>
-                                <li><a href="/blog.html">Блог</a></li>
-                                <li><a href="/contacts.html">Контакты</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
-                    <div class="right_block">
-                        <a href="">
-                            Политика в отношении обработки персональных данных
-                        </a>
-                    </div>
-                </div>
-                <div class="bottom_block">
-                    <p class="descr">Все права защищены © 2021</p>
                 </div>
             </div>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/slider.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

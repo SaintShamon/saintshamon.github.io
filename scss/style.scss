@@ -1,11 +1,11 @@
-$raleway: 'Raleway',
+$Bai: 'Bai Jamjuree',
 sans-serif;
-$Poiret-one: 'Poiret One',
-cursive;
-$gold: #DCC29D;
-$white: #F3EFEC;
-$black: #2C2C2C;
-$grey: #5E5E5E;
+$Montserrat: 'Montserrat',
+sans-serif;
+$Outfit: 'Outfit',
+sans-serif;
+$Roboto: 'Roboto',
+sans-serif;
 
 * {
     box-sizing: border-box;
@@ -17,68 +17,21 @@ $grey: #5E5E5E;
 }
 
 body {
-    position: relative;
-    // overflow: hidden;
-    font-size: 18px;
-    line-height: 150%;
-    color: $black;
-    font-family: $raleway;
-    font-style: normal;
-    font-weight: normal;
-    padding: 0;
-    margin: 0;
+    font-family: $Bai;
+    background-color: #15171A;
 }
 
 .site {
     overflow: hidden;
+    padding-top: 104px;
 }
 
 .container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0 15px;
-}
-
-h1 {
-    font-family: $Poiret-one;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 70px;
-    line-height: 120%;
-}
-
-h2 {
-    font-family: $Poiret-one;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 120%;
-}
-
-h3 {
-    font-family: $Poiret-one;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 120%;
-}
-
-h4 {
-    font-family: $Poiret-one;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 120%;
-}
-
-h5 {
-    font-family: $Poiret-one;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 120%;
+    padding: 0 10px;
 }
 
 img {
@@ -115,101 +68,96 @@ img {
 
 .section {
     position: relative;
-    margin-top: 150px;
+    margin-top: 100px;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
 }
 
 .btn {
-    width: 100%;
-    max-width: 300px;
-    height: 70px;
-    background: $gold;
-    border-radius: 5px 35px;
-    font-family: $raleway;
+    display: block;
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(315deg, #E45E26 0%, #F7D322 100%);
+    border-radius: 5px;
+    font-family: $Bai;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 132.69%;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    text-decoration: none;
+    padding-top: 15px;
+    text-align: center;
+    color: #15171A;
+    transition: 0.5s;
+
+    &:hover {
+        transition: 0.5s;
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.7));
+    }
 }
 
-.site {
-    padding-top: 107px;
-}
-
-main {
+.main-page {
     position: relative;
 
-    .section-bg_top {
-        width: 100vw;
-        height: 1109px;
+    .decor_top {
         position: absolute;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        z-index: -1;
+    }
+
+    .decor_left {
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+
+    .decor_right {
+        position: absolute;
+        right: 0;
         top: 0;
-        left: 50%;
-        margin-left: calc(-1 * (100vw / 2));
-        z-index: -1;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url('/img/main_page_top.svg')
-    }
-
-    .section-bg_bottom {
-        width: 100vw;
-        height: 2378px;
-        position: absolute;
-        bottom: 312px;
-        left: 50%;
-        margin-left: calc(-1 * (100vw / 2));
-        z-index: -1;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url('/img/main_page_bottom.svg')
-    }
-
-    &.single-product-page {
-        .section-bg_bottom {
-            bottom: -50%;
-            background-position: top center;
-        }
     }
 }
 
 
+@media screen and (max-width:1640px) {
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1420px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
 
 @media screen and (max-width:1368px) {
-
-    body {
-        font-size: 16px;
-        line-height: 150%;
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
     }
 
-    h1 {
-        font-family: $Poiret-one;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 54px;
-        line-height: 120%;
-    }
-
-    h2 {
-        font-family: $Poiret-one;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 40px;
-        line-height: 120%;
-    }
-
-    h3 {
-        font-family: $Poiret-one;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 34px;
-        line-height: 120%;
+    .section {
+        position: relative;
+        margin-top: 70px;
     }
 }
 
@@ -217,14 +165,9 @@ main {
     .container {
         position: relative;
         width: 100%;
-        max-width: 1100px;
+        max-width: 1000px;
         margin: 0 auto;
-        padding: 0 15px;
-    }
-
-    .section {
-        position: relative;
-        margin-top: 100px;
+        padding: 0 10px;
     }
 }
 
@@ -232,63 +175,21 @@ main {
     .container {
         position: relative;
         width: 100%;
-        max-width: 960px;
+        max-width: 800px;
         margin: 0 auto;
         padding: 0 15px;
     }
-
-    .about_production {
-        .img_block {
-            margin-right: 30px;
-        }
-    }
-
-    .services {
-        .img_block {
-            width: 100%;
-            max-width: 48%;
-            margin-right: 30px;
-        }
-    }
 }
 
-@media screen and (max-width:586px) {
+@media screen and (max-width:768px) {
     .section {
         position: relative;
         margin-top: 50px;
     }
-
-    h1 {
-        font-family: $Poiret-one;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 34px;
-        line-height: 120%;
-    }
-
-    h2 {
-        font-family: $Poiret-one;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 34px;
-        line-height: 120%;
-    }
-
-    h3 {
-        font-family: $Poiret-one;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 26px;
-        line-height: 120%;
-    }
 }
+
+@media screen and (max-width:586px) {}
 
 @import 'header';
 @import 'footer';
-@import 'main_page';
-@import 'catalog';
-@import 'new_products';
-@import 'single_product';
-@import 'blog';
-@import 'contacts';
-@import 'text_block';
+@import 'main-page';
