@@ -1,6 +1,6 @@
 var mySwiper = new Swiper('.swiper-container', {
     speed: 400,
-    spaceBetween: 30,
+    spaceBetween: 10,
     a11y: true,
     keyboardControl: true,
     grabCursor: true,

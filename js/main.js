@@ -12,3 +12,14 @@ $('.burger-container').click(function () {
     $('body').addClass('menu-panel-overlay');
     return false;
 });
+
+$(document).ready(function () {
+    $(".control").click(function () {
+        var pageIndex = $(this).index();
+        $next = $(".page").eq(pageIndex);
+        $(".active-page").removeClass("active-page");
+        $(".active-control").removeClass("active-control");
+        $(this).addClass("active-control");
+        $next.addClass("active-page");
+    })
+})

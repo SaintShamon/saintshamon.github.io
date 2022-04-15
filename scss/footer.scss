@@ -192,4 +192,29 @@ footer {
 
 @media screen and (max-width:768px) {}
 
-@media screen and (max-width:586px) {}
+@media screen and (max-width:586px) {
+    footer {
+
+        .main_block {
+            padding: 30px 0;
+        }
+
+        .footer_menu {
+            li {
+                margin-bottom: 20px;
+            }
+        }
+
+        .bottom_block {
+            margin-top: 40px;
+        }
+
+        .copyright {
+            order: 2;
+        }
+
+        .bottom_footer_menu {
+            margin-bottom: 30px;
+        }
+    }
+}
