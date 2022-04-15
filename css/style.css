@@ -801,7 +801,6 @@ footer .bottom_footer_menu a:hover {
   font-weight: 300;
   font-size: 30px;
   line-height: 130%;
-  /* identical to box height, or 39px */
   text-align: center;
   letter-spacing: 0.3em;
   text-transform: uppercase;
@@ -833,6 +832,7 @@ footer .bottom_footer_menu a:hover {
   -ms-flex-item-align: center;
       align-self: center;
   margin: 0 auto;
+  max-width: 105px;
 }
 
 .production_section .main_block {
