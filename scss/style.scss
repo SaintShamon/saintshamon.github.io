@@ -22,6 +22,7 @@ body {
 }
 
 .site {
+    position: relative;
     overflow: hidden;
     padding-top: 104px;
 }
@@ -29,7 +30,7 @@ body {
 .container {
     position: relative;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -106,38 +107,38 @@ img {
 
 .main-page {
     position: relative;
+}
 
-    .decor_top {
-        position: absolute;
-        top: -100px;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        z-index: -1;
-    }
+.decor_top {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+}
 
-    .decor_bottom {
-        position: absolute;
-        bottom: 200vh;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        z-index: -1;
-    }
+.decor_bottom {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+}
 
-    .decor_left {
-        position: absolute;
-        left: 0;
-        top: 100px;
-        z-index: -1;
-    }
+.decor_left {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: -1;
+}
 
-    .decor_right {
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: -1;
-    }
+.decor_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
 h2 {
@@ -147,6 +148,7 @@ h2 {
     line-height: 130%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 h3 {
@@ -154,6 +156,7 @@ h3 {
     font-weight: 500;
     font-size: 50px;
     line-height: 120%;
+    color: #FFFFFF;
 }
 
 h4 {
@@ -161,28 +164,13 @@ h4 {
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
+    color: #FFFFFF;
 }
 
 
-@media screen and (max-width:1640px) {
-    .container {
-        position: relative;
-        width: 100%;
-        max-width: 1420px;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-}
+@media screen and (max-width:1640px) {}
 
-@media screen and (max-width:1500px) {
-    .container {
-        position: relative;
-        width: 100%;
-        max-width: 1320px;
-        margin: 0 auto;
-        padding: 0 10px;
-    }
-}
+@media screen and (max-width:1500px) {}
 
 @media screen and (max-width:1368px) {
     .container {
@@ -197,6 +185,18 @@ h4 {
         position: relative;
         margin-top: 70px;
     }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -210,6 +210,8 @@ h4 {
 }
 
 @media screen and (max-width:1024px) {
+
+
     .container {
         position: relative;
         width: 100%;
@@ -224,9 +226,17 @@ h4 {
         position: relative;
         margin-top: 50px;
     }
+
+    h2 {
+        font-size: 30px;
+    }
 }
 
-@media screen and (max-width:586px) {}
+@media screen and (max-width:586px) {
+    h3 {
+        font-size: 22px;
+    }
+}
 
 @import 'header';
 @import 'footer';

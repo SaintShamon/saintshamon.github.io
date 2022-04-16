@@ -23,3 +23,9 @@ $(document).ready(function () {
         $next.addClass("active-page");
     })
 })
+
+$('.service_block li').click(function () {
+    $(this).parents().eq(1).find('li').removeClass('active');
+    $(this).toggleClass('active');
+    $(this).find('li').slideToggle(300);
+});

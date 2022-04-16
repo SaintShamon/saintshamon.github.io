@@ -448,7 +448,7 @@
     .swiper-button-prev-unique {
         position: absolute;
         content: '';
-        left: -20px;
+        left: -200px;
         top: calc(50% - 48px);
         width: 155px;
         height: 96px;
@@ -463,7 +463,7 @@
     .swiper-button-next-unique {
         position: absolute;
         content: '';
-        right: -20px;
+        right: -200px;
         top: calc(50% - 48px);
         width: 155px;
         height: 96px;
@@ -500,14 +500,14 @@
         }
 
         .swiper-button-prev-unique {
-            left: 100px;
+            left: -80px;
             top: calc(50% - 33px);
             width: 115px;
             height: 66px;
         }
 
         .swiper-button-next-unique {
-            right: 80px;
+            right: -100px;
             top: calc(50% - 33px);
             width: 115px;
             height: 66px;
@@ -577,11 +577,11 @@
         }
 
         .swiper-button-prev-unique {
-            left: 40px;
+            left: 20px;
         }
 
         .swiper-button-next-unique {
-            right: 20px;
+            right: -20px;
         }
     }
 }

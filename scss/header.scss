@@ -74,7 +74,7 @@ header {
         }
 
         li {
-            margin-right: 20px;
+            margin-right: 10px;
 
             &.active {
                 a {
@@ -85,6 +85,10 @@ header {
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
                 }
+            }
+
+            &:last-of-type {
+                margin-right: 0;
             }
         }
     }

@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.blog_block .swiper-container', {
     speed: 400,
     spaceBetween: 10,
     a11y: true,
@@ -14,6 +14,37 @@ var mySwiper = new Swiper('.swiper-container', {
             keyboardControl: true,
             grabCursor: true,
             centeredSlides: false,
+        },
+    },
+    navigation: {
+        nextEl: ".swiper-button-next-unique",
+        prevEl: ".swiper-button-prev-unique",
+    }
+});
+
+let contactsSwiper = new Swiper('.technologies_list', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 30,
+    // centeredSlidesBounds: true,
+    loop: true,
+    loopedSlides: 5,
+    autoplay: {
+        delay: 3000,
+    },
+});
+
+var mySwiper_client = new Swiper('.clients_block_inner', {
+    speed: 400,
+    spaceBetween: 40,
+    a11y: true,
+    loop: true,
+    keyboardControl: true,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    breakpoints: {
+        1640: {
+            slidesPerView: 6,
         },
     },
     navigation: {
