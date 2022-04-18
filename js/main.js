@@ -14,10 +14,13 @@ $('.burger-container').click(function () {
 });
 
 $(document).ready(function () {
-    $(".control").click(function () {
+    $(".controls .swiper-slide").click(function () {
+        if ($('.page').hasClass('active-page')) {
+            $(".active-page").removeClass("active-page");
+        }
         var pageIndex = $(this).index();
-        $next = $(".page").eq(pageIndex);
-        $(".active-page").removeClass("active-page");
+        $next = $(".pages .page").eq(pageIndex);
+
         $(".active-control").removeClass("active-control");
         $(this).addClass("active-control");
         $next.addClass("active-page");
