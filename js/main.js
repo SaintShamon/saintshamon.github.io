@@ -52,3 +52,11 @@ function move2() {
 }
 
 var interval2 = setInterval(move2, 10);
+
+$('.block i').on('click', function () {
+    $(this).parents().eq(1).find('.icon').toggleClass('active');
+});
+
+$('.form-group i').on('click', function () {
+    $(this).parents().eq(1).find('.icon').toggleClass('active');
+});

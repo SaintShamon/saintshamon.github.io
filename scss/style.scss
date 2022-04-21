@@ -78,7 +78,7 @@ img {
     }
 
     &:last-of-type {
-        margin-bottom: 100px;
+        margin-bottom: 260px;
     }
 }
 
@@ -131,6 +131,7 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+    position: relative;
 }
 
 h1 {
@@ -182,22 +183,127 @@ i {
         }
 
         &:last-of-type {
-            margin-bottom: 100px;
+            margin-bottom: 260px;
         }
+    }
+
+    h1 {
+        font-size: 105px;
+        line-height: 105px;
+    }
+
+    h2 {
+        font-size: 40px;
     }
 }
 
-@media screen and (max-width:1500px) {}
+@media screen and (max-width:1500px) {
+    h1 {
+        font-size: 85px;
+        line-height: 85px;
+    }
 
-@media screen and (max-width:1368px) {}
+}
 
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1368px) {
 
-@media screen and (max-width:1024px) {}
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .section {
+        position: relative;
+        margin-top: 70px;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &:last-of-type {
+            margin-bottom: 160px;
+        }
+    }
+
+    h1 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    .button_block {
+        display: flex;
+        width: 143px;
+        height: 143px;
+
+        &::after {
+            left: -33px;
+            top: 15px;
+            width: 200.42px;
+            height: 115.93px;
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+}
 
 @media screen and (max-width:768px) {}
 
-@media screen and (max-width:586px) {}
+@media screen and (max-width:586px) {
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:386px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    body section .title_block span {
+        font-size: 40px !important;
+    }
+}
 
 @import 'header';
 @import 'footer';
