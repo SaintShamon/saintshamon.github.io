@@ -2369,7 +2369,7 @@ footer .logo_block {
     margin-left: 100px;
   }
   .second_section .bottom_block .button_block {
-    left: 0;
+    left: calc(50% - 71.5px);
   }
   .who_section .title_block h2 {
     text-align: center;
