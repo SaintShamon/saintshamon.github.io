@@ -99,7 +99,7 @@ img {
         background: linear-gradient(0deg, #FF007B, #FF007B);
         filter: blur(300px);
         transform: rotate(-12.78deg);
-        z-index: 2;
+        z-index: -1;
     }
 
     &::after {
@@ -132,6 +132,8 @@ img {
     color: #FFFFFF;
     text-decoration: none;
     position: relative;
+    cursor: pointer;
+    z-index: 2;
 }
 
 h1 {
@@ -171,6 +173,33 @@ i {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@keyframes animate {
+    0% {
+        width: 400px;
+        height: 400px;
+    }
+
+    25% {
+        width: 300px;
+        height: 300px;
+    }
+
+    50% {
+        width: 200px;
+        height: 200px;
+    }
+
+    50% {
+        width: 350px;
+        height: 350px;
+    }
+
+    100% {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 @media screen and (max-width:1640px) {
@@ -263,6 +292,48 @@ i {
         max-width: 1000px;
         margin: 0 auto;
         padding: 0 10px;
+    }
+
+    .button_block {
+        &::before {
+            position: absolute;
+            content: '';
+            width: 242.98px;
+            left: -20%;
+            top: -20%;
+            height: 242.98px;
+            background: linear-gradient(0deg, #FF007B, #FF007B);
+            filter: blur(300px);
+            transform: rotate(-12.78deg);
+            z-index: -1;
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            width: 300px;
+            height: 300px;
+        }
+
+        25% {
+            width: 200px;
+            height: 200px;
+        }
+
+        50% {
+            width: 100px;
+            height: 100px;
+        }
+
+        50% {
+            width: 200px;
+            height: 200px;
+        }
+
+        100% {
+            width: 300px;
+            height: 300px;
+        }
     }
 }
 
