@@ -1,0 +1,388 @@
+html, body
+  -webkit-overflow-scrolling: touch
+
+body
+	z-index: -2
+	position: relative
+	font-family: $font-family-base
+	font-size: $default-font-size
+	font-weight: $default-font-weight
+	font-style: normal
+	line-height: $default-line-height
+	color: $default-text-color
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	-webkit-backface-visibility: hidden
+	-webkit-tap-highlight-color: transparent
+	::-moz-selection
+		color: $color-primary
+		background: transparent
+	::selection
+		color: $color-primary
+		background: transparent
+	+max-screen($breakpoint-1500)
+		font-size: 16px
+.text
+	&--style
+
+	&--default,&--default *
+		font-family: $font-family-base
+		font-size: $default-font-size
+		font-weight: $default-font-weight
+		font-style: normal
+		line-height: $default-line-height
+
+	&--uppercase
+		text-transform: uppercase
+
+	&--left
+		text-align: left
+	&--right
+		text-align: right
+	&--center
+		text-align: center
+
+	&-color
+		&-white
+			&,& *, &.content-block *
+				color: #fff
+		&-primary
+			&,& *
+				color: $color-primary
+		&-default
+			&,& *
+				color: $default-text-color
+
+	&--underline
+		text-decoration: underline
+
+	&--spacing
+		letter-spacing: 0.05em
+
+	&--opacity
+		opacity: 0.6
+
+	&--size
+		&--12
+			font-size: 12px
+			line-height: 16px
+		&--14
+			font-size: 14px
+			line-height: 1.2em
+		&--16
+			font-size: 16px
+			line-height: 1.2em
+		&--24
+			font-size: 24px
+
+	&--outline
+		color: transparent
+		-webkit-text-stroke: 1px $default-text-color
+		.content-block &
+			color: transparent
+		.text-color-white &
+			-webkit-text-stroke: 1px #fff
+	&--color--blue
+		color: $color-blue
+
+.font
+	&--primary
+		font-family: $font-family-base
+	&--secondary
+		font-family: $font-family-secondary
+	&--italic
+		font-style: italic
+	&-weight
+		&-300,
+		&-300 *
+			font-weight: 300
+		&-400,
+		&-400 *
+			font-weight: 400
+		&-500,
+		&-500 *
+			font-weight: 500
+		&-600,
+		&-600 *
+			font-weight: 600
+		&-700,
+		&-700 *
+			font-weight: 700
+		&-900,
+		&-900 *
+			font-weight: 900
+
+.p1
+	opacity: 0.75
+	font-size: 16px
+	font-weight: 600
+	letter-spacing: 0
+	line-height: 26px
+
+.p2
+	opacity: 0.75
+	font-size: 14px
+	font-weight: 600
+	line-height: 22px
+
+.p3
+	opacity: 0.75
+	font-size: 13px
+	font-weight: 600
+	line-height: 22px
+
+h1,.h1
+	font-size: 124px
+	font-weight: 400
+	line-height: 1.06em
+	font-family: $font-family-secondary
+	+max-screen(1800px)
+		font-size: 92px
+	+max-screen(1500px)
+		font-size: 82px
+	+max-screen($breakpoint-xl)
+		font-size: 72px
+	+max-screen(1200px)
+		font-size: 62px
+	+max-screen($breakpoint-lg)
+		font-size: 49px
+	+max-screen($breakpoint-md)
+		font-size: 36px
+
+h2,.h2
+	font-size: 70px
+	line-height: 100%
+	font-weight: 400
+	font-family: $font-family-secondary
+	+max-screen($breakpoint-xl)
+		font-size: 55px
+	+max-screen($breakpoint-lg)
+		font-size: 40px
+	+max-screen($breakpoint-md)
+		font-size: 32px
+
+h3,.h3
+	font-size: 45px
+	font-weight: 400
+	line-height: 1.13em
+	font-family: $font-family-secondary
+	+max-screen($breakpoint-xl)
+		font-size: 40px
+	+max-screen($breakpoint-lg)
+		font-size: 32px
+	+max-screen($breakpoint-md)
+		font-size: 26px
+
+h4,.h4
+	font-size: 35px
+	font-weight: 400
+	line-height: 1.13em
+	font-family: $font-family-secondary
+	+max-screen($breakpoint-xl)
+		font-size: 30px
+	+max-screen($breakpoint-lg)
+		font-size: 26px
+	+max-screen($breakpoint-md)
+		font-size: 23px
+
+.h5,h5
+	font-size: 32px
+	font-weight: 400
+	line-height: 1.13em
+	font-family: $font-family-secondary
+	+max-screen($breakpoint-xl)
+		font-size: 23px
+	+max-screen($breakpoint-lg)
+		font-size: 20px
+	+max-screen($breakpoint-md)
+		font-size: 18px
+
+h6,.h6
+	font-size: 20px
+	+max-screen($breakpoint-md)
+		font-size: 16px
+
+.link-underline
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 100%
+		height: 1px
+		background-color: $color-primary
+		transition: 0.2s ease-out
+	&:hover:before
+		width: 0
+
+.content-block
+	p,h1,h2,h3,h4,h5,h6
+		margin-bottom: 20px
+		+max-screen($breakpoint-md)
+			margin-bottom: 15px
+		&:nth-last-child(1)
+			margin-bottom: 0
+	h1,h2
+		//padding-bottom: 0
+		//margin-bottom: -10px
+		color: $color-black
+		&:nth-last-child(1)
+			margin-bottom: 0
+	h3
+		padding-bottom: 10px
+		&:nth-last-child(1)
+			margin-bottom: 0
+
+	h1,h2,h3,h4,h5
+		color: $color-black
+		.text-color-white &
+			color: #fff
+	p,ul,ol
+		font-size: 18px
+		line-height: 1.6
+		color: $default-text-color
+		.text-color-white &
+			color: #fff
+	a
+		&:not(.button)
+			text-decoration: underline
+			transition: 0.3s
+			&:hover
+				opacity: 0.8
+
+	.button
+		margin-top: rem(40px)
+		margin-bottom: rem(40px)
+		&:nth-child(1)
+			//margin-top: 0
+		&:nth-last-child(1)
+			margin-bottom: 0
+		+max-screen($breakpoint-md)
+			margin-top: rem(30px)
+			margin-bottom: rem(30px)
+	ul
+		padding: rem(12px 0)
+		padding-left: 46px
+		+max-screen($breakpoint-md)
+			padding-left: 15px
+		+max-screen($breakpoint-sm)
+			padding-left: 15px
+		.textBlock--full  &
+			padding-left: 15px
+			+max-screen($breakpoint-md)
+
+		&>li
+			display: block
+			position: relative
+			margin-bottom: 5px
+			&:nth-last-child(1)
+				margin-bottom: 0
+			&:before
+				content: ''
+				background-color: $color-black
+				width: 8px
+				height: 8px
+				min-width: 8px
+				border-radius: 50%
+				margin-bottom: 0.12em
+				margin-right: 18px
+				font-weight: 700
+				position: absolute
+				right: 100%
+				top: 10px
+			ol
+				padding: 10px
+				padding-left: rem(30px)
+				&>li
+					margin-bottom: 0
+			ul
+				padding: 10px
+				padding-left: rem(30px)
+	ol
+		list-style-type: decimal
+		counter-reset: my-counter
+		padding: rem(12px 0)
+		padding-left: 25px
+		+max-screen($breakpoint-md)
+			padding-left: 25px
+		+max-screen($breakpoint-sm)
+			padding-left: 25px
+		&>li
+			list-style-type: decimal
+			counter-increment: my-counter
+			margin-bottom: 5px
+			position: relative
+			&:nth-last-child(1)
+				margin-bottom: 0
+			&::marker
+				color: $default-text-color
+				//margin-bottom: 5px
+				font-weight: 600
+			ol
+				padding: 10px
+				padding-left: 30px
+			ul
+				padding: rem(10px 0)
+				padding-left: rem(30px)
+	img
+		width: 100%
+		height: auto
+		border-radius: rem(10px)
+		overflow: hidden
+	code
+		margin: 12px 0
+		line-height: $default-line-height
+		padding: 2px 4px
+		border: 1px solid #dde4e9
+		background-color: #F6F6F6
+		color: #232527
+		display: inline-block
+	pre
+		white-space: pre-wrap
+	blockquote
+		margin: rem(24px 0)
+		position: relative
+		padding-left: rem(75px)
+		padding-top: rem(20px)
+		+max-screen($breakpoint-sm)
+			padding-left: rem(30px)
+			padding-right: rem(30px)
+			padding-top: rem(5px)
+		p
+			font-size: rem(30px)
+			line-height: rem(42px)
+			font-weight: 400
+			+max-screen($breakpoint-md)
+				font-size: rem(24px)
+				line-height: 1.25em
+		a
+			font-size: 14px
+			line-height: 19px
+		& *
+			z-index: 1
+		+max-screen($breakpoint-md)
+
+		&:before
+			content: '"'
+			position: absolute
+			top: 0
+			left: 0
+			width: rem(55px)
+			height: rem(55px)
+			font-size: 100px
+			line-height: 85px
+			font-weight: 600
+			color: $color-primary
+			//background-image: url(../assets/images/icon-quote.svg)
+			//background-repeat: no-repeat
+			//background-size: contain
+			//background-position: center
+			+max-screen($breakpoint-sm)
+				width: rem(30px)
+				height: rem(30px)
+				left: -10px
+	.wpcf7
+		padding: rem(12px 0)
+		&:nth-last-child(1)
+			padding-bottom: 0

@@ -1,0 +1,237 @@
+.button
+    --webkit-appearence: none
+    position: relative
+    display: flex
+    align-items: center
+    box-sizing: border-box
+    transition: 0.3s
+    font-weight: 500
+    font-size: 15px
+    line-height: 120%
+    width: fit-content
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+    padding: 22px 44px
+    background: none
+    color: $color-blue
+    min-height: 44px
+    border: 1px solid $color-blue
+    border-radius: 37px
+    text-align: center
+    text-transform: uppercase
+    transition: 0.3s ease-out
+    +min-screen(2200px)
+    +max-screen($breakpoint-1500)
+        font-size: 13px
+        padding: 16px 34px
+    +max-screen($breakpoint-xl)
+
+    +max-screen($breakpoint-md)
+
+    +max-screen($breakpoint-xs)
+        padding: 11px 22px
+        font-size: 13px
+    &:hover
+        background-color: $color-blue
+        color: white
+    &:disabled,
+    &[disabled=disabled],
+    &[disabled]
+        background-color: #F5F5F5
+        // color: $color-grey
+    &--secondary
+        color: white
+        background-color: $color-blue
+
+        &:hover
+            color: $color-blue
+            border: 1px solid $color-blue
+            background-color: white
+        &:active,
+        &:focus
+            background-color: white
+        &:disabled,
+        &[disabled=disabled],
+        &[disabled]
+            background-color: #F5F5F5
+
+    &--text
+        background-color: transparent
+        color: white
+        border-radius: 60px
+        border: 1px solid rgba(255, 255, 255, 0.3)
+        svg
+            width: 24px
+            height: 24px
+            margin-left: 40px
+            path
+                fill: #fff
+                transition: .3s
+            +max-screen($breakpoint-1500)
+                width: 20px
+                height: 20px
+                margin-left: 30px
+            +max-screen($breakpoint-xl)
+                width: 18px
+                height: 18px
+                margin-left: 26px
+            +max-screen($breakpoint-xs)
+                width: 12px
+                height: 12px
+                margin-left: 18px
+        &:hover
+            background-color: #FAFAFA
+            color: $color-blue
+            border: 1px solid #FAFAFA
+            svg
+                path
+                    fill: $color-blue
+                    transition: .3s
+        &:active,
+        &:focus
+            color: black
+            border-color: transparent
+            background-color: #F5F5F5
+        &:disabled,
+        &[disabled=disabled],
+        &[disabled]
+            background-color: transparent
+            // color: $color-grey
+
+    &--icon_right
+        background: none
+        color: $color-blue
+        border: 1px solid $color-blue
+        padding: 22px 38px 22px 44px
+        font-size: 15px
+        svg
+            width: 10px
+            height: 20px
+            margin-left: 34px
+            path
+                fill: $color-blue
+                transition: .3s
+        &:hover
+            background-color: $color-blue
+            color: #fff
+
+            svg
+                path
+                    fill: #fff
+                    transition: .3s
+        +max-screen($breakpoint-md)
+            padding: 11px 22px
+            font-size: 13px
+            svg
+                width: 8px
+                height: 16px
+                margin-left: 17px
+        +max-screen($breakpoint-xs)
+            margin-top: 20px
+    &--outline
+        // border: 1px solid $color-primary
+        background: #fff
+        // color: $color-primary
+        &.grey
+            // border: 4px solid $color-d-gray
+            // color: $color-d-gray
+            padding: 17px 58px
+            background-color: transparent
+            +min-screen(2200px)
+                padding: 21px 69px
+            +max-screen($breakpoint-md)
+                border: 2px solid #747474
+            &:hover
+                color: white
+                // border-color: $color-d-gray
+                // background-color: $color-d-gray
+                opacity: 1
+    &--sm
+        padding-top: 4px
+        padding-bottom: 4px
+        padding-left: 36px
+        padding-right: 36px
+        font-size: 16px
+        line-height: 1.5
+        +max-screen($breakpoint-lg)
+            padding: 3px 16px
+        +max-screen($breakpoint-md)
+            padding: 2px 12px
+    &--md
+        padding: 12px 38px
+        font-size: 20px
+        line-height: 1.2
+        +max-screen($breakpoint-lg)
+            padding: 8px 18px
+        +max-screen($breakpoint-md)
+            padding: 6px 14px
+    &--lg
+        padding: 28px 38px 28px 48px
+        font-size: 15px
+        line-height: 120%
+        +max-screen($breakpoint-1500)
+            padding: 22px 22px 22px 38px
+        +max-screen($breakpoint-xl)
+            padding: 12px 12px 12px 28px
+        +max-screen($breakpoint-1200)
+            font-size: 13px
+        +max-screen($breakpoint-lg)
+            // padding: 14px 32px
+        +max-screen($breakpoint-md)
+            // padding: 10px 24px
+    &--xl
+        font-size: 30px
+        min-width: 345px
+        padding: 16.5px 30px
+        +max-screen($breakpoint-lg)
+            font-size: 24px
+            padding: 16px 30px
+            min-width: 245px
+        +max-screen($breakpoint-md)
+            font-size: 20px
+            padding: 14px 30px
+            min-width: 185px
+
+.buttonsBlock
+    &__inner
+        margin-left: -5px
+        margin-right: -5px
+        display: flex
+        flex-wrap: wrap
+        .buttonsBlock--center &
+            justify-content: center
+        .buttonsBlock--right &
+            justify-content: flex-end
+    .button
+        margin: 5px
+
+.arrow_block
+    .btn
+        width: 66px
+        height: 66px
+        border: 1px solid rgba(255, 255, 255, 0.3)
+        border-radius: 60px
+        background: none
+
+        path
+            fill: white
+            transition: .3s
+
+        &:hover
+            background: white
+            transition: .3s
+            path
+                fill: $color-blue
+        +max-screen($breakpoint-1200)
+            width: 55px
+            height: 55px
+
+    .prev_btn
+        margin-right: 10px
+        svg
+            transform: rotate(90deg)
+
+    .next_btn
+        svg
+            transform: rotate(-90deg)

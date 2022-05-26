@@ -1,0 +1,163 @@
+//map block
+
+.map
+    &.section
+        padding-bottom: 404px
+    .map_block
+        width: 100vw
+        height: 46%
+        position: absolute
+        bottom: 0
+        left: 50%
+        margin-left: calc(-1 * (100vw / 2))
+        z-index: 1
+
+    .main_block
+        background: #FFFFFF
+        border-radius: 60px
+        display: flex
+        justify-content: space-between
+        padding: 60px 60px 60px 80px
+        position: relative
+        z-index: 2
+    .col
+        width: 100%
+
+    .col:first-of-type
+        max-width: 422px
+
+    .col:last-of-type
+        max-width: 652px
+    .subtitle
+        margin-top: 60px
+        p
+            font-weight: 400
+            font-size: 26px
+            line-height: 140%
+    .content_block
+        margin-top: 107px
+        span
+            opacity: 0.6
+        .adres
+            margin-bottom: 20px
+    .nf-form-wrap
+        margin-bottom: 30px
+        display: flex
+        justify-content: space-between
+        &:last-of-type
+            margin-bottom: 0
+    .form
+        textarea
+            height: 220px
+        input[type=text],input[type=email],input[type=tel],textarea
+            width: 311px
+    .radio_block
+        width: 100%
+        max-width: 311px
+        display: flex
+        flex-direction: column
+        p
+            margin-bottom: 20px
+        .btn
+            margin-top: 44px
+
++max-screen($breakpoint-1920)
+
++max-screen($breakpoint-xxl)
+
++max-screen($breakpoint-1500)
+    .map
+        .main_block
+            padding: 40px
+
++max-screen($breakpoint-xl)
+    .map
+        .nf-form-wrap
+            margin-bottom: 20px
+        .col:last-of-type
+            max-width: 550px
+        .form
+            textarea
+                height: 220px
+            input[type=text],input[type=email],input[type=tel],textarea
+                width: 100%
+                max-width: 260px
+        .radio_block
+            width: 100%
+            max-width: 260px
+            display: flex
+            flex-direction: column
+            p
+                margin-bottom: 20px
+            .btn
+                margin-top: 44px
++max-screen($breakpoint-1200)
+    .map
+        .col:first-of-type
+            max-width: 400px
++max-screen(1100px)
+    .map
+        .col:first-of-type
+            max-width: 320px
++max-screen(1025px)
+    .map
+        .main_block
+            width: 100%
+            max-width: 640px
+            margin: 0 auto
+            flex-direction: column
+        .col:first-of-type
+            max-width: none
+            margin-bottom: 40px
+        .col:last-of-type
+            max-width: 640px
+        .subtitle
+            margin-top: 40px
+            p
+                font-size: 20px
+        .content_block
+            margin-top: 40px
+
++max-screen($breakpoint-lg)
+
++max-screen($breakpoint-md)
+    .map
+        .map_block
+            height: 30%
+        .col:first-of-type
+            max-width: none
+            margin-bottom: 20px
+        .col:last-of-type
+            max-width: 640px
+        .subtitle
+            margin-top: 20px
+            p
+                font-size: 20px
+        .content_block
+            margin-top: 20px
+        .nf-form-wrap
+            flex-direction: column
+            margin-bottom: 0
+        .form
+            textarea
+                height: 220px
+            input[type=text],input[type=email],input[type=tel],textarea
+                width: 100%
+                max-width: none
+                margin-bottom: 20px
+        .radio_block
+            width: 100%
+            max-width: none
+        .nf-form-content
+            .submit-wrap
+                input[type=submit]
+                    width: 100%
+                    max-width: none
++max-screen($breakpoint-sm)
+    .map
+        .main_block
+            padding: 30px
+        .title,
+        .subtitle,
+        .content_block
+            text-align: center

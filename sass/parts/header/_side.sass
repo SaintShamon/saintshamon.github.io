@@ -1,0 +1,69 @@
+.side-panel
+    position: fixed
+    top: 55px
+    right: 0
+    display: block
+    z-index: 10
+    width: 584px
+    height: 100%
+    overflow: auto
+    transition: .2s ease-out
+    transform: translateX(100%)
+    padding-left: 0
+    border-top: 1px solid transparentize($default-text-color, 0.4)
+
+    .admin-bar
+        top: 32px
+
+    &.active
+        transform: translateX(0%)
+
+    &.service
+        top: 0 !important
+
+.side-inner
+    min-height: 100vh
+    overflow-x: hidden
+    // box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+    background-color: #fff
+
+.side-panel-overlay
+    overflow: hidden
+
+    &.service::after
+        top: 0 !important
+        z-index: 2
+
+    &.service
+        .fixed-header
+            .bottom_header
+                opacity: 0
+
+.side-panel-overlay:after
+    content: ""
+    position: fixed
+    top: 55px
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(31, 28, 28, 0.8)
+    backdrop-filter: blur(20px)
+    z-index: 2
+
+.side-header
+    display: flex
+    flex-direction: column
+    padding: 20px 40px
+
+    .btn_block
+        display: flex
+        flex-wrap: wrap
+        margin-top: 20px
+        a
+            margin: 0 20px 0 0
+            &:last-of-type
+                margin: 0
+
++max-screen($breakpoint-xs)
+    .side-panel
+        width: 100%

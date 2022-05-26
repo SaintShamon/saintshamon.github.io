@@ -1,0 +1,192 @@
+// events_inner_section
+
+.events_main
+    .main_block
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 30px
+        grid-template-areas: "box1 box_blue box_blue" "box2 box3 box4"
+    .event_block
+        box-sizing: border-box
+        position: relative
+        width: 100%
+        max-width: 460px
+        height: 505px
+        background: #FFFFFF
+        border-radius: 60px
+        padding: 40px
+        a
+            position: absolute
+            top: 0
+            left: 0
+            height: 100%
+            width: 100%
+        &.box1
+            grid-area: box1
+        &.box2
+            grid-area: box2
+        &.box3
+            grid-area: box3
+        &.box4
+            grid-area: box4
+
+    .top_event
+        display: flex
+        justify-content: space-between
+        margin-bottom: 43px
+    .date
+        position: absolute
+        left: 40px
+        top: 20px
+        display: flex
+        flex-direction: column
+        font-size: 22px
+        line-height: 120%
+        text-transform: uppercase
+        span
+            font-family: $font-family-secondary
+            font-size: 96px
+            line-height: 100%
+            color: $color-blue
+    .time
+        display: flex
+        flex-direction: column
+        margin-left: auto
+
+        span
+            font-size: 22px
+            line-height: 24px
+            text-align: right
+            &.year
+                margin-bottom: 50px
+    .img_event
+        max-height: 182px
+
+    .title_event
+        position: absolute
+        left: 40px
+        right: 40px
+        bottom: 40px
+        p
+            font-weight: 700
+            font-size: 26px
+            line-height: 140%
+    .event_block_blue
+        --padding: 80px
+        position: relative
+        grid-area: box_blue
+        background: $color-blue
+        border-radius: 60px
+        padding: var(--padding)
+        color: #FFFFFF
+        width: 100%
+        max-width: 950px
+        p
+            font-size: 26px
+            line-height: 140%
+            margin-bottom: 40px
+            &:last-of-type
+                margin-bottom: 0
+            &.small_text
+                font-size: 20px
+        a.button
+            position: absolute
+            background: #fff
+            margin-left: 0
+            margin-top: auto
+            left: var(--padding)
+            bottom: var(--padding)
+            &:hover
+                background: $color-blue
+                border: 1px solid #fff
+                color: #fff
+
+    +max-screen($breakpoint-1920)
+
++max-screen($breakpoint-xxl)
+
++max-screen($breakpoint-1500)
+    .events_main
+        .event_block
+            max-width: 360px
+            height: 455px
+        .event_block_blue
+            --padding: 60px
+            max-width: 780px
+            p
+                font-size: 22px
+            p.small_text
+                font-size: 14px
++max-screen($breakpoint-xl)
+    .events_main
+        .event_block
+            height: 455px
+            padding: 30px
+        .date
+            left: 30px
+            span
+                font-size: 72px
+        .time
+            span.year
+                margin-bottom: 40px
+
++max-screen($breakpoint-1200)
+    .events_main
+        .events_row
+
+        .event_block
+            margin: 0 auto
+
++max-screen(1100px)
+    .events_main
+        .main_block
+            max-width: 780px
+            margin: 0 auto
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 30px
+            grid-template-areas: "box_blue box_blue" "box1 box2" "box3 box4"
+        .event_block
+        .event_block_blue
+            --padding: 60px
+            margin: 0 auto
+            a.button
+                position: relative
+                left: auto
+                bottom: auto
+                margin-top: 40px
++max-screen(1025px)
+
++max-screen($breakpoint-lg)
+
++max-screen(700px)
+    .events_main
+        .main_block
+            max-width: 780px
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            grid-template-columns: auto
+            gap: inherit
+            grid-template-areas: none
+        .event_block
+            margin-bottom: 30px
+        .event_block_blue
+            --padding: 30px
+            margin: 0 auto
+            max-width: 360px
+            text-align: center
+            a.button
+                position: relative
+                left: auto
+                bottom: auto
+                margin-top: 40px
+                margin-left: auto
+
++max-screen($breakpoint-sm)
+    .events_main
+        .title_event
+            p
+                font-size: 20px
+        .event_block_blue
+            --padding: 30px

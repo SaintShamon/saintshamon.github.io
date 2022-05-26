@@ -1,0 +1,137 @@
+// agency_section
+.agency
+    .agency_list
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 30px
+
+    .agency_block
+        position: relative
+        width: 100%
+        max-width: 460px
+        background: #FFFFFF
+        border-radius: 60px
+        overflow: hidden
+        min-height: 604px
+        .img_block
+            border-radius: 60px
+            overflow: hidden
+        .title
+            position: relative
+            p
+                font-weight: 700
+                font-size: 26px
+                line-height: 140%
+                max-width: 80%
+                width: 100%
+
+            span
+                position: absolute
+                top: 0
+                right: 0
+                font-weight: 700
+                font-size: 26px
+                line-height: 100%
+                opacity: 0.6
+        &.last
+            background: none
+            border-radius: 0
+            display: flex
+            .bio_block
+                align-self: center
+            span
+                opacity: 0.6
+        .bio_block
+            padding-top: 40px
+            padding-left: 40px
+            padding-right: 40px
+            min-height: 200px
+            p
+                font-size: 20px
+                line-height: 140%
+                margin-top: 10px
+                &:nth-of-type(2)
+                    margin-top: 40px
+        .email_block
+            position: absolute
+            left: 0
+            bottom: 0
+            margin-top: 40px
+            padding-bottom: 40px
+            padding-left: 40px
+            padding-right: 40px
+
++max-screen($breakpoint-1920)
+
++max-screen($breakpoint-xxl)
+
++max-screen($breakpoint-1500)
+    .agency
+        .agency_list
+
+        .agency_block
+            min-height: 524px
+            .bio_block
+                padding-top: 30px
+                padding-left: 30px
+                padding-right: 30px
+                min-height: 200px
+                p
+                    font-size: 16px
+            .email_block
+
+                padding-bottom: 30px
+                padding-left: 30px
+                padding-right: 30px
++max-screen($breakpoint-xl)
+
++max-screen($breakpoint-1200)
+    .agency
+        .agency_list
+
+        .agency_block
+            min-height: 504px
+
++max-screen(1100px)
+    .agency
+        .agency_list
+
+        .agency_block
+            min-height: 474px
++max-screen(1025px)
+    .agency
+        .agency_list
+            grid-template-columns: repeat(2, 1fr)
+        .agency_block
+            min-height: 574px
++max-screen($breakpoint-lg)
+    .agency
+        .agency_block
+            min-height: 544px
++max-screen($breakpoint-md)
+    .agency
+        .agency_block
+            min-height: 484px
++max-screen(760px)
+    .agency
+        .agency_list
+            grid-template-columns: repeat(1, 1fr)
+        .agency_block
+            min-height: 574px
+            margin: 0 auto
+            &.last
+                min-height: auto
+                text-align: center
+                .bio_block
+                    margin: 0 auto
+                    min-height: auto
++max-screen(425px)
+    .agency
+
+        .agency_block
+            min-height: 494px
+            border-radius: 40px
+            .img_block
+                border-radius: 40px
+            .email_block
+                padding-bottom: 20px

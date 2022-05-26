@@ -1,0 +1,199 @@
+.container
+	padding-left: 30px
+	padding-right: 30px
+	width: 100%
+	margin: 0 auto
+	+min-screen($breakpoint-xxl)
+		max-width: 1520px
+	+min-screen(2200px)
+		max-width: 1696px
+	+max-screen($breakpoint-xxl)
+		max-width: 1440px
+	+max-screen(1500px)
+		max-width: 1300px
+	+max-screen($breakpoint-xl)
+		max-width: 1240px
+	+max-screen($breakpoint-lg)
+		max-width: 100%
+	+max-screen($breakpoint-md)
+		padding-left: 30px
+		padding-right: 30px
+	+max-screen(330px)
+		padding-left: 10px
+		padding-right: 10px
+	&--full
+		+min-screen($breakpoint-xxl)
+			max-width: 100%
+	&--md
+		max-width: 1020px
+		+max-screen($breakpoint-md)
+			max-width: 555px
+
+.row
+	&--x
+		&--center
+			justify-content: center
+	&--y
+		&--middle
+			align-items: center
+		&--top
+			align-items: flex-start
+		&--bottom
+			align-items: flex-end
+
+.section
+	position: relative
+	padding-top: 125px
+	padding-bottom: 35px
+	margin-left: auto
+	margin-right: auto
+	// max-width: 1920px
+	+max-screen($breakpoint-1200)
+		padding-top: 85px
+		padding-bottom: 35px
+	+max-screen(1050px)
+		padding-top: 60px
+		padding-bottom: 60px
+	+max-screen($breakpoint-lg)
+		//padding-top: 30px
+		//padding-bottom: 30px
+	+max-screen($breakpoint-md)
+		padding-top: 60px
+		padding-bottom: 60px
+	+max-screen($breakpoint-sm)
+		//padding-top: rem(30px)
+		//padding-bottom: rem(30px)
+	&:last-of-type
+		padding-bottom: 160px
+		+max-screen($breakpoint-md)
+			padding-bottom: 60px
+	&--spacing--sm
+		padding-top: 25px
+		padding-bottom: 25px
+	&--spacing--lg
+		padding-top: 165px
+		padding-bottom: 165px
+		+max-screen(1050px)
+			padding-top: 60px
+			padding-bottom: 60px
+	&--fullscreen
+		min-height: 70vh
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&--bg--separator
+		position: relative
+		// background: $color-bg-lgray-2
+		&::before,
+		&::after
+			content: ""
+			position: absolute
+			height: 50px
+			width: 60%
+			background-color: white
+			+max-screen($breakpoint-md)
+				height: 30px
+		&::before
+			top: -1px
+			left: 0
+			clip-path: polygon(0% 0%, 75% 0%, 100% 0, 95% 100%, 0% 100%)
+		&::after
+			clip-path: polygon(5% 0, 75% 0%, 100% 0, 100% 100%, 0 100%)
+			bottom: -1px
+			right: 0
+
+.page-blocks
+
+	+max-screen($breakpoint-md)
+		padding-bottom: 0
+	.header-transparent &
+		padding-top: 0
+
+.hidden
+	&--lg
+		+min-screen($breakpoint-lg)
+			display: none !important
+
+.visible
+	&--lg
+		+max-screen($breakpoint-lg)
+			display: none !important
+
+.spacing
+	&-p
+
+		&-30
+			padding-top: 30px
+			padding-bottom: 30px
+			+max-screen($breakpoint-sm)
+				padding-top: 15px
+				padding-bottom: 15px
+		&-40
+			padding-top: 40px
+			padding-bottom: 40px
+			+max-screen($breakpoint-sm)
+				padding-top: 20px
+				padding-bottom: 20px
+		&-60
+			padding-top: 60px
+			padding-bottom: 60px
+			+max-screen($breakpoint-sm)
+				padding-top: 30px
+				padding-bottom: 30px
+
+	&-pt
+		&-30
+			padding-top: 30px
+			+max-screen($breakpoint-sm)
+				padding-top: 15px
+		&-40
+			padding-top: 40px
+			+max-screen($breakpoint-sm)
+				padding-top: 20px
+		&-60
+			padding-top: 60px
+			+max-screen($breakpoint-sm)
+				padding-top: 30px
+	&-pb
+		&-20
+			padding-bottom: 20px
+			+max-screen($breakpoint-sm)
+				padding-bottom: 15px
+		&-25
+			padding-bottom: 25px
+			+max-screen($breakpoint-sm)
+				padding-bottom: 25px
+		&-30
+			padding-bottom: 30px
+			+max-screen($breakpoint-sm)
+				padding-bottom: 15px
+		&-40
+			padding-bottom: 40px
+			+max-screen($breakpoint-sm)
+				padding-bottom: 20px
+		&-50
+			padding-bottom: 50px
+			+max-screen($breakpoint-sm)
+				padding-bottom: 30px
+		&-60
+			padding-bottom: 60px
+			+max-screen($breakpoint-sm)
+				padding-bottom: 30px
+	&-m
+		&-30
+			margin-top: 30px
+			margin-bottom: 30px
+		&-40
+			margin-top: 40px
+			margin-bottom: 40px
+	&-mt
+		&-30
+			margin-top: 30px
+		&-40
+			margin-top: 40px
+	&-mb
+		&-30
+			margin-bottom: 30px
+		&-40
+			margin-bottom: 40px

@@ -1,0 +1,68 @@
+// alone_section
+
+.alone
+    margin-bottom: -170px
+    .content_wrapper
+        margin-top: 60px
+        margin-bottom: 60px
+        display: flex
+        justify-content: space-between
+    .col
+        width: 100%
+        max-width: 685px
+
+    .image_center_block
+        border-radius: 60px
+        overflow: hidden
+        max-height: 320px
+
++max-screen($breakpoint-1920)
+    .alone
+        .col
+            width: 100%
+            max-width: 650px
++max-screen($breakpoint-xxl)
+
++max-screen($breakpoint-1500)
+    .alone
+        .col
+            width: 100%
+            max-width: 48%
+        .content_wrapper
+            margin-top: 40px
+            margin-bottom: 40px
++max-screen($breakpoint-xl)
+
++max-screen($breakpoint-1200)
+
++max-screen(1100px)
+
++max-screen(1025px)
+
++max-screen($breakpoint-lg)
+
++max-screen(768px)
+    .alone
+        margin-bottom: 0
+        padding-bottom: 0
+        .content_wrapper
+            display: block
+        .col
+            width: 100%
+            max-width: none
+            margin-bottom: 10px
+        .image_center_block
+            width: 100vw
+            height: 100%
+            position: relative
+            top: auto
+            left: 50%
+            margin-left: calc(-1 * (100vw / 2))
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            overflow: inherit
+
++max-screen($breakpoint-md)
+
++max-screen($breakpoint-sm)

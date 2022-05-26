@@ -1,0 +1,47 @@
+// .slick-prev,
+// .slick-next
+//     font-size: 0
+//     background-color: transparent
+//     background-image: url('../assets/images/partners_slider_arrow.png')
+//     position: absolute
+//     top: 50%
+//     width: 17px
+//     height: 27px
+//     border: 0
+//     +max-screen($breakpoint-md)
+//         z-index: 2
+//         background-size: contain
+//         width: 14px
+//         height: 22px
+// .slick-next
+//     right: 0
+//     transform: translateY(-50%)
+//     +max-screen($breakpoint-md)
+//         right: -10px
+// .slick-prev
+//     left: 0
+//     transform: rotate(180deg) translateY(50%)
+//     +max-screen($breakpoint-md)
+//         left: -10px
+
+#main .slick-dots
+    bottom: -125px
+    li
+        &.slick-active
+            width: 40px
+            height: 40px
+            border: 1px solid rgba(8, 64, 116, 0.3)
+            border-radius: 50%
+            button
+                background: $color-blue
+
+        button
+            width: 10px
+            height: 10px
+            margin: 15px auto
+            border-radius: 50%
+            background: rgba(8, 64, 116, 0.3)
+            &::before
+                display: none
+    +max-screen($breakpoint-sm)
+        bottom: -75px

@@ -1,0 +1,107 @@
+// reviews_block
+
+.reviews
+    &.section
+        padding-bottom: 100px
+    .reviews_row
+        margin-top: 60px
+    .inner_block
+
+        box-sizing: border-box
+        padding: 80px
+        border: 1px solid rgba(8, 64, 116, 0.3)
+        border-radius: 60px
+        svg
+            width: 80px
+            height: 64px
+            margin-right: 40px
+            margin-bottom: 80px
+            float: left
+
+        path
+            fill: #084074
+            opacity: 0.6
+        p
+            font-weight: 700
+            font-size: 26px
+            line-height: 140%
+            color: $color-blue
+    .slick-list
+        overflow: inherit
+        padding: 0 20% 0 20%
+    .slick-slide
+        margin-right: 31px
+        &.slick-current
+            .inner_block
+                background-color: $color-blue
+                p
+                    color: #fff
+                path
+                    fill: #fff
+                    opacity: 0.6
+
++max-screen($breakpoint-1920)
+
++max-screen($breakpoint-xxl)
+
++max-screen($breakpoint-1500)
+    .reviews
+        .reviews_row
+            margin-top: 60px
+        .inner_block
+            padding: 60px
+            p
+                font-size: 20px
+
++max-screen($breakpoint-xl)
+
++max-screen($breakpoint-1200)
+    .reviews
+        .reviews_row
+            margin-top: 40px
+            .inner_block
+                padding: 40px
+                p
+                    font-size: 16px
+            svg
+                width: 60px
+                height: 44px
+                margin-right: 20px
+                margin-bottom: 40px
+                float: left
+
++max-screen(1100px)
+
++max-screen(1025px)
+
++max-screen($breakpoint-lg)
+
++max-screen($breakpoint-md)
+    .reviews
+        .reviews_row
+            padding-left: 30px
+            padding-right: 30px
+        .slick-list
+            overflow: hidden
+            padding: 0
+        .slick-dots
+            width: calc(100% - 60px)
+        .slick-slide
+            margin-left: 31px
++max-screen($breakpoint-sm)
+    .reviews
+        &.section
+            padding-bottom: 60px
++max-screen(330px)
+    .reviews
+        .reviews_row
+            padding-left: 0
+            padding-right: 0
+        .slick-list
+            overflow: hidden
+            padding: 0
+        .slick-dots
+            width: 100%
+        .slick-slide
+            margin-left: 10px
+            margin-right: 10px
