@@ -75,11 +75,17 @@
     .involved
         .service_block
             max-width: 287px
+            &.img_block
+                img
+                    object-fit: cover
 +max-screen($breakpoint-xl)
     .involved
         .service_block
             width: 100%
             max-width: 337px
+            &.img_block
+                img
+                    object-fit: none
         .involved_wrapper
             margin-top: 40px
             display: grid
@@ -103,7 +109,6 @@
             &.img_block
                 img
                     object-fit: cover
-
 +max-screen(700px)
     .involved
         .service_block
