@@ -1,25 +1,32 @@
 .fade-up
-	transition: 0.7s ease-out
+	transition: 0.3s ease-out
 	transform: translateY(30px)
+	opacity: 0
+	&.in
+		transform: translateY(0)
+		opacity: 1
+.fade-bottom
+	transition: 0.3s ease-out
+	transform: translateY(-30px)
 	opacity: 0
 	&.in
 		transform: translateY(0)
 		opacity: 1
 
 .fade-in
-	transition: opacity 0.7s ease-out 0s
+	transition: opacity 0.3s ease-out 0s
 	opacity: 0
 	&.in
 		opacity: 1
 
 .zoom-in
-	transition: transform 0.7s ease-out 0s
+	transition: transform 0.3s ease-out 0s
 	transform: scale(1.1)
 	&.in
 		transform: scale(1)
 
 .fade-left
-	transition: 0.7s ease-out
+	transition: 0.3s ease-out
 	opacity: 0
 	transform: translateX(30px)
 	+max-screen($breakpoint-md)
@@ -27,7 +34,13 @@
 	.loaded:not(.loading) .animate.in &
 		opacity: 1
 		transform: translateX(0)
-
+.fade-right
+	transform: translateX(-30px)
+	transition: 0.3s ease-out
+	opacity: 0
+	.loaded:not(.loading) .animate.in &
+		opacity: 1
+		transform: translateX(0)
 .delay
 	&-1
 		transition-delay: 0.1s

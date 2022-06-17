@@ -1,0 +1,137 @@
+.resourses_section
+    &::before
+        position: absolute
+        content: ""
+        top: -50%
+        right: 0
+        height: 1384px
+        width: 1211px
+        background-position: 50%
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('../assets/images/lines/resourses_lines.svg')
+        +max-screen($breakpoint-lg)
+            display: none
+    .main_block
+        position: relative
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-lg)
+            flex-direction: column
+    .col
+        width: 100%
+        max-width: 493px
+        +max-screen($breakpoint-1500)
+            // max-width: 400px
+        +max-screen($breakpoint-lg)
+            margin: 0 auto
+            max-width: 533px
+            order: 2
+        &.resourses_img
+            max-width: 800px
+            height: 100%
+            min-height: 655px
+            margin-right: 90px
+            background-position: left
+            background-size: cover
+            background-repeat: no-repeat
+            background-blend-mode: soft-light, normal
+            +max-screen($breakpoint-1500)
+                max-width: 590px
+                height: 100%
+                min-height: 455px
+                margin-right: 40px
+            +max-screen($breakpoint-lg)
+                margin: 0 auto 40px
+                max-width: 533px
+                min-height: 355px
+                order: 1
+                background-position: center
+    .title
+        margin-top: 75px
+        margin-bottom: 50px
+        +max-screen($breakpoint-1500)
+            margin-top: 50px
+            margin-bottom: 25px
+    .subtitle
+        margin-bottom: 80px
+        +max-screen($breakpoint-1500)
+            margin-bottom: 40px
+        p
+            color: $color-grey
+    .resourses_inner
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 100%
+        justify-content: space-between
+        padding: 38px 40px
+        margin-bottom: 22px
+        background-color: #F9FCFF
+        +max-screen($breakpoint-1200)
+            padding: 28px 40px
+        +max-screen($breakpoint-xl)
+            padding: 28px 20px 28px 40px
+        +max-screen(1100px)
+            padding: 20px 20px 20px 30px
+        p
+            display: block
+            font-family: $font-family-h3
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 112%
+            text-transform: uppercase
+            align-self: center
+            +max-screen($breakpoint-xl)
+                font-size: 14px
+        svg
+            margin-right: 0
+        a
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            z-index: 2
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            width: 10px
+            height: 100%
+            background-color: $default-text-color
+        &:last-of-type
+            margin-bottom: 0
+        &:hover
+            p
+                color: #fff
+                position: relative
+            svg
+                position: relative
+                path
+                    fill: #fff
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                transition: width .7s
+                background-color: $default-text-color
+
+.resourses_section ~ .contact_section
+    &::after
+        position: absolute
+        content: ""
+        top: -50%
+        left: 0
+        height: 1384px
+        width: 934px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('../assets/images/lines/contact_lines.svg')

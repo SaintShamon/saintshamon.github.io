@@ -5,48 +5,21 @@
 	&::before
 		box-sizing: border-box
 
+#app
+	min-height: calc(100vh - 460px)
+	box-sizing: border-box
+	+max-screen(769px)
+		min-height: 0
 #main
 	width: 100%
-	min-height: calc(100vh - 273px)
-	+max-screen($breakpoint-sm)
-
-.site
 	overflow: hidden
-
-#app-wrapper
-	// padding-top: 115px
-	// padding-bottom: 15px
-	.header-transparent &
+	+max-screen($breakpoint-md)
+		padding-top: 12px
+	.header__white &
 		padding-top: 0
-
-.divider
-	display: block
-	height: 1px
-	background: cfd0d2
-
-.app-container--y--middle
-	display: flex
-	flex-direction: column
-	justify-content: center
-img
-	width: 100%
-	height: auto
-	// object-fit: cover
-iframe
-	border: 0
-	margin-top: 35px
-
-.lottie
-	width: 100%
-	svg
-		width: 100%
-		height: auto
-
-.bg
-	&--primary
-		background-color: $color-primary
-	&--white
-		background-color: #fff
+.site
+	position: relative
+	overflow: hidden
 
 .section-bg
 	width: 100vw
@@ -60,45 +33,12 @@ iframe
 	background-size: cover
 	background-repeat: no-repeat
 
-.col-sm-6
-	padding-left: 15px
-	padding-right: 15px
-	+min-screen($breakpoint-sm)
-		max-width: 50%
-		flex: 0 0 50%
+.divider
+	display: block
+	height: 1px
+	background: cfd0d2
 
-.img
-	&_36
-		width: 36px
-		height: 36px
-	&_24
-		width: 24px
-		height: 24px
-
-.title_wrapper
-	position: relative
-	width: 100%
-	padding-bottom: 34px
+.app-container--y--middle
 	display: flex
-	justify-content: space-between
-	&::after
-		position: absolute
-		content: ''
-		height: 1px
-		width: 100%
-		bottom: 0
-		left: 0
-		background-color: $color-blue
-
-	.btn_block
-		align-self: center
-	+max-screen($breakpoint-1500)
-		padding-bottom: 20px
-	+max-screen($breakpoint-sm)
-		flex-direction: column
-		.btn_block
-			margin-top: 10px
-		.title
-			width: 100%
-			h1,.h1,h2,.h2
-				text-align: center
+	flex-direction: column
+	justify-content: center

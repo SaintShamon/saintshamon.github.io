@@ -1,0 +1,73 @@
+.patient_section
+    &::before
+        position: absolute
+        content: ""
+        top: -80%
+        right: 0
+        height: 1593px
+        width: 854px
+        background-position: 50%
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('../assets/images/lines/patient_lines.svg')
+        +max-screen($breakpoint-1500)
+            top: -10%
+            height: 600px
+            width: 60vw
+    .main_block
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-lg)
+            flex-direction: column
+    .col
+        width: 100%
+        max-width: 710px
+        padding-top: 100px
+        +max-screen($breakpoint-1500)
+            max-width: 590px
+            padding-top: 50px
+        +max-screen($breakpoint-lg)
+            max-width: 533px
+            padding-top: 0
+            margin: 0 auto
+        &.patient_img
+            padding-top: 0
+            max-width: 800px
+            height: 100%
+            min-height: 527px
+            margin-right: 30px
+            background-position: left !important
+            background-size: cover!important
+            background-repeat: no-repeat!important
+            background-blend-mode: soft-light, normal
+            +max-screen($breakpoint-1500)
+                max-width: 600px
+                height: 100%
+                min-height: 427px
+            +max-screen($breakpoint-1200)
+                min-height: 327px
+            +max-screen($breakpoint-lg)
+                margin: 0 auto 40px
+                max-width: 533px
+                min-height: 369px
+    .title
+        margin-bottom: 80px
+        +max-screen($breakpoint-1500)
+            margin-bottom: 40px
+    .content
+        p
+            color: $color-grey
+            margin-bottom: 30px
+            &:last-of-type
+                margin-bottom: 0
+    a.button
+        margin-top: 80px
+        margin-right: 0
+        margin-left: auto
+        width: 100%
+        max-width: 242px
+        +max-screen($breakpoint-1500)
+            margin-top: 40px
+        +max-screen($breakpoint-lg)
+            margin-right: auto
+            margin-left: 0

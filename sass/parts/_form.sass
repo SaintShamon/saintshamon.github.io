@@ -1,110 +1,37 @@
-.form
-    .nf-form-cont *
-        font-family: $font-family-base
-    .nf-form-wrap
-        .nf-before-form-content
-            display: none
-    .nf-form-content
-        padding: 0
-        input[type=text],input[type=email],input[type=tel],textarea
-            -webkit-appearence: none
-            font-family: $font-family-base
-            background: white
-            border: 1px solid $color-blue
-            border-radius: 69px
-            font-size: 20px
-            font-weight: 400
-            padding: 17px 30px
-            height: 62px
-            color: transparentize($default-text-color, 0.4)
-            transition: 0.3s
-            +max-screen($breakpoint-sm)
-
-            &:focus
-                color: transparentize($default-text-color, 0.4)
-                border: 1px solid transparentize($default-text-color, 0.3)
-            &::placeholder
-                color: transparentize($default-text-color, 0.4)
-            +max-screen($breakpoint-xl)
-                font-size: 16px
-                font-weight: 400
-                padding: 13px 24px
-                height: 52px
-        textarea
-            resize: none
-            height: auto
-            border-radius: 30px
-
-        .submit-wrap
-            .nf-field-label
-                display: none
-            input[type=submit],button
-                position: relative
-                display: inline-block
-                box-sizing: border-box
-                color: white
-                background-color: $color-blue
-                border: 1px solid $color-blue
-                border-radius: 69px
-                font-weight: 400
-                padding: 22px 44px
-                height: 62px
-                text-align: center
-                transition: 0.3s ease-out
-                font-size: 15px
-                line-height: 120%
-                text-transform: uppercase
-                cursor: pointer
-                &:hover
-                    color: $color-blue
-                    background-color: white
-                    transition: 0.3s ease-out
-        .nf-field-label
-            margin-bottom: 11px
-            display: none
-            label
-                font-size: 14px
-                line-height: 14px
-                text-transform: uppercase
-                font-weight: 500
-                color: #fff
-                .ninja-forms-req-symbol
-                    display: none
-    .nf-error .nf-error-msg, .nf-error-msg
-        font-size: 12px
-    .nf-radio-wrap
-        display: flex
-        margin-bottom: 10px
-        &:last-of-type
-            margin-bottom: 0
-
-        input
-            width: 20px
-            height: 20px
-        label,
-        input
-            align-self: center
-            color: $color-blue
-            cursor: pointer
-        label
-            margin-left: 10px
-
-.form--newsletter
-    h4
-        padding-bottom: 30px
-    .nf-form-content
-        .nf-fields-wrap
-            display: flex
-        .nf-field-container
-            margin-bottom: 0
-            .nf-field
-                width: 100%
-            &:nth-child(1)
-                width: 100%
-                +max-screen($breakpoint-sm)
-                    width: 100%
-                &:nth-child(2)
-                    width: auto
-                    min-width: 105px
-        .nf-field-label
-            margin-bottom: 5px
+.wpcf7-submit
+    background: $color-light-blue
+    color: $color-primary
+    transition: .3s
+    font-style: normal
+    font-weight: 500
+    font-size: 17px
+    line-height: 130.5%
+    padding: 21px 68px 21px 32px
+    height: 64px
+    border: none
+    text-align: left
+    background-image: url('../assets/images/icons/Arrow-right.svg')
+    background-position: bottom 24px right 23px
+    background-size: 16px
+    background-repeat: no-repeat
+    cursor: pointer
+    box-sizing: border-box
+    +max-screen($breakpoint-1500)
+        height: 54px
+        padding: 15px 58px 15px 32px
+        font-size: 15px
+        background-position: bottom 20px right 23px
+    +max-screen($breakpoint-sm)
+        height: 44px
+        padding: 10px 58px 10px 32px
+        background-position: bottom 15px right 23px
+    &:hover
+        background: #fff
+        background-image: url('../assets/images/icons/Arrow-right.svg')
+        background-position: bottom 24px right 23px
+        background-size: 16px
+        background-repeat: no-repeat
+        +max-screen($breakpoint-1500)
+            background-position: bottom 20px right 23px
+        +max-screen($breakpoint-sm)
+            background-position: bottom 15px right 23px

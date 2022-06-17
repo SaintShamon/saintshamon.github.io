@@ -10,17 +10,17 @@ html, body
 	height: 100%
 	cursor: default
 	&.header-active
-		overflow: hidden
+		//overflow: hidden
 
 body,html
-	font: normal #{$default-font-size}/1.4 $font-family-base
-	font-weight: 600
+	font: normal #{$default-font-size}/1.3 $font-family-base
+	font-weight: 300
 	color: $default-text-color
-	background: #EBF1F6
-
+	// background: #FFF
 	+mobile
 		-webkit-text-size-adjust: 100%
-
+	+max-screen($breakpoint-1500)
+		font: normal #{15px}/1.3 $font-family-base
 img, fieldset
 	border: 0
 

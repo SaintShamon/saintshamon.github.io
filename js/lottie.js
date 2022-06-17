@@ -1,10 +1,10 @@
-import $  from 'jquery';
-import jQuery  from 'jquery';
+import $ from 'jquery';
+import jQuery from 'jquery';
 import bodymovin from "lottie-web";
 
 
-function lottie(){
-    $('.lottie').each(function(){
+function lottie() {
+    $('.lottie').each(function () {
         let path = $(this).data('path');
         let animation = bodymovin.loadAnimation({
             container: this, // Required
@@ -18,4 +18,6 @@ function lottie(){
 }
 
 
-export { lottie };
+export {
+    lottie
+};

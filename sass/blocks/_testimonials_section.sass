@@ -1,0 +1,81 @@
+.testimonials_section
+    &::before
+        position: absolute
+        content: ""
+        top: -200px
+        left: 0
+        height: 1156px
+        width: 490px
+        background-position: top
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('/assets/images/lines/Testimonials_lines.svg')
+    .title_wrapper
+        position: relative
+        width: 100%
+        padding-bottom: 80px
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-1500)
+            padding-bottom: 40px
+    .title
+        display: flex
+        h2
+            align-self: center
+    .testimonials_block
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding: 40px 50px
+        width: 100%
+        height: 271px
+        background: #F9FCFF
+        .title
+            margin-bottom: 10px
+            align-self: flex-start
+        .content
+            align-self: flex-start
+        h3
+            text-transform: uppercase
+        p
+            color: $color-grey
+            text-transform: none
+        a.link--icon
+            display: flex
+            position: absolute
+            bottom: 40px
+            left: 50px
+            align-self: flex-end
+            margin-right: 0
+            font-style: normal
+            font-weight: 500
+            svg
+                align-self: center
+                margin-left: 10px
+    .slick-slide
+        width: 400px
+        margin-right: 40px
+        +max-screen(453px)
+            width: 100%
+            margin-right: 10px
+    .bottom_row
+        display: flex
+        justify-content: space-between
+        margin-top: 20px
+        +max-screen(453px)
+            flex-direction: column
+    .arrow_block
+        display: flex
+        +max-screen(453px)
+            margin: 20px auto
+        .prev
+            transform: matrix(-1, 0, 0, 1, 0, 0)
+            margin-right: 20px
+        .arrow_btn
+            background: none
+            border: none
+            align-self: center
+            width: 40px
+        .slick-disabled
+            opacity: 0.2

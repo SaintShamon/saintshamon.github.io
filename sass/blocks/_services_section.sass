@@ -1,0 +1,126 @@
+.services_section
+    z-index: 1
+    .container
+        position: relative
+    .section-bg
+        background: #F9FCFF
+    .main_block
+        padding-top: 160px
+        padding-bottom: 200px
+        +max-screen($breakpoint-1500)
+        padding-top: 100px
+        padding-bottom: 100px
+    .title_wrapper
+        position: relative
+        width: 100%
+        padding-bottom: 111px
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-xl)
+            padding-bottom: 60px
+        +max-screen($breakpoint-md)
+            flex-direction: column
+    .title
+        display: flex
+        h2
+            align-self: center
+    .btn_block
+        align-self: center
+        +max-screen($breakpoint-md)
+            align-self: flex-start
+            margin-top: 20px
+    .content_wrapper
+        position: relative
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-lg)
+            flex-direction: column
+        .col
+            width: 100%
+            max-width: 493px
+            margin-right: 20px
+            +max-screen($breakpoint-1500)
+                max-width: 373px
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+            +max-screen($breakpoint-lg)
+                max-width: 533px
+                margin: 0 auto 20px
+            &:last-of-type
+                margin-right: 0
+                +max-screen($breakpoint-lg)
+                    margin-right: auto
+                    margin-bottom: 0
+            &.services_img
+                position: relative
+                max-width: 534px
+                img
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    +max-screen($breakpoint-1500)
+                        position: relative
+    .service_inner
+        position: relative
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 100%
+        justify-content: space-between
+        padding: 38px 40px
+        margin-bottom: 22px
+        background: #FFFFFF
+        +max-screen($breakpoint-1200)
+            padding: 28px 40px
+        +max-screen($breakpoint-xl)
+            padding: 28px 20px 28px 40px
+        +max-screen(1100px)
+            padding: 20px 20px 20px 30px
+        p
+            display: block
+            font-family: $font-family-h3
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 112%
+            text-transform: uppercase
+            align-self: center
+            +max-screen($breakpoint-xl)
+                font-size: 14px
+        svg
+            margin-right: 0
+        a
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            z-index: 2
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            width: 10px
+            height: 100%
+            background-color: $default-text-color
+        &:last-of-type
+            margin-bottom: 0
+        &:hover
+            p
+                color: #fff
+                position: relative
+            svg
+                position: relative
+                path
+                    fill: #fff
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                transition: width .7s
+                background-color: $default-text-color

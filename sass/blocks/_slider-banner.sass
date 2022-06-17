@@ -1,0 +1,143 @@
+.slider-banner
+    padding-top: 152px
+    padding-bottom: 206px
+    position: relative
+    overflow: hidden
+    +max-screen($breakpoint-1500)
+        padding-top: 102px
+        padding-bottom: 102px
+    +max-screen(853px)
+        &::before
+            position: absolute
+            content: ''
+            left: 0
+            top: 0
+            height: 100%
+            width: 100%
+            background-color: rgba(0, 0, 0,0.4)
+    .slider_list_bg
+        width: 100vw
+        height: 100%
+        position: absolute
+        top: 0
+        left: 50%
+        margin-left: calc(-1 * (100vw / 2))
+        z-index: -1
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+    .slick-dotted.slick-slider
+        margin-bottom: 0
+    .background_image
+        position: relative
+        min-height: 972px
+        height: 100%
+        width: 100%
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        +max-screen($breakpoint-1500)
+            min-height: 872px
+        +max-screen($breakpoint-xl)
+            min-height: calc(100vw / 1.4)
+        +max-screen(853px)
+            min-height: 60vh
+        .lines_block
+            position: absolute
+            content: ''
+            top: -90px
+            left: 0
+            height: 1678px
+            width: 1154px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            +max-screen($breakpoint-sm)
+                position: absolute
+                content: ""
+                bottom: -100px
+                left: 0
+                height: 600px
+                width: 100vw
+    .main_block
+        position: relative
+        width: 100%
+        max-width: 811px
+        z-index: 1
+    .first_section_slider
+        position: relative
+    .slider_block
+        .title_wrapper
+            display: block
+            margin-bottom: 68px
+            padding-bottom: 0
+            +max-screen($breakpoint-xl)
+                margin-bottom: 38px
+        .top_subtitle
+            margin-bottom: 26px
+            p
+                color: #fff
+                text-transform: uppercase
+                +max-screen(853px)
+                    color: #fff !important
+        .title
+            h1
+                color: #fff
+                +max-screen(853px)
+                    color: #fff !important
+        .content_wrapper
+            width: 100%
+            max-width: 562px
+            margin-top: 0
+            +max-screen($breakpoint-xl)
+                max-width: 462px
+            p
+                color: #fff
+                font-size: 20px
+                +max-screen($breakpoint-xl)
+                    font-size: 16px
+                +max-screen(853px)
+                    color: #fff !important
+            a.button
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+                margin-top: 206px
+                width: 264px
+                height: 84px
+                +max-screen($breakpoint-xl)
+                    margin-top: 126px
+                    height: 54px
+    .dots_block
+        position: absolute
+        bottom: 206px
+        left: 0
+        z-index: 2
+        +max-screen($breakpoint-xl)
+            bottom: 126px
+        .slick-dots
+            bottom: auto
+            position: relative
+            width: max-content
+            li
+                width: max-content
+                height: 6px
+                z-index: 2
+                margin: 0 6px 0 0
+
+                button
+                    position: relative
+                    width: 10px
+                    height: 6px
+                    background: #5A5A5A
+                    opacity: 0.8
+                    border-radius: 10px
+                    padding: 0
+                    &::before
+                        display: none
+            li.slick-active
+                button
+                    width: 42px
+                    height: 6px
+                    opacity: 0.6

@@ -1,0 +1,163 @@
+.contact_section
+    .container
+        position: relative
+    .section-bg
+        background-color: $color-light-blue
+    .main_block
+        padding-top: 160px
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-1500)
+            padding-top: 100px
+        +max-screen($breakpoint-1200)
+            flex-direction: column
+    .col
+        width: 100%
+        max-width: 323px
+        position: relative
+        z-index: 2
+        +max-screen($breakpoint-1200)
+            max-width: none
+        +max-screen($breakpoint-lg)
+            max-width: 533px
+            margin: 0 auto
+        &.col_form
+            max-width: 1067px
+            margin-left: 50px
+            +max-screen($breakpoint-1200)
+                margin-left: 0
+                margin-top: 40px
+            +max-screen($breakpoint-lg)
+                max-width: 533px
+                margin: 40px auto 0
+                display: flex
+                flex-direction: column
+    .title
+        margin-top: 100px
+        margin-bottom: 80px
+        +max-screen($breakpoint-1500)
+            margin-top: 50px
+            margin-bottom: 40px
+    .content
+        +max-screen($breakpoint-1200)
+            display: flex
+            > div
+                width: 33%
+                align-self: center
+                +max-screen($breakpoint-lg)
+                    width: 100%
+        +max-screen($breakpoint-lg)
+            flex-direction: column
+    .tel_block,
+    .adres_block
+        li
+            position: relative
+            padding-left: 30px
+            font-size: 22px
+            color: $color-grey
+            margin-bottom: 15px
+            display: flex
+            flex-direction: row
+            align-items: center
+            +max-screen($breakpoint-1500)
+            font-size: 18px
+            &:last-of-type
+                margin-bottom: 0
+        a
+
+            font-size: 22px
+            color: $color-grey
+            align-items: center
+            +max-screen($breakpoint-1500)
+            font-size: 18px
+            &:hover
+                color: $color-primary
+        span
+            position: relative
+            font-size: 18px
+            color: #5A8DA1
+            margin-left: 30px
+            &::after
+                position: absolute
+                content: '|'
+                left: -15px
+                top: -4px
+                font-size: 23px
+                color: #5A8DA2
+        li:before
+            content: "—"
+            left: 0
+            position: absolute
+    .tel_block
+        margin-bottom: 50px
+        +max-screen($breakpoint-1200)
+            margin-bottom: 0
+        +max-screen($breakpoint-lg)
+            margin-bottom: 20px
+    .social_block
+        margin-top: 80px
+        ul
+            display: flex
+            +max-screen($breakpoint-lg)
+                justify-content: flex-start
+        li
+            margin-right: 20px
+        +max-screen($breakpoint-1200)
+            margin-top: 0
+            align-self: center
+        +max-screen($breakpoint-lg)
+            margin-top: 20px
+            align-self: flex-start
+    .col_form
+        display: flex
+    .form_block
+        padding: 80px 89px
+        background: #FFFFFF
+        height: max-content
+        +max-screen($breakpoint-1500)
+            padding: 50px
+        +max-screen(375px)
+            padding: 30px
+        h3
+            text-transform: uppercase
+            margin-bottom: 17px
+        p
+            color: $color-grey
+        .form_field
+            width: 100%
+            margin-bottom: 40px
+            +max-screen($breakpoint-1500)
+                margin-bottom: 30px
+            &:first-of-type
+                margin-top: 40px
+                +max-screen($breakpoint-1500)
+                    margin-top: 30px
+            input[type=text],input[type=tel],input[type=email]
+                width: 100%
+                padding: 10px
+                background: none
+                border: none
+                border-bottom: 1px solid #E2EEF3
+                height: 43px
+                font-style: normal
+                font-weight: 300
+                font-size: 18px
+                line-height: 130%
+                color: $color-grey
+                +max-screen($breakpoint-1500)
+                    font-size: 15px
+                +max-screen(375px)
+                    font-size: 12px
+                    height: 33px
+                &:placeholder
+                    color: #9C9C9C
+        input[type=submit].wpcf7-submit
+            &:hover
+                border: 1px solid $color-primary
+    .img_block
+        +max-screen($breakpoint-1500)
+            max-width: 400px
+        img
+            width: 100%
+        +max-screen($breakpoint-lg)
+            max-width: 533px

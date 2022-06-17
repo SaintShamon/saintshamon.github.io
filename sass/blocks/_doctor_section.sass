@@ -1,0 +1,126 @@
+.meet_section ~ .doctor_section
+    &::before
+        position: absolute
+        content: ""
+        top: -10%
+        left: 0
+        height: 1629px
+        width: 767px
+        background-position: 50%
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('../assets/images/lines/doctor_lines_before.svg')
+    &::after
+        position: absolute
+        content: ""
+        top: -130%
+        right: calc(50% - 772px)
+        height: 1729px
+        width: 1554px
+        background-position: 50%
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('../assets/images/lines/doctor_lines_after.svg')
+.doctor_section
+    .main_block
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-1200)
+            flex-direction: column
+    .col
+        width: 100%
+        max-width: 590px
+        padding-top: 100px
+        position: relative
+        z-index: 1
+        &:last-of-type
+            padding-top: 0
+            display: flex
+            max-width: 900px
+            height: 100%
+            margin-left: 30px
+            +max-screen($breakpoint-1200)
+                margin-left: auto
+                max-width: 900px
+                margin-top: 30px
+            +max-screen($breakpoint-md)
+                flex-direction: column
+                max-width: 533px
+        +max-screen($breakpoint-1500)
+            padding-top: 50px
+            max-width: 490px
+        +max-screen($breakpoint-xl)
+            padding-top: 0
+        +max-screen($breakpoint-1200)
+            max-width: none
+        +max-screen($breakpoint-lg)
+            max-width: 533px
+            margin: 0 auto
+    .title
+        margin-bottom: 80px
+        +max-screen($breakpoint-1500)
+            margin-bottom: 40px
+    .content
+        p
+            color: $color-grey
+            margin-bottom: 30px
+            &:last-of-type
+                margin-bottom: 0
+    a.button
+        margin-top: 74px
+        +max-screen($breakpoint-xl)
+            margin-top: 44px
+    .sertefication_block
+        margin-top: 95px
+        padding: 60px 70px 60px 40px
+        background: #F9FCFF
+        height: max-content
+        +max-screen($breakpoint-1500)
+            margin-top: 50px
+            padding: 50px 60px 50px 30px
+        +max-screen($breakpoint-xl)
+            margin-top: 0
+            height: auto
+            padding: 30px
+        +max-screen($breakpoint-1200)
+            margin-top: 95px
+            padding: 60px 70px 60px 40px
+            height: max-content
+        +max-screen($breakpoint-lg)
+            margin-top: 50px
+            padding: 50px 60px 50px 30px
+        +max-screen($breakpoint-md)
+        h3
+            text-transform: uppercase
+            margin-bottom: 45px
+            +max-screen($breakpoint-1500)
+            margin-bottom: 25px
+        .inner_block
+            display: flex
+            margin-bottom: 35px
+            &:last-of-type
+                margin-bottom: 0
+            img
+                min-width: 43.33px
+                min-height: 44px
+                margin-right: 20px
+                +max-screen($breakpoint-1500)
+                    min-width: 33.33px
+                    min-height: 34px
+                    margin-right: 10px
+        p:not(.text--size--14)
+            font-size: 16px
+            +max-screen($breakpoint-1500)
+            font-size: 13px
+    .img_block
+        img
+            width: 100%
+        +max-screen($breakpoint-1500)
+            width: 100%
+            max-width: 400px
+        +max-screen($breakpoint-1200)
+            max-width: 500px
+        +max-screen($breakpoint-lg)
+            max-width: 400px
+        +max-screen($breakpoint-md)
+            max-width: 533px
