@@ -124,6 +124,8 @@ $(document).ready(function () {
 
 });
 
+
+
 //Account tabs 
 
 
@@ -135,3 +137,45 @@ lazy();
 mainslider();
 testimonials();
 //blogAjax();
+
+
+$('.slider-banner').each(function () {
+    let block = $(this);
+    let slider = $(this).find('.slider_list_bg');
+    let slider2 = $(this).find('.first_section_slider');
+
+    slider.slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        cssEase: 'linear',
+        draggable: false,
+        swipe: false,
+        touchMove: false,
+        // adaptiveHeight: true,
+
+        asNavFor: '.slider_main'
+    });
+
+    slider2.slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        draggable: false,
+        swipe: false,
+        touchMove: false,
+        cssEase: 'linear',
+        adaptiveHeight: true,
+        asNavFor: '.slider_main',
+        appendDots: $('.dots_block'),
+        responsive: [{
+            breakpoint: 853,
+            settings: {
+                draggable: true,
+                swipe: true,
+                touchMove: true,
+            }
+        }]
+    });
+
+});

@@ -1,4 +1,15 @@
 .contact_section
+    &::after
+        position: absolute
+        content: ""
+        top: -50%
+        left: 0
+        height: 1384px
+        width: 934px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('../assets/images/lines/contact_lines.svg')
     .container
         position: relative
     .section-bg
@@ -53,28 +64,20 @@
         li
             position: relative
             padding-left: 30px
-            font-size: 22px
             color: $color-grey
             margin-bottom: 15px
             display: flex
             flex-direction: row
             align-items: center
-            +max-screen($breakpoint-1500)
-            font-size: 18px
             &:last-of-type
                 margin-bottom: 0
         a
-
-            font-size: 22px
             color: $color-grey
             align-items: center
-            +max-screen($breakpoint-1500)
-            font-size: 18px
             &:hover
                 color: $color-primary
         span
             position: relative
-            font-size: 18px
             color: #5A8DA1
             margin-left: 30px
             &::after
@@ -119,7 +122,6 @@
         +max-screen(375px)
             padding: 30px
         h3
-            text-transform: uppercase
             margin-bottom: 17px
         p
             color: $color-grey

@@ -78,14 +78,7 @@
         p
             display: block
             font-family: $font-family-h3
-            font-style: normal
-            font-weight: 400
-            font-size: 18px
-            line-height: 112%
-            text-transform: uppercase
             align-self: center
-            +max-screen($breakpoint-xl)
-                font-size: 14px
         svg
             margin-right: 0
         a
@@ -122,16 +115,3 @@
                 height: 100%
                 transition: width .7s
                 background-color: $default-text-color
-
-.resourses_section ~ .contact_section
-    &::after
-        position: absolute
-        content: ""
-        top: -50%
-        left: 0
-        height: 1384px
-        width: 934px
-        background-position: center
-        background-size: cover
-        background-repeat: no-repeat
-        background-image: url('../assets/images/lines/contact_lines.svg')

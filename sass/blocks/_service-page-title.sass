@@ -1,0 +1,85 @@
+.page-title
+    position: relative
+    padding-bottom: 60px
+    &::after
+        position: absolute
+        content: ""
+        top: -20%
+        right: 0
+        height: 1060px
+        width: 917px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url('../assets/images/lines/services_page_lines.svg')
+        z-index: -1
+    +max-screen($breakpoint-lg)
+        padding-bottom: 0
+    .main_block
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-xl)
+            flex-direction: column
+    .col
+        width: 100%
+        max-width: 733px
+        +max-screen($breakpoint-xl)
+            max-width: 533px
+            margin: 0 auto
+
+        &.page-title__image
+            max-width: 800px
+            margin-left: 60px
+            +max-screen($breakpoint-xl)
+                max-width: 533px
+                margin: 30px auto
+    .title
+        margin-bottom: 50px
+    .content
+        color: $color-grey
+        a
+            color: $color-primary
+            font-weight: 500
+    .bottom_wrapper
+        margin-top: 100px
+        .col
+            width: 100%
+            max-width: 800px
+            &:last-of-type
+                max-width: 710px
+    .conditions
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding: 80px 70px
+        background: $color-white-blue
+        color: $color-blue
+
+        h3
+            margin-bottom: 40px
+        &_list
+            display: grid
+            width: 100%
+            grid-template-columns: repeat(2,1fr)
+            gap: 25px
+        li
+            width: 100%
+            max-width: 272px
+            position: relative
+            padding-left: 10px
+            &::before
+                position: absolute
+                content: ''
+                left: 0
+                top: 0
+                width: 1px
+                height: 100%
+                background: $color-blue
+    .content-block
+        padding: 80px 0
+        color: $color-grey
+        margin-left: 60px
+        p
+            margin-bottom: 40px
+            &:last-of-type
+                margin-bottom: 0

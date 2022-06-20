@@ -71,13 +71,16 @@
             display: block
             margin-bottom: 68px
             padding-bottom: 0
+            &.color-blue
+                p,
+                h1
+                    color: $color-blue
             +max-screen($breakpoint-xl)
                 margin-bottom: 38px
         .top_subtitle
             margin-bottom: 26px
             p
                 color: #fff
-                text-transform: uppercase
                 +max-screen(853px)
                     color: #fff !important
         .title
@@ -93,9 +96,9 @@
                 max-width: 462px
             p
                 color: #fff
-                font-size: 20px
+                // font-size: 20px
                 +max-screen($breakpoint-xl)
-                    font-size: 16px
+                    // font-size: 16px
                 +max-screen(853px)
                     color: #fff !important
             a.button

@@ -7,7 +7,17 @@
 
 add_action( 'wp_enqueue_scripts', 'theme_load_scripts' );
 function theme_load_scripts(){
-	
+
+    /* fonts */
+
+    /*theme css*/
+	wp_enqueue_style( 'main',get_template_directory_uri() . '/dist/main.min.css');
+}
+
+add_action( 'wp_footer', 'theme_scripts' );
+
+function theme_scripts() {
+
     wp_enqueue_script( 'jquery' );
   
     //main.js
@@ -22,11 +32,6 @@ function theme_load_scripts(){
         )
     );
 
-
-    /* fonts */
-
-    /*theme css*/
-	wp_enqueue_style( 'main',get_template_directory_uri() . '/dist/main.min.css');
 }
 
 //additional variables
