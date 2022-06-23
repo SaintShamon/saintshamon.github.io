@@ -14,16 +14,23 @@
     color: #0C6F97
     min-width: 170px
     z-index: 2
-    +max-screen($breakpoint-1500)
+    position: relative
+    +max-screen(1500px)
         padding: 13px 22px
         font-size: 15px
     &:hover
-        opacity: 0.8
         background: #0C6F97
         color: #fff
     &--blue
         background: $default-text-color
         color: #fff
+        border: 1px solid
+        & .content-block &
+            color: #fff
+        &:hover
+            background: #fff
+            color: $default-text-color
+            border: 1px solid $default-text-color
     &--icon
         display: flex
         flex-direction: row
@@ -32,14 +39,38 @@
         padding: 21px 33px 21px 33px
         svg
             margin-left: 20px
+
         &:hover
-            opacity: 0.8
             background: #0C6F97
             color: #fff
             svg
                 path
                     fill: #fff
-    &--blue
+    &--pdf
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        padding: 21px 33px 21px 33px
+        background: $default-text-color
+        color: #fff
+        border: 1px solid
+        +max-screen(400px)
+            padding: 21px
+            font-size: 13px
+        svg
+            margin-right: 20px
+            +max-screen(400px)
+                margin-right: 10px
+        &:hover
+            background: #fff
+            color: $default-text-color
+            border: 1px solid $default-text-color
+            svg
+                .white
+                    fill: #0C6F97
+                .blue
+                    fill: #fff
 .buttonsBlock
     &__inner
         margin-left: -5px

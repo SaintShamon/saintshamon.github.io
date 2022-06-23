@@ -11,7 +11,10 @@ function theme_load_scripts(){
     /* fonts */
 
     /*theme css*/
+	wp_enqueue_style( 'typekit', 'https://use.typekit.net/kdb5vaj.css');
 	wp_enqueue_style( 'main',get_template_directory_uri() . '/dist/main.min.css');
+	wp_enqueue_style( 'slick-theme',get_template_directory_uri() . '/js/libs/slick/slick-theme.css');
+	wp_enqueue_style( 'slick',get_template_directory_uri() . '/js/libs/slick/slick.css');
 }
 
 add_action( 'wp_footer', 'theme_scripts' );

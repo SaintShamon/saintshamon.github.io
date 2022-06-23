@@ -15,28 +15,22 @@
                 grid-template-columns: repeat(1, 1fr)
                 gap: 31px
     &__item
-        display: flex
-        flex-direction: column
         position: relative
         width: 100%
         max-width: 493px
+        display: flex 
+        flex-direction: column
         +max-screen($breakpoint-lg)
             max-width: 533px
+            margin: 0 auto
         a
-            position: absolute
-            top: 0
-            left: 0
+            display: flex
+            flex-direction: column
+            position: relative
             width: 100%
-            height: 100%
-            z-index: 2
-        &:nth-of-type(2)
-            margin-top: 0
-            .services-list__img
-                order: 1
-                .services-list_title
-                    order: 2
+            margin-top: auto
         &:hover
-            .services-list_title
+            .services-archive__item_title
                 transition: .3s
                 h3
                     color: #fff
@@ -57,16 +51,15 @@
                     height: 100%
                     transition: width .7s
                     background-color: $default-text-color
-        &__img
+        &_img
             width: 100%
-            height: 240px
-            background-position: center
-            background-size: cover
-            background-repeat: no-repeat
-            +max-screen(1200px)
-                height: 200px
-            +max-screen(425px)
-                height: 160px
+            img
+                object-fit: cover
+                min-height: 237px
+                +max-screen(1500px)
+                    min-height: 200px
+                    +max-screen(425px)
+                        min-height: 160px
         &_title
             position: relative
             display: flex

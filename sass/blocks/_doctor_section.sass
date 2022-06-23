@@ -10,6 +10,7 @@
         background-size: cover
         background-repeat: no-repeat
         background-image: url('../assets/images/lines/doctor_lines_before.svg')
+        z-index: -1
     &::after
         position: absolute
         content: ""
@@ -21,106 +22,113 @@
         background-size: cover
         background-repeat: no-repeat
         background-image: url('../assets/images/lines/doctor_lines_after.svg')
-.doctor_section
-    .main_block
-        display: flex
-        justify-content: space-between
-        +max-screen($breakpoint-1200)
-            flex-direction: column
-    .col
-        width: 100%
-        max-width: 590px
-        padding-top: 100px
-        position: relative
-        z-index: 1
-        &:last-of-type
-            padding-top: 0
+        z-index: -1
+.doctor
+    &_section
+        .main_block
             display: flex
-            max-width: 900px
-            height: 100%
-            margin-left: 30px
-            +max-screen($breakpoint-1200)
-                margin-left: auto
-                max-width: 900px
-                margin-top: 30px
-            +max-screen($breakpoint-md)
+            justify-content: space-between
+            +max-screen(1200px)
                 flex-direction: column
-                max-width: 533px
-        +max-screen($breakpoint-1500)
-            padding-top: 50px
-            max-width: 490px
-        +max-screen($breakpoint-xl)
-            padding-top: 0
-        +max-screen($breakpoint-1200)
-            max-width: none
-        +max-screen($breakpoint-lg)
-            max-width: 533px
-            margin: 0 auto
-    .title
-        margin-bottom: 80px
-        +max-screen($breakpoint-1500)
-            margin-bottom: 40px
-    .content
-        p
-            color: $color-grey
-            margin-bottom: 30px
+        .col
+            width: 100%
+            max-width: 590px
+            padding-top: 100px
+            position: relative
+            z-index: 1
             &:last-of-type
-                margin-bottom: 0
-    a.button
-        margin-top: 74px
-        +max-screen($breakpoint-xl)
-            margin-top: 44px
-    .sertefication_block
-        margin-top: 95px
-        padding: 60px 70px 60px 40px
-        background: #F9FCFF
-        height: max-content
-        +max-screen($breakpoint-1500)
-            margin-top: 50px
-            padding: 50px 60px 50px 30px
-        +max-screen($breakpoint-xl)
-            margin-top: 0
-            height: auto
-            padding: 30px
-        +max-screen($breakpoint-1200)
+                padding-top: 0
+                display: flex
+                max-width: 900px
+                height: 100%
+                margin-left: 30px
+                +max-screen(1200px)
+                    margin-left: auto
+                    max-width: 900px
+                    margin-top: 30px
+                +max-screen($breakpoint-md)
+                    flex-direction: column
+                    max-width: 533px
+            +max-screen(1500px)
+                padding-top: 50px
+                max-width: 490px
+            +max-screen($breakpoint-xl)
+                padding-top: 0
+            +max-screen(1200px)
+                max-width: none
+            +max-screen($breakpoint-lg)
+                max-width: 533px
+                margin: 0 auto
+
+        .content_block
+            p
+                color: $color-grey
+                margin-bottom: 30px
+                &:last-of-type
+                    margin-bottom: 0
+            h2
+                margin-bottom: 80px
+                +max-screen(1500px)
+                margin-bottom: 40px
+        a.button
+            margin-top: 74px
+            +max-screen($breakpoint-xl)
+                margin-top: 44px
+        .sertefication_block
             margin-top: 95px
             padding: 60px 70px 60px 40px
+            background: #F9FCFF
             height: max-content
-        +max-screen($breakpoint-lg)
-            margin-top: 50px
-            padding: 50px 60px 50px 30px
-        +max-screen($breakpoint-md)
-        h3
-            // text-transform: uppercase
-            margin-bottom: 45px
-            +max-screen($breakpoint-1500)
-            margin-bottom: 25px
-        .inner_block
-            display: flex
-            margin-bottom: 35px
-            &:last-of-type
-                margin-bottom: 0
-            img
-                min-width: 43.33px
-                max-width: 43.33px
-                min-height: 44px
-                margin-right: 20px
-                +max-screen($breakpoint-1500)
-                    min-width: 33.33px
-                    max-width: 33.33px
-                    min-height: 34px
-                    margin-right: 10px
-        p:not(.text--size--14)
-            font-size: 16px
-            +max-screen($breakpoint-1500)
-            font-size: 13px
-    .img_block
+            +max-screen(1500px)
+                margin-top: 50px
+                padding: 50px 60px 50px 30px
+            +max-screen($breakpoint-xl)
+                margin-top: 0
+                height: auto
+                padding: 30px
+            +max-screen(1200px)
+                margin-top: 95px
+                padding: 60px 70px 60px 40px
+                height: max-content
+            +max-screen($breakpoint-lg)
+                margin-top: 50px
+                padding: 50px 60px 50px 30px
+            +max-screen($breakpoint-md)
+            h3
+                // text-transform: uppercase
+                margin-bottom: 45px
+                +max-screen(1500px)
+                margin-bottom: 25px
+            .inner_block
+                display: flex
+                margin-bottom: 35px
+                &:last-of-type
+                    margin-bottom: 0
+                img
+                    min-width: 43.33px
+                    max-width: 43.33px
+                    min-height: 44px
+                    margin-right: 20px
+                    +max-screen(1500px)
+                        min-width: 33.33px
+                        max-width: 33.33px
+                        min-height: 34px
+                        margin-right: 10px
+            p:not(.text--size--14)
+                font-size: 16px
+                +max-screen(1500px)
+                font-size: 13px
+    &_img_block
         img
             width: 100%
-        +max-screen($breakpoint-1500)
+            min-height: 510px
+            +max-screen($breakpoint-sm)
+                min-height: auto
+
+        +max-screen(1500px)
             width: 100%
             max-width: 400px
-        +max-screen($breakpoint-1200)
+        +max-screen(1200px)
             max-width: 500px
         +max-screen($breakpoint-lg)
             max-width: 400px

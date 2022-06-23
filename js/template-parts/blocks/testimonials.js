@@ -28,11 +28,53 @@ function testimonials() {
 
   });
 
-  function truncateText(selector, maxLength) {
-    $(selector).text((i, txt) => txt.length > maxLength ? txt.substr(0, maxLength) + "..." : txt);
-  };
+  $('.testimonials_block a.link--icon').click(function () {
 
-  truncateText(".testimonials_block .content", 293);
+  });
+
+  // function truncateText(selector, maxLength) {
+  //   $(selector).text((i, txt) => txt.length > maxLength ? txt.substr(0, maxLength) + "..." : txt);
+  //   return
+  // };
+
+  // truncateText(".testimonials_block .content > p", 200);
+
+  // requires jquery
+  $(document).ready(function () {
+    (function () {
+      var showChar = 250;
+      var ellipsestext = "...";
+
+      $(".testimonials_block .content").each(function () {
+        var content = $(this).html();
+        if (content.length > showChar) {
+          var c = content.substr(0, showChar);
+          var h = content;
+          var html =
+            '<div class="truncate-text" style="display:block">' +
+            c + ellipsestext + '</div><div class="truncate-text" style="display:none">' +
+            h +
+            '</span></div>';
+
+          $(this).html(html);
+        }
+      });
+
+      $("a.link--icon").click(function () {
+        event.preventDefault();
+        var thisEl = $(this).parents().eq(1);
+        var cT = thisEl.find(".truncate-text");
+
+        $(this).toggleClass('relative');
+        cT.toggle();
+        return false;
+      });
+      /* end iffe */
+    })();
+
+    /* end ready */
+  });
+
 };
 
 export {

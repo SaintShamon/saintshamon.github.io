@@ -1,0 +1,128 @@
+.our_services_section
+    z-index: 1
+    .container
+        position: relative
+    .section-bg
+        background: #F9FCFF
+    .main_block
+        padding-top: 160px
+        padding-bottom: 200px
+        +max-screen(1500px)
+        padding-top: 100px
+        padding-bottom: 100px
+    .title_wrapper
+        position: relative
+        width: 100%
+        padding-bottom: 111px
+        display: flex
+        justify-content: space-between
+        +max-screen(1500px)
+            padding-bottom: 20px
+        +max-screen($breakpoint-lg)
+            max-width: 533px
+            margin: 0 auto 30px
+            padding-bottom: 0
+        +max-screen($breakpoint-md)
+            flex-direction: column
+    .title
+        display: flex
+        width: 100%
+        max-width: 493px
+        +max-screen($breakpoint-lg)
+        ~.btn_block
+            width: max-content
+        h2
+            align-self: center
+    .btn_block
+        align-self: center
+        +max-screen($breakpoint-lg)
+
+        +max-screen($breakpoint-md)
+            align-self: flex-start
+            margin-top: 20px
+    .content_wrapper
+        position: relative
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-lg)
+            flex-direction: column
+        .col
+            width: 100%
+            max-width: 493px
+            margin-right: 20px
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            +max-screen(1500px)
+                max-width: 373px
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+            +max-screen($breakpoint-lg)
+                max-width: 533px
+                margin: 0 auto 20px
+            &:last-of-type
+                margin-right: 0
+                +max-screen($breakpoint-lg)
+                    margin-right: auto
+                    margin-bottom: 0
+            &.services_img
+                position: relative
+                max-width: 534px
+                img
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    +max-screen(1500px)
+                        position: relative
+    .service_inner
+        position: relative
+        margin-bottom: 22px
+        background: #FFFFFF
+
+        a
+            display: flex
+            flex-direction: row
+            align-items: center
+            width: 100%
+            justify-content: space-between
+            padding: 38px 40px
+            +max-screen(1500px)
+                padding: 28px 40px
+            +max-screen($breakpoint-xl)
+                padding: 28px 20px 28px 40px
+            +max-screen(1100px)
+                padding: 20px 20px 20px 30px
+        p
+            display: block
+            font-family: $font-family-h3
+            align-self: center
+        svg
+            margin-right: 0
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            width: 10px
+            height: 100%
+            background-color: $default-text-color
+        &:last-of-type
+            margin-bottom: 0
+        &:hover
+            p
+                color: #fff
+                position: relative
+            svg
+                position: relative
+                path
+                    fill: #fff
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                transition: width .7s
+                background-color: $default-text-color

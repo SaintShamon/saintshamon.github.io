@@ -1,6 +1,6 @@
 .slider-banner ~ .services-list
     padding-top: 200px
-    +max-screen($breakpoint-1500)
+    +max-screen(1500px)
         padding-top: 100px
 .services-list
     &::after
@@ -13,7 +13,8 @@
         background-position: 50%
         background-size: cover
         background-repeat: no-repeat
-        background-image: url('../assets/images/lines/services-list_lines.svg')
+        background-image: url('../assets/images/lines/procedures_lines.svg')
+        z-index: -1
         +max-screen($breakpoint-sm)
             bottom: auto
             top: 0
@@ -25,14 +26,14 @@
         padding-bottom: 157px
         display: flex
         justify-content: space-between
-        +max-screen($breakpoint-1500)
+        +max-screen(1500px)
             padding-bottom: 100px
         +max-screen($breakpoint-md)
             flex-direction: column
-    .title
-        display: flex
-        h2
-            align-self: center
+        .title
+            display: flex
+            h2
+                align-self: center
     .btn_block
         align-self: center
         +max-screen($breakpoint-md)
@@ -41,7 +42,7 @@
     .content_wrapper
         position: relative
         margin-top: 0
-        +max-screen($breakpoint-1200)
+        +max-screen(1200px)
             margin-top: 0
     &_row
         display: flex
@@ -58,21 +59,21 @@
         +max-screen(1024px)
             margin: 0 auto 10px
         a
-            position: absolute
-            top: 0
-            left: 0
+            display: flex
+            flex-direction: column
+            position: relative
             width: 100%
-            height: 100%
-            z-index: 2
         &:nth-of-type(2)
             margin-top: 116px
-            .services-list_img
+            .services-list__img
                 order: 2
             .services-list_title
                 order: 1
+            +max-screen(1500px)
+                margin-top: 99px
             +max-screen(1024px)
                 margin-top: 0
-                .services-list_img
+                .services-list__img
                     order: 1
                 .services-list_title
                     order: 2
@@ -98,23 +99,22 @@
                     height: 100%
                     transition: width .7s
                     background-color: $default-text-color
-    &_img
+    &__img
         width: 100%
-        height: 240px
-        background-position: center
-        background-size: cover
-        background-repeat: no-repeat
-        +max-screen($breakpoint-1200)
-            height: 200px
-        +max-screen(425px)
-            height: 160px
+        img
+            object-fit: cover
+            min-height: 237px
+            +max-screen(1500px)
+                min-height: 200px
+            +max-screen(425px)
+                min-height: 160px
     &_title
         position: relative
         display: flex
         justify-content: space-between
         padding: 38px 60px
         background-color: #fff
-        +max-screen($breakpoint-1200)
+        +max-screen(1500px)
             padding: 28px 40px
         h3
             margin-bottom: 5px

@@ -10,6 +10,7 @@
         background-size: cover
         background-repeat: no-repeat
         background-image: url('../assets/images/lines/contact_lines.svg')
+        z-index: -1
     .container
         position: relative
     .section-bg
@@ -18,16 +19,16 @@
         padding-top: 160px
         display: flex
         justify-content: space-between
-        +max-screen($breakpoint-1500)
+        +max-screen(1500px)
             padding-top: 100px
-        +max-screen($breakpoint-1200)
+        +max-screen(1200px)
             flex-direction: column
     .col
         width: 100%
         max-width: 323px
         position: relative
         z-index: 2
-        +max-screen($breakpoint-1200)
+        +max-screen(1200px)
             max-width: none
         +max-screen($breakpoint-lg)
             max-width: 533px
@@ -35,7 +36,7 @@
         &.col_form
             max-width: 1067px
             margin-left: 50px
-            +max-screen($breakpoint-1200)
+            +max-screen(1200px)
                 margin-left: 0
                 margin-top: 40px
             +max-screen($breakpoint-lg)
@@ -46,11 +47,13 @@
     .title
         margin-top: 100px
         margin-bottom: 80px
-        +max-screen($breakpoint-1500)
+        +max-screen(1500px)
             margin-top: 50px
             margin-bottom: 40px
+        +max-screen($breakpoint-sm)
+            margin-top: 0
     .content
-        +max-screen($breakpoint-1200)
+        +max-screen(1200px)
             display: flex
             > div
                 width: 33%
@@ -60,7 +63,7 @@
         +max-screen($breakpoint-lg)
             flex-direction: column
     .tel_block,
-    .adres_block
+    .address_block
         li
             position: relative
             padding-left: 30px
@@ -90,10 +93,11 @@
         li:before
             content: "—"
             left: 0
+            top: 0
             position: absolute
     .tel_block
         margin-bottom: 50px
-        +max-screen($breakpoint-1200)
+        +max-screen(1200px)
             margin-bottom: 0
         +max-screen($breakpoint-lg)
             margin-bottom: 20px
@@ -105,7 +109,7 @@
                 justify-content: flex-start
         li
             margin-right: 20px
-        +max-screen($breakpoint-1200)
+        +max-screen(1200px)
             margin-top: 0
             align-self: center
         +max-screen($breakpoint-lg)
@@ -117,7 +121,7 @@
         padding: 80px 89px
         background: #FFFFFF
         height: max-content
-        +max-screen($breakpoint-1500)
+        +max-screen(1500px)
             padding: 50px
         +max-screen(375px)
             padding: 30px
@@ -125,14 +129,15 @@
             margin-bottom: 17px
         p
             color: $color-grey
+            margin-bottom: 40px
         .form_field
             width: 100%
             margin-bottom: 40px
-            +max-screen($breakpoint-1500)
+            +max-screen(1500px)
                 margin-bottom: 30px
-            &:first-of-type
+            &:nth-of-type(2)
                 margin-top: 40px
-                +max-screen($breakpoint-1500)
+                +max-screen(1500px)
                     margin-top: 30px
             input[type=text],input[type=tel],input[type=email]
                 width: 100%
@@ -146,7 +151,7 @@
                 font-size: 18px
                 line-height: 130%
                 color: $color-grey
-                +max-screen($breakpoint-1500)
+                +max-screen(1500px)
                     font-size: 15px
                 +max-screen(375px)
                     font-size: 12px
@@ -154,12 +159,33 @@
                 &:placeholder
                     color: #9C9C9C
         input[type=submit].wpcf7-submit
+            border: 1px solid $color-light-blue
+            color: $color-blue
             &:hover
                 border: 1px solid $color-primary
     .img_block
-        +max-screen($breakpoint-1500)
+        width: 100%
+        max-width: 534px
+        +max-screen(1500px)
             max-width: 400px
         img
             width: 100%
+            min-height: 778px
+            +max-screen(1500px)
+                min-height: auto
         +max-screen($breakpoint-lg)
             max-width: 533px
+
+    ~ .cta-book
+        &::after
+            position: absolute
+            content: ""
+            bottom: 0
+            right: 0
+            height: 450px
+            width: 300px
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            background-image: url('../assets/images/lines/about_book.svg')
+            z-index: -1

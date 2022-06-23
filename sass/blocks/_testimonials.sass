@@ -1,0 +1,149 @@
+.testimonials
+    &List_section
+        padding-top: 140px
+        padding-bottom: 100px
+        position: relative
+        +max-screen($breakpoint-lg)
+            padding-top: 80px
+            padding-bottom: 60px
+        +max-screen($breakpoint-md)
+            padding-top: 50px
+            padding-bottom: 40px
+        .background_image_1
+            background-image: url(../assets/images/testimonials_background.svg)
+            width: 53.6%
+            position: absolute
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: 50%
+            left: -8.4%
+            top: -2%
+            &::before
+                content: ""
+                padding-bottom: 112.06%
+                display: block
+        .background_image_2
+            background-image: url('../assets/images/testimonials_background_2.svg')
+            width: 37%
+            position: absolute
+            trasnform: rotate(-70.57deg)
+            height: 100%
+            right: 0
+            bottom: -54%
+            background-size: contain
+            background-position: center
+            z-index: -1
+            &::before 
+                content: ""
+                padding-bottom: 177.89%
+                display: block
+        &::after
+            content: ""
+            height: 
+    &List 
+        display: flex 
+        margin-left: -40px
+        margin-right: -40px
+        flex-wrap: wrap
+        margin-bottom: -80px
+        +max-screen($breakpoint-lg)
+            margin-left: -25px
+            margin-right: -25px
+            margin-bottom: -50px
+        +max-screen($breakpoint-md)
+            margin-bottom: -32px
+    &Item 
+        background: #F9FCFF
+        border-left: 10px solid $color-blue
+        padding: 60px
+        padding-left: 50px
+        height: 100%
+        +max-screen($breakpoint-lg)
+            padding: 40px
+            padding-left: 30px
+        +max-screen($breakpoint-md)
+            padding: 30px
+            padding-left: 25px
+            border-left: 5px solid $color-blue
+        &__name
+            margin-bottom: 20px
+            +max-screen($breakpoint-md)
+                margin-bottom: 8px
+        &__content 
+            color: #5A5A5A
+            font-weight: 300
+            transition: .3s
+        &__button
+            cursor: pointer 
+            position: relative
+            display: inline-block
+            margin-top: 44.66px
+            padding-right: 18px
+            +max-screen($breakpoint-lg)
+                margin-top: 24px
+            +max-screen($breakpoint-md)
+                margin-top: 16px
+            &.hide
+                display: none
+            &::after 
+                content: ""
+                position: absolute
+                top: 50%
+                right: 0
+                width: 8px
+                height: 6px
+                background-image: url('../assets/images/more_arrow.svg')
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+                transform: translateY(-50%)
+                transition: .3s
+        &Wrapper
+            padding: 0 40px
+            margin-bottom: 80px
+            max-width: 50%
+            +max-screen($breakpoint-lg)
+                padding: 0 25px
+                margin-bottom: 50px
+            +max-screen($breakpoint-md)
+                max-width: 100%
+                margin-bottom: 32px
+            &.limited_content 
+                .testimonialsItem__content
+                    overflow: hidden
+                    text-overflow: ellipsis
+                    display: -webkit-box
+                    -webkit-line-clamp: 6
+                    +max-screen($breakpoint-md)
+                        -webkit-line-clamp: 10
+                .testimonialsItem__more
+                    display: inline-block
+            &.opened
+                .testimonialsItem__content
+                    overflow: visible
+                    -webkit-line-clamp: inherit
+                .testimonialsItem__button
+                    &.show 
+                        display: none
+                    &.hide
+                        display: inline-block
+                        &::after
+                            transform: rotate(180deg) translateY(50%)
+.post-type-archive-testimonial
+    .contact_section:after
+        content: none
+    .page-title 
+        .background_image
+            background-image: url(../assets/images/testimonials_hero_background.svg)
+            position: absolute
+            left: 0
+            top: -22%
+            width: 70.88%
+            background-size: contain
+            background-repeat: no-repeat
+            +max-screen($breakpoint-lg)
+                top: 10%
+            &::before
+                padding-bottom: 81%
+                display: block
+                content: ""
