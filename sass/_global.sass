@@ -53,14 +53,54 @@ img
 		&:hover
 			color: $color-blue
 			opacity: 0.8
-	.center-separator
-		margin-left: 10px
-		margin-right: 10px
+
 	#breadcrumbs
 		margin-left: -10px
 		margin-right: -10px
-		span 
+		span
 			span
 				span,
 				a
 					padding: 0 10px
+		span.center-separator
+			padding: 0
+
+#button_top
+	display: flex
+	background-color: #fff
+	width: 50px
+	height: 50px
+	text-align: center
+	border-radius: 50%
+	border: 1px solid $color-blue
+	position: fixed
+	bottom: 30px
+	right: 30px
+	opacity: 0
+	transition: background-color .3s, opacity .5s, visibility .5s
+	visibility: hidden
+	z-index: 2
+
+	svg
+		align-self: center
+		margin: 0 auto
+
+		transform: rotate(-90deg)
+		path
+			fill: $color-blue
+	&:hover
+		cursor: pointer
+		background-color: #FFF
+		border: 1px solid $color-blue
+		opacity: 1
+		visibility: visible
+		svg
+			path
+				fill: $color-blue
+
+	&:active
+		background-color: #555
+
+	&.show
+		opacity: 1
+		visibility: visible

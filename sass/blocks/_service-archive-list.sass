@@ -18,7 +18,7 @@
         position: relative
         width: 100%
         max-width: 493px
-        display: flex 
+        display: flex
         flex-direction: column
         +max-screen($breakpoint-lg)
             max-width: 533px
@@ -68,8 +68,12 @@
             background: $color-white-blue
             +max-screen(1500px)
                 padding: 28px 40px
+            .text_block
+                margin-top: 5px
+
             h3
-                margin-bottom: 5px
+                line-height: 100%
+
             &::before
                 position: absolute
                 content: ''

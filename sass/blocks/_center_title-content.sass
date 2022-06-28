@@ -1,0 +1,26 @@
+.center_title-content
+    .main_block
+        display: block
+        .title_wrapper
+            +max-screen($breakpoint-lg)
+                max-width: 533px
+                margin: 0 auto
+            h2
+                text-align: center
+                +max-screen($breakpoint-lg)
+                    text-align: left
+        .content_wrapper
+            margin-top: 111px
+            display: flex
+            justify-content: space-between
+            +max-screen($breakpoint-lg)
+                flex-direction: column
+            +max-screen($breakpoint-xl)
+                margin-top: 61px
+        .col
+            align-self: flex-start
+        .col.center_img
+            img
+                min-height: 784px
+                +max-screen(1500px)
+                min-height: auto

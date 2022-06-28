@@ -27,12 +27,10 @@ function header() {
 
         $(window).scroll(function () {
             if ($(window).scrollTop() >= 300) {
-                $('.top_header_block').addClass('fixed_header');
-                $('.bottom_header_block').addClass('fixed_header');
+                $('.header .header_block').addClass('fixed_header');
                 $('#button_top').addClass('show');
             } else {
-                $('.top_header_block').removeClass('fixed_header');
-                $('.bottom_header_block').removeClass('fixed_header');
+                $('.header .header_block').removeClass('fixed_header');
                 $('#button_top').removeClass('show');
             }
         });

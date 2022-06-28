@@ -1,0 +1,56 @@
+.list_content
+    .main_block
+        position: relative
+        display: flex
+        justify-content: space-between
+        z-index: 2
+        +max-screen($breakpoint-lg)
+            flex-direction: column
+    .col
+        width: 100%
+    &__content
+        max-width: 710px
+        align-self: center
+        +max-screen($breakpoint-lg)
+            max-width: 533px
+            margin: 0 auto 0
+        h2
+            margin-bottom: 60px
+            +max-screen(1500px)
+                margin-bottom: 40px
+    &__list
+        max-width: 800px
+        margin-right: 90px
+        +max-screen($breakpoint-xl)
+            margin-right: 40px
+        +max-screen($breakpoint-lg)
+            max-width: 533px
+            margin: 0 auto 30px
+        .inner_block
+            background-color: $color-white-blue
+        .title
+            background: rgba(12, 111, 151, 0.1)
+            padding: 40px 49px 34px
+            +max-screen($breakpoint-xl)
+                padding: 20px 29px 14px
+        .inner_list
+            padding: 40px 30px
+            display: grid
+            gap: 25px
+            +max-screen($breakpoint-xl)
+                padding: 30px
+                gap: 15px
+        li
+            position: relative
+            padding-left: 30px
+            &::before
+                content: ''
+                position: absolute
+                width: 20px
+                height: 20px
+                left: 0
+                top: calc( 50% - 10px )
+                background-image: url('../assets/images/icons/li_marker.svg')
+                background-position: center
+                background-repeat: no-repeat
+                background-size: cover

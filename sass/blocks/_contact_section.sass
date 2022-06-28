@@ -11,6 +11,10 @@
         background-repeat: no-repeat
         background-image: url('../assets/images/lines/contact_lines.svg')
         z-index: -1
+        +max-screen($breakpoint-sm)
+            top: 0
+            height: 384px
+            width: 134px
     .container
         position: relative
     .section-bg
@@ -95,6 +99,7 @@
             left: 0
             top: 0
             position: absolute
+            color: $color-blue
     .tel_block
         margin-bottom: 50px
         +max-screen(1200px)
@@ -150,14 +155,15 @@
                 font-weight: 300
                 font-size: 18px
                 line-height: 130%
-                color: $color-grey
+                color: #9C9C9C
+                &::placeholder
+                    color: #9C9C9C
                 +max-screen(1500px)
                     font-size: 15px
                 +max-screen(375px)
                     font-size: 12px
                     height: 33px
-                &:placeholder
-                    color: #9C9C9C
+
         input[type=submit].wpcf7-submit
             border: 1px solid $color-light-blue
             color: $color-blue
@@ -189,3 +195,10 @@
             background-repeat: no-repeat
             background-image: url('../assets/images/lines/about_book.svg')
             z-index: -1
+    &.contact-center
+        .col.col_form
+            margin: 0 auto
+            +max-screen($breakpoint-xl)
+                max-width: 867px
+            +max-screen($breakpoint-lg)
+                max-width: 533px

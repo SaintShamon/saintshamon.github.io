@@ -35,3 +35,38 @@
         +max-screen($breakpoint-lg)
             max-width: 533px
             margin: 0 auto 30px
+.change_blocks_order
+    #main 
+        display: flex 
+        flex-direction: column 
+        .cta-book
+            overflow: hidden
+            order: 1
+            .background_image 
+                position: absolute
+                background-image: url(../assets/images/book_background.svg)
+                right: 0
+                top: -85%
+                opacity: 0.3
+                width: 31.25%
+                background-size: contain
+                background-position: center
+                background-repeat: no-repeat
+                right: -2%
+                +max-screen($breakpoint-xl)
+                    top: -60%
+                +max-screen($breakpoint-lg)
+                    bottom: 0
+                    right: -5%
+                +max-screen($breakpoint-md)
+                    width: 60%
+                    right: -12%
+                    bottom: 0
+                &::before
+                    content: ""
+                    padding-bottom: 177.83%
+                    display: block
+            .main_block 
+                padding: 160px 0
+                +max-screen(1200px)
+                    padding: 100px 0

@@ -34,7 +34,9 @@
 
         &.page-title__image
             max-width: 800px
-            margin-left: 60px
+            margin-left: 90px
+            +max-screen(1500px)
+                margin-left: 40px
             +max-screen($breakpoint-lg)
                 max-width: 533px
                 margin: 30px auto
@@ -42,13 +44,12 @@
     &__block_content
         p
             color: $color-grey
-            margin-bottom: 40px
             &:last-of-type
                 margin-bottom: 0
         h1,h2
             margin-bottom: 50px
         a
-            color: $color-primary
+            color: $color-blue
             font-weight: 500
         ~ .conditions
             margin-top: 80px
@@ -66,7 +67,9 @@
                 margin: 0 auto 50px
             &:last-of-type
                 max-width: 710px
-                margin-left: 60px
+                margin-left: 90px
+                +max-screen(1500px)
+                    margin-left: 40px
                 +max-screen($breakpoint-lg)
                     max-width: 533px
                     margin: 0 auto
@@ -89,20 +92,30 @@
         h3
             margin-bottom: 40px
         &_list
-            display: grid
+            // display: grid
             width: 100%
-            grid-template-columns: repeat(2,1fr)
-            gap: 25px
-            +max-screen($breakpoint-xl)
-            gap: 20px
+            columns: 2
+            // grid-template-columns: repeat(2,1fr)
+            // gap: 25px
+            // +max-screen($breakpoint-xl)
+            // gap: 20px
             +max-screen(450px)
-                grid-template-columns: repeat(1,1fr)
+                columns: auto
+            &.one_col
+                columns: auto
+                li
+                    max-width: none
         li
             width: 100%
             max-width: 272px
             position: relative
             padding-left: 10px
+            margin-bottom: 25px
             height: max-content
+            &:last-of-type
+                margin-bottom: 0
+            +max-screen($breakpoint-xl)
+                margin-bottom: 20px
             +max-screen(450px)
                 max-width: none
             &::before
@@ -118,7 +131,7 @@
             content: none
         .page-title
             &__block_content
-                padding-right: 23px
+                // padding-right: 23px
                 h1
                     margin-bottom: 80px
                     +max-screen($breakpoint-lg)
@@ -134,3 +147,32 @@
                 a
                     background: $color-blue
                     color: #fff
+    &.list-right 
+        .bottom_wrapper
+            margin-top: 200px
+            +max-screen($breakpoint-lg)
+                margin-top: 120px
+            +max-screen($breakpoint-md)
+                margin-top: 80px
+            .main_block
+                flex-direction: row-reverse
+                +max-screen($breakpoint-lg)
+                    flex-direction: column-reverse
+                .col:nth-child(2)
+                    margin-right: 97px
+                    margin-left: 0
+                    +max-screen(1500px)
+                        margin-right: 42px
+                    +max-screen($breakpoint-lg)
+                        margin-left: auto 
+                        margin-right: auto
+                        margin-bottom: 32px
+                .col:first-child 
+                    +max-screen($breakpoint-lg)
+                        margin-bottom: 0
+                .conditions_list
+                    flex-direction: column
+                    columns: 1
+                    +max-screen($breakpoint-lg)
+                    li 
+                        max-width: 100%

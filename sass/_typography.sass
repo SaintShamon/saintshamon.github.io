@@ -70,51 +70,50 @@ p,.p
 .text
 	&--style
 	&--size--10,&--size--10 *
-		font-size: rem(10px)
+		font-size: 10px
 		+max-screen($breakpoint-lg)
 		+max-screen($breakpoint-md)
-			font-size: rem(10px)
+			font-size: 10px
 	&--size--12,&--size--12 *
-		font-size: rem(12px)
+		font-size: 12px
 
 		+max-screen($breakpoint-lg)
 		+max-screen($breakpoint-md)
-			font-size: rem(12px)
+			font-size: 12px
 	&--size--13,&--size--13 *
-		font-size: rem(13px)
-
+		font-size: 13px
 		+max-screen($breakpoint-lg)
 		+max-screen($breakpoint-md)
-			font-size: rem(13px)
+			font-size: 12px
 	&--size--14,&--size--14 *
-		font-size: rem(14px)
+		font-size: 14px
 		line-height: 130.5%
 		+max-screen(1500px)
-			font-size: rem(14px)
+			font-size: 14px
 		+max-screen($breakpoint-md)
-			font-size: rem(14px)
+			font-size: 14px
 	&--size--16,&--size--16 *
-		font-size: rem(16px)
+		font-size: 16px
 		+max-screen($breakpoint-lg)
 		+max-screen($breakpoint-md)
-			font-size: rem(14px)
+			font-size: 14px
 	&--size--17,&--size--17 *
-		font-size: rem(17px)
+		font-size: 17px
 		+max-screen($breakpoint-lg)
 		+max-screen($breakpoint-md)
 			font-size: rem(14px)
 	&--size--20,&--size--20 *
-		font-size: rem(20px)
+		font-size: 20px
 		+max-screen($breakpoint-xl)
-			font-size: rem(16px)
+			font-size: 16px
 		+max-screen($breakpoint-md)
-			font-size: rem(16px)
+			font-size: 16px
 	&--size--22,&--size--22 *
-		font-size: rem(22px)
+		font-size: 22px
 		+max-screen($breakpoint-xl)
-			font-size: rem(18px)
+			font-size: 18px
 		+max-screen($breakpoint-md)
-			font-size: rem(16px)
+			font-size: 16px
 
 	&--default,&--default *
 		font-size: rem(16px)
@@ -178,38 +177,49 @@ p,.p
 		width: 100%
 
 .content-block
-	font-size: rem(16px)
-	line-height: rem(28px)
+	// font-size: rem(16px)
+	// line-height: rem(28px)
 	p
-		margin-bottom: 20px
+		margin-bottom: 30px
 		&:nth-child(1)
 			padding-top: 0
+
 		&:nth-last-child(1)
 			padding-bottom: 0
-	h1,h2,h3,h4,h5,h6
-		margin-bottom: 15px
-		line-height: 1.2em
-	h1
-		font-size: 32px
-		margin-bottom: 20px
-	h2
-		font-size: 28px
-	h3
-		font-size: 24px
-	h4
-		font-size: 22px
-	h5
-		font-size: 20px
-	h6
-		font-size: 18px
+			margin-bottom: 0
+	// h1,h2,h3,h4,h5,h6
+	// 	margin-bottom: 15px
+		// line-height: 1.2em
+	h2,h3,h4,h5,h6
+		margin-top: 80px
+		margin-bottom: 30px
+		+max-screen(1500px)
+			margin-top: 40px
+			margin-bottom: 20px
+		&:first-of-type
+			margin-top: 0
+	// h1
+	// 	font-size: 64px
+	// h2
+	// 	font-size: 48px
+	// h3
+	// 	font-size: 18px
+	// h4
+	// 	font-size: 16px
+	// h5
+	// 	font-size: 14px
+	// h6
+	// 	font-size: 14px
 	p,ul,ol
-		font-size: rem(16px)
-		line-height: rem(28px)
+		color: $color-grey
+		// font-size: rem(16px)
+		// line-height: rem(28px)
 	a
-		overflow-wrap: break-word
-		word-wrap: break-word
+		// overflow-wrap: break-word
+		// word-wrap: break-word
 		transition: 0.3s
-		color: $color-primary
+		color: $color-blue
+		font-weight: 500
 		&:hover
 			opacity: 0.8
 			text-decoration: underline

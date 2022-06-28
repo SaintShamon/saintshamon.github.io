@@ -1,0 +1,99 @@
+.contact-title
+    .main_block
+        position: relative
+        display: flex
+        justify-content: space-between
+        z-index: 1
+        +max-screen($breakpoint-lg)
+            flex-direction: column
+    .col
+        width: 100%
+    &__content
+        max-width: 607px
+        margin-right: 90px
+        +max-screen($breakpoint-xl)
+            margin-right: 40px
+        +max-screen($breakpoint-lg)
+            margin: 0 auto 30px
+            max-width: 533px
+        p
+            color: $color-grey
+        .bottom_wrap
+            margin-top: 80px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            +max-screen(1500px)
+                margin-top: 40px
+        .tel_block,
+        .address_block
+            li
+                position: relative
+                padding-left: 0
+                color: $color-grey
+                margin-bottom: 15px
+                display: flex
+                flex-direction: row
+                align-items: center
+                &:last-of-type
+                    margin-bottom: 0
+            a
+                color: $color-grey
+                align-items: center
+                &:hover
+                    color: $color-primary
+            span
+                position: relative
+                color: #5A8DA1
+                margin-left: 30px
+                &::after
+                    position: absolute
+                    content: '|'
+                    left: -15px
+                    top: -4px
+                    font-size: 23px
+                    color: #5A8DA2
+        .address_block
+            width: 100%
+            max-width: 300px
+            +max-screen(1200px)
+                margin-bottom: 30px
+            +max-screen($breakpoint-lg)
+                max-width: none
+        .tel_block
+            width: 100%
+            max-width: 250px
+            +max-screen(1200px)
+                margin-bottom: 30px
+            +max-screen($breakpoint-lg)
+                margin-bottom: 20px
+                max-width: none
+        .social_block
+            display: flex
+            justify-content: space-between
+            width: 100%
+            margin-top: 40px
+            ul
+                width: 100%
+                max-width: 300px
+                display: flex
+                +max-screen(1200px)
+                    margin-left: 30px
+                +max-screen($breakpoint-lg)
+                    justify-content: flex-start
+            li
+                margin-right: 20px
+            +max-screen(1200px)
+                margin-top: 0
+                align-self: center
+            +max-screen($breakpoint-lg)
+                align-self: flex-start
+        .email_block
+            a
+                margin-top: 5px
+
+    &__map
+        max-width: 800px
+        +max-screen($breakpoint-lg)
+            margin: 0 auto 0
+            max-width: 533px

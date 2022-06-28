@@ -1,7 +1,7 @@
 <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="43.3333" height="44" fill="url(#pattern0)"/>
 <g style="mix-blend-mode:color">
-<path d="M0 0H43.3333V44H0V0Z" fill="#53B4DB"/>
+<path d="M0 0H43.3333V44H0V0Z" fill=""/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

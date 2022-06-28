@@ -33,6 +33,9 @@ import {
 import {
     testimonialsShowMore
 } from './template-parts/blocks/testimonials_list';
+import {
+    check_lenght
+} from './template-parts/blocks/conditions_lenght';
 // import {
 //     gsap
 // } from "gsap";
@@ -136,7 +139,7 @@ lottie();
 mainslider();
 testimonials();
 testimonialsShowMore();
-
+// check_lenght()
 
 // $('.slider-banner').each(function () {
 //     let block = $(this);
@@ -178,3 +181,24 @@ testimonialsShowMore();
 //     });
 
 // });
+
+var btn = $('#button_top');
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, '300');
+    $('.header .header_block').removeClass('fixed_header');
+});
+
+$(window).scroll(function () {
+    $(window).scrollTop(function () {
+        if ($(window).scrollTop() >= 300) {
+            function scrollEnd() {
+                $('#button_top').removeClass('show');
+            }
+            $('#button_top').addClass('show');
+            setTimeout(scrollEnd, 3000);
+        };
+    });
+});

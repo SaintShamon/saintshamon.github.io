@@ -33,26 +33,27 @@
             background-size: contain
             background-position: center
             z-index: -1
-            &::before 
+            &::before
                 content: ""
                 padding-bottom: 177.89%
                 display: block
         &::after
             content: ""
-            height: 
-    &List 
-        display: flex 
+            height:
+    &List
+        display: flex
         margin-left: -40px
         margin-right: -40px
         flex-wrap: wrap
         margin-bottom: -80px
+        align-items: center
         +max-screen($breakpoint-lg)
             margin-left: -25px
             margin-right: -25px
             margin-bottom: -50px
         +max-screen($breakpoint-md)
             margin-bottom: -32px
-    &Item 
+    &Item
         background: #F9FCFF
         border-left: 10px solid $color-blue
         padding: 60px
@@ -69,12 +70,12 @@
             margin-bottom: 20px
             +max-screen($breakpoint-md)
                 margin-bottom: 8px
-        &__content 
+        &__content
             color: #5A5A5A
             font-weight: 300
             transition: .3s
         &__button
-            cursor: pointer 
+            cursor: pointer
             position: relative
             display: inline-block
             margin-top: 44.66px
@@ -85,7 +86,7 @@
                 margin-top: 16px
             &.hide
                 display: none
-            &::after 
+            &::after
                 content: ""
                 position: absolute
                 top: 50%
@@ -108,7 +109,7 @@
             +max-screen($breakpoint-md)
                 max-width: 100%
                 margin-bottom: 32px
-            &.limited_content 
+            &.limited_content
                 .testimonialsItem__content
                     overflow: hidden
                     text-overflow: ellipsis
@@ -123,7 +124,7 @@
                     overflow: visible
                     -webkit-line-clamp: inherit
                 .testimonialsItem__button
-                    &.show 
+                    &.show
                         display: none
                     &.hide
                         display: inline-block
@@ -132,7 +133,7 @@
 .post-type-archive-testimonial
     .contact_section:after
         content: none
-    .page-title 
+    .page-title
         .background_image
             background-image: url(../assets/images/testimonials_hero_background.svg)
             position: absolute

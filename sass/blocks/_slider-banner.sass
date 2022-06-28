@@ -43,6 +43,8 @@
             min-height: 600px
         +max-screen(853px)
             min-height: 60vh
+        +max-screen($breakpoint-sm)
+            min-height: 700px
         .lines_block
             position: absolute
             content: ''
@@ -118,9 +120,11 @@
                 height: 84px
                 +max-screen($breakpoint-xl)
                     margin-top: 126px
-                    height: 54px
+                    height: 64px
+                    width: max-content
+                    padding: 13px 32px
             &.color-blue
-                color: #000
+                color: #0C6F97
                 a.button
                     background: #0C6F97
                     color: #fff
