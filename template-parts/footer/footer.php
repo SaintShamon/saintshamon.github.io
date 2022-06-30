@@ -1,57 +1,58 @@
+<?php 
+    $left_text = get_field('footer_left_text', 'options');
+    $logo = get_field('footer_logo', 'options');
+    $right_text = get_field('footer_right_text', 'options');
+    $center_text = get_field('footer_center_text', 'options');
+?>
 <footer class="footer">
     <div class="section-bg"></div>
     <div class="container">
         <div class="top_wrap">
-            <div class="phone_block">
-                <a href="tel:+8106953766">(810) 695-3766
-                </a>
-                <p>Holly Road Professional Village | 9463 N. Holly Rd., Suite 100
-                </p>
-                <p>Grand Blanc, MI 48439</p>
-            </div>
+            <?php if($left_text): ?>
+                <div class="phone_block">
+                    <?php echo $left_text; ?>
+                </div>
+            <?php endif; ?>
             <div class="menu_block">
-                <nav>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">For Patients</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </nav>
+                <?php wp_nav_menu(array( 'theme_location' => 'footer-menu' )) ?>
             </div>
             <div class="form_block">
-                <form action="">
-                    <div class="form_container">
-                        <input type="email" name="" id="" placeholder="Your E-mail">
-                        <input type="submit" value="Subscribe" class="wpcf7-submit btn">
-                    </div>
-                </form>
+                <?php echo do_shortcode( '[contact-form-7 id="389" title="Footer Form"]' ) ?>
             </div>
         </div>
         <div class="bottom_wrap">
-            <div class="logo_block">
-                <img src="<?= get_template_directory_uri() ?>/assets/images/logo_footer.svg" alt="">
-            </div>
-            <div class="copyright_block">
-                <p>©Michigan Nose & Sinus Health - All Rights Reserved</p>
-            </div>
-            <div class="socials_block">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/icons/fb_white.svg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/icons/youtube_white.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" target="_blank" rel="noopener noreferrer">Website: Sharkey Advertising</a>
-            </div>
+            <?php if($logo): ?>
+                <div class="logo_block">
+                    <img src="<?php echo $logo['url'] ?>" alt="<?php echo $logo['title'] ?>">
+                </div>
+            <?php endif; ?>
+            <?php if($center_text): ?>
+                <div class="copyright_block">
+                    <?php echo $center_text; ?>
+                </div>
+            <?php endif; ?>
+            <?php if(have_rows('icons_list', 'options') || $right_text): ?>
+                <div class="socials_block">
+                    <ul>
+                        <?php while(have_rows('icons_list', 'options')): the_row(); ?>
+                            <?php 
+                                $link = get_sub_field('link');
+                                $icon = get_sub_field('icon');
+                                if($icon):
+                            ?>
+                                <li>
+                                    <a href="<?php echo $link['url']; ?>">
+                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                        <?php endwhile; ?>
+                    </ul>
+                    <?php if($right_text): ?>
+                        <?php echo $right_text; ?>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </footer>

@@ -3,7 +3,7 @@
         position: relative
         display: flex
         justify-content: space-between
-        z-index: 1
+        z-index: 2
         +max-screen($breakpoint-lg)
             flex-direction: column
     .col
@@ -56,14 +56,23 @@
         .address_block
             width: 100%
             max-width: 300px
+            +max-screen($breakpoint-xl)
+                width: 50%
+                max-width: none
             +max-screen(1200px)
+                width: 100%
                 margin-bottom: 30px
             +max-screen($breakpoint-lg)
                 max-width: none
+                margin-bottom: 20px
         .tel_block
             width: 100%
             max-width: 250px
+            +max-screen($breakpoint-xl)
+                width: 50%
+                max-width: none
             +max-screen(1200px)
+                width: 100%
                 margin-bottom: 30px
             +max-screen($breakpoint-lg)
                 margin-bottom: 20px
@@ -77,6 +86,9 @@
                 width: 100%
                 max-width: 300px
                 display: flex
+                +max-screen($breakpoint-xl)
+                    width: 50%
+                    max-width: none
                 +max-screen(1200px)
                     margin-left: 30px
                 +max-screen($breakpoint-lg)

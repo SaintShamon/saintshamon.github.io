@@ -1,20 +1,14 @@
 <?php 
-    $content = get_sub_field('content');
-    $image = get_sub_field('image');
-    $list_title = get_sub_field('list_title');
-    if($content || $image):
+    $list_title = get_sub_field('list_title'); 
+    $text = get_sub_field('text');
+    $list_side = get_sub_field('list_side');
+    if(have_rows('list')):
 ?>
-<section class="page-title section">
+<section class="page-title section list-<?php echo $list_side; ?>">
     <div class="container">
-        <div class="top_wrapper">
+        <div class="bottom_wrapper service-hero">
             <div class="main_block">
                 <div class="col">
-                    <?php if($content): ?>
-                    <div class="page-title__block_content content-block">
-                        <?php echo $content; ?>
-                    </div>
-                    <?php endif; ?>
-                    <?php if(have_rows('list')): ?>
                     <div class="conditions">
                         <?php if($list_title): ?>
                         <h3><?php echo $list_title; ?></h3>
@@ -26,11 +20,12 @@
                             <?php endwhile; ?>
                         </ul>
                     </div>
-                    <?php endif; ?>
                 </div>
-                <?php if($image): ?>
-                <div class="col page-title__image">
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
+                <?php if($text): ?>
+                <div class="col">
+                    <div class="page-title__block_content content-block">
+                        <?php echo $text; ?>
+                    </div>
                 </div>
                 <?php endif; ?>
             </div>

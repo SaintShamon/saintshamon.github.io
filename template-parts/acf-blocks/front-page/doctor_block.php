@@ -1,20 +1,17 @@
+<?php 
+    $content = get_sub_field('content');
+    $button = get_sub_field('button');
+    $image = get_sub_field('image');
+    $list_title = get_sub_field('list_title');
+    if($content):
+?>
 <section class="doctor_section section">
     <div class="container">
         <div class="main_block">
-            <?php 
-                $name = get_sub_field('name');
-                $description = get_sub_field('description');
-                $button = get_sub_field('button');
-                $image = get_sub_field('image');
-                $list_title = get_sub_field('list_title');
-            ?>
             <div class="col">
-                <?php if($name || $description): ?>
-                    <div class="content_block">
-                        <?php if($name): ?><h2><?php echo $name; ?></h2><?php endif; ?>
-                        <?php if($description): ?>
-                            <?php echo $description; ?>
-                        <?php endif; ?>
+                <?php if($content): ?>
+                    <div class="content_block content-block">
+                        <?php echo $content; ?>
                     </div>
                 <?php endif; ?>
                 <?php if($button): ?>
@@ -53,10 +50,11 @@
                 </div>
                 <?php if($image): ?>
                     <div class="doctor_img_block">
-                        <img src="<?php echo $image; ?>" alt="">
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
                     </div>
                 <?php endif; ?>
             </div>
         </div>
     </div>
 </section>
+<?php endif; ?>

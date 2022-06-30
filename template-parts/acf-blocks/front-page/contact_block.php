@@ -1,16 +1,17 @@
 <?php 
     $contact = get_field('contact_us_block_content', 'options');
+    $title = $contact['title'];
+    $phone_numbers = $contact['phone_numbers'];
+    $address = $contact['address'];
+    $image = $contact['image'];
+    $icons = $contact['icons_list'];
+    if($title || $phone_numbers || $address):
 ?>
+
+
 <section class="contact_section section">
     <div class="container">
         <div class="section-bg"></div>
-        <?php 
-            $title = $contact['title'];
-            $phone_numbers = $contact['phone_numbers'];
-            $address = $contact['address'];
-            $image = $contact['image'];
-            $icons = $contact['icons_list'];
-        ?>
         <div class="main_block">
             <div class="col">
                 <?php if($title): ?>
@@ -39,7 +40,7 @@
                                 <?php if($iconUrl): ?>
                                     <li>
                                         <a href="<?php echo $link; ?>">
-                                            <img src="<?php echo $iconUrl; ?>" alt="">
+                                            <img src="<?php echo $iconUrl; ?>" alt="social media icon">
                                         </a>
                                     </li>
                                 <?php endif; ?>
@@ -51,7 +52,7 @@
             <div class="col col_form">
                 <?php if($image): ?>
                     <div class="img_block">
-                        <img src="<?php echo $image; ?>" alt="">
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['title']; ?>">
                     </div>
                 <?php endif; ?>
                 <div class="form_block">
@@ -61,3 +62,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>

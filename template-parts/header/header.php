@@ -16,7 +16,7 @@
                     </div>
                 <?php endif; ?>
                 <div class="header_menu_block">
-                    <?php wp_nav_menu('main-menu') ?>
+                    <?php wp_nav_menu(array( 'theme_location' => 'main-menu' )) ?>
                 </div>
                 <?php if($phone || $button): ?>
                     <div class="header_phone_block">

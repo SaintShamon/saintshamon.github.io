@@ -38,17 +38,7 @@ $the_query = new WP_Query($args);
                         <?php $i = 1; ?>
                         <?php while($the_query->have_posts()): $the_query->the_post(); ?>
                             <?php if($i <= 4): ?>
-                                <li class="service_inner">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <p class="text--uppercase"><?php the_title(); ?></p>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M16 8L11 5.11325L11 10.8868L16 8ZM-4.37114e-08 8.5L11.5 8.5L11.5 7.5L4.37114e-08 7.5L-4.37114e-08 8.5Z"
-                                                fill="#0C6F97" />
-                                        </svg>
-                                    </a>
-                                </li>
+                                <?php get_template_part('template-parts/acf-blocks/service_item') ?>
                             <?php endif; ?>
                             <?php $i++; ?>
                         <?php endwhile; wp_reset_postdata(  ); ?>
@@ -56,7 +46,7 @@ $the_query = new WP_Query($args);
                 </div>
                 <?php if($center_image): ?>
                     <div class="col services_img">
-                        <img src="<?php echo $center_image; ?>" alt="">
+                        <img src="<?php echo $center_image['url']; ?>" alt="<?php echo $center_image['title']; ?>">
                     </div>
                 <?php endif; ?>
                 <div class="col">
@@ -64,17 +54,7 @@ $the_query = new WP_Query($args);
                         <?php $i = 1; ?>
                         <?php while($the_query->have_posts()): $the_query->the_post(); ?>
                             <?php if($i > 4): ?>
-                                <li class="service_inner">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <p class="text--uppercase"><?php the_title(); ?></p>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M16 8L11 5.11325L11 10.8868L16 8ZM-4.37114e-08 8.5L11.5 8.5L11.5 7.5L4.37114e-08 7.5L-4.37114e-08 8.5Z"
-                                                fill="#0C6F97" />
-                                        </svg>
-                                    </a>
-                                </li>
+                                <?php get_template_part('template-parts/acf-blocks/service_item') ?>
                             <?php endif; ?>
                             <?php $i++; ?>
                         <?php endwhile; wp_reset_postdata(  ); ?>
