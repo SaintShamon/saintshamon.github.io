@@ -4,10 +4,10 @@ import 'slick-carousel';
 function testimonials() {
   $('.testimonials_section').each(function () {
     let block = $(this);
-    let slider = $(this).find('.testimonials_slider');
+    let testimonials_slider = $(this).find('.testimonials_slider');
 
 
-    slider.slick({
+    testimonials_slider.slick({
       dots: false,
       arrows: true,
       infinite: false,
@@ -27,17 +27,6 @@ function testimonials() {
     });
 
   });
-
-  $('.testimonials_block a.link--icon').click(function () {
-
-  });
-
-  // function truncateText(selector, maxLength) {
-  //   $(selector).text((i, txt) => txt.length > maxLength ? txt.substr(0, maxLength) + "..." : txt);
-  //   return
-  // };
-
-  // truncateText(".testimonials_block .content > p", 200);
 
   // requires jquery
   $(document).ready(function () {

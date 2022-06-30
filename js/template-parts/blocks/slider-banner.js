@@ -4,8 +4,8 @@ import 'slick-carousel';
 function mainslider() {
     $('.slider-banner').each(function () {
         let block = $(this);
-        let slider = $(this).find('.slider_list_bg');
-        let slider2 = $(this).find('.first_section_slider');
+        let slider = $(this).find('.slider_list_bg').not('.slick-initialized');
+        let slider2 = $(this).find('.first_section_slider').not('.slick-initialized');
 
         slider.slick({
             dots: false,

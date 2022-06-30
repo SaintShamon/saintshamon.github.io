@@ -1,5 +1,4 @@
-	</div>
-
+	</main>
 	<?php get_template_part('template-parts/footer/footer'); ?>
 	<a id="button_top">
 	    <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -9,8 +8,7 @@
 	    </svg>
 	</a>
 	<?php wp_footer(); ?>
-	<script src="<?php echo get_template_directory_uri(  ) ?>/dist/main.min.js"></script>
+	</div>
+	</body>
 
-</body>
-
-</html>
+	</html>

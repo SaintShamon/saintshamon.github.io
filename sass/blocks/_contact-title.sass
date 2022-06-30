@@ -106,6 +106,12 @@
 
     &__map
         max-width: 800px
+        min-height: 424px
+        +max-screen(1500px)
+            min-height: 320px
+        // iframe
+        //     width: 100%
+        //     min-height: 424px
         +max-screen($breakpoint-lg)
             margin: 0 auto 0
             max-width: 533px

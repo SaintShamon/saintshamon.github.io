@@ -10,7 +10,9 @@ import {
 import {
     header
 } from './template-parts/header/header';
-
+import {
+    footer
+} from './template-parts/footer/footer';
 
 import {
     mainslider
@@ -21,35 +23,15 @@ import {
 import {
     testimonialsShowMore
 } from './template-parts/blocks/testimonials_list';
-// import {
-//     contact_map
-// } from './template-parts/blocks/contact_map';
+import {
+    contact_map
+} from './template-parts/blocks/contact_map';
 
 header();
+footer()
 lazy();
 lottie();
 mainslider();
 testimonials();
 testimonialsShowMore();
-//contact_map();
-
-var btn = $('#button_top');
-btn.on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({
-        scrollTop: 0
-    }, '300');
-    $('.header .header_block').removeClass('fixed_header');
-});
-
-$(window).scroll(function () {
-    $(window).scrollTop(function () {
-        if ($(window).scrollTop() >= 300) {
-            function scrollEnd() {
-                $('#button_top').removeClass('show');
-            }
-            $('#button_top').addClass('show');
-            setTimeout(scrollEnd, 3000);
-        };
-    });
-});
+contact_map();
