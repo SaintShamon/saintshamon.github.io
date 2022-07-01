@@ -6,7 +6,7 @@ import {
 function contact_map() {
     const loader = new Loader({
         // apiKey: "AIzaSyBgcdPg-UETh9mUvcIEn5Mynu6yRv0lA48",
-        apiKey: "AIzaSyDUdVyPmty0zgZSUv6MFMXHOfkrtpbl96I",
+        apiKey: "AIzaSyDxPSjnQzXbH7so_Lc5yiWKm-htLf3LXo8",
         version: "weekly",
     });
 
@@ -194,8 +194,7 @@ function contact_map() {
         const marker = new google.maps.Marker({
             position: uluru,
             map: map,
-            // icon: '/wp-content/michigannsh/assets/images/icons/location-on-map.svg'
-            icon: '/assets/images/icons/location-on-map.svg'
+            icon: '/wp-content/themes/michigannsh/assets/images/icons/location-on-map.svg'
         });
     });
 

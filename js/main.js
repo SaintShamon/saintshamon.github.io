@@ -35,3 +35,11 @@ mainslider();
 testimonials();
 testimonialsShowMore();
 contact_map();
+
+$('.has_popup a.button').click(function () {
+    $('body').addClass('opened-popup');
+});
+
+$('.overlay').click(function () {
+    $('body').removeClass('opened-popup');
+});
