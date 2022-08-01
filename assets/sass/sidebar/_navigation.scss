@@ -1,0 +1,148 @@
+.has-sidebar{
+    overflow: hidden;
+    .components {
+        max-width: 960px;
+        width: 66.6666%;
+        @include breakpoint-lg {
+            order: 2;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    & > .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include breakpoint-lg {
+            flex-direction: column;
+        }
+    }
+    .sidebar{
+        width: 100%;
+        padding-left: 50px;
+        max-width: 377px;
+        width: 33.33%;
+        margin-top: 30px;
+        @include desktop-md {
+            max-width: auto;
+        }
+        @include breakpoint-lg {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 36px;
+        }
+        &__links{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            @include breakpoint-lg {
+                align-items: flex-start;
+                flex-wrap: wrap;
+                flex-direction: row;
+                margin-bottom: -18px;
+            }
+        }
+        &__link {
+            text-align: right;
+            line-height: 2;
+            &.active {
+                a{
+                    font-weight: 500;
+                    color: $color-green;
+                }
+            }
+            @include breakpoint-lg {
+                line-height: 1.4;
+                margin-bottom: 18px;
+                text-align: center;
+                width: 33%; 
+                padding: 0 8px;
+            }
+        }
+        .separator {
+            margin-right: calc((-100vw + 1500px)/2 - 30px);
+            width: calc(50% + (100vw - 1500px)/2 + 30px);
+            margin-left: auto;
+            margin-top: 50px;
+            margin-bottom: 60px;
+            @include desktop-md{
+                margin-right: -30px;
+                width: calc(50% + 30px);
+            }
+            @include breakpoint-lg {
+                margin-top: 24px;
+                margin-bottom: 28px;
+                margin-left: -30px;
+                margin-right: auto;
+            }
+        }
+        &__blockTitle {
+            color: $color-green;
+            font-weight: 500;
+            text-align: right;
+            @include breakpoint-lg{
+                text-align: left;
+                padding-left: 6vw;
+            }
+        }
+        &__block {
+            position: relative;
+            padding-top: 118px;
+            padding-bottom: 54px;
+            @include breakpoint-lg{
+                padding-top: 12vw;
+                padding-bottom: 8vw;
+                padding-left: 6vw;
+            }
+        }
+        &__text {
+            color: $color-white;
+            position: relative;
+            font-weight: 500;
+            text-align: right;
+            margin-bottom: 44px;
+            @include breakpoint-lg{
+                margin-bottom: 24px;
+                text-align: left;
+            }
+        }
+        &__button {
+            text-align: right;
+            @include breakpoint-lg{
+                text-align: left;
+            }
+            .btn {
+                padding-right: 106px;
+            }
+        }
+        &__image {
+            margin-right: calc((-100vw + 1500px)/2 - 30px);
+            width: calc(100% + (100vw - 1500px)/2 + 30px);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            @include desktop-md {
+                margin-right: -30px;
+                width: calc(100% + 30px);
+            }
+            @include breakpoint-lg {
+                margin-right: 0;
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+                object-position: center;
+            }
+        }
+    }
+}
+.separator{
+    height: 3px;
+    background: $color-green;
+}

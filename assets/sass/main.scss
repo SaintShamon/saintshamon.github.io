@@ -1,0 +1,30 @@
+@import "mixins";
+@import "variables";
+@import "base";
+@import "font-face";
+
+/*** include global settings ***/
+@import "global/wrapper";
+@import "global/header";
+@import "global/navigation";
+@import "global/main-menu";
+@import "global/footer";
+
+/*** page layouts ***/
+@import "layouts/page";
+@import "layouts/front_page";
+
+/*** sidebars ***/
+@import "sidebar/navigation";
+
+/*** include fonts and default styles ***/
+@import "typography";
+
+/*** include components ***/
+@import "components/accordion";
+@import "components/text_block";
+@import "components/cta";
+@import "components/breadcrumbs";
+@import "components/formBlock";
+@import "components/testimonials";
+@import "components/hero";

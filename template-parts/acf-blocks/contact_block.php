@@ -1,1 +1,0 @@
-<?php get_template_part('template-parts/acf-blocks/front-page/contact_block'); ?>
