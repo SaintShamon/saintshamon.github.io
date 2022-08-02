@@ -1,4 +1,4 @@
-.main_banner {
+.homepage_hero {
 
     .section-bg {
         background-image: url('/assets/img/bg_img.png');
@@ -53,7 +53,7 @@
             max-width: calc(100% - 50px);
         }
 
-        p.quote {
+        p.testimonial_text {
             position: relative;
             font-size: 65px;
             line-height: 100%;
@@ -137,7 +137,7 @@
     }
 }
 
-.about_us {
+.image_content_top {
     margin-top: 150px;
 
     .main_block {
@@ -399,7 +399,7 @@
     }
 }
 
-.exxelence {
+.image_content_side {
     .main_block {
         @include breakpoint-lg {
             width: 100%;
