@@ -13,8 +13,5 @@
     "gulp-sass": "^4.1.0",
     "gulp-terser": "^1.4.0",
     "postcss": "^8.3.6"
-  },
-  "dependencies": {
-    "gulp-scss": "^1.4.0"
   }
 }

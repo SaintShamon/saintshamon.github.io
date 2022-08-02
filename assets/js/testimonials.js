@@ -3,4 +3,7 @@ jQuery('.testimonials__list').slick({
     slidesToShow: 1,
     dots: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnFocus: true,
 });

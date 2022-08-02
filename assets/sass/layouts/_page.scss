@@ -1,0 +1,145 @@
+.banner_page {
+    position: relative;
+
+    .bg_image {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: calc(100% - 141px);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    .main_block {
+        padding-top: 722px;
+        padding-bottom: 51px;
+
+        .title {
+            color: $color-white;
+        }
+    }
+}
+
+.page_row {
+
+
+    .main_container {
+        width: 100%;
+        max-width: var(--block-width);
+    }
+}
+
+.text_content {
+    .content-block {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 155px;
+            height: 3px;
+            background-color: $color-green;
+            left: 0;
+            bottom: -40px;
+
+            @include desktop-md {
+                bottom: -30px;
+            }
+
+            @include breakpoint-md {
+                bottom: -20px;
+                height: 2px;
+            }
+        }
+    }
+}
+
+.tabs_gallery {
+    padding-top: 40px;
+    margin-top: 150px;
+
+    .section-bg {
+        background-color: #F4F4F4;
+        left: auto;
+        margin-left: auto;
+        right: calc(var(--block-width)/2);
+        margin-right: calc(var(--block-width) * -1 / 2);
+    }
+
+    .main_block {
+        width: 100%;
+        max-width: 940px;
+    }
+
+    &_top {
+        padding-top: 22px;
+        padding-bottom: 0;
+
+        ul {
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li {
+            text-transform: uppercase;
+            margin-right: 32px;
+            color: $color-grey;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            &.active {
+                color: $color-green;
+            }
+        }
+    }
+
+    &_block {
+        .img_block {
+            position: relative;
+            padding: 147px 76px 138px;
+
+            a.button--icon {
+                position: absolute;
+                bottom: -30px;
+                right: 120px;
+            }
+
+            .text_block {
+                position: relative;
+                width: 100%;
+                max-width: 505px;
+                color: $color-white;
+
+                h3 {
+                    color: $color-white;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 155px;
+                    height: 3px;
+                    background-color: $color-green;
+                    left: 0;
+                    bottom: -40px;
+
+                    @include desktop-md {
+                        bottom: -30px;
+                    }
+
+                    @include breakpoint-md {
+                        bottom: -20px;
+                        height: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

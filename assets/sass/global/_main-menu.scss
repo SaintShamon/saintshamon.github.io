@@ -40,8 +40,6 @@
     justify-content: space-between;
     padding: 40px 0 20px;
     margin-top: 40px;
-
-    .menu_boxlogo {}
 }
 
 .menu_box-close-btn {
@@ -102,8 +100,8 @@
     a {
         font-style: normal;
         font-weight: 500;
-        font-size: 40px;
-        line-height: 170%;
+        font-size: 30px;
+        line-height: 150%;
         text-transform: uppercase;
         color: $color-white;
         text-decoration: none;
@@ -117,6 +115,7 @@
 .separator {
     position: relative;
     width: 100%;
+    max-width: 155px;
 }
 
 .menu_box_bottom {
@@ -128,7 +127,7 @@
         display: block;
         font-style: normal;
         font-weight: 500;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 200%;
         text-transform: uppercase;
         color: $color-white;

@@ -17,6 +17,7 @@
                     <?php echo $text; ?>
                 </div>
             <?php endif; ?>
+            <div class="separator"></div>
         </div>
     <?php endif; ?>
     <div class="accordion__list">

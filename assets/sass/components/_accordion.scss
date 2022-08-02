@@ -1,11 +1,39 @@
 .accordion{
     &Wrapper {
-        padding-top: 65px;
-        @include breakpoint-lg{
-            padding-top: 52px;
+        .single-programs & {
+            padding-top: 65px;
+            @include breakpoint-lg{
+                padding-top: 52px;
+            }
+            @include breakpoint-md{
+                padding-top: 42px;
+            }
         }
-        @include breakpoint-md{
-            padding-top: 42px;
+        & + .testimonials {
+            margin-top: 77px;
+            @include breakpoint-lg{
+                margin-top: 60px;
+            }
+            @include breakpoint-md{
+                margin-top: 48px;
+            }
+        }
+    }
+    &__contentWrapper {
+        .separator {
+            margin-top: 27px;
+            width: 155px;
+            margin-bottom: 63px;
+            @include breakpoint-lg{
+                margin-bottom: 48px;
+            }
+            @include breakpoint-md{
+                margin-bottom: 32px;
+                margin-top: 14px;
+            }
+        }
+        h3 {
+            margin-bottom: 12px;
         }
     }
     &__item{
@@ -46,6 +74,17 @@
                 background-size: contain;
                 @include breakpoint-md{
                     right: 10px;
+                }
+            }
+        }
+        &Button {
+            .btn {
+                padding-right: 100px;
+                @include breakpoint-lg {
+                    padding-right: 85px;
+                }
+                @include breakpoint-md {
+                    padding-right: 70px;
                 }
             }
         }

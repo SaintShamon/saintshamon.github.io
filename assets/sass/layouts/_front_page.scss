@@ -1,4 +1,4 @@
-.first_section {
+.main_banner {
 
     .section-bg {
         background-image: url('/assets/img/bg_img.png');
@@ -138,6 +138,8 @@
 }
 
 .about_us {
+    margin-top: 150px;
+
     .main_block {
         width: 100%;
     }
@@ -613,6 +615,11 @@
     &_row {
         display: flex;
 
+        @include desktop-md {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
         @include breakpoint-lg {
             flex-direction: column;
         }
@@ -629,6 +636,10 @@
 
         @include desktop-xxl {
             max-width: 529px;
+        }
+
+        @include desktop-md {
+            max-width: 429px;
         }
 
         @include breakpoint-lg {
@@ -675,6 +686,7 @@
 
                 @include desktop-md {
                     line-height: 1;
+                    width: 100%;
                     max-width: 300px;
                 }
 
@@ -685,6 +697,11 @@
                 &::before {
                     display: none;
                 }
+            }
+
+            a:hover {
+                font-weight: 500;
+                font-family: $heading-font-alt;
             }
 
         }

@@ -1,7 +1,25 @@
 @include font-face("Gotham Pro", "/assets/fonts/GothamPro-Medium", 500, normal, "ttf");
-@include font-face("Gotham Pro", "/assets/fonts/GothamPro", 400, normal, "ttf");
-@include font-face("Gotham Pro", "/assets/fonts/GothamPro-Light", 300, normal, "ttf");
+// @include font-face("Gotham Pro", "/assets/fonts/GothamPro", 400, normal, "ttf");
+// @include font-face("Gotham Pro", "/assets/fonts/GothamPro-Light", 300, normal, "ttf");
 
+
+/* Fonts */
+@font-face {
+    font-family: 'gotham_prolight';
+    src: url('../../build/fonts/cfb300ea35b997d608f4c43d12b55fe6.woff2') format('woff2'),
+        url('../../build/fonts/736c3a9856363a0153f1677fa9130c49.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_proregular';
+    src: url('../../build/fonts/c751a229063527f137f8bdd87b36b997.woff2') format('woff2'),
+        url('../../build/fonts/d72a702895b70a9764ca2aa501b7a98b.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html {
     scroll-behavior: smooth;
@@ -53,7 +71,7 @@ a {
 
 h1 {
     font-size: 100px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: $heading-font;
     line-height: 0.9;
     margin-top: 0;
@@ -76,7 +94,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $heading-font-alt;
+    font-family: $heading-font;
     line-height: 1.1;
     margin-top: 0;
     margin-bottom: 1.5rem;
@@ -90,10 +108,6 @@ h2 {
     font-weight: 300;
 
     @include desktop-xxl {
-        font-size: 70px;
-    }
-
-    @include breakpoint-lg {
         font-size: 64px;
     }
 
@@ -114,10 +128,6 @@ h2 {
         }
 
         @include desktop-md {
-            font-size: 80px;
-        }
-
-        @include breakpoint-xl {
             font-size: 70px;
         }
 
@@ -143,14 +153,10 @@ h2 {
         }
 
         @include desktop-md {
-            font-size: 90px;
+            font-size: 80px;
         }
 
         @include breakpoint-xl {
-            font-size: 70px;
-        }
-
-        @include breakpoint-lg {
             font-size: 64px;
         }
 

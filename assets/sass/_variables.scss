@@ -9,11 +9,14 @@ $color-dark-green: #7DBAC8;
 $color-light-grey: #E5E5E5;
 
 /*** fonts ***/
-$default-font-size: 22px;
-$default-sc-lg-font-size: 18px;
-$default-sc-md-font-size: 16px;
-$body-font: 'Gotham Pro';
-$heading-font: 'Gotham Pro';
+$default-font-size: 20px;
+$default-sc-lg-font-size: 16px;
+$default-sc-md-font-size: 14px;
+// $body-font: 'Gotham Pro',
+// sans-serif;
+$body-font: 'gotham_proregular';
+$font-light: 'gotham_prolight';
+$heading-font: 'gotham_proregular';
 $heading-font-alt: 'Gotham Pro';
 
 /*** other ***/

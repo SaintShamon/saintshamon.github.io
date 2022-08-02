@@ -47,6 +47,15 @@
             padding-top: 110px;
             padding-bottom: 80px;
         }
+        .btn {
+            padding-right: 110px;
+            @include breakpoint-lg {
+                padding-right: 90px;
+            }
+            @include breakpoint-md {
+                padding-right: 72px;
+            }
+        }
     }
     &__title {
         color: $color-white;
@@ -72,7 +81,7 @@
         @include breakpoint-xl {
             bottom: 0;
         }
-        @include breakpoint-md {
+        @include breakpoint-lg {
             content: none;
         }
     }

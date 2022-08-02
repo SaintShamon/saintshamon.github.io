@@ -3,9 +3,25 @@
     top: 0;
     width: 100%;
 
+    &.header-page {
+        .header_row {
+            .menu_button {
+                top: 451px;
+            }
+        }
+    }
+
     &_row {
         position: relative;
         width: 100%;
+
+        .logo_block {
+            position: relative;
+            width: 100%;
+            max-width: 212.43px;
+            margin: 51px auto 0;
+            z-index: 1;
+        }
 
         .menu_button {
             display: flex;
@@ -16,7 +32,7 @@
             height: 56px;
             width: 20px;
             z-index: 1;
-
+            cursor: pointer;
 
             @include desktop-xxl {
                 top: 402px;

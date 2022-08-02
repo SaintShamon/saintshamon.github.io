@@ -3,23 +3,97 @@
     &Wrapper {
         margin-bottom: 60px;
         height: 100vh;
+        max-height: 920px;
         position: relative;
         overflow: hidden;
-        .menu {
-            position: absolute;
-            height: 100%;
-            width: 141px;
-            background: #fff;
+        @include breakpoint-md {
+            margin-bottom: 48px;
+        }
+        @include breakpoint-md {
+            padding-top: 56px;
+            margin-bottom: 32px;
+        }
+        &::after {
+            content: "";
+            background-image: url(../img/hero_bacnner_background_particle.png);
+            bottom: 0;
             right: 0;
-            top: 0;
-            @include breakpoint-xl {
-                width: 90px;
+            background-size: cover;
+            background-position: bottom left;
+            width: 50%;
+            background-repeat: no-repeat;
+            height: 100%;
+            position: absolute;
+            @include breakpoint-lg {
+                content: none;
             }
+        }
+        .menu {
             &__iconWrapper{
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                cursor: pointer;
+                z-index: 100;
+                position: absolute;
+                height: 100%;
+                width: 141px;
+                background: #fff;
+                right: 0;
+                top: 0;
+                @include breakpoint-xl {
+                    width: 90px;
+                }
+                @include breakpoint-md {
+                    width: 100%;
+                    height: 56px;
+                    top: 0;
+                    left: 0;
+                    right: auto;
+                }
+            }
+            &__icon {
+                transition: 0.2s;
+                @include breakpoint-md {
+                    transform: rotate(90deg);
+                    max-width: 14px;
+                    display: flex;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+            &__wrapper {
+                position: absolute;
+                background: #fff;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                transition: $transition;
+                right: 100%;
+                z-index: 99;
+                @include breakpoint-md {
+                    right: 0;
+                    bottom: 100%;
+                    position: fixed;
+                }
+            }
+        }
+        &.menu-open {
+            .menu__wrapper {
+                right: 141px;
+                @include breakpoint-xl {
+                    right: 90px;
+                }
+                @include breakpoint-md {
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+            .menu__icon {
+                transform: rotate(90deg);
             }
         }
     }
@@ -31,6 +105,9 @@
         right: 141px;
         @include breakpoint-xl {
             right: 90px;
+        }
+        @include breakpoint-md {
+            right: 0;
         }
         img{
             object-fit: cover;
@@ -51,6 +128,9 @@
             display: block;
             margin: 0 auto;
         }
+        @include breakpoint-md{
+            margin-top: 24px;
+        }
     }
     &__title{
         color: $color-white;
@@ -58,6 +138,10 @@
         margin-bottom: 60px;
         @include desktop-md{
             max-width: calc( 100% - 141px );
+        }
+        @include breakpoint-md {
+            max-width: 100%;
+            margin-bottom: 24px;
         }
     }
     

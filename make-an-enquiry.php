@@ -14,6 +14,7 @@
             </div>
         </div>
         <div class="menu">
+            <div class="menu__wrapper"></div>
             <div class="menu__iconWrapper">
                 <div class="menu__icon"><img src="<?php echo get_template_directory_uri() . '/build/img/menu_icon.svg'; ?>" alt=""></div>
             </div>
@@ -65,32 +66,8 @@
                     </form>
                 </div>
             </section>
-            <section class="testimonials">
-                <h2 class="testimonials__title">What our staff say “</h2>
-                <div class="testimonials__list">
-                    <div class="testimonials__item">
-                        <div class="testimonials__itemText">Particular highlights were the residential weekend. I felt the programme was bespoke; an aspect of professional development I feel is lacking in many senior leadership courses.</div>
-                        <div class="testimonials__itemSubtext">Aspiring Senior Leadership Programme</div>
-                    </div>
-                    <div class="testimonials__item">
-                        <div class="testimonials__itemText">Particular highlights were the residential weekend. I felt the programme was bespoke; an aspect of professional development I feel is lacking in many senior leadership courses.</div>
-                        <div class="testimonials__itemSubtext">Aspiring Senior Leadership Programme</div>
-                    </div>
-                    <div class="testimonials__item">
-                        <div class="testimonials__itemText">Particular highlights were the residential weekend. I felt the programme was bespoke; an aspect of professional development I feel is lacking in many senior leadership courses.</div>
-                        <div class="testimonials__itemSubtext">Aspiring Senior Leadership Programme</div>
-                    </div>
-                </div>
-            </section>
-            <section class="cta">
-                <div class="cta__backgroundImage"><img src="<?php echo get_template_directory_uri() . '/build/img/get_in_touch_background.png'; ?>" alt=""></div>
-                <div class="cta__content">
-                    <h2 class="cta__title">Get in touch</h2>
-                    <div class="cta__button">
-                        <a href="#" class="btn">Contact us</a>
-                    </div>
-                </div>
-            </section>
+            
+            
         </div>
         <div class="sidebar">
             <div class="sidebar__links">
