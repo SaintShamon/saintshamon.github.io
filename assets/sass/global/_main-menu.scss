@@ -13,6 +13,12 @@
     transition: .2s ease-out;
     transform: translateX(-100%);
     padding-left: 0;
+
+    .separator {
+        position: relative;
+        width: 100%;
+        max-width: 155px;
+    }
 }
 
 .admin-bar .menu_box-panel {
@@ -112,11 +118,7 @@
     }
 }
 
-.separator {
-    position: relative;
-    width: 100%;
-    max-width: 155px;
-}
+
 
 .menu_box_bottom {
     width: 100%;

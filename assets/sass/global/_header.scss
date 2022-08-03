@@ -6,7 +6,27 @@
     &.header-page {
         .header_row {
             .menu_button {
-                top: 451px;
+                top: 421px;
+
+                @include desktop-xxl {
+                    top: 352px;
+                    right: 53px;
+                }
+
+                @include desktop-md {
+                    top: 300px;
+                }
+
+                @include breakpoint-xl {
+                    top: 150px;
+                    height: 46px;
+                    width: 16px;
+                }
+
+                @include breakpoint-lg {
+                    top: 150px;
+                    right: 40px;
+                }
             }
         }
     }
