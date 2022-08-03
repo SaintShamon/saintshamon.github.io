@@ -12,6 +12,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
+
+        @include desktop-md {
+            width: calc(100% - 111px);
+        }
     }
 
     &::after {
@@ -34,6 +38,14 @@
     .main_block {
         padding-top: 722px;
         padding-bottom: 51px;
+
+        @include desktop-xxl {
+            padding-top: 622px;
+        }
+
+        @include desktop-md {
+            padding-top: 522px;
+        }
 
         .title {
             color: $color-white;
@@ -81,7 +93,7 @@
 
     .main_block {
         width: 100%;
-        max-width: 940px;
+        max-width: calc(100% - 60px);
     }
 
     &_top {
@@ -154,7 +166,7 @@
             }
 
             .text_block {
-                position: relative;
+
                 width: 100%;
                 max-width: 505px;
                 color: $color-white;
@@ -164,24 +176,30 @@
                     color: $color-white;
                 }
 
-                &::after {
-                    position: absolute;
-                    content: '';
-                    width: 155px;
-                    height: 3px;
-                    background-color: $color-green;
-                    left: 0;
-                    bottom: -40px;
+                &_inner {
+                    position: relative;
 
-                    @include desktop-md {
-                        bottom: -30px;
-                    }
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 155px;
+                        height: 3px;
+                        background-color: $color-green;
+                        left: 0;
+                        bottom: -40px;
 
-                    @include breakpoint-md {
-                        bottom: -20px;
-                        height: 2px;
+                        @include desktop-md {
+                            bottom: -30px;
+                        }
+
+                        @include breakpoint-md {
+                            bottom: -20px;
+                            height: 2px;
+                        }
                     }
                 }
+
+
             }
         }
     }
