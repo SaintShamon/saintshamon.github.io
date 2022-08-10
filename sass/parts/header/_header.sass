@@ -1,0 +1,127 @@
+.header
+    margin-top: 20px
+    margin-bottom: 20px
+    &__desctop
+        width: 100%
+        .main_block
+            display: flex
+            justify-content: space-between
+    &__logo
+        width: 100%
+        max-width: 340px
+        margin-right: 30px
+        align-self: center
+        +max-screen(1240px)
+            max-width: 240px
+    &__menu
+        width: 100%
+        max-width: 640px
+        align-self: center
+        +max-screen(1240px)
+            display: flex
+        .top_row
+            display: flex
+            margin-left: auto
+            width: max-content
+            +max-screen($breakpoint-sm)
+                display: none
+        .socials_block
+            display: flex
+            margin-left: 20px
+            a
+                display: flex
+                text-decoration: none
+                margin-right: 10px
+                transition: 0.2s
+                &:last-of-type
+                    margin-right: 0
+                &:hover
+                    transform: scale(1.05)
+                    transition: 0.2s
+            img
+                width: 40px
+                display: block
+                align-self: center
+                +max-screen(1240px)
+                    width: 30px
+        .menu_row
+            position: relative
+            margin-top: 10px
+            +max-screen(1240px)
+                width: max-content
+                margin-left: 20px
+                align-self: center
+                margin-top: 0
+            +max-screen($breakpoint-sm)
+                margin-left: auto
+            nav
+                background-color: #353436
+                height: 40px
+                padding: 10px 25px 10px
+                position: relative
+                +max-screen(1240px)
+                    display: none
+            ul
+                display: flex
+            li
+                margin-left: 20px
+                line-height: normal
+                &:first-of-type
+                    margin-left: 0
+
+            a
+                color: #fff
+                transition: 0.2s
+                &:hover
+                    color: $color-orange
+                    transition: 0.2s
+#toggle
+    position: relative
+    display: none
+    width: 28px
+    height: 30px
+    margin: 0 auto
+    align-self: center
+    background: none
+    border: none
+    z-index: 2
+
+    span:after,
+    span:before
+        content: ""
+        position: absolute
+        left: 0
+        top: -9px
+
+    span:after
+        top: 9px
+
+    span
+        position: relative
+        display: block
+    span,
+
+    span:after,
+
+    span:before
+        width: 100%
+        height: 5px
+        background-color: $color-primary
+        transition: all 0.3s
+        backface-visibility: hidden
+        border-radius: 2px
+
+    &.on span
+        background-color: transparent
+
+    &.on span:before
+        transform: rotate(45deg) translate(5px, 5px)
+
+    &.on span:after
+        transform: rotate(-45deg) translate(7px, -8px)
+
+    &.on + #menu
+        opacity: 1
+        visibility: visible
+    +max-screen(1240px)
+        display: block

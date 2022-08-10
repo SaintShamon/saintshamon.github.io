@@ -1,0 +1,223 @@
+*
+	box-sizing: border-box
+
+	&::after,
+	&::before
+		box-sizing: border-box
+.site
+	position: relative
+	overflow: hidden
+	max-width: 80%
+	margin: 0 auto
+	padding: 0
+	background-color: #fff
+	background-image: url('../assets/images/bg.png')
+	background-repeat: no-repeat
+	+max-screen($breakpoint-lg)
+		max-width: 100%
+img
+	width: 100%
+	height: auto
+
+.section-bg
+	width: 100vw
+	height: 100%
+	position: absolute
+	top: 0
+	left: 50%
+	margin-left: calc(-1 * (100vw / 2))
+	z-index: -1
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+
+.divider
+	display: block
+	height: 1px
+	background: #cfd0d2
+.components
+	display: flex
+	justify-content: space-between
+	margin-bottom: 40px
+	+max-screen($breakpoint-lg)
+		flex-direction: column
+	.sidebar
+		width: 30%
+		max-width: 340px
+		margin-right: 30px
+		+max-screen($breakpoint-lg)
+			order: 2
+			width: 100%
+			max-width: none
+			margin-right: 0
+			display: flex
+			justify-content: space-between
+		+max-screen($breakpoint-lg)
+			flex-direction: column
+	.common_block
+		width: 69%
+		max-width: 870px
+		+max-screen($breakpoint-lg)
+			width: 100%
+			max-width: none
+			order: 1
+			margin-bottom: 30px
+.search_box
+	padding: 10px 38px 10px 14px
+	background: #fff
+	width: 100%
+	color: #999
+	font-style: italic
+	font-size: 11px
+	line-height: 11px
+	outline: none
+	margin: 0
+	border: 1px solid #e0e0e0
+.search_submit
+	position: absolute
+	right: 1px
+	top: 1px
+	background: url('../assets/images/icons/search.png') no-repeat center center
+	background-size: 60%
+	width: 38px
+	height: 33px
+	cursor: pointer
+	border: none
+
+.breadcrumbs_block
+	margin-top: 40px
+	span
+		color: $color-grey
+	a
+		color: $color-grey
+		&:hover
+			color: $color-orange
+			opacity: 0.8
+
+	#breadcrumbs
+		margin-left: -10px
+		margin-right: -10px
+		span
+			span
+				span,
+				a
+					padding: 0 10px
+		span.center-separator
+			padding: 0
+
+#button_top
+	display: flex
+	background-color: #fff
+	width: 50px
+	height: 50px
+	text-align: center
+	border-radius: 50%
+	border: 1px solid $color-orange
+	position: fixed
+	bottom: 30px
+	right: 30px
+	opacity: 0
+	transition: background-color .3s, opacity .5s, visibility .5s
+	visibility: hidden
+	z-index: 2
+
+	svg
+		align-self: center
+		margin: 0 auto
+
+		transform: rotate(-90deg)
+		path
+			fill: $color-orange
+	&:hover
+		cursor: pointer
+		background-color: #FFF
+		border: 1px solid $color-orange
+		opacity: 1
+		visibility: visible
+		svg
+			path
+				fill: $color-orange
+
+	&:active
+		background-color: #555
+
+	&.show
+		opacity: 1
+		visibility: visible
+
+.overlay
+	content: ""
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, 0.3)
+	opacity: 0
+	transition: .3s
+	z-index: -10
+	.opened-popup &
+		opacity: 1
+		z-index: 99
+
+.member_popup
+	opacity: 0
+	visibility: visible
+	width: 65%
+	max-width: 550px
+	height: max-content
+	position: fixed
+	left: 50%
+	top: 50vh
+	transition: .3s
+	transform: translate(-50%, -50%)
+	background: #fff
+	z-index: 100
+	padding: 40px
+	z-index: -10
+	+max-screen(1200px)
+		padding: 30px
+		width: 75%
+	+max-screen($breakpoint-lg)
+		width: 90%
+
+	.opened-popup &
+		opacity: 1
+		visibility: visible
+		transform: translate(-50%, -50%)
+		z-index: 100
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1)
+	.row
+		flex-direction: column
+		display: flex
+		h3
+			text-align: center
+		a.button
+			width: 100%
+			margin-bottom: 20px
+			text-decoration: none
+			background: $default-text-color
+			color: #fff
+			border: 1px solid
+			&:hover
+				background: #fff
+				color: $default-text-color
+				border: 1px solid $default-text-color
+			&:last-of-type
+				margin-bottom: 0
+
+.img_right_block
+	display: flex
+	+max-screen(1200px)
+		flex-direction: column
+	img.img_right
+		display: block
+		max-width: 50%
+		+max-screen(1200px)
+			max-width: none
+
+.page-template-form-page
+	.section
+		position: relative
+		padding-top: 50px
+		padding-bottom: 50px

@@ -1,10 +1,17 @@
 <?php
-//Include function files in functions folder
-$dir = scandir(get_template_directory() . '/functions');
-foreach($dir as $file):
-    if(preg_match('/\\.php$/', $file) ):
-        $file = "functions/{$file}";
-        locate_template($file, true, true);
-    endif;
-endforeach;
-?>
+require get_template_directory().'/inc/theme-setup.php';
+require get_template_directory().'/inc/theme-support.php';
+require get_template_directory().'/inc/theme-cleanup.php';
+require get_template_directory().'/inc/theme-enqueue.php';
+
+require get_template_directory().'/inc/custom-post-types.php';
+require get_template_directory().'/inc/custom-taxonomies.php';
+
+require get_template_directory().'/inc/acf.php';
+require get_template_directory().'/inc/theme-functions.php';
+require get_template_directory().'/inc/theme-components.php';
+require get_template_directory().'/inc/theme-shortcodes.php';
+require get_template_directory().'/inc/theme-ajax.php';
+
+
+

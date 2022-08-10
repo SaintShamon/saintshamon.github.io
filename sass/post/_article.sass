@@ -1,0 +1,28 @@
+.post
+    display: flex
+    margin-bottom: 30px
+    &:last-of-type
+        margin-bottom: 0
+    +max-screen($breakpoint-sm)
+        flex-direction: column
+    .img_block
+        margin-left: 30px
+        +max-screen($breakpoint-sm)
+            margin-left: 0
+            margin-top: 30px
+    a
+        color: $color-orange
+        &:hover
+            color: $color-primary
+    .title
+        margin-bottom: 10px
+        h2
+            &:hover
+                color: $color-primary
+    .entry-utility
+        margin-bottom: 10px
+        text-transform: uppercase
+    .link
+        margin-top: 10px
+        a
+            text-decoration: underline

@@ -1,30 +1,23 @@
-<?php 
-	global $wp_query;
-
-    // $show_right_sidebar = get_field('show_right_sidebar');
-    $show_right_sidebar = false;
-    get_header(); 
-?>
-
-	<?php get_template_part('template-parts/global/breadcrumbs'); ?>
-
-    <main class="<?php if ( $show_right_sidebar ) { echo 'has-sidebar'; } ?> no-sidebar text-center" >
-        <div class="components">
-            <section class="text-content">
-                <div class="text-container">
-                    <div class="wrapper">
-                        <h1>We are very sorry...</h1>
-                        The page you were looking for appears to have been moved, deleted or doesn't exist.<br>
-                        Try going back to where you were or head straight to our <a href="<?php echo get_site_url(); ?>">home page</a>.
+<?php get_header(); ?>
+<div id="app-wrapper" role="main">
+    <div id="app" class="app-container" data-class="page-404">
+        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <div class="container txt--center">
+                <section class="error-404 error__page not-found content-block section">
+                    <div class="container">
+                        <div class="error__page__content">
+                            <h1 class="error__page__title">
+                                404
+                            </h1>
+                            <div class="error__page__subtitle">Ooops!!!</div>
+                            <div class="error__page__text">That page doesn't exist or is unavailable</div>
+                            <div class="error__page__button"><a href="<?php echo get_home_url() ?>"
+                                    class="button button--secondary">Go back to home</a></div>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
-        <!-- left sidebar -->
-        <?php if ( $show_right_sidebar ) : ?>
-            <div class="sidebar">
-                <?php get_template_part('template-parts/sidebar/navigation'); ?>
+                </section><!-- .error-404 -->
             </div>
-        <?php endif; ?>
-    </main>
+        </div>
+    </div>
+</div>
 <?php get_footer(); ?>
