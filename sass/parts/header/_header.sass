@@ -56,18 +56,23 @@
                 margin-left: auto
             nav
                 background-color: #353436
-                height: 40px
+                min-height: 40px
                 padding: 10px 25px 10px
                 position: relative
                 +max-screen(1240px)
                     display: none
             ul
                 display: flex
+                flex-wrap: wrap
+                justify-content: flex-start
             li
-                margin-left: 20px
+                margin-right: 20px
                 line-height: normal
-                &:first-of-type
-                    margin-left: 0
+                +max-screen(1440px)
+                    margin-bottom: 5px
+                &:last-of-type
+                    margin-right: 0
+                    margin-bottom: 0
 
             a
                 color: #fff
