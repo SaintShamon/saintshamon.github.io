@@ -25,26 +25,32 @@
             width: 100%
             max-width: 320px
             margin: 20px auto 0
+        a
+            text-transform: uppercase
     &__col
-        width: 24%
+        margin-right: 30px
+        &:last-of-type
+            margin-right: 0
         +max-screen(1240px)
             width: 100%
             position: relative
-            &::before
-                position: absolute
-                content: '+'
-                right: 0
-                color: #C4C4C4
+            // &::before
+            //     position: absolute
+            //     content: '+'
+            //     right: 0
+            //     color: #C4C4C4
 
         .footer__left_col &
             width: 100%
             +max-screen(1240px)
                 &::before
                     display: none
+
         a
             color: #fff
             transition: 0.2s
             font-weight: 300
+
             &:hover
                 color: $color-orange
                 transition: 0.2s
@@ -61,11 +67,36 @@
 
         nav
             +max-screen(1240px)
-                display: none
+                // display: none
 
         ul
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-start
             +max-screen(1240px)
-                padding-left: 25px
+                flex-direction: column
+        li
+            line-height: normal
+            margin-bottom: 10px
+        .sub-menu
+            position: absolute
+            width: max-content
+            min-height: 74px
+            height: auto
+            left: 0
+            padding: 20px 0
+            background-color: #353436
+            +max-screen(1240px)
+                position: relative
+                left: auto
+                padding: 10px
+                min-height: auto
+            li
+                margin-right: 0
+            a
+                font-size: 14px
+                +max-screen(1240px)
+                    font-size: 12px
 
     &__logo
         margin-bottom: 20px

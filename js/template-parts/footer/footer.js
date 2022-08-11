@@ -21,20 +21,20 @@ function footer() {
                 };
             });
         });
-        if ($(window).width() < 1240) {
-            /*Dropdown Menu footer*/
-            $('.footer__right_col .footer__col').click(function () {
-                $(this).attr('tabindex', 1).focus();
-                $(this).toggleClass('active');
-                $(this).find('nav').slideToggle(300);
-            });
+        // if ($(window).width() < 1240) {
+        //     /*Dropdown Menu footer*/
+        //     $('.footer__right_col .footer__col').click(function () {
+        //         $(this).attr('tabindex', 1).focus();
+        //         $(this).toggleClass('active');
+        //         $(this).find('nav').slideToggle(300);
+        //     });
 
-            $('.footer__right_col .footer__col').focusout(function () {
-                $(this).removeClass('active');
-                $(this).find('nav').slideUp(300);
-            });
+        //     $('.footer__right_col .footer__col').focusout(function () {
+        //         $(this).removeClass('active');
+        //         $(this).find('nav').slideUp(300);
+        //     });
 
-        }
+        // }
     });
 }
 
