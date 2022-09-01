@@ -1,421 +1,546 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../dist/main.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../assets/css/main.css" rel="stylesheet" />
+  <title>USM</title>
+  <link rel="icon" href="../assets/img/favicon.ico" />
 </head>
 <body>
-    <div class="site">
-        <header class="header">
-            <div class="header__desctop">
-                <div class="container">
-                    <div class="main_block">
-                        <div class="header__logo">
-                            <a href="/">
-                                <img src="/assets/images/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="header__menu">
-                            <div class="top_row">
-                                <a href="#" class="button">find a store</a>
-                                <div class="socials_block">
-                                    <a href="#fb" target="_blank" rel="noopener noreferrer">
-                                        <img src="/assets/images/icons/facebook.svg" alt="">
-                                    </a>
-                                    <a href="#youtube" target="_blank" rel="noopener noreferrer">
-                                        <img src="/assets/images/icons/youtube.svg" alt="">
-                                    </a>
-                                    <a href="#twitter" target="_blank" rel="noopener noreferrer">
-                                        <img src="/assets/images/icons/twitter.svg" alt="">
-                                    </a>
-                                    <a href="#inst" target="_blank" rel="noopener noreferrer">
-                                        <img src="/assets/images/icons/instagram.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="menu_row">
-                                <nav>
-                                    <ul class="main-menu">
-                                        <li class="text--size--16"><a href="#">BLOG</a></li>
-                                        <li class="text--size--16"><a href="#">About</a></li>
-                                        <li class="text--size--16"><a href="#">Show Info/Program</a></li>
-                                        <li class="text--size--16"><a href="#">Exhibitors</a></li>
-                                        <li class="text--size--16"><a href="#">Performers 2019</a></li>
-                                        <li class="text--size--16"><a href="#">WIN</a></li>
-                                        <li class="text--size--16"><a href="#">Tickets</a></li>
-                                    </ul>
-                                </nav>
-                                <button id="toggle"><span></span></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="side-panel" class="side-panel custom-scrollbar">
-                <div class="side-inner">
-                    <div class="white_bg">
-                        <div class="side-header">
-                            <div class="header_phone_block">
-                                <div class="phone_block_inner">
-                                    <div class="email_phone_map">
-                                        <a class="text--size--16" href="mailto:maibox@store.com">
-                                            <svg enable-background="new 0 0 330.001 330.001" version="1.1"
-                                                viewBox="0 0 330 330" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="m173.87 177.1c-2.641 1.936-5.756 2.903-8.87 2.903-3.116 0-6.23-0.967-8.871-2.903l-156.13-114.49-1e-3 212.4c1e-3 8.284 6.716 15 15 15l300-1e-3c8.285 0 15-6.716 15-14.999v-212.4l-156.13 114.5z" />
-                                                <polygon points="165 146.4 310.09 40.001 19.911 40" />
-                                            </svg>
-                                            maibox@store.com
-                                        </a>
-                                        <a class="text--size--16" href="tel:+61999999999">
-                                            <svg enable-background="new 0 0 53.942 53.942" version="1.1"
-                                                viewBox="0 0 53.942 53.942" xml:space="preserve"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="m53.364 40.908c-2.008-3.796-8.981-7.912-9.288-8.092-0.896-0.51-1.831-0.78-2.706-0.78-1.301 0-2.366 0.596-3.011 1.68-1.02 1.22-2.285 2.646-2.592 2.867-2.376 1.612-4.236 1.429-6.294-0.629l-11.486-11.487c-2.045-2.045-2.233-3.928-0.632-6.291 0.224-0.309 1.65-1.575 2.87-2.596 0.778-0.463 1.312-1.151 1.546-1.995 0.311-1.123 0.082-2.444-0.652-3.731-0.173-0.296-4.291-7.27-8.085-9.277-0.708-0.375-1.506-0.573-2.306-0.573-1.318 0-2.558 0.514-3.49 1.445l-2.538 2.537c-4.014 4.013-5.467 8.562-4.321 13.52 0.956 4.132 3.742 8.529 8.282 13.068l14.705 14.705c5.746 5.746 11.224 8.66 16.282 8.66h1e-3c3.72 0 7.188-1.581 10.305-4.698l2.537-2.537c1.542-1.541 1.892-3.871 0.873-5.796z" />
-                                            </svg>
-                                            +61 9 9999 9999
-                                        </a>
-                                        <a class="text--size--16" href="#" target="_blank" rel="noopener noreferrer">
-                                            <svg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M3 0c-1.66 0-3 1.34-3 3 0 2 3 5 3 5s3-3 3-5c0-1.66-1.34-3-3-3zm0 1c1.11 0 2 .9 2 2 0 1.11-.89 2-2 2-1.1 0-2-.89-2-2 0-1.1.9-2 2-2z"
-                                                    transform="translate(1)" />
-                                            </svg>
-                                            PO Box 12042 Carrum VIC 3197
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="side-close-btn" class="side-close-btn">
-                                <button>
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="side_container">
-                            <div class="separator">
-                                <div class="line"></div>
-                            </div>
-                            <div class="location_menu_block">
-                                <nav class="header__nav">
-                                    <div class="menu-main-menu-container">
-                                        <ul id="menu-main-menu-1" class="menu">
-                                            <li class="menu-item text--size--18"><a href="#">Blog</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">About</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">Show Info/Program</a></li>
-                                            <li
-                                                class="menu-item text--size--18 menu-item-type-post_type_archive menu-item-object-programs menu-item-has-children">
-                                                <a href="http://cngc/programs/">Exhibitors</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item menu-item-type-post_type">
-                                                        <a href="#">Exhibitor list & profiles</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type">
-                                                        <a href="#">Brands</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item text--size--18"><a href="#">Performers 2019</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">WIN</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">Tickets</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main id="main_page">
-            <div class="container">
-                <section class="banners_main">
-                    <div class="banners_main__top">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="/assets/images/fenderaugust.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="banners_main__down">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img src="/assets/images/Pearl-AM-Daniel-Furnari.jpg" alt="">
-                        </a>
-                    </div>
-                </section>
-                <div class="components">
-                    <div class="sidebar">
-                        <div class="widget">
-                            <h3>SEARCH</h3>
-                            <div class="search">
-                                <form method="get" id="searchform" action="https://australianmusician.com.au/">
-                                    <input class="search_submit" id="searchsubmit" value="" type="submit">
-                                    <input class="search_box" name="s" id="s" type="text" value=""
-                                        onfocus="if (this.value == '') {this.value = '';}"
-                                        onblur="if (this.value == '') {this.value = '';}">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="widget">
-                            <a href="#">
-                                <img src="http://placeimg.com/360/540/any" alt="">
-                            </a>
-                        </div>
-                        <div class="widget">
-                            <a href="#">
-                                <img src="http://placeimg.com/360/540/any" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="common_block">
-                        <article id="" class="post">
-                            <div class="content_block">
-                                <div class="title">
-                                    <a href="#">
-                                        <h2>KAT GRETA: ‘GET UP & GO’ EP INTERVIEW</h2>
-                                    </a>
-                                </div>
-                                <div class="entry-utility">
-                                    <span class="cat-links">
-                                        <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
-                                        <a href="https://australianmusician.com.au/artists/"
-                                            rel="category tag">Artists</a>, <a
-                                            href="https://australianmusician.com.au/artists/interviews/"
-                                            rel="category tag">Interviews</a> </span>
-                                </div>
-                                <div class="entry-summary">
-                                    <p>On her debut EP Get Up And Go, Melbourne-based musician Kat Greta delivers rays
-                                        of funky grooves, retro keyboard sounds and big, driving drums, all of which
-                                        equate to a damn good time. The twist to it all is the unusual band dynamic …
-                                        Kat Greta, composer and driving force…</p>
-                                </div>
-                                <div class="link">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <div class="img_block">
-                                <a href="#">
-                                    <img src="/assets/images/img_1.jpg" alt="">
-                                </a>
-                            </div>
-                        </article>
-                        <article id="" class="post">
-                            <div class="content_block">
-                                <div class="title">
-                                    <a href="#">
-                                        <h2>KAT GRETA: ‘GET UP & GO’ EP INTERVIEW</h2>
-                                    </a>
-                                </div>
-                                <div class="entry-utility">
-                                    <span class="cat-links">
-                                        <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
-                                        <a href="https://australianmusician.com.au/artists/"
-                                            rel="category tag">Artists</a>, <a
-                                            href="https://australianmusician.com.au/artists/interviews/"
-                                            rel="category tag">Interviews</a> </span>
-                                </div>
-                                <div class="entry-summary">
-                                    <p>On her debut EP Get Up And Go, Melbourne-based musician Kat Greta delivers rays
-                                        of funky grooves, retro keyboard sounds and big, driving drums, all of which
-                                        equate to a damn good time. The twist to it all is the unusual band dynamic …
-                                        Kat Greta, composer and driving force…</p>
-                                </div>
-                                <div class="link">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <div class="img_block">
-                                <a href="#">
-                                    <img src="/assets/images/img_1.jpg" alt="">
-                                </a>
-                            </div>
-                        </article>
-                        <article id="" class="post">
-                            <div class="content_block">
-                                <div class="title">
-                                    <a href="#">
-                                        <h2>KAT GRETA: ‘GET UP & GO’ EP INTERVIEW</h2>
-                                    </a>
-                                </div>
-                                <div class="entry-utility">
-                                    <span class="cat-links">
-                                        <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
-                                        <a href="https://australianmusician.com.au/artists/"
-                                            rel="category tag">Artists</a>, <a
-                                            href="https://australianmusician.com.au/artists/interviews/"
-                                            rel="category tag">Interviews</a> </span>
-                                </div>
-                                <div class="entry-summary">
-                                    <p>On her debut EP Get Up And Go, Melbourne-based musician Kat Greta delivers rays
-                                        of funky grooves, retro keyboard sounds and big, driving drums, all of which
-                                        equate to a damn good time. The twist to it all is the unusual band dynamic …
-                                        Kat Greta, composer and driving force…</p>
-                                </div>
-                                <div class="link">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <div class="img_block">
-                                <a href="#">
-                                    <img src="/assets/images/img_1.jpg" alt="">
-                                </a>
-                            </div>
-                        </article>
-                        <article id="" class="post">
-                            <div class="content_block">
-                                <div class="title">
-                                    <a href="#">
-                                        <h2>KAT GRETA: ‘GET UP & GO’ EP INTERVIEW</h2>
-                                    </a>
-                                </div>
-                                <div class="entry-utility">
-                                    <span class="cat-links">
-                                        <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
-                                        <a href="https://australianmusician.com.au/artists/"
-                                            rel="category tag">Artists</a>, <a
-                                            href="https://australianmusician.com.au/artists/interviews/"
-                                            rel="category tag">Interviews</a> </span>
-                                </div>
-                                <div class="entry-summary">
-                                    <p>On her debut EP Get Up And Go, Melbourne-based musician Kat Greta delivers rays
-                                        of funky grooves, retro keyboard sounds and big, driving drums, all of which
-                                        equate to a damn good time. The twist to it all is the unusual band dynamic …
-                                        Kat Greta, composer and driving force…</p>
-                                </div>
-                                <div class="link">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <div class="img_block">
-                                <a href="#">
-                                    <img src="/assets/images/img_1.jpg" alt="">
-                                </a>
-                            </div>
-                        </article>
-                        <article id="" class="post">
-                            <div class="content_block">
-                                <div class="title">
-                                    <a href="#">
-                                        <h2>KAT GRETA: ‘GET UP & GO’ EP INTERVIEW</h2>
-                                    </a>
-                                </div>
-                                <div class="entry-utility">
-                                    <span class="cat-links">
-                                        <span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span>
-                                        <a href="https://australianmusician.com.au/artists/"
-                                            rel="category tag">Artists</a>, <a
-                                            href="https://australianmusician.com.au/artists/interviews/"
-                                            rel="category tag">Interviews</a> </span>
-                                </div>
-                                <div class="entry-summary">
-                                    <p>On her debut EP Get Up And Go, Melbourne-based musician Kat Greta delivers rays
-                                        of funky grooves, retro keyboard sounds and big, driving drums, all of which
-                                        equate to a damn good time. The twist to it all is the unusual band dynamic …
-                                        Kat Greta, composer and driving force…</p>
-                                </div>
-                                <div class="link">
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <div class="img_block">
-                                <a href="#">
-                                    <img src="/assets/images/img_1.jpg" alt="">
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__main">
-                    <div class="footer__left_col">
-                        <div class="footer__col">
-                            <div class="footer__logo">
-                                <a href="/">
-                                    <img src="/assets/images/logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="email_phone_map">
-                                <a class="text--size--16" href="mailto:maibox@store.com">
-                                    <svg enable-background="new 0 0 330.001 330.001" version="1.1" viewBox="0 0 330 330"
-                                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m173.87 177.1c-2.641 1.936-5.756 2.903-8.87 2.903-3.116 0-6.23-0.967-8.871-2.903l-156.13-114.49-1e-3 212.4c1e-3 8.284 6.716 15 15 15l300-1e-3c8.285 0 15-6.716 15-14.999v-212.4l-156.13 114.5z" />
-                                        <polygon points="165 146.4 310.09 40.001 19.911 40" />
-                                    </svg>
-                                    maibox@store.com
-                                </a>
-                                <a class="text--size--16" href="tel:+61999999999">
-                                    <svg enable-background="new 0 0 53.942 53.942" version="1.1"
-                                        viewBox="0 0 53.942 53.942" xml:space="preserve"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="m53.364 40.908c-2.008-3.796-8.981-7.912-9.288-8.092-0.896-0.51-1.831-0.78-2.706-0.78-1.301 0-2.366 0.596-3.011 1.68-1.02 1.22-2.285 2.646-2.592 2.867-2.376 1.612-4.236 1.429-6.294-0.629l-11.486-11.487c-2.045-2.045-2.233-3.928-0.632-6.291 0.224-0.309 1.65-1.575 2.87-2.596 0.778-0.463 1.312-1.151 1.546-1.995 0.311-1.123 0.082-2.444-0.652-3.731-0.173-0.296-4.291-7.27-8.085-9.277-0.708-0.375-1.506-0.573-2.306-0.573-1.318 0-2.558 0.514-3.49 1.445l-2.538 2.537c-4.014 4.013-5.467 8.562-4.321 13.52 0.956 4.132 3.742 8.529 8.282 13.068l14.705 14.705c5.746 5.746 11.224 8.66 16.282 8.66h1e-3c3.72 0 7.188-1.581 10.305-4.698l2.537-2.537c1.542-1.541 1.892-3.871 0.873-5.796z" />
-                                    </svg>
-                                    +61 9 9999 9999
-                                </a>
-                                <a class="text--size--16" href="#" target="_blank" rel="noopener noreferrer">
-                                    <svg viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3 0c-1.66 0-3 1.34-3 3 0 2 3 5 3 5s3-3 3-5c0-1.66-1.34-3-3-3zm0 1c1.11 0 2 .9 2 2 0 1.11-.89 2-2 2-1.1 0-2-.89-2-2 0-1.1.9-2 2-2z"
-                                            transform="translate(1)" />
-                                    </svg>
-                                    PO Box 12042 Carrum VIC 3197
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer__right_col">
-                        <div class="footer__col">
-                            <div class="location_menu_block">
-                                <nav class="header__nav">
-                                    <div class="menu-main-menu-container">
-                                        <ul id="menu-main-menu" class="menu">
-                                            <li class="menu-item text--size--18"><a href="#">Blog</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">About</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">Show Info/Program</a></li>
-                                            <li
-                                                class="menu-item text--size--18 menu-item-type-post_type_archive menu-item-object-programs menu-item-has-children">
-                                                <a href="http://cngc/programs/">Exhibitors</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item menu-item-type-post_type">
-                                                        <a href="#">Exhibitor list & profiles</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type">
-                                                        <a href="#">Brands</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item text--size--18"><a href="#">Performers 2019</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">WIN</a></li>
-                                            <li class="menu-item text--size--18"><a href="#">Tickets</a></li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__copyright">
-                    <p class="text--size--12">Ⓒ Copyright Company name | Website design by <a href="#" target="_blank"
-                            rel="noopener noreferrer">Company name</a></p>
-                </div>
-            </div>
-        </footer>
-        <a id="button_top">
-            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M2.43937 7.75746L0.875631 1.50252C0.629645 0.518582 1.83571 -0.164287 2.55288 0.552877L9.29289 7.29289C9.68342 7.68342 9.68342 8.31658 9.29289 8.70711L2.55288 15.4471C1.83572 16.1643 0.629645 15.4814 0.87563 14.4975L2.43937 8.24254C2.47918 8.0833 2.47918 7.9167 2.43937 7.75746Z"
-                    fill="#fff"></path>
-            </svg>
+  <header class="header-main ls:shadow-3xl bg-white">
+    <div
+      class="container flex-row-reverse lg:flex-row px-[27px] ls:px-0 justify-between ls:justify-center flex gap-5 xl:gap-5 items-center py-10">
+      <div class="logo">
+        <a href="#"><img class="max-w-[210px] max-h-[50px]" src="/assets/img/logo.png" alt="газета.ru" /></a>
+      </div>
+      <menu class="ls:flex hidden gap-[10px] items-center">
+        <li class="lg:p-1 p-[10px]">
+          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100" href="#">Общество</a>
+        </li>
+        <li class="lg:p-1 p-[10px]">
+          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100" href="#">Политика</a>
+        </li>
+        <li class="lg:p-1 p-[10px]">
+          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100" href="#">Экономика</a>
+        </li>
+        <li class="lg:p-1 p-[10px]">
+          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
+            href="#">Колумнисты</a>
+        </li>
+        <li class="lg:p-1 p-[10px]">
+          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
+            href="#">Коронавирус</a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="max-w-[135px] max-h-[33px]" src="assets/img/Tashkent.png" alt="Tashkent" /></a>
+        </li>
+        <li class="pr-[20px] 2xl:pr-[40px]">
+          <a class="max-w-[40px] w-[40px] max-h-[40px] h-[40px]" href="#"><img src="assets/img/search.png"
+              alt="search" /></a>
+        </li>
+        <li class="mr-[10px]">
+          <a class="max-w-[40px] w-[40px] max-h-[40px] h-[40px]" href="#"><img src="assets/img/user.png"
+              alt="search" /></a>
+        </li>
+        <li>
+          <a class="text-[20px] font-medium hover:text-green transition delay-100" href="#">Ўзб</a>
+        </li>
+        <li>
+          <a class="text-[20px] font-medium hover:text-green transition delay-100" href="#">O`zb</a>
+        </li>
+        <li>
+          <a class="text-[20px] font-medium hover:text-green transition delay-100" href="#">Рус</a>
+        </li>
+      </menu>
+      <div class="ls:hidden">
+        <a href="#" id="toggle">
+          <img src="assets/img/burger.png" alt="" />
         </a>
-        <script src="../dist/main.min.js"></script>
+      </div>
+      <div id="side-panel" class="side-panel custom-scrollbar">
+        <div class="side-inner">
+          <div class="white_bg">
+            <div class="side-header">
+              <div class="sidelogo">
+                <img src="/assets/img/logo.png" alt="">
+              </div>
+              <div id="side-close-btn" class="side-close-btn">
+                <button>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <div class="side_container">
+              <div class="separator">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img class="max-w-[135px] max-h-[33px]" src="assets/img/Tashkent.png" alt="Tashkent" /></a>
+                  </li>
+                  <li class="pr-[20px] 2xl:pr-[40px]">
+                    <a class="icon_img" href="#"><img src="assets/img/search.png" alt="search" /></a>
+                  </li>
+                  <li class="mr-[10px]">
+                    <a class="icon_img" href="#"><img src="assets/img/user.png" alt="search" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="location_menu_block">
+                <menu class="ls:flex gap-[10px] items-center">
+                  <li class="lg:p-1 p-[10px]">
+                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
+                      href="#">Общество</a>
+                  </li>
+                  <li class="lg:p-1 p-[10px]">
+                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
+                      href="#">Политика</a>
+                  </li>
+                  <li class="lg:p-1 p-[10px]">
+                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
+                      href="#">Экономика</a>
+                  </li>
+                  <li class="lg:p-1 p-[10px]">
+                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
+                      href="#">Колумнисты</a>
+                  </li>
+                  <li class="lg:p-1 p-[10px]">
+                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
+                      href="#">Коронавирус</a>
+                  </li>
+                </menu>
+              </div>
+              <div class="separator">
+                <ul class="lang">
+                  <li>
+                    <a class="text-[16px] font-medium hover:text-green transition delay-100" href="#">Ўзб</a>
+                  </li>
+                  <li>
+                    <a class="text-[16px] font-medium hover:text-green transition delay-100" href="#">O`zb</a>
+                  </li>
+                  <li>
+                    <a class="text-[16px] font-medium hover:text-green transition delay-100" href="#">Рус</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </header>
+  <div class="container bg-white ls:mt-7 px-[70px]">
+    <div class="py-7 pt-[40px] lg:flex hidden max-w-[1187px]">
+      <a href="#"><img src="assets/img/banner.png" alt="" /></a>
+    </div>
+    <ul class="hidden items-center gap-[14px] xl:gap-[19px] lg:flex lg:text-[14px] xl:text-[18px] font-medium">
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Главная</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Новости</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Статьи</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Медиа</a>
+      </li>
+      <li>
+        <a id="d1" class="text-[#757575] hover:text-green transition delay-100" href="#">15 августа, понедельник</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">COVID-19</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Afisha</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Spot</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Zira</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Погода</a>
+      </li>
+      <li>
+        <a href="#" class="hover:text-green transition delay-100">Вакансии</a>
+      </li>
+      <li>
+        <a href="#"><img class="min-w-[110px] w-[110px] min-h-[40px] h-[40px]" src="assets/img/ish.svg" alt="" /></a>
+      </li>
+    </ul>
+    <div
+      class="lg:mt-[15px] text-[#757575] font-medium text-[20px] lg:relative lg:top-0 lg:right-0 absolute top-[82px] right-[60px] hover:text-green transition delay-100">
+      <a href="#">
+        <span id="dd"> 15 августа 2022, </span> <span id="time">11:00</span>
+        <span
+          class="text-[#7D7D7D] hidden ls:inline-flex font-extrabold ml-2 hover:text-green transition delay-100">Общество</span></a>
+    </div>
+
+    <!-- <script>
+        let dd = new Intl.DateTimeFormat("ru", {
+          day: "numeric",
+          month: "long",
+          weekday: "long",
+          year: "numeric",
+        })
+      
+          .format(new Date())
+          .replace(/(\s?\г\.?)/, "");
+        document.getElementById("dd").innerText = dd;
+
+        let today = new Date();
+        let time = today.getHours() + ":" + today.getMinutes();
+
+        document.getElementById("time").innerText = time;
+        let date = new Intl.DateTimeFormat("ru", {
+          day: "numeric",
+          month: "long",
+          weekday: "long",
+          year: "numeric",
+        })
+
+      </script> -->
+    <div class="flex ls:mt-3 gap-[15px] justify-center">
+      <div class="flex ls:max-w-full ls:flex-[0_0_74%] h-full">
+        <div class="ls:max-w-full">
+          <h1 class="text-[28px] lg:text-[40px] leading-[34px] lg:leading-[48px] font-bold text-center mb-[40px]">
+            Жители Узбекистана <br />
+            зарабатывают с Усмановым
+          </h1>
+          <div class="left-0 right-0 w-full lg:relative">
+            <a href="#"><img class="s:w-[886px] ls:min-w-[886px] ls:min-h-[503px] ls:h-[503px]"
+                src="assets/img/main.png" alt="" /></a>
+          </div>
+
+          <div
+            class="mt-[35px] pb-[35px] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
+            <div class="max-w-[862px]">
+              <p class="mb-[15px] text-[20px] font-normal leading-[24px]">
+                Алишер Усманов запустил проект “USM INVEST”, который даёт
+                возможность жителям Узбекистана получать доход от инвестиций.
+                Это позволит зарабатывать свою дневную зарплату за несколько
+                сделок.
+              </p>
+              <p class="pb-[45px] text-[20px] font-normal leading-[24px]">
+                Компания разработана финансовыми специалистами “USM Holding” и
+                утверждена президентом Шавкатом Мирзиёевым на
+                <a href="#" class="underline hover:text-green transition delay-100">государственном уровне</a>.
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <a class="font-bold text-[28px] leading-[34px] transition duration-300 hover:bg-opacityGreen text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
+              href="#">Перейти на сайт</a>
+          </div>
+          <div
+            class="my-[40px] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
+            <h2 class="text-[20px] lg:text-[30px] font-bold leading-[24px] lg:leading-[39px] mb-[40px]">
+              Природные богатства страны приносят доход каждому
+            </h2>
+            <div class="max-w-[862px]">
+              <p class="mb-[15px] text-[20px] font-normal leading-[24px]">
+                Трудно найти лучшего эксперта в извлечении прибыли от
+                природных и цифровых ресурсов, чем Алишер Бурханович.
+                Уникальность проекта в том, что каждый житель нашей страны
+                сможет получать
+                <a href="#" class="underline hover:text-green transition delay-100">прибыль от инвестиций</a>. Каждый
+                участник заключает самые выгодные сделки на торговле
+                металлами и нефтью, а также акциями мировых компаний. Многие
+                жители уже проверили надежность проекта
+                <a href="#" class="underline hover:text-green transition delay-100">“USM INVEST”</a>
+                на своем личном опыте. Компания обеспечивает стабильный доход
+                и позволяет заработать даже новичку, уделяя всего 15 минут в
+                день.
+              </p>
+              <p class="text-[20px] font-normal leading-[24px]">
+                Передовая технология торговли нефтью и золотом, а также
+                акциями мировых брендов - всё это возможно с USM. Просто
+                взгляните на результаты первой недели торговли с “USM INVEST”.
+              </p>
+              <div class="mt-[15px] mb-[35px]">
+                <a href="#">
+                  <img class="ls:max-w-[895px] ls:w-[895px] ls:min-h-[531px] ls:h-[531px]" src="assets/img/graph.png"
+                    alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-[40px]">
+            <p class="text-[20px] font-normal leading-[24px]">
+              В 2020-2021 возможность успешной торговли была очень низка.
+              Требовалось много читать и обучаться, рисковать личными
+              финансами и терять их в обмен на опыт. Участники “USM INVEST”
+              получили возможность оставить эти трудности в прошлом. Компания
+              “USM” занимается
+              <a href="#" class="underline hover:text-green transition delay-100">полным обеспечением</a>
+              безопасности и гарантирует успешную торговлю. Каждому участнику
+              предоставляется персональный трейдер, который просчитывает все
+              возможные варианты исхода на рынке. Услугами трейдера пользуется
+              и Алишер Усманов, и теперь он готов поделиться инструментом для
+              приумножения капитала со всеми жителями Узбекистана. На основе
+              надёжности, которую уже доказал
+              <a href="#" class="underline hover:text-green transition delay-100">Алишер Усманов</a>, “USM INVEST” даёт
+              возможность зарабатывать уже сегодня.
+            </p>
+            <div class="flex justify-center items-center mt-[25px]">
+              <a class="font-bold text-[28px] transition duration-300 hover:bg-opacityGreen leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
+                href="#">Перейти на сайт</a>
+            </div>
+          </div>
+          <div
+            class="mt-[35px] pb-[35px] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
+            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
+              USM Invest - для безопасного инвестирования
+            </h2>
+            <div class="max-w-[862px]">
+              <p class="text-[20px] font-normal leading-[24px]">
+                Алишер Усманов заявил, что его компания USM INVEST
+                <a href="#" class="underline hover:text-green transition delay-100">не имеет конкурентов</a>
+                в СНГ. Лучшие специалисты из различных стран, новейшие
+                алгоритмы и уникальные программы предоставлены всем участникам
+                для успешной торговли.
+              </p>
+              <div class="my-[35px]">
+                <a href="#"><img class="ls:w-[898px] ls:max-w-[898px] ls:h-[585px] ls:max-h-[585px]"
+                    src="assets/img/usmanov.png" alt="" /></a>
+              </div>
+              <p class="text-[20px] font-normal leading-[24px]">
+                "Я помню, как сам инвестировал в различные проекты и новые
+                программы, когда этого все боялись и не понимали. Теперь же я
+                хочу помочь всему своему народу, и открыть для них сферу
+                инвестирования под моим началом", - говорит Алишер Бурханович.
+              </p>
+              <div class="flex justify-center items-center my-[25px]">
+                <a class="font-bold text-[28px] transition duration-300 hover:bg-opacityGreen leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
+                  href="#">Перейти на сайт</a>
+              </div>
+            </div>
+          </div>
+          <div class="relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
+            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
+              Стиль жизни USM
+            </h2>
+            <div class="max-w-[862px]">
+              <div class="my-[25px]">
+                <a href="#">
+                  <img class="ls:w-[885px] ls:max-w-[885px] ls:h-[585px] ls:max-h-[585px]" src="assets/img/life.png"
+                    alt="Life" /></a>
+              </div>
+              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                До участия в программе USM 43-летний Шерзод из Самарканда
+                очень долго пытался изменить свою жизнь:
+              </p>
+              <p class="text-[20px] font-bold leading-[24px] mb-[25px]">
+                “Надоело, знаете ли, наблюдать, как мои знакомые покупают
+                машины и делают дорогой ремонт в своем доме. У меня не
+                получалось заработать даже на толковый отпуск в горы для всей
+                семьи.
+              </p>
+              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                В связи с коронавирусной пандемией компания, где я работал,
+                закрылась. Найти новую работу стало невероятно сложно.
+              </p>
+              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                А когда прочел в
+                <a href="#" class="underline hover:text-green transition delay-100">новостях про USM</a>,
+                заинтересовался проектом с внушительным доверием. Я
+                торговал в лавке брата, и не понимал, как устроены финансы и
+                инвестиции. Оказалось, что
+                <a href="#" class="underline hover:text-green transition delay-100">“USM INVEST”</a>
+                действительно позволяет даже новичку начать зарабатывать и
+                получать свою первую прибыль. Мой специалист всегда
+                безошибочно заключал прибыльные сделки.
+              </p>
+              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                Регистрация была проще, чем в банке. Перезвонили, провели
+                консультацию и порекомендовали начать с 200 долларов. Вечером
+                проверил аккаунт и не поверил своим глазам: у меня на счету
+                уже была моя первая прибыль в 30$! А это моя 5-дневная
+                зарплата! Казалось, что это был сон. Сейчас с улыбкой
+                вспоминаю старую работу. Ушел и уже начал развивать свой
+                бизнес по выращиванию фазанов”.
+              </p>
+              <div class="flex justify-center items-center my-[25px]">
+                <a class="font-bold transition duration-300 hover:bg-opacityGreen text-[28px] leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
+                  href="#">Перейти на сайт</a>
+              </div>
+            </div>
+          </div>
+          <div class="py-[25px]">
+            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
+              Самые прибыльные инвестиции - своевременные
+            </h2>
+            <div>
+              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                Центральный банк сообщил, что в 2022 году ожидается
+                значительная инфляция. Она коснется всех, кто не позаботился о
+                финансовой подушке в иностранной валюте. На фоне этого,
+                увеличивается прирост средств от физических лиц на 6-8%, а
+                юридических – на 11-13%. Прогнозируется и увеличение розничных
+                кредитов, которые будут расти на 10-12% . Корпоративные
+                кредиты тоже будут расти на 7-10%.
+              </p>
+              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                Переводя на простой язык: заработать станет сложнее, если не
+                позаботиться об этом заранее.
+              </p>
+              <div class="flex justify-center items-center mt-[25px]">
+                <a class="font-bold transition duration-300 hover:bg-opacityGreen text-[28px] leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
+                  href="#">Перейти на сайт</a>
+              </div>
+            </div>
+          </div>
+          <div class="pt-[25px]">
+            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
+              Простота – залог успеха
+            </h2>
+            <ul>
+              <li class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                1.
+                <a href="#"><span class="underline hover:text-green transition delay-100">
+                    Перейдите по этой ссылке</span></a>
+                на официальный сайт USM.
+              </li>
+              <li class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                2. Внимательно заполните все поля и завершите регистрацию.
+              </li>
+              <li class="text-[20px] font-normal leading-[24px] mb-[25px]">
+                3. Ожидайте звонка специалиста, он свяжется с Вами в ближайшее
+                время..
+              </li>
+              <li class="text-[20px] font-normal leading-[24px] mb-[35px]">
+                4. Выберите желаемую сумму для первого депозита и заработайте
+                первую прибыль с “USM INVEST” уже сегодня!
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hidden lg:flex-col lg:flex bg-gray py-[25px] px-[55px] h-full">
+        <div class="mb-[25px]">
+          <a href="#">
+            <div id="t1" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
+              15 августа
+            </div>
+            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
+              <a href="#" class="hover:text-green transition delay-100">
+                Молодежь сможет получить льготные кредиты на учебу на
+                IT-курсах</a>
+            </div>
+          </a>
+        </div>
+        <div class="mb-[25px]">
+          <a href="#">
+            <div id="t2" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
+              15 августа
+            </div>
+            <div class="leading-[18px] text-[15px] font-semibold">
+              <a href="#" class="hover:text-green transition delay-100">В Казахстане опровергли транспортировку нефти
+                через
+                Азербайджан</a>
+            </div>
+          </a>
+        </div>
+        <div class="mb-[25px]">
+          <a href="#">
+            <div id="t3" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
+              14 августа
+            </div>
+            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
+              <a href="#" class="hover:text-green transition delay-100">«Узбекнефтегаз» опроверг дефицит Аи-80 на своих
+                заправках</a>
+            </div>
+          </a>
+        </div>
+        <div class="mb-[25px]">
+          <a href="#">
+            <div id="t4" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
+              15 августа
+            </div>
+            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
+              <a href="#" class="hover:text-green transition delay-100">
+                Дзюдоисты Узбекистана завоевали четыре медали ЧМ</a>
+            </div>
+          </a>
+        </div>
+        <div class="mb-[25px]">
+          <a href="#">
+            <div id="t5" class="date text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
+              15 августа
+            </div>
+            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
+              <a href="#" class="hover:text-green transition delay-100">
+                TBC Bank: как осуществляется переход на цифровые технологии в
+                Узбекистане</a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div
+      class="container footer-main px-[70px] pt-[85px] pb-[85px] flex gap-[20px] lg:gap-[155px] bg-white relative after:content-[''] after:w-full after:h-[1px] after:absolute after:left-0 after:right-0 after:bg-[#D9D9D9] after:top-0">
+      <div class="text-[13px] font-normal leading-[16px]">
+        <p class="pb-2">
+          © 2008-2022 <br />
+          «Газета.uz»
+        </p>
+        <p class="pb-2">Новости для людей.</p>
+        <p class="text-[#7D7D7D]">
+          Нашли ошибку? <br />
+          Нажмите Ctrl+Enter
+        </p>
+      </div>
+      <div class="text-[15px] leading-[18px] font-normal text-[#7D7D7D] max-w-[588px]">
+        <p class="pb-2">
+          Воспроизводство, копирование, тиражирование, распространение и иное
+          использование информации с сайта «Газета.uz» возможно только с
+          предварительного письменного разрешения редакции.
+        </p>
+        <p>
+          Регистрация электронного СМИ: №0460 от 13 августа 2019 года.
+          Учредитель: ООО «Afisha Media»
+        </p>
+      </div>
+    </div>
+    <script>
+      let today = new Date();
+      let options = {
+        day: 'numeric',
+        year: 'numeric',
+        month: 'long'
+      };
+      let option = {
+        day: 'numeric',
+        month: 'long',
+        weekday: 'long'
+      };
+      let now = today.toLocaleString('ru-Ru', options);
+      let t1 = today.toLocaleString('ru-Ru', {
+        day: 'numeric',
+        month: 'long'
+      });
+      let nowDay = today.toLocaleString('ru-Ru', option);
+      let time = today.getHours() + ":" + today.getMinutes();
+      document.getElementById("dd").innerText = now;
+      document.getElementById("d1").innerText = nowDay;
+      document.getElementById("time").innerText = time;
+      document.getElementById("t1").innerText = t1;
+      document.getElementById("t2").innerText = t1;
+      document.getElementById("t3").innerText = t1;
+      document.getElementById("t4").innerText = t1;
+      document.getElementById("t5").innerText = t1;
+    </script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
