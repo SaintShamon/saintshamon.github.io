@@ -1,0 +1,65 @@
+.carts_blocks
+    &_wrap
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 85px 20px
+        width: max-content
+        margin: 100px auto 0
+        +max-screen($breakpoint-xm)
+            gap: 65px 20px
+        +max-screen(1300px)
+            grid-template-columns: repeat(2, 1fr)
+            gap: 69px 35px
+        +max-screen(1024px)
+            margin: 69px auto 0
+        +max-screen(700px)
+            grid-template-columns: repeat(1, 1fr)
+        .cart_inner
+            display: flex
+            position: relative
+            background: $color-greyblack
+            border-radius: 10px
+            width: 325px
+            min-height: 180px
+            padding: 50px 25px 25px
+            +max-screen($breakpoint-xm)
+                width: 100%
+                max-width: 300px
+                padding: 50px 20px 25px
+            +max-screen(1300px)
+                width: 325px
+                padding: 50px 25px 25px
+        .icon
+            position: absolute
+            left: calc( 50% - 45px )
+            top: -45px
+            display: flex
+            width: 90px
+            height: 90px
+            background: #242528
+            border: 1px solid $color-black
+            border-radius: 50%
+            padding: 18.46px
+            box-sizing: border-box
+            +max-screen($breakpoint-xm)
+                width: 70px
+                height: 70px
+                top: -35px
+                left: calc( 50% - 35px )
+            +max-screen(1300px)
+                left: calc( 50% - 45px )
+                top: -45px
+                display: flex
+                width: 90px
+                height: 90px
+            img
+                display: block
+                align-self: center
+                margin: 0 auto
+                box-sizing: border-box
+        .text
+            margin: 0 auto
+            width: max-content
+            align-self: center
+            p
+                text-align: center

@@ -1,0 +1,109 @@
+.footer
+    margin-top: 128px
+    background-color: $color-greyblack
+    display: flex
+    +max-screen(1024px)
+        margin-top: 64px
+    &_top_block
+        margin-top: 55px
+        display: flex
+        justify-content: space-between
+        +max-screen(1100px)
+            flex-wrap: wrap
+        +max-screen($breakpoint-sm)
+            margin-top: 34px
+    .col
+        width: 100%
+        max-width: 225px
+        padding-top: 20px
+        margin-right: 34px
+
+        +max-screen(1100px)
+            max-width: 46%
+            margin-right: 0
+            margin-bottom: 36px
+            padding-top: 0
+        +max-screen($breakpoint-sm)
+            max-width: 100%
+            margin-bottom: 24px
+        &:nth-of-type(2)
+            max-width: 253px
+            +max-screen(1100px)
+                max-width: 46%
+                margin-right: 0
+            +max-screen($breakpoint-sm)
+                max-width: 100%
+        &:nth-of-type(3)
+            max-width: 325px
+            +max-screen(1100px)
+                max-width: 46%
+            +max-screen($breakpoint-sm)
+                max-width: 100%
+        &:nth-of-type(4)
+            margin-bottom: 0
+            +max-screen($breakpoint-sm)
+                margin-bottom: 24px
+        &:last-of-type
+            margin-right: 0
+            margin-bottom: 0
+        &.logo_block
+            max-width: 205px
+            padding-top: 0
+            +max-screen(1100px)
+                max-width: none
+            img
+                max-width: 140px
+            p
+                margin-top: 14px
+        h3
+            margin-bottom: 14px
+            font-weight: 600
+            line-height: 110%
+        li
+
+            margin-bottom: 10px
+            &:last-of-type
+                margin-bottom: 0
+            a
+                font-size: 14px
+                line-height: 140%
+                &:hover
+                    color: $color-gold
+                    transition: $default-transition
+    &_bottom_block
+        position: relative
+        margin-top: 87px
+        margin-bottom: 53px
+        padding-top: 30px
+        display: flex
+        justify-content: space-between
+        +max-screen($breakpoint-sm)
+            margin-top: 24px
+            flex-direction: column
+            margin-bottom: 48px
+        ul
+            display: flex
+            +max-screen($breakpoint-sm)
+                flex-direction: column
+                margin-top: 24px
+        li
+            margin-right: 25px
+            +max-screen($breakpoint-sm)
+                margin-right: 0
+                margin-bottom: 10px
+            &:last-of-type
+                margin-right: 0
+                +max-screen($breakpoint-sm)
+                    margin-bottom: 0
+        a
+            &:hover
+                color: $color-gold
+                transition: $default-transition
+        &::before
+            position: absolute
+            content: ''
+            top: 0
+            left: 0
+            width: 100%
+            height: 1px
+            background: #fff

@@ -1,0 +1,46 @@
+.top_text_image
+    &.section
+        margin-top: 100px
+        +max-screen(1024px)
+            margin-top: 52px
+    .content-block
+        margin-top: 16px
+        p
+            text-align: center
+    .img_block
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        max-width: 984px
+        margin: 56px auto 0
+        +max-screen(850px)
+            justify-content: space-around
+        img
+            width: max-content
+            margin-right: 116px
+            margin-bottom: 44px
+            &:nth-of-type(4),
+            &:last-of-type
+                margin-right: 0
+                +max-screen(850px)
+                    margin-right: auto
+                    margin-bottom: 0
+            +max-screen(1024px)
+                margin-right: 76px
+            +max-screen(850px)
+                margin-right: auto
+                margin-left: auto
+    &::before
+        position: absolute
+        content: ''
+        top: -10%
+        left: 0
+        width: 334.94px
+        height: 528.38px
+        background-image: url('../assets/images/left_bg.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        +max-screen($breakpoint-sm)
+            width: 160px
+            height: 250px

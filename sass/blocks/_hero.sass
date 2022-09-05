@@ -1,0 +1,69 @@
+.hero
+    .section-bg
+        background-image: url('../assets/images/main_bg.svg')
+        background-position: bottom
+        +max-screen(1024px)
+            background-image: url('../assets/images/main_1024_bg.svg')
+        +max-screen($breakpoint-sm)
+            background-image: url('../assets/images/main_mob_bg.svg')
+    &_main_menu
+        position: relative
+        display: flex
+    &_text_block
+        width: 100%
+        max-width: 575px
+        margin-top: 72px
+        margin-bottom: 142px
+        margin-left: 0
+        +max-screen(1024px)
+            max-width: 375px
+            margin-top: 0
+        +max-screen($breakpoint-sm)
+            margin-bottom: 16px
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+        .btn_block
+            margin-top: 42px
+            display: flex
+            +max-screen(1024px)
+                flex-wrap: wrap
+            +max-screen($breakpoint-sm)
+                flex-direction: column
+                margin-top: 16px
+            a.button
+                margin-right: 16px
+                +max-screen(1024px)
+                    margin-bottom: 16px
+                +max-screen($breakpoint-sm)
+                    margin-right: auto
+                    margin-left: auto
+                    margin-bottom: 8px
+                &:last-of-type
+                    margin-right: 0
+                    +max-screen(1024px)
+                        margin-bottom: 0
+                    +max-screen($breakpoint-sm)
+                        margin-right: auto
+                        margin-left: auto
+    &_img_block
+        width: 100vw
+        max-width: 900px
+        height: 100%
+        position: absolute
+        top: 50px
+        right: 50%
+        margin-right: calc(-1 * (100vw / 2))
+        z-index: -1
+        +max-screen($breakpoint-xl)
+            max-width: 52vw
+        +max-screen($breakpoint-lg)
+            max-width: 62vw
+        +max-screen($breakpoint-sm)
+            position: relative
+            width: 100%
+            max-width: 75vw
+            top: auto
+            right: auto
+            margin-right: auto
+            margin-left: auto

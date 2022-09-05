@@ -1,0 +1,79 @@
+.text_image
+    .main_block
+        display: flex
+        justify-content: space-between
+        +max-screen(700px)
+            flex-direction: column
+    .title_block
+        p.subtitle
+            text-align: left
+            +max-screen(700px)
+                text-align: center
+        h2
+            text-align: left
+            +max-screen(700px)
+                text-align: center
+    .col
+        max-width: 662px
+        position: relative
+        +max-screen(1024px)
+            max-width: 48%
+        +max-screen(700px)
+            max-width: none
+        &:last-of-type
+            max-width: 664px
+            margin-left: 40px
+            +max-screen(1024px)
+                max-width: 48%
+            +max-screen(700px)
+                max-width: none
+                margin-top: 36px
+        .img_block
+            width: 644px
+            height: 100%
+            position: absolute
+            right: -100px
+            +max-screen(1200px)
+                width: 47vw
+                right: -20px
+            +max-screen($breakpoint-lg)
+                width: 50vw
+                right: 0
+            +max-screen($breakpoint-md)
+                width: 55vw
+            +max-screen(700px)
+                width: 75vw
+                margin-left: auto
+                margin-right: auto
+                position: relative
+                right: auto
+    &.column_list
+        .content-block
+            ul
+                margin: 0
+                padding: 0
+                list-style: none
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 32px 115px
+                +max-screen(1024px)
+                    gap: 32px 25px
+                +max-screen(700px)
+                    display: block
+            li
+                max-width: 210px
+                +max-screen(700px)
+                    max-width: none
+                    text-align: center
+                &::before
+                    display: none
+    .content-block
+        margin-top: 40px
+    a.button
+        margin-top: 56px
+        +max-screen(700px)
+            margin-left: auto
+            margin-right: auto
+            margin-top: 36px
+            display: block
+            width: max-content

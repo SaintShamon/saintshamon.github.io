@@ -1,0 +1,51 @@
+.list_block
+    &_content
+        margin-top: 48px
+        ul
+            margin: 0 auto
+            padding: 0
+            list-style: none
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 54px 74px
+            width: 100%
+            max-width: 1186px
+            +max-screen($breakpoint-lg)
+                gap: 24px 38px
+            +max-screen($breakpoint-sm)
+                grid-template-columns: repeat(1, 1fr)
+                gap: 24px
+        li
+            position: relative
+            padding-left: 56px
+            width: 100%
+            max-width: 556px
+            &::before
+                position: absolute
+                content: ''
+                top: 0
+                left: 0
+                width: 40px
+                height: 40px
+                background-image: url('../assets/images/icon/list_icon.svg')
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+    &::before
+        position: absolute
+        content: ''
+        bottom: -30%
+        right: 0
+        width: 411.09px
+        height: 736.89px
+        background-image: url('../assets/images/right_bg.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        +max-screen($breakpoint-xm)
+            width: 351.09px
+            height: 636.89px
+        +max-screen($breakpoint-sm)
+            width: 174.64px
+            height: 221.08px
+            bottom: 0

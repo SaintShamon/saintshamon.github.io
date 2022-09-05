@@ -1,546 +1,408 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="../assets/css/main.css" rel="stylesheet" />
-  <title>USM</title>
-  <link rel="icon" href="../assets/img/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="/dist/main.min.css">
 </head>
 <body>
-  <header class="header-main ls:shadow-3xl bg-white">
-    <div
-      class="container flex-row-reverse lg:flex-row px-[27px] ls:px-0 justify-between ls:justify-center flex gap-5 xl:gap-5 items-center py-10">
-      <div class="logo">
-        <a href="#"><img class="max-w-[210px] max-h-[50px]" src="/assets/img/logo.png" alt="газета.ru" /></a>
-      </div>
-      <menu class="ls:flex hidden gap-[10px] items-center">
-        <li class="lg:p-1 p-[10px]">
-          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100" href="#">Общество</a>
-        </li>
-        <li class="lg:p-1 p-[10px]">
-          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100" href="#">Политика</a>
-        </li>
-        <li class="lg:p-1 p-[10px]">
-          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100" href="#">Экономика</a>
-        </li>
-        <li class="lg:p-1 p-[10px]">
-          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
-            href="#">Колумнисты</a>
-        </li>
-        <li class="lg:p-1 p-[10px]">
-          <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
-            href="#">Коронавирус</a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="max-w-[135px] max-h-[33px]" src="assets/img/Tashkent.png" alt="Tashkent" /></a>
-        </li>
-        <li class="pr-[20px] 2xl:pr-[40px]">
-          <a class="max-w-[40px] w-[40px] max-h-[40px] h-[40px]" href="#"><img src="assets/img/search.png"
-              alt="search" /></a>
-        </li>
-        <li class="mr-[10px]">
-          <a class="max-w-[40px] w-[40px] max-h-[40px] h-[40px]" href="#"><img src="assets/img/user.png"
-              alt="search" /></a>
-        </li>
-        <li>
-          <a class="text-[20px] font-medium hover:text-green transition delay-100" href="#">Ўзб</a>
-        </li>
-        <li>
-          <a class="text-[20px] font-medium hover:text-green transition delay-100" href="#">O`zb</a>
-        </li>
-        <li>
-          <a class="text-[20px] font-medium hover:text-green transition delay-100" href="#">Рус</a>
-        </li>
-      </menu>
-      <div class="ls:hidden">
-        <a href="#" id="toggle">
-          <img src="assets/img/burger.png" alt="" />
-        </a>
-      </div>
-      <div id="side-panel" class="side-panel custom-scrollbar">
-        <div class="side-inner">
-          <div class="white_bg">
-            <div class="side-header">
-              <div class="sidelogo">
-                <img src="/assets/img/logo.png" alt="">
-              </div>
-              <div id="side-close-btn" class="side-close-btn">
-                <button>
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
+    <div class="site">
+        <header class="header">
+            <div class="header_wrap">
+                <div class="container">
+                    <div class="header_main_block">
+                        <div class="header__logo">
+                            <a href="/">
+                                <img src="/assets/images/main_logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header_inner_block">
+                            <div class="header__menu">
+                                <nav>
+                                    <ul class="header__menu_list">
+                                        <li class="menu-item-has-children"><a href="#">О нас</a></li>
+                                        <li class="menu-item-has-children"><a href="#">Торговля на Форекс</a></li>
+                                        <li class="menu-item-has-children"><a href="#">Платформы</a></li>
+                                        <li class="menu-item-has-children"><a href="#">Лицензии и сертификаты</a></li>
+                                        <li><a href="#">Пополнение</a></li>
+                                        <li><a href="#">Вывод</a></li>
+                                        <li class="menu-item-has-children"><a href="#">RU</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="header__button">
+                                <a href="#" class="button">Начать инвестирвовать</a>
+                            </div>
+                            <button id="toggle"><span></span></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="side_container">
-              <div class="separator">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <img class="max-w-[135px] max-h-[33px]" src="assets/img/Tashkent.png" alt="Tashkent" /></a>
-                  </li>
-                  <li class="pr-[20px] 2xl:pr-[40px]">
-                    <a class="icon_img" href="#"><img src="assets/img/search.png" alt="search" /></a>
-                  </li>
-                  <li class="mr-[10px]">
-                    <a class="icon_img" href="#"><img src="assets/img/user.png" alt="search" /></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="location_menu_block">
-                <menu class="ls:flex gap-[10px] items-center">
-                  <li class="lg:p-1 p-[10px]">
-                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
-                      href="#">Общество</a>
-                  </li>
-                  <li class="lg:p-1 p-[10px]">
-                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
-                      href="#">Политика</a>
-                  </li>
-                  <li class="lg:p-1 p-[10px]">
-                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
-                      href="#">Экономика</a>
-                  </li>
-                  <li class="lg:p-1 p-[10px]">
-                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
-                      href="#">Колумнисты</a>
-                  </li>
-                  <li class="lg:p-1 p-[10px]">
-                    <a class="xl:text-[20px] text-[16px] font-medium hover:text-green transition delay-100"
-                      href="#">Коронавирус</a>
-                  </li>
-                </menu>
-              </div>
-              <div class="separator">
-                <ul class="lang">
-                  <li>
-                    <a class="text-[16px] font-medium hover:text-green transition delay-100" href="#">Ўзб</a>
-                  </li>
-                  <li>
-                    <a class="text-[16px] font-medium hover:text-green transition delay-100" href="#">O`zb</a>
-                  </li>
-                  <li>
-                    <a class="text-[16px] font-medium hover:text-green transition delay-100" href="#">Рус</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="container bg-white ls:mt-7 px-[70px]">
-    <div class="py-7 pt-[40px] lg:flex hidden max-w-[1187px]">
-      <a href="#"><img src="assets/img/banner.png" alt="" /></a>
-    </div>
-    <ul class="hidden items-center gap-[14px] xl:gap-[19px] lg:flex lg:text-[14px] xl:text-[18px] font-medium">
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Главная</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Новости</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Статьи</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Медиа</a>
-      </li>
-      <li>
-        <a id="d1" class="text-[#757575] hover:text-green transition delay-100" href="#">15 августа, понедельник</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">COVID-19</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Afisha</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Spot</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Zira</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Погода</a>
-      </li>
-      <li>
-        <a href="#" class="hover:text-green transition delay-100">Вакансии</a>
-      </li>
-      <li>
-        <a href="#"><img class="min-w-[110px] w-[110px] min-h-[40px] h-[40px]" src="assets/img/ish.svg" alt="" /></a>
-      </li>
-    </ul>
-    <div
-      class="lg:mt-[15px] text-[#757575] font-medium text-[20px] lg:relative lg:top-0 lg:right-0 absolute top-[82px] right-[60px] hover:text-green transition delay-100">
-      <a href="#">
-        <span id="dd"> 15 августа 2022, </span> <span id="time">11:00</span>
-        <span
-          class="text-[#7D7D7D] hidden ls:inline-flex font-extrabold ml-2 hover:text-green transition delay-100">Общество</span></a>
-    </div>
+        </header>
+        <main id="main">
+            <section class="hero section">
+                <div class="section-bg"></div>
+                <div class="container">
+                    <div class="hero_main_block">
+                        <div class="hero_text_block">
+                            <h1>Действуем в интересах трейдеров
+                            </h1>
+                            <div class="btn_block">
+                                <a href="#" class="button">Открыть счет</a>
+                                <a href="#" class="button button--black">Перейти в личный кабинет</a>
+                            </div>
+                        </div>
 
-    <!-- <script>
-        let dd = new Intl.DateTimeFormat("ru", {
-          day: "numeric",
-          month: "long",
-          weekday: "long",
-          year: "numeric",
-        })
-      
-          .format(new Date())
-          .replace(/(\s?\г\.?)/, "");
-        document.getElementById("dd").innerText = dd;
+                    </div>
+                </div>
+                <div class="hero_img_block">
+                    <img src="/assets/images/bitcoin_img_main.svg" alt="">
+                </div>
+            </section>
+            <section class="carts_blocks section">
+                <div class="container">
+                    <div class="main_menu">
+                        <div class="title_block">
+                            <p class="subtitle">Почему jotul Capital</p>
+                            <h2 class="title">Почему Вам нужно к нам
+                            </h2>
+                        </div>
+                        <div class="carts_blocks_wrap">
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_1.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>У нас есть все необходимые документы и лицензии
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_2.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Присутствие информации о нас на открытых форумах
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_3.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Безопасность вложенных средств
 
-        let today = new Date();
-        let time = today.getHours() + ":" + today.getMinutes();
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_4.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Мы всегда на связи.
+                                        На сайте в блоке «контакты» есть почта и номер телефона чтобы задать все вопросы
+                                        которые Вас интересуют
 
-        document.getElementById("time").innerText = time;
-        let date = new Intl.DateTimeFormat("ru", {
-          day: "numeric",
-          month: "long",
-          weekday: "long",
-          year: "numeric",
-        })
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_5.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        Отчетность в цифрах на сайте чтобы трейдер мог проанализировать площадку для
+                                        торговли
 
-      </script> -->
-    <div class="flex ls:mt-3 gap-[15px] justify-center">
-      <div class="flex ls:max-w-full ls:flex-[0_0_74%] h-full">
-        <div class="ls:max-w-full">
-          <h1 class="text-[28px] lg:text-[40px] leading-[34px] lg:leading-[48px] font-bold text-center mb-[40px]">
-            Жители Узбекистана <br />
-            зарабатывают с Усмановым
-          </h1>
-          <div class="left-0 right-0 w-full lg:relative">
-            <a href="#"><img class="s:w-[886px] ls:min-w-[886px] ls:min-h-[503px] ls:h-[503px]"
-                src="assets/img/main.png" alt="" /></a>
-          </div>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_6.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Подробный рассказ об актуальных на сегодня инвестиционных идеях, которые способны
+                                        обеспечить рост актива и принести прибыль
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_7.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Присутствие в составе руководства акционеров и известных в финансовом мире персон
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cart_inner">
+                                <div class="icon">
+                                    <img src="/assets/images/icon/cart_icon_8.svg" alt="">
+                                </div>
+                                <div class="text">
+                                    <p>Глобальное присутствие. Нашей платформой пользуются 53 странах мира
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sales_block section">
+                <div class="container">
+                    <div class="main_block">
+                        <div class="content-block">
+                            <h2>Присоединяйтесь к брокеру который действует в интересах трейдеров
+                            </h2>
+                            <div class="btn_block">
+                                <a href="#" class="button">Открыть счет</a>
+                                <a href="#" class="button button--black">Перейти в личный кабинет</a>
+                            </div>
 
-          <div
-            class="mt-[35px] pb-[35px] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
-            <div class="max-w-[862px]">
-              <p class="mb-[15px] text-[20px] font-normal leading-[24px]">
-                Алишер Усманов запустил проект “USM INVEST”, который даёт
-                возможность жителям Узбекистана получать доход от инвестиций.
-                Это позволит зарабатывать свою дневную зарплату за несколько
-                сделок.
-              </p>
-              <p class="pb-[45px] text-[20px] font-normal leading-[24px]">
-                Компания разработана финансовыми специалистами “USM Holding” и
-                утверждена президентом Шавкатом Мирзиёевым на
-                <a href="#" class="underline hover:text-green transition delay-100">государственном уровне</a>.
-              </p>
+                        </div>
+                        <div class="img_block">
+                            <img src="/assets/images/coins_img.svg" alt="">
+                        </div>
+                        <div class="img_mobile first">
+                            <img src="/assets/images/coin_1.svg" alt="">
+                        </div>
+                        <div class="img_mobile second">
+                            <img src="/assets/images/coin_2.svg" alt="">
+                        </div>
+                        <div class="img_mobile third">
+                            <img src="/assets/images/coin_3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="list_block section">
+                <div class="container">
+                    <div class="main_block">
+                        <div class="title_block">
+                            <p class="subtitle">Почему с нами выгодно торговать</p>
+                            <h2 class="title">Причины торговать с нами
+                            </h2>
+                        </div>
+                        <div class="list_block_content">
+                            <ul>
+                                <li>
+                                    <b>Обучение. </b>
+                                    <p>Наличие обучающего центра для новых трейдеров которые мало знают о финансовых
+                                        рынках</p>
+                                </li>
+                                <li>
+                                    <b>Полезная практика. </b>
+                                    <p>Бесплатный пробный счет. Всегда поможет почувствовать площадку</p>
+                                </li>
+                                <li>
+                                    <b>Структурирование материала. </b>
+                                    <p> Обучающий материал построен так что позволит структурировать ваши знания для
+                                        более
+                                        эффективного применения имеющегося опыта даже в опытных трейдеров</p>
+                                </li>
+                                <li>
+                                    <b>Обширная теория. </b>
+                                    <p>В учебном пособии содержится вся необходимая теория устройства рынков и описание
+                                        методов прогноза изменения цен с помощью фундаментального и технического
+                                        анализов.
+                                    </p>
+                                </li>
+                                <li>
+                                    <b>Удобство в использовании. </b>
+                                    <p>Интуитивный интерфейс и доступная подача материала
+                                    </p>
+                                </li>
+                                <li>
+                                    <b>Наличие аналитики. </b>
+                                    <p>Обзоры финансовых рынков от ведущих аналитиков для построения правильной
+                                        стратегии
+                                    </p>
+                                </li>
+                                <li>
+                                    <b>Компетентность команды. </b>
+                                    <p>Авторами и разработчиками платформы являются практикующие профессионалы, имеющие
+                                        как опыт трейдера, так и опыт работы в банках и инвестиционных компаниях
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text_image column_list section">
+                <div class="container">
+                    <div class="main_block">
+                        <div class="col">
+                            <div class="title_block">
+                                <p class="subtitle">наши преимущества</p>
+                                <h2 class="title">Торговля с нами – это:
+                                </h2>
+                            </div>
+                            <div class="content-block">
+                                <ul>
+                                    <li>Минимальная сумма сделки
+                                    </li>
+                                    <li>Быстрый ввод и вывод средств
+                                    </li>
+                                    <li>Привлекательные условия торговли
+                                    </li>
+                                    <li>Простая регистрация
+                                    </li>
+                                    <li>Самый широкий выбор инструментов
+                                    </li>
+                                    <li>Торговля на удобных Вам устройствах
+                                    </li>
+                                </ul>
+                                <a href="#" class="button">Открыть счет и начать торги</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img_block">
+                                <img src="/assets/images/sales_img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="top_text_image section">
+                <div class="container">
+                    <div class="main_block">
+                        <div class="title_block">
+                            <p class="subtitle">СМИ</p>
+                            <h2 class="title">О нас пишут СМИ
+                            </h2>
+                        </div>
+                        <div class="content-block">
+                            <p>Наши эксперты ежемесячно дают сотни комментариев<br> на ключевые события финансового мира
+                            </p>
+                        </div>
+                        <div class="img_block">
+                            <img src="/assets/images/smi/Forbes_logo.svg" alt="">
+                            <img src="/assets/images/smi/Financial_Times_corporate_logo.svg" alt="">
+                            <img src="/assets/images/smi/finmasters_logo.svg" alt="">
+                            <img src="/assets/images/smi/finmap_logo.svg" alt="">
+                            <img src="/assets/images/smi/logical_logo.svg" alt="">
+                            <img src="/assets/images/smi/MU30-logo.svg" alt="">
+                            <img src="/assets/images/smi/millennial-money-logo.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text_block section">
+                <div class="container">
+                    <div class="main_block">
+                        <div class="content-block text--size--14">
+                            <p>Jotul Capital<br>
+                                <span>Данные являются брокерской информацией, обладателем (собственником) которой
+                                    является название компании. Распространение, трансляция или иное предоставление
+                                    брокерской информации третьим лицам возможно исключительно в порядке и на условиях,
+                                    предусмотренных порядком использования брокерской информации, предоставляемой
+                                    название компании. название компании, лицензия № на осуществление брокерской
+                                    деятельности. Выдана кем. Без ограничения срока действия. Адрес компании</span>
+                            </p>
+                            <p><span>Материалы, представленные в данном разделе, не являются индивидуальными
+                                    инвестиционными рекомендациями. Финансовые инструменты либо операции, упомянутые
+                                    в данном разделе, могут не подходить Вам, не соответствовать Вашему инвестиционному
+                                    профилю, финансовому положению, опыту инвестиций, знаниям, инвестиционным целям,
+                                    отношению к риску и доходности. Определение соответствия финансового инструмента
+                                    либо операции инвестиционным целям, инвестиционному горизонту и толерантности
+                                    к риску является задачей инвестора. название компании не несет ответственности
+                                    за возможные убытки инвестора в случае совершения операций, либо инвестирования
+                                    в финансовые инструменты, упомянутые в данном разделе.</span></p>
+                            <p>
+                                Информация не может рассматриваться как публичная оферта, предложение или приглашение
+                                приобрести, или продать какие-либо ценные бумаги, иные финансовые инструменты, совершить
+                                с ними сделки. Информация не может рассматриваться в качестве гарантий или обещаний
+                                в будущем доходности вложений, уровня риска, размера издержек, безубыточности
+                                инвестиций. Результат инвестирования в прошлом не определяет дохода в будущем. Перед
+                                принятием инвестиционного решения Инвестору необходимо самостоятельно оценить
+                                экономические риски и выгоды, налоговые, юридические, бухгалтерские последствия
+                                заключения сделки, свою готовность и возможность принять такие риски. Клиент также несет
+                                расходы на оплату брокерских и депозитарных услуг, подачи поручений по телефону, иные
+                                расходы, подлежащие оплате клиентом. Перед совершением сделок вам также необходимо
+                                ознакомиться с уведомлением о рисках.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_top_block">
+                    <div class="col logo_block">
+                        <a href="/">
+                            <img src="/assets/images/main_logo.svg" alt="">
+                        </a>
+                        <p class="text--size--16">Действуем в интересах трейдеров
+                        </p>
+                    </div>
+                    <div class="col menu">
+                        <h3 class="h4">О нас</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Как мы шли к своей цели</a></li>
+                                <li><a href="#">Условия для торговли</a></li>
+                                <li><a href="#">То что ценим</a></li>
+                                <li><a href="#">То что предлагаем</a></li>
+                                <li><a href="#">Безопасность</a></li>
+                                <li><a href="#">Результативность</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col menu">
+                        <h3 class="h4">Торговля на Форекс</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">5 настоящих советов для реализации интересов трейдеров
+                                    </a></li>
+                                <li><a href="#">Правовые отношения </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col menu">
+                        <h3 class="h4">Платформы</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Web status trader
+                                    </a></li>
+                                <li><a href="#">Apple mobile status trader
+                                    </a></li>
+                                <li><a href="#">Android mobile status trader</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col menu">
+                        <h3 class="h4">Лицензии и сертификаты</h3>
+                        <nav>
+                            <ul>
+                                <li><a href="#">London stock exchange PLC</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer_bottom_block">
+                    <div class="copyright text--size--14">
+                        <p>Jotul Capital © 2022. Все права защищены </p>
+                    </div>
+                    <nav class="bottom_menu text--size--14">
+                        <ul>
+                            <li><a href="#">Уведомление о рисках</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-          </div>
-          <div class="flex justify-center items-center">
-            <a class="font-bold text-[28px] leading-[34px] transition duration-300 hover:bg-opacityGreen text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
-              href="#">Перейти на сайт</a>
-          </div>
-          <div
-            class="my-[40px] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
-            <h2 class="text-[20px] lg:text-[30px] font-bold leading-[24px] lg:leading-[39px] mb-[40px]">
-              Природные богатства страны приносят доход каждому
-            </h2>
-            <div class="max-w-[862px]">
-              <p class="mb-[15px] text-[20px] font-normal leading-[24px]">
-                Трудно найти лучшего эксперта в извлечении прибыли от
-                природных и цифровых ресурсов, чем Алишер Бурханович.
-                Уникальность проекта в том, что каждый житель нашей страны
-                сможет получать
-                <a href="#" class="underline hover:text-green transition delay-100">прибыль от инвестиций</a>. Каждый
-                участник заключает самые выгодные сделки на торговле
-                металлами и нефтью, а также акциями мировых компаний. Многие
-                жители уже проверили надежность проекта
-                <a href="#" class="underline hover:text-green transition delay-100">“USM INVEST”</a>
-                на своем личном опыте. Компания обеспечивает стабильный доход
-                и позволяет заработать даже новичку, уделяя всего 15 минут в
-                день.
-              </p>
-              <p class="text-[20px] font-normal leading-[24px]">
-                Передовая технология торговли нефтью и золотом, а также
-                акциями мировых брендов - всё это возможно с USM. Просто
-                взгляните на результаты первой недели торговли с “USM INVEST”.
-              </p>
-              <div class="mt-[15px] mb-[35px]">
-                <a href="#">
-                  <img class="ls:max-w-[895px] ls:w-[895px] ls:min-h-[531px] ls:h-[531px]" src="assets/img/graph.png"
-                    alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="pt-[40px]">
-            <p class="text-[20px] font-normal leading-[24px]">
-              В 2020-2021 возможность успешной торговли была очень низка.
-              Требовалось много читать и обучаться, рисковать личными
-              финансами и терять их в обмен на опыт. Участники “USM INVEST”
-              получили возможность оставить эти трудности в прошлом. Компания
-              “USM” занимается
-              <a href="#" class="underline hover:text-green transition delay-100">полным обеспечением</a>
-              безопасности и гарантирует успешную торговлю. Каждому участнику
-              предоставляется персональный трейдер, который просчитывает все
-              возможные варианты исхода на рынке. Услугами трейдера пользуется
-              и Алишер Усманов, и теперь он готов поделиться инструментом для
-              приумножения капитала со всеми жителями Узбекистана. На основе
-              надёжности, которую уже доказал
-              <a href="#" class="underline hover:text-green transition delay-100">Алишер Усманов</a>, “USM INVEST” даёт
-              возможность зарабатывать уже сегодня.
-            </p>
-            <div class="flex justify-center items-center mt-[25px]">
-              <a class="font-bold text-[28px] transition duration-300 hover:bg-opacityGreen leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
-                href="#">Перейти на сайт</a>
-            </div>
-          </div>
-          <div
-            class="mt-[35px] pb-[35px] relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
-            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
-              USM Invest - для безопасного инвестирования
-            </h2>
-            <div class="max-w-[862px]">
-              <p class="text-[20px] font-normal leading-[24px]">
-                Алишер Усманов заявил, что его компания USM INVEST
-                <a href="#" class="underline hover:text-green transition delay-100">не имеет конкурентов</a>
-                в СНГ. Лучшие специалисты из различных стран, новейшие
-                алгоритмы и уникальные программы предоставлены всем участникам
-                для успешной торговли.
-              </p>
-              <div class="my-[35px]">
-                <a href="#"><img class="ls:w-[898px] ls:max-w-[898px] ls:h-[585px] ls:max-h-[585px]"
-                    src="assets/img/usmanov.png" alt="" /></a>
-              </div>
-              <p class="text-[20px] font-normal leading-[24px]">
-                "Я помню, как сам инвестировал в различные проекты и новые
-                программы, когда этого все боялись и не понимали. Теперь же я
-                хочу помочь всему своему народу, и открыть для них сферу
-                инвестирования под моим началом", - говорит Алишер Бурханович.
-              </p>
-              <div class="flex justify-center items-center my-[25px]">
-                <a class="font-bold text-[28px] transition duration-300 hover:bg-opacityGreen leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
-                  href="#">Перейти на сайт</a>
-              </div>
-            </div>
-          </div>
-          <div class="relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-[#D9D9D9]">
-            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
-              Стиль жизни USM
-            </h2>
-            <div class="max-w-[862px]">
-              <div class="my-[25px]">
-                <a href="#">
-                  <img class="ls:w-[885px] ls:max-w-[885px] ls:h-[585px] ls:max-h-[585px]" src="assets/img/life.png"
-                    alt="Life" /></a>
-              </div>
-              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                До участия в программе USM 43-летний Шерзод из Самарканда
-                очень долго пытался изменить свою жизнь:
-              </p>
-              <p class="text-[20px] font-bold leading-[24px] mb-[25px]">
-                “Надоело, знаете ли, наблюдать, как мои знакомые покупают
-                машины и делают дорогой ремонт в своем доме. У меня не
-                получалось заработать даже на толковый отпуск в горы для всей
-                семьи.
-              </p>
-              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                В связи с коронавирусной пандемией компания, где я работал,
-                закрылась. Найти новую работу стало невероятно сложно.
-              </p>
-              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                А когда прочел в
-                <a href="#" class="underline hover:text-green transition delay-100">новостях про USM</a>,
-                заинтересовался проектом с внушительным доверием. Я
-                торговал в лавке брата, и не понимал, как устроены финансы и
-                инвестиции. Оказалось, что
-                <a href="#" class="underline hover:text-green transition delay-100">“USM INVEST”</a>
-                действительно позволяет даже новичку начать зарабатывать и
-                получать свою первую прибыль. Мой специалист всегда
-                безошибочно заключал прибыльные сделки.
-              </p>
-              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                Регистрация была проще, чем в банке. Перезвонили, провели
-                консультацию и порекомендовали начать с 200 долларов. Вечером
-                проверил аккаунт и не поверил своим глазам: у меня на счету
-                уже была моя первая прибыль в 30$! А это моя 5-дневная
-                зарплата! Казалось, что это был сон. Сейчас с улыбкой
-                вспоминаю старую работу. Ушел и уже начал развивать свой
-                бизнес по выращиванию фазанов”.
-              </p>
-              <div class="flex justify-center items-center my-[25px]">
-                <a class="font-bold transition duration-300 hover:bg-opacityGreen text-[28px] leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
-                  href="#">Перейти на сайт</a>
-              </div>
-            </div>
-          </div>
-          <div class="py-[25px]">
-            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
-              Самые прибыльные инвестиции - своевременные
-            </h2>
-            <div>
-              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                Центральный банк сообщил, что в 2022 году ожидается
-                значительная инфляция. Она коснется всех, кто не позаботился о
-                финансовой подушке в иностранной валюте. На фоне этого,
-                увеличивается прирост средств от физических лиц на 6-8%, а
-                юридических – на 11-13%. Прогнозируется и увеличение розничных
-                кредитов, которые будут расти на 10-12% . Корпоративные
-                кредиты тоже будут расти на 7-10%.
-              </p>
-              <p class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                Переводя на простой язык: заработать станет сложнее, если не
-                позаботиться об этом заранее.
-              </p>
-              <div class="flex justify-center items-center mt-[25px]">
-                <a class="font-bold transition duration-300 hover:bg-opacityGreen text-[28px] leading-[34px] text-white bg-green rounded-[6px] w-[286px] h-[58px] p-[13px] flex justify-center items-center"
-                  href="#">Перейти на сайт</a>
-              </div>
-            </div>
-          </div>
-          <div class="pt-[25px]">
-            <h2 class="text-[20px] lg:text-[40px] leading-[24px] lg:leading-[48px] font-bold text-center mb-[40px]">
-              Простота – залог успеха
-            </h2>
-            <ul>
-              <li class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                1.
-                <a href="#"><span class="underline hover:text-green transition delay-100">
-                    Перейдите по этой ссылке</span></a>
-                на официальный сайт USM.
-              </li>
-              <li class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                2. Внимательно заполните все поля и завершите регистрацию.
-              </li>
-              <li class="text-[20px] font-normal leading-[24px] mb-[25px]">
-                3. Ожидайте звонка специалиста, он свяжется с Вами в ближайшее
-                время..
-              </li>
-              <li class="text-[20px] font-normal leading-[24px] mb-[35px]">
-                4. Выберите желаемую сумму для первого депозита и заработайте
-                первую прибыль с “USM INVEST” уже сегодня!
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="hidden lg:flex-col lg:flex bg-gray py-[25px] px-[55px] h-full">
-        <div class="mb-[25px]">
-          <a href="#">
-            <div id="t1" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
-              15 августа
-            </div>
-            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
-              <a href="#" class="hover:text-green transition delay-100">
-                Молодежь сможет получить льготные кредиты на учебу на
-                IT-курсах</a>
-            </div>
-          </a>
-        </div>
-        <div class="mb-[25px]">
-          <a href="#">
-            <div id="t2" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
-              15 августа
-            </div>
-            <div class="leading-[18px] text-[15px] font-semibold">
-              <a href="#" class="hover:text-green transition delay-100">В Казахстане опровергли транспортировку нефти
-                через
-                Азербайджан</a>
-            </div>
-          </a>
-        </div>
-        <div class="mb-[25px]">
-          <a href="#">
-            <div id="t3" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
-              14 августа
-            </div>
-            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
-              <a href="#" class="hover:text-green transition delay-100">«Узбекнефтегаз» опроверг дефицит Аи-80 на своих
-                заправках</a>
-            </div>
-          </a>
-        </div>
-        <div class="mb-[25px]">
-          <a href="#">
-            <div id="t4" class="text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
-              15 августа
-            </div>
-            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
-              <a href="#" class="hover:text-green transition delay-100">
-                Дзюдоисты Узбекистана завоевали четыре медали ЧМ</a>
-            </div>
-          </a>
-        </div>
-        <div class="mb-[25px]">
-          <a href="#">
-            <div id="t5" class="date text-[#7D7D7D] text-[16px] font-medium mb-[10px]">
-              15 августа
-            </div>
-            <div class="max-w-[177px] text-[15px] font-semibold leading-[18px]">
-              <a href="#" class="hover:text-green transition delay-100">
-                TBC Bank: как осуществляется переход на цифровые технологии в
-                Узбекистане</a>
-            </div>
-          </a>
-        </div>
-      </div>
+        </footer>
     </div>
-  </div>
-  <footer>
-    <div
-      class="container footer-main px-[70px] pt-[85px] pb-[85px] flex gap-[20px] lg:gap-[155px] bg-white relative after:content-[''] after:w-full after:h-[1px] after:absolute after:left-0 after:right-0 after:bg-[#D9D9D9] after:top-0">
-      <div class="text-[13px] font-normal leading-[16px]">
-        <p class="pb-2">
-          © 2008-2022 <br />
-          «Газета.uz»
-        </p>
-        <p class="pb-2">Новости для людей.</p>
-        <p class="text-[#7D7D7D]">
-          Нашли ошибку? <br />
-          Нажмите Ctrl+Enter
-        </p>
-      </div>
-      <div class="text-[15px] leading-[18px] font-normal text-[#7D7D7D] max-w-[588px]">
-        <p class="pb-2">
-          Воспроизводство, копирование, тиражирование, распространение и иное
-          использование информации с сайта «Газета.uz» возможно только с
-          предварительного письменного разрешения редакции.
-        </p>
-        <p>
-          Регистрация электронного СМИ: №0460 от 13 августа 2019 года.
-          Учредитель: ООО «Afisha Media»
-        </p>
-      </div>
-    </div>
-    <script>
-      let today = new Date();
-      let options = {
-        day: 'numeric',
-        year: 'numeric',
-        month: 'long'
-      };
-      let option = {
-        day: 'numeric',
-        month: 'long',
-        weekday: 'long'
-      };
-      let now = today.toLocaleString('ru-Ru', options);
-      let t1 = today.toLocaleString('ru-Ru', {
-        day: 'numeric',
-        month: 'long'
-      });
-      let nowDay = today.toLocaleString('ru-Ru', option);
-      let time = today.getHours() + ":" + today.getMinutes();
-      document.getElementById("dd").innerText = now;
-      document.getElementById("d1").innerText = nowDay;
-      document.getElementById("time").innerText = time;
-      document.getElementById("t1").innerText = t1;
-      document.getElementById("t2").innerText = t1;
-      document.getElementById("t3").innerText = t1;
-      document.getElementById("t4").innerText = t1;
-      document.getElementById("t5").innerText = t1;
-    </script>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/assets/js/main.js"></script>
+    <script src="/dist/main.min.js"></script>
 </body>
 </html>
