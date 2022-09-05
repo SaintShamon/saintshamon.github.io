@@ -9,6 +9,14 @@ function header() {
             return false;
         });
 
+        $('.btn_close').click(function () {
+            $('#side-panel').toggleClass('active');
+            $('#menu_box-panel').removeClass('active');
+            $('body').toggleClass('side-panel-overlay');
+            $('body').removeClass('menu-panel-overlay');
+            return false;
+        });
+
         $(document).click(function (event) {
             let $target = $(event.target);
             if (!$target.closest('.side-panel').length) {
