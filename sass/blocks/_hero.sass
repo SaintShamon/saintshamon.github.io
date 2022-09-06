@@ -80,6 +80,18 @@
             right: auto
             margin-right: auto
             margin-left: auto
+    &.inner_pages
+        .hero_img_block
+            +max-screen($breakpoint-lg)
+                max-width: 55vw
+            +max-screen($breakpoint-sm)
+                max-width: 85vw
+            img
+                max-width: max-content
+                margin-left: auto
+                display: block
+                +max-screen($breakpoint-xm)
+                    max-width: none
     &.right_bottom_img
         .hero_img_block
             +max-screen($breakpoint-sm)
