@@ -11,7 +11,7 @@
         display: flex
     &_text_block
         width: 100%
-        max-width: 575px
+        max-width: 605px
         margin-top: 72px
         margin-bottom: 142px
         margin-left: 0
@@ -23,6 +23,10 @@
             margin-left: auto
             margin-right: auto
             text-align: center
+            .inner_pages &
+                text-align: left
+        .content-block
+            margin-top: 24px
         .btn_block
             margin-top: 42px
             display: flex
@@ -31,6 +35,9 @@
             +max-screen($breakpoint-sm)
                 flex-direction: column
                 margin-top: 16px
+                .inner_pages &
+                    margin-top: 24px
+                    margin-bottom: 54px
             a.button
                 margin-right: 16px
                 +max-screen(1024px)
@@ -39,6 +46,8 @@
                     margin-right: auto
                     margin-left: auto
                     margin-bottom: 8px
+                    .inner_pages &
+                        margin-left: 0
                 &:last-of-type
                     margin-right: 0
                     +max-screen(1024px)
@@ -46,17 +55,21 @@
                     +max-screen($breakpoint-sm)
                         margin-right: auto
                         margin-left: auto
+                        .inner_pages &
+                            margin-left: 0
     &_img_block
         width: 100vw
         max-width: 900px
         height: 100%
         position: absolute
-        top: 50px
+        top: 100px
         right: 50%
         margin-right: calc(-1 * (100vw / 2))
         z-index: -1
         +max-screen($breakpoint-xl)
-            max-width: 52vw
+            max-width: 55vw
+        +max-screen($breakpoint-xm)
+            max-width: 50vw
         +max-screen($breakpoint-lg)
             max-width: 62vw
         +max-screen($breakpoint-sm)
@@ -67,3 +80,15 @@
             right: auto
             margin-right: auto
             margin-left: auto
+    &.right_bottom_img
+        .hero_img_block
+            +max-screen($breakpoint-sm)
+                display: flex
+                align-self: flex-end
+                position: absolute
+                top: auto
+                bottom: 0
+                right: 0
+                max-width: 55vw
+                img
+                    margin-top: auto

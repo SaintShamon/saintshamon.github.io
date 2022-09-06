@@ -7,6 +7,7 @@
         background: $color-greyblack
         border-radius: 20px
         padding: 70px 90px
+        z-index: 1
         +max-screen(1200px)
             max-width: 685px
             padding: 63px 80px 80px
@@ -73,3 +74,21 @@
                     margin-right: auto
                     margin-left: auto
                     margin-bottom: 0
+    + .text_block
+        &::before
+            position: absolute
+            content: ''
+            top: -50%
+            left: 0
+            width: 334.94px
+            height: 528.38px
+            background-image: url('../assets/images/left_bg.svg')
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
+            +max-screen($breakpoint-xm)
+                top: -60%
+            +max-screen($breakpoint-sm)
+                top: -10%
+                width: 160px
+                height: 250px
