@@ -41,6 +41,8 @@
     .center_img
         grid-area: center_img
         border: 31px solid #FFFFFF
+        +max-screen($breakpoint-xl)
+            border: 21px solid #FFFFFF
         img
             object-fit: cover
             display: block
@@ -76,3 +78,9 @@
         padding-bottom: 50px
         gap: 32px 75px
         grid-template-areas: 'left_side center_img right_side'
+        +max-screen($breakpoint-xxl)
+            gap: 32px 55px
+        +max-screen($breakpoint-xl)
+            grid-template-columns: 25% 45% 25%
+            margin: 50px auto 0
+            width: 100%

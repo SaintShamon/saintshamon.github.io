@@ -33,6 +33,10 @@
             left: 0
             bottom: -98%
             z-index: 2
+            +max-screen($breakpoint-xxl)
+                width: 401.07px
+                height: 160.56px
+                bottom: -88%
     &_col
         position: relative
         margin-left: 86px
@@ -44,6 +48,7 @@
             top: 0
             left: 0
             margin-left: 0
+
         .news_block
             width: 566px
             height: 460px
@@ -51,6 +56,12 @@
             background-size: cover !important
             background-repeat: no-repeat !important
             background-position: center !important
+            +max-screen($breakpoint-xxl)
+                width: 506px
+                height: 420px
+            +max-screen($breakpoint-xl)
+                width: 466px
+                height: 380px
             &:last-of-type
                 margin-right: 0
             a

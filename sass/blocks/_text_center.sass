@@ -17,9 +17,18 @@
         height: 442.4px
         bottom: -60px
         left: 6%
+        +max-screen($breakpoint-xxxl)
+            left: 3.5%
+        +max-screen($breakpoint-xxl)
+            left: 0
+            width: 35vw
+            height: 30vw
+            bottom: -80px
     .pig_img
         position: absolute
         width: 306.86px
         height: 144.76px
         right: 6%
         bottom: -110px
+        +max-screen($breakpoint-xxxl)
+            bottom: -90px

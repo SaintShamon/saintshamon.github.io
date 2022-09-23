@@ -34,6 +34,9 @@
     bottom: 0
     img
         height: 100%
+    +max-screen($breakpoint-xxl)
+        width: 40vw
+        height: 35vw
 .side_bg_grass
     position: absolute
     width: 191.48px
@@ -156,6 +159,11 @@
     width: 100%
     margin-right: 466px
     margin-left: auto
+    +max-screen($breakpoint-xxl)
+        margin-right: 20vw
+    +max-screen($breakpoint-xl)
+        margin-top: 49px
+        max-width: 306px
     &.header__menu
         display: block
     nav
@@ -173,8 +181,14 @@
             font-family: $font-family-title
             text-transform: none
             transition: .2s ease-out
+            +max-screen($breakpoint-xxl)
+                font-size: 30px
+                line-height: 50px
+            +max-screen($breakpoint-xl)
+                font-size: 22px
+                line-height: 34px
             &:hover
-                color: $color-gold
+                color: $color-red
         li
             padding: 0
             margin-bottom: 0
@@ -188,7 +202,9 @@
             &:last-of-type
                 margin-bottom: 0
             &.active
-                border-bottom: 4px solid #61091E
+                border-bottom: 4px solid $color-red
+                +max-screen($breakpoint-xl)
+                    border-bottom: 2px solid $color-red
                 a
                     font-weight: 700
                     color: $color-red

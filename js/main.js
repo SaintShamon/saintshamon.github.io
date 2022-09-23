@@ -16,9 +16,9 @@ import {
     footer
 } from './template-parts/footer/footer';
 
-// import {
-//     scrollToAnchor
-// } from './animations/scroll-to-anchor';
+import {
+    scrollToAnchor
+} from './animations/scroll-to-anchor';
 
 import {
     calltoaction
@@ -26,7 +26,7 @@ import {
 
 header();
 footer();
-// lazy();
-// lottie();
-// scrollToAnchor();
+lazy();
+lottie();
+scrollToAnchor();
 calltoaction();

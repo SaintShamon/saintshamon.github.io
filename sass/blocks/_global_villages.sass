@@ -36,6 +36,9 @@
             display: flex
             flex-direction: column
             max-width: 728px
+            +max-screen($breakpoint-xl)
+                max-width: 628px
+                margin-right: 34px
             .inner_block
                 position: relative
             .red_title
@@ -65,12 +68,16 @@
                 display: flex
                 img
                     max-width: 377px
+                    +max-screen($breakpoint-xl)
+                        max-width: 50%
             .red_content
                 width: 100%
                 max-width: 290px
                 margin-right: 76px
                 padding-top: 36px
                 color: black
+                +max-screen($breakpoint-xl)
+                    max-width: 340px
                 a.button
                     margin-top: 20px
                     margin-left: 0
@@ -80,6 +87,8 @@
             max-width: 608px
             padding-left: 61px
             display: flex
+            +max-screen($breakpoint-xl)
+                padding-left: 31px
             .content-block
                 margin-top: 196px
             .section-bg_sm
@@ -101,3 +110,6 @@
                 width: 364px
                 right: -40%
                 bottom: 0
+                +max-screen($breakpoint-xl)
+                    width: 20vw
+                    right: -30%

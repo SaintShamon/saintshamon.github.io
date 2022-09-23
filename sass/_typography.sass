@@ -20,8 +20,8 @@ h1, .h1
 	font-size: 100px
 	font-family: $font-family-title
 	font-weight: 600
-	+max-screen($breakpoint-xm)
-		font-size: 56px
+	+max-screen($breakpoint-xl)
+		font-size: 76px
 	+max-screen(1200px)
 		font-size: 48px
 	+max-screen(360px)
@@ -31,19 +31,21 @@ h2, .h2
 	line-height: 110%
 	font-family: $font-family-title
 	font-weight: 600
-	+max-screen($breakpoint-xm)
-		font-size: 44px
+	+max-screen($breakpoint-xl)
+		font-size: 34px
 	+max-screen(1200px)
-		font-size: 36px
-	+max-screen(360px)
 		font-size: 30px
+	+max-screen(360px)
+		font-size: 24px
 h3, .h3
 	font-weight: 600
 	font-size: 35px
 	line-height: 130%
 	font-family: $font-family-title
+	+max-screen($breakpoint-xl)
+		font-size: 30px
 	+max-screen(1200px)
-		font-size: 18px
+		font-size: 26px
 h4, .h4
 	font-weight: 600
 	font-size: 20px
@@ -63,6 +65,8 @@ h6, .h6
 p,.p
 	font-size: $default-font-size
 	line-height: $default-line-height
+	+max-screen($breakpoint-xl)
+		font: normal #{15px}/1.3
 
 .text
 	&--style
