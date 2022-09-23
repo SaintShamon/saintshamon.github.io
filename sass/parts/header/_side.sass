@@ -25,7 +25,10 @@
     min-height: 100vh
     overflow-x: hidden
     background-color: #E9E4DC
-
+    .container
+        +max-screen($breakpoint-md)
+            padding-left: 30px
+            padding-right: 30px
 .side_bg_img
     position: absolute
     width: 889.68px
@@ -37,6 +40,10 @@
     +max-screen($breakpoint-xxl)
         width: 40vw
         height: 35vw
+    +max-screen($breakpoint-md)
+        width: 300px
+        height: auto
+        left: -50px
 .side_bg_grass
     position: absolute
     width: 191.48px
@@ -45,6 +52,12 @@
     bottom: 0
     img
         height: 100%
+        +max-screen($breakpoint-md)
+            height: auto
+    +max-screen($breakpoint-md)
+        height: auto
+        width: 151px
+
 .side-panel-overlay
     overflow: hidden
 
@@ -164,6 +177,8 @@
     +max-screen($breakpoint-xl)
         margin-top: 49px
         max-width: 306px
+    +max-screen($breakpoint-md)
+        margin-right: 0
     &.header__menu
         display: block
     nav
