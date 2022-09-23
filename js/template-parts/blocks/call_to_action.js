@@ -4,10 +4,9 @@ import 'slick-carousel';
 function calltoaction() {
     $('.call_to_action').each(function () {
         let block = $(this);
-        let testimonials_slider = $(this).find('.call_to_action__row');
+        let slider = $(this).find('.call_to_action__row');
 
-
-        testimonials_slider.slick({
+        slider.slick({
             dots: true,
             arrows: false,
             infinite: false,
@@ -16,7 +15,7 @@ function calltoaction() {
             slidesToScroll: 1,
             // variableWidth: true,
             responsive: [{
-                breakpoint: 453,
+                breakpoint: 253,
                 settings: {
                     slidesToShow: 1,
                     variableWidth: false,

@@ -24,11 +24,22 @@
                 color: #fff
     .left_side
         grid-area: left_side
+        +max-screen(1200px)
+            grid-area: auto
+            max-width: 540px
+            margin-left: auto
+            margin-right: auto
         .content_left_side
             margin-bottom: 32px
+            +max-screen(1200px)
+                text-align: center
         .img_left_side
             position: relative
             min-height: 316px
+            +max-screen($breakpoint-xm)
+                min-height: auto
+            +max-screen(1200px)
+                min-height: auto
             img
                 width: 100vw
                 max-width: 587px
@@ -38,8 +49,24 @@
                 top: 0
                 right: 0
                 margin-right: 0
+                +max-screen($breakpoint-xm)
+                    min-height: 276px
+                    max-width: 457px
+                +max-screen(1200px)
+                    position: relative
+                    height: auto
+                    min-height: auto
+                    top: auto
+                    right: auto
+                    width: 100%
+                    max-width: 540px
     .center_img
         grid-area: center_img
+        +max-screen(1200px)
+            grid-area: auto
+            max-width: 540px
+            margin-left: auto
+            margin-right: auto
         border: 31px solid #FFFFFF
         +max-screen($breakpoint-xl)
             border: 21px solid #FFFFFF
@@ -49,10 +76,19 @@
             height: 100%
     .right_side
         grid-area: right_side
+        +max-screen(1200px)
+            grid-area: auto
+            max-width: 540px
+            margin-left: auto
+            margin-right: auto
         .img_right_side
             position: relative
             min-height: 374px
             margin-bottom: 32px
+            +max-screen($breakpoint-xm)
+                min-height: 324px
+            +max-screen($breakpoint-sm)
+                min-height: auto
             img
                 width: 100vw
                 max-width: 557px
@@ -62,12 +98,25 @@
                 top: 0
                 left: 0
                 margin-left: 0
-
+                +max-screen($breakpoint-xm)
+                    min-height: 324px
+                    max-width: 457px
+                +max-screen(1200px)
+                    position: relative
+                    min-height: auto
+                    top: auto
+                    left: auto
+                    width: 100%
+                    max-width: 540px
         .content_right_side
             color: #8E6D3E
+            +max-screen(1200px)
+                text-align: center
             a.button
                 margin-left: 0
                 margin-top: 19px
+                +max-screen(1200px)
+                    margin-left: auto
 
     &_row
         position: relative
@@ -84,3 +133,12 @@
             grid-template-columns: 25% 45% 25%
             margin: 50px auto 0
             width: 100%
+        +max-screen(1200px)
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-areas: none
+            gap: 22px
+            margin: 25px auto
+        +max-screen(1024px)
+            padding-bottom: 0
+        +max-screen($breakpoint-sm)
+            margin: 25px auto 0
