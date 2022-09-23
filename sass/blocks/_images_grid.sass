@@ -1,0 +1,78 @@
+.images_grid
+    .section-bg
+        background-color: $color-gold
+    &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 482px
+        left: 0
+        bottom: -110px
+        background-image: url('../assets/images/lines/our_heritage_bottom.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: bottom
+    .main_block
+        padding-top: 100px
+
+    .title_block
+        .subtitle
+            p
+                color: #fff
+        .title
+            h2
+                color: #fff
+    .left_side
+        grid-area: left_side
+        .content_left_side
+            margin-bottom: 32px
+        .img_left_side
+            position: relative
+            min-height: 316px
+            img
+                width: 100vw
+                max-width: 587px
+                height: 100%
+                min-height: 316px
+                position: absolute
+                top: 0
+                right: 0
+                margin-right: 0
+    .center_img
+        grid-area: center_img
+        border: 31px solid #FFFFFF
+        img
+            object-fit: cover
+            display: block
+            height: 100%
+    .right_side
+        grid-area: right_side
+        .img_right_side
+            position: relative
+            min-height: 374px
+            margin-bottom: 32px
+            img
+                width: 100vw
+                max-width: 557px
+                height: 100%
+                min-height: 374px
+                position: absolute
+                top: 0
+                left: 0
+                margin-left: 0
+
+        .content_right_side
+            color: #8E6D3E
+            a.button
+                margin-left: 0
+                margin-top: 19px
+
+    &_row
+        position: relative
+        display: grid
+        grid-template-columns: 308px 676px 308px
+        grid-template-rows: auto
+        margin-top: 50px
+        padding-bottom: 50px
+        gap: 32px 75px
+        grid-template-areas: 'left_side center_img right_side'

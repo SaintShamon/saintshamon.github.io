@@ -1,112 +1,156 @@
 .footer
-    margin-top: 128px
-    background-color: $color-greyblack
-    display: flex
-    +max-screen(1024px)
-        margin-top: 64px
+    position: relative
     &_top_block
-        margin-top: 55px
         display: flex
         justify-content: space-between
-        +max-screen(1100px)
-            flex-wrap: wrap
-        +max-screen($breakpoint-sm)
-            margin-top: 34px
-    .col
+        padding-top: 100px
+        padding-bottom: 71px
+    .section-bg
+        background-color: #E3DDD3
+    .logo_block
+        width: 125px
+    .menu_block
         width: 100%
-        max-width: 225px
-        padding-top: 20px
-        margin-right: 34px
-
-        +max-screen(1100px)
-            max-width: 46%
-            margin-right: 0
-            margin-bottom: 36px
-            padding-top: 0
-        +max-screen($breakpoint-sm)
-            max-width: 100%
-            margin-bottom: 24px
-        &:nth-of-type(2)
-            max-width: 253px
-            +max-screen(1100px)
-                max-width: 46%
-                margin-right: 0
-            +max-screen($breakpoint-sm)
-                max-width: 100%
-        &:nth-of-type(3)
-            max-width: 325px
-            +max-screen(1100px)
-                max-width: 46%
-            +max-screen($breakpoint-sm)
-                max-width: 100%
-        &:nth-of-type(4)
-            margin-bottom: 0
-            +max-screen($breakpoint-sm)
-                margin-bottom: 24px
-        &:last-of-type
-            margin-right: 0
-            margin-bottom: 0
-        &.logo_block
-            max-width: 205px
-            padding-top: 0
-            +max-screen(1100px)
-                max-width: none
-            img
-                max-width: 140px
-            p
-                margin-top: 14px
-        h3
-            margin-bottom: 14px
-            font-weight: 600
-            line-height: 110%
-        li
-
-            margin-bottom: 10px
-            &:last-of-type
-                margin-bottom: 0
-            a
-                font-size: 14px
-                line-height: 140%
+        max-width: 595px
+        .text_block
+            color: rgba(0, 0, 0, 0.5)
+            font-family: $font-family-title
+        .socials_block
+            display: flex
+            margin-top: 38px
+            li
+                max-width: 38px
+                margin-right: 8px
+                transition: .15s
                 &:hover
-                    color: $color-gold
-                    transition: $default-transition
+                    transition: .15s
+                    transform: translate(0, 4px)
+        .footer_block
+            display: flex
+            justify-content: space-between
+            font-family: $font-family-title
+            margin-top: 25px
+            padding-bottom: 32px
+            border-bottom: 1px solid #B69970
+            .col
+                width: 60%
+
+                &:last-of-type
+                    width: 30%
+                    display: flex
+            .phone_block
+                position: relative
+                padding-left: 27px
+                display: flex
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 16px
+                    height: 16px
+                    background-image: url('../assets/images/icon/phone_icon.svg')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center
+                    left: 0
+                    top: calc( 50% - 8px )
+                a
+                    color: $color-blue
+                    font-weight: 700
+                    transition: 0.4s
+                    &:hover
+                        color: $color-gold
+                span
+                    color: $color-blue
+                    font-weight: 700
+                    margin-left: 5px
+                    margin-right: 5px
+            .email_block
+                position: relative
+                padding-left: 27px
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 16px
+                    height: 12px
+                    background-image: url('../assets/images/icon/email_icon.svg')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center
+                    left: 0
+                    top: calc( 50% - 6px )
+                a
+                    color: $color-blue
+                    font-weight: 700
+                    transition: 0.4s
+                    &:hover
+                        color: $color-gold
+            .socials_block
+                margin-top: 0
+                align-self: end
+        .menu_block_inner
+            margin-top: 47px
+            display: flex
+            justify-content: space-between
+            .menu_col
+                width: max-content
+                max-width: 230px
+            h3
+                margin-bottom: 6px
+                color: $color-blue
+            li
+                a
+                    color: #000
+                    font-size: 16px
+                    transition: 0.4s
+                    &:hover
+                        color: $color-gold
+    .map_block
+        width: 100%
+        max-width: 535px
+        position: relative
+        .map_content
+            display: flex
+            flex-direction: column
+            position: absolute
+            width: 202px
+            height: 202px
+            left: 30px
+            bottom: -51px
+            background-color: $color-blue
+            padding: 27px
+            border-radius: 50%
+            img
+                max-width: 50px
+                align-self: center
+                margin-bottom: 13px
+            p
+                font-family: $font-family-title
+                text-align: center
+
     &_bottom_block
         position: relative
-        margin-top: 87px
-        margin-bottom: 53px
-        padding-top: 30px
         display: flex
         justify-content: space-between
-        +max-screen($breakpoint-sm)
-            margin-top: 24px
-            flex-direction: column
-            margin-bottom: 48px
-        ul
-            display: flex
-            +max-screen($breakpoint-sm)
-                flex-direction: column
-                margin-top: 24px
-        li
-            margin-right: 25px
-            +max-screen($breakpoint-sm)
-                margin-right: 0
-                margin-bottom: 10px
-            &:last-of-type
-                margin-right: 0
-                +max-screen($breakpoint-sm)
-                    margin-bottom: 0
-        a
-            &:hover
+        padding: 29px 0
+        .section-bg
+            background-color: #fff
+        .copyright
+            p,
+            a
+                color: #000
+                transition: 0.4s
+            a:hover
                 color: $color-gold
-                transition: $default-transition
-        &::before
-            position: absolute
-            content: ''
-            top: 0
-            left: 0
-            width: 100%
-            height: 1px
-            background: #fff
-            +max-screen($breakpoint-md)
-                width: 100vw
-                left: -10px
+        .developer
+            max-width: 82px
+    &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 142px
+        left: 0
+        top: -121px
+        background-image: url('../assets/images/lines/footer_bg_top.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center

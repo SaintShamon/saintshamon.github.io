@@ -44,6 +44,3 @@ if( function_exists('acf_add_options_page') ) {
 function the_acf_loop(){
   	get_template_part('template-parts/loop/acf-blocks','loop');
 }
-function the_front_page_acf_loop(){
-	get_template_part('template-parts/loop/front-page-blocks','loop');
-}

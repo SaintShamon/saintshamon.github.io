@@ -7,7 +7,7 @@ body
 	font-style: normal
 	line-height: $default-line-height
 	color: $default-text-color
-	background: $color-black
+	background: #fff
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 	-webkit-backface-visibility: hidden
@@ -17,9 +17,9 @@ body
 
 h1, .h1
 	line-height: 110%
-	font-size: 96px
+	font-size: 100px
 	font-family: $font-family-title
-	font-weight: 700
+	font-weight: 600
 	+max-screen($breakpoint-xm)
 		font-size: 56px
 	+max-screen(1200px)
@@ -27,10 +27,10 @@ h1, .h1
 	+max-screen(360px)
 		font-size: 40px
 h2, .h2
-	font-size: 60px
+	font-size: 40px
 	line-height: 110%
 	font-family: $font-family-title
-	font-weight: 700
+	font-weight: 600
 	+max-screen($breakpoint-xm)
 		font-size: 44px
 	+max-screen(1200px)
@@ -38,25 +38,25 @@ h2, .h2
 	+max-screen(360px)
 		font-size: 30px
 h3, .h3
-	font-weight: 700
-	font-size: 48px
-	line-height: 120%
+	font-weight: 600
+	font-size: 35px
+	line-height: 130%
 	font-family: $font-family-title
 	+max-screen(1200px)
 		font-size: 18px
 h4, .h4
-	font-weight: 700
-	font-size: 18px
-	line-height: 112%
+	font-weight: 600
+	font-size: 20px
+	line-height: 150%
 	font-family: $font-family-title
 h5, .h5
 	font-family: $font-family-title
 	line-height: 112%
-	font-weight: 700
+	font-weight: 600
 	font-size: 16px
 h6, .h6
 	font-family: $font-family-title
-	font-weight: 700
+	font-weight: 600
 	font-size: 16px
 	line-height: 112%
 
@@ -73,7 +73,6 @@ p,.p
 			font-size: 10px
 	&--size--12,&--size--12 *
 		font-size: 12px
-
 		+max-screen($breakpoint-lg)
 		+max-screen($breakpoint-md)
 			font-size: 12px
@@ -107,6 +106,12 @@ p,.p
 			font-size: 16px
 	&--size--22,&--size--22 *
 		font-size: 22px
+		+max-screen($breakpoint-xl)
+			font-size: 18px
+		+max-screen($breakpoint-md)
+			font-size: 16px
+	&--size--23,&--size--23 *
+		font-size: 23px
 		+max-screen($breakpoint-xl)
 			font-size: 18px
 		+max-screen($breakpoint-md)
@@ -174,8 +179,6 @@ p,.p
 		width: 100%
 
 .content-block
-	// font-size: rem(16px)
-	// line-height: rem(28px)
 	p
 		margin-bottom: 20px
 		&:nth-child(1)
@@ -184,9 +187,6 @@ p,.p
 		&:nth-last-child(1)
 			padding-bottom: 0
 			margin-bottom: 0
-	// h1,h2,h3,h4,h5,h6
-	// 	margin-bottom: 15px
-		// line-height: 1.2em
 	h2,h3,h4,h5,h6
 		margin-top: 80px
 		margin-bottom: 30px
@@ -195,25 +195,10 @@ p,.p
 			margin-bottom: 20px
 		&:first-of-type
 			margin-top: 0
-	// h1
-	// 	font-size: 64px
-	// h2
-	// 	font-size: 48px
-	// h3
-	// 	font-size: 18px
-	// h4
-	// 	font-size: 16px
-	// h5
-	// 	font-size: 14px
-	// h6
-	// 	font-size: 14px
+
 	p,ul,ol
-		color: $color-primary
-		// font-size: rem(16px)
-		// line-height: rem(28px)
+
 	a
-		// overflow-wrap: break-word
-		// word-wrap: break-word
 		transition: 0.3s
 		color: $color-primary
 		font-weight: 500
@@ -221,6 +206,9 @@ p,.p
 			opacity: 0.8
 			text-decoration: underline
 	a.button
+		font-weight: 400
+		margin-left: 0
+		margin-top: 37px
 		&:hover
 			text-decoration: none
 	ul

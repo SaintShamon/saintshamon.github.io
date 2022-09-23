@@ -16,12 +16,17 @@ import {
     footer
 } from './template-parts/footer/footer';
 
+// import {
+//     scrollToAnchor
+// } from './animations/scroll-to-anchor';
+
 import {
-    scrollToAnchor
-} from './animations/scroll-to-anchor';
+    calltoaction
+} from './template-parts/blocks/call_to_action';
 
 header();
-footer()
+footer();
 // lazy();
 // lottie();
-scrollToAnchor();
+// scrollToAnchor();
+calltoaction();

@@ -1,0 +1,103 @@
+.global_villages
+    .section-bg
+        background-color: $color-lightgold
+    &::before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 182px
+        left: 0
+        top: -130px
+        background-image: url('../assets/images/lines/school_bg_top.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: top
+    &::after
+        position: absolute
+        content: ''
+        width: 100%
+        height: 182px
+        left: 0
+        bottom: -160px
+        background-image: url('../assets/images/lines/school_bg_bottom.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: bottom
+    &_row
+        margin-top: 85px
+        padding-bottom: 85px
+        display: flex
+        justify-content: space-between
+        .col
+            width: 100%
+
+        .col_red
+            margin-right: 64px
+            display: flex
+            flex-direction: column
+            max-width: 728px
+            .inner_block
+                position: relative
+            .red_title
+                position: relative
+                width: 100%
+                max-width: 246px
+                padding-top: 41px
+                padding-right: 56px
+                padding-bottom: 41px
+                box-sizing: content-box
+            .section-bg_sm
+                width: 100vw
+                height: 100%
+                position: absolute
+                top: 0
+                right: 0
+                margin-right: 0
+                z-index: -1
+                background-color: $color-red
+            .tree
+                position: absolute
+                width: 361px
+                height: 234px
+                left: 70%
+                bottom: 20px
+            .inner_block:last-of-type
+                display: flex
+                img
+                    max-width: 377px
+            .red_content
+                width: 100%
+                max-width: 290px
+                margin-right: 76px
+                padding-top: 36px
+                color: black
+                a.button
+                    margin-top: 20px
+                    margin-left: 0
+        .col_blue
+            position: relative
+            width: 100%
+            max-width: 608px
+            padding-left: 61px
+            display: flex
+            .content-block
+                margin-top: 196px
+            .section-bg_sm
+                width: 100vw
+                height: 100%
+                position: absolute
+                top: 0
+                left: 0
+                margin-left: 0
+                z-index: -1
+                background-color: $color-blue
+            .cat
+                position: absolute
+                width: 260px
+                bottom: 0
+                left: 303px
+            .giraffe
+                position: absolute
+                width: 364px
+                right: -40%
+                bottom: 0

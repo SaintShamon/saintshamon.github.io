@@ -6,7 +6,7 @@
 */
 
 function theme_setup(){
-	load_theme_textdomain( 'arken', get_template_directory() . '/languages' );
+	// load_theme_textdomain( 'arken', get_template_directory() . '/languages' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
@@ -18,8 +18,13 @@ function theme_setup(){
 	//main menu
 	register_nav_menus(
 		array( 
-			'main-menu' => __( 'Main Menu', 'arken' ),
-			'footer-menu' => __( 'Footer Menu', 'arken'),
+			'main-menu' => __( 'Main Menu', 'jotul' ),
+			'lang-menu' => __( 'Language Menu', 'jotul' ),
+			'footer-menu-1' => __( 'Footer Menu 1', 'jotul'),
+			'footer-menu-2' => __( 'Footer Menu 2', 'jotul'),
+			'footer-menu-3' => __( 'Footer Menu 3', 'jotul'),
+			'footer-menu-4' => __( 'Footer Menu 4', 'jotul'),
+			'footer-menu-bottom' => __( 'Bottom footer menu', 'jotul'),
 		)
     );
     

@@ -1,6 +1,6 @@
 .side-panel
     position: fixed
-    top: 70px
+    top: 0
     right: 0
     display: block
     z-index: 10
@@ -24,8 +24,24 @@
 .side-inner
     min-height: 100vh
     overflow-x: hidden
-    background-color: #363837
+    background-color: #E9E4DC
 
+.side_bg_img
+    position: absolute
+    width: 889.68px
+    height: 729.13px
+    left: -100px
+    bottom: 0
+    img
+        height: 100%
+.side_bg_grass
+    position: absolute
+    width: 191.48px
+    height: 176.49px
+    right: 32px
+    bottom: 0
+    img
+        height: 100%
 .side-panel-overlay
     overflow: hidden
 
@@ -51,53 +67,134 @@
 .admin-bar.side-panel-overlay:after,
 .admin-bar .side-panel
     top: 124px
-.side-header
+.side_header
     position: relative
     display: flex
     justify-content: space-between
-    padding: 10px
+    padding: 29px 0 0
+    .header__menu
+        align-self: center
+        margin-right: 32px
+        ul
+            display: flex
+        li
+            position: relative
+            margin-right: 30px
+            line-height: normal
+            &::before
+                position: absolute
+                content: '/'
+                right: -20px
+                color: $color-blue
+            a
+                text-transform: uppercase
+                font-weight: 700
+                font-size: 14px
+                line-height: 19px
+                text-align: right
+                letter-spacing: 0.05em
+                color: $color-blue
+                transition: .2s ease-out
+                &:hover
+                    color: $color-gold
+
+            &:last-of-type
+                margin-right: 0
+                &::before
+                    display: none
     .btn_close
-        width: 24px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        align-self: center
+        width: 72px
         height: 24px
-        background-color: transparent
-        padding: 0
-        border: 0
         position: relative
-        span:first-child
+        cursor: pointer
+        margin-top: 4px
+        &:hover
+            span.line
+                background-color: $color-gold
+            .text
+                color: $color-gold
+        span.line:first-child
             transform: translate(-50%, -50%) rotate(45deg)
 
-        span:last-child
+        span.line:last-child
             transform: translate(-50%, -50%) rotate(-45deg)
-        span
+        button
+            position: relative
+            background: none
+            border: none
+            display: block
+            width: 14px
+            height: 14px
+
+        .text
+            display: block
+            align-self: center
+            text-transform: uppercase
+            font-weight: 700
+            font-size: 14px
+            line-height: 19px
+            text-align: right
+            letter-spacing: 0.05em
+            color: $color-blue
+            transition: .2s ease-out
+        span.line
             position: absolute
             top: 50%
             left: 50%
-            width: 24px
-            height: 1px
-            background: #FFFFFF
+            display: block
+            width: 14px
+            height: 2px
+            background-color: $color-blue
             transition: .2s ease-out
-
 .side_menu_block
-    padding: 20px 40px
+    margin-top: 109px
+    max-width: 366px
+    width: 100%
+    margin-right: 466px
+    margin-left: auto
     &.header__menu
         display: block
-
     nav
         margin: 0 auto
-        width: max-content
+        width: 100%
     ul
         text-align: center
-
-    ul.lang-menu
-        margin-top: 37px
         display: flex
+        flex-direction: column
+        a
+            font-weight: 400
+            font-size: 35px
+            line-height: 60px
+            color: $color-blue
+            font-family: $font-family-title
+            text-transform: none
+            transition: .2s ease-out
+            &:hover
+                color: $color-gold
         li
-            padding: 6px 18px
-            margin-right: 24px
+            padding: 0
             margin-bottom: 0
+            margin-right: 0
+            width: 100%
+            height: auto
+            line-height: 100%
+            text-align: right
+            &::before
+                display: none
             &:last-of-type
-                margin-right: 0
-
+                margin-bottom: 0
+            &.active
+                border-bottom: 4px solid #61091E
+                a
+                    font-weight: 700
+                    color: $color-red
+                    transition: .2s ease-out
+                    &:hover
+                        color: $color-gold
     .sub-menu
         margin-top: 10px
         margin-bottom: 10px
@@ -109,46 +206,3 @@
         li
             padding: 0
             margin-bottom: 5px
-    a
-        font-weight: 400
-        font-size: 18px
-        line-height: 120%
-        letter-spacing: 0.08em
-        color: $color-primary
-    li
-        padding: 0
-        margin-bottom: 8px
-        width: 100%
-        height: auto
-        line-height: 100%
-        &:last-of-type
-            margin-bottom: 0
-    li.menu-item-has-children
-        position: relative
-
-        .menu-item__parent
-            display: flex
-            justify-content: center
-            width: 100%
-            padding-left: 15px
-        .menu-item__icon
-            position: relative
-            content: ''
-            display: block
-            width: 25px
-            &::before
-                position: absolute
-                content: ''
-                width: 10px
-                height: 6px
-                top: calc( 50% - 3px )
-                left: calc(50% - 5px)
-                background-image: url('../assets/images/arrow_down_mob.svg')
-                background-size: cover
-                background-repeat: no-repeat
-                transition: 0.3s
-    li.menu-item-has-children.active
-        .menu-item__icon
-            &::before
-                transform: rotate(180deg)
-                transition: 0.3s

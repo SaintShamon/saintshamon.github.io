@@ -32,20 +32,50 @@ img
 	background-size: cover
 	background-repeat: no-repeat
 .title_block
-	// max-width: 60%
 	margin-left: auto
 	margin-right: auto
-	p.subtitle
-		font-weight: 600
-		font-size: 16px
-		line-height: 19px
-		text-align: center
-		letter-spacing: 3px
-		text-transform: uppercase
-		color: $color-gold
-		margin-bottom: 3px
-	h2
-		text-align: center
+	.subtitle
+		max-width: 500px
+		margin-left: auto
+		margin-right: auto
+		p
+			font-weight: 600
+			font-size: 16px
+			line-height: 19px
+			text-align: center
+			text-transform: uppercase
+			font-family: $font-family-title
+			color: $color-gold
+			margin-bottom: 13px
+	.title
+		max-width: 500px
+		margin-left: auto
+		margin-right: auto
+		h2
+			text-align: center
+			color: $color-blue
+.slick-slider
+	.slick-dots
+		bottom: 83px
+		li.slick-active
+
+			button
+				width: 12px
+				height: 12px
+				background: $color-red
+		li
+			width: 12px
+			height: 12px
+			margin: 0 5px
+			display: inline-flex
+			button
+				width: 7px
+				height: 7px
+				background: #fff
+				border-radius: 50%
+				&::before
+					display: none
+
 .breadcrumbs_block
 	margin-top: 40px
 	span
