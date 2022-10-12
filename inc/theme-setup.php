@@ -50,8 +50,3 @@ function my_custom_login_url($url) {
 add_filter( 'excerpt_more', function( $more ) {
 	return '...';
 } );
-
-// в php 7.4+ можно сократить так:
-add_filter( 'excerpt_more', function( $more ) {
-	return '...';
-} );

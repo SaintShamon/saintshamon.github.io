@@ -1,0 +1,44 @@
+.awards
+    .section-bg
+        background-image: url('../assets/images/blue_bg.jpg')
+    .main_block
+        padding: 50px 0 150px
+        +max-screen($breakpoint-xxl)
+            padding: 50px 0 100px
+        +max-screen($breakpoint-xl)
+            padding: 50px 0 0
+    .title_block
+        margin-bottom: 100px
+        +max-screen($breakpoint-xxl)
+            margin-bottom: 50px
+        h2
+            text-align: center
+            color: $color-white
+    .content-block
+        p
+            text-align: center
+            color: $color-white
+    &_row
+        margin-top: 100px
+        max-width: 1054px
+        margin-left: auto
+        margin-right: auto
+        display: flex
+        justify-content: center
+        justify-items: center
+        flex-wrap: wrap
+        +max-screen($breakpoint-xl)
+            max-width: 754px
+    &_block
+        margin-right: 50px
+        margin-bottom: 50px
+        align-self: center
+        &:nth-of-type(5)
+            margin-right: 0
+        &:nth-of-type(10)
+            margin-right: 0
+        &:last-of-type
+            margin-right: 0
+        img
+            width: max-content
+            max-width: 100px

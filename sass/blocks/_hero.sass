@@ -1,0 +1,44 @@
+.hero
+    z-index: 1
+    &_main_block
+        padding-top: 150px
+        padding-bottom: 250px
+        +max-screen($breakpoint-xxl)
+            padding-top: 100px
+        +max-screen(1640px)
+            padding-bottom: 150px
+        +max-screen($breakpoint-xl)
+    &_text_block
+        position: relative
+        width: 100%
+        max-width: 776px
+        +max-screen(1640px)
+            max-width: 700px
+        h1
+            font-size: 117px
+            line-height: 85%
+            +max-screen(1640px)
+                font-size: 100px
+            +max-screen($breakpoint-xl)
+                font-size: 80px
+            span
+                font-size: 70px
+                line-height: 85%
+                +max-screen(1640px)
+                    font-size: 50px
+                +max-screen($breakpoint-xl)
+                    font-size: 40px
+                &:first-of-type
+                    margin-left: 50px
+        .content-block
+            max-width: 588px
+            margin-top: 40px
+    .img_block
+        position: absolute
+        top: 0
+        right: 0
+        width: 90%
+        +min-screen($breakpoint-xxxl)
+            width: 80%
+        +max-screen($breakpoint-xxl)
+            width: 80%

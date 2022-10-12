@@ -2,6 +2,10 @@
     $left_text = get_field('footer_left_text', 'options');
     $logo = get_field('footer_logo', 'options');
     $copyright = get_field('copyright', 'options');
+    $menu_name_1 = get_field('footer_menu_name_1', 'options');
+    $menu_name_2 = get_field('footer_menu_name_2', 'options');
+    $menu_name_3 = get_field('footer_menu_name_3', 'options');
+    $menu_name_4 = get_field('footer_menu_name_4', 'options');
 ?>
 
 <footer class="footer">
@@ -19,38 +23,41 @@
                 <?php endif; ?>
             </div>
             <div class="col menu">
-                <?php 
-                    $menu_id = get_nav_menu_locations()[ 'footer-menu-1' ];
-                    $menu = wp_get_nav_menu_object( $menu_id );
-                    $items = wp_get_nav_menu_items( $menu_id );
-                    
-                    echo $menu->name; // Displays the menu name.
-                    foreach($items as $item){
-                        echo '<a href="'. esc_url( $item->url )'">'. esc_html( $item->title ).'</a>'; // Displays a link to the item destination.
-                         // Displays the item description.
-                    }
-                 ?>
+                <?php if($menu_name_1): ?>
                 <h3 class="h4">
-                    <?php echo $item->description; ?>
+                    <?php echo esc_html($menu_name_1); ?>
                 </h3>
+                <?php endif; ?>
                 <nav>
                     <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-1' )) ?>
                 </nav>
             </div>
             <div class="col menu">
-                <h3 class="h4">Торговля на Форекс</h3>
+                <?php if($menu_name_2): ?>
+                <h3 class="h4">
+                    <?php echo esc_html($menu_name_2); ?>
+                </h3>
+                <?php endif; ?>
                 <nav>
                     <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-2' )) ?>
                 </nav>
             </div>
             <div class="col menu">
-                <h3 class="h4">Платформы</h3>
+                <?php if($menu_name_3): ?>
+                <h3 class="h4">
+                    <?php echo esc_html($menu_name_3); ?>
+                </h3>
+                <?php endif; ?>
                 <nav>
                     <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-3' )) ?>
                 </nav>
             </div>
             <div class="col menu">
-                <h3 class="h4">Лицензии и сертификаты</h3>
+                <?php if($menu_name_4): ?>
+                <h3 class="h4">
+                    <?php echo esc_html($menu_name_4); ?>
+                </h3>
+                <?php endif; ?>
                 <nav>
                     <?php wp_nav_menu(array( 'theme_location' => 'footer-menu-4' )) ?>
                 </nav>
@@ -60,7 +67,6 @@
             <?php if($copyright): ?>
             <div class="copyright text--size--14">
                 <?php echo $copyright; ?>
-                <p>Jotul Capital © 2022. Все права защищены </p>
             </div>
             <?php endif; ?>
             <nav class="bottom_menu text--size--14">

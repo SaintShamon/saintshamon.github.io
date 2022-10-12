@@ -21,12 +21,12 @@ import {
 } from './animations/scroll-to-anchor';
 
 import {
-    calltoaction
-} from './template-parts/blocks/call_to_action';
+    mainslider
+} from './template-parts/blocks/slider';
 
 header();
-footer();
+footer()
 lazy();
 lottie();
+mainslider();
 scrollToAnchor();
-calltoaction();

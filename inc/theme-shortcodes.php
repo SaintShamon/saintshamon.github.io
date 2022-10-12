@@ -51,6 +51,6 @@ function shortcode_button( $atts ){
     'label' => ''
 	), $atts );
   
-	return '<a class="button" href="'.$atts['href'].'" target="'.$atts['target'].'"><span class="button__text">'.$atts['label'].'</span><span class="button__icon">'.file_get_contents(esc_url(get_template_directory().'/assets/images/icon-arrow.svg')).'</span></a>';
+	return '<a class="button" href="'.$atts['href'].'" target="'.$atts['target'].'"><span class="button__text">'.$atts['label'].'</span></a>';
 }
 add_shortcode( 'button', 'shortcode_button' );

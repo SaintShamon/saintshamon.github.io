@@ -1,0 +1,48 @@
+.product
+    &.left_text
+        .text
+            margin-left: 70px
+            margin-right: 50px
+            +max-screen($breakpoint-xl)
+                margin-left: 40px
+    &.right_text
+        .text
+            order: 2
+        .image
+            order: 1
+    .main_block
+        display: flex
+        justify-content: space-between
+    .col
+        width: 100%
+    .text
+        height: max-content
+        align-self: center
+        max-width: 552px
+        +max-screen(1640px)
+            max-width: 500px
+
+    .image
+        max-width: 909px
+        +max-screen(1640px)
+            width: 50%
+        +max-screen($breakpoint-xl)
+            width: 45%
+            max-width: 659px
+    .title_block
+        margin-bottom: 50px
+        h2
+            // display: flex
+        img
+            max-width: 129px
+            display: block
+            +max-screen(1640px)
+                max-width: 79px
+    .content-block
+        p,li
+            color: $color-grey
+            font-weight: 700
+        a.button
+            margin-top: 110px
+            +max-screen($breakpoint-xxl)
+                margin-top: 60px

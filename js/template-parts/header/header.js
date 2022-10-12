@@ -11,7 +11,9 @@ function header() {
 
         $('.btn_close').click(function () {
             $('#side-panel').toggleClass('active');
+            $('#menu_box-panel').removeClass('active');
             $('body').toggleClass('side-panel-overlay');
+            $('body').removeClass('menu-panel-overlay');
             return false;
         });
 
@@ -37,16 +39,6 @@ function header() {
             $(this).parents().eq(1).find('.sub-menu').slideToggle(300);
             // console.log(123);
         });
-
-        // $(window).scroll(function () {
-        //     if ($(window).scrollTop() >= 300) {
-        //         $('.header .header_block').addClass('fixed_header');
-        //         $('#button_top').addClass('show');
-        //     } else {
-        //         $('.header .header_block').removeClass('fixed_header');
-        //         $('#button_top').removeClass('show');
-        //     }
-        // });
     });
 }
 

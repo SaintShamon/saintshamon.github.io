@@ -1,0 +1,44 @@
+.image_text
+    .main_block
+        display: flex
+        justify-content: space-between
+        padding: 150px 0
+        +max-screen($breakpoint-xxl)
+            padding: 100px 0
+    .col
+        width: 100%
+    .image
+        max-width: 827px
+        margin-right: 50px
+        .img_block
+            background: $color-primary
+            padding: 20px
+    .text
+        max-width: 673px
+        .title_block
+            margin-bottom: 40px
+            h2
+                position: relative
+                font-size: 75px
+                line-height: 85%
+                padding-left: 30px
+                span
+                    font-size: 39px
+                    &:first-of-type
+                        position: absolute
+                        top: -10px
+                        left: 0
+                        display: inline-block
+                        width: max-content
+        .bottom_title
+            position: relative
+            margin-top: 50px
+            p
+                text-align: center
+                font-weight: 700
+        .icon
+            position: absolute
+            width: 19px
+            height: 14px
+            top: 70px
+            left: calc( 50% - 7px )
