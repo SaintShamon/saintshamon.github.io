@@ -6,7 +6,12 @@
         margin: 0 auto
         display: flex
         width: 100%
-    .content-block
+        +max-screen($breakpoint-xm)
+            max-width: 60%
+        +max-screen($breakpoint-sm)
+            max-width: 100%
+
+    .inner_block
         margin: 350px 0
         padding: 30px
         background-image: url('../assets/images/white_bg.svg')
@@ -19,13 +24,14 @@
             margin: 250px 0
         +max-screen(1640px)
             margin: 200px 0
-        p
-            font-size: 59px
-            text-align: center
-            +max-screen(1640px)
-                font-size: 39px
-        h3,h2
-            font-size: 52px
-            text-align: center
-            +max-screen(1640px)
-                font-size: 32px
+        +max-screen($breakpoint-xm)
+            margin: 150px 0
+        +max-screen(1200px)
+            margin: 50px 0
+        +max-screen($breakpoint-lg)
+            background-size: cover
+    .content-block
+        margin-bottom: 30px
+        text-align: center
+    .title_block
+        text-align: center

@@ -12,12 +12,16 @@
         height: 160px
         +max-screen($breakpoint-xxl)
             height: 120px
+        +max-screen(1200px)
+            height: 100px
     &__logo
         width: 100%
         max-width: 193px
         align-self: center
         +max-screen($breakpoint-xxl)
             max-width: 140px
+        +max-screen(1200px)
+            max-width: 100px
     &__menu
         ul
             display: flex
@@ -25,6 +29,9 @@
             font-size: 14px
             position: relative
             margin-right: 40px
+            +max-screen($breakpoint-xm)
+                font-size: 12px
+                margin-right: 30px
             &:last-of-type
                 margin-right: 0
             &::before
@@ -35,6 +42,10 @@
                 top: calc( 50% - 17.5px )
                 right: -19px
                 background-color: #1D2D51
+                +max-screen($breakpoint-xm)
+                    height: 30px
+                    top: calc( 50% - 15px )
+                    right: -16px
             &.active
                 border-bottom: 1px solid $color-blue
                 a
@@ -44,15 +55,21 @@
             font-weight: bold
             font-family: $font-family-title
             transition: $default-transition
+            +max-screen($breakpoint-xm)
+                font-size: 12px
             &:hover
                 color: $color-blue
     &_inner_block
         display: flex
         align-self: center
+        +max-screen(1200px)
+            display: none
     &__search
         display: flex
         align-self: center
         margin-left: 40px
+        +max-screen($breakpoint-xm)
+            margin-left: 30px
         button
             align-self: center
             background: none
@@ -66,6 +83,61 @@
         svg
             width: 22px
             height: 22px
+            +max-screen($breakpoint-xm)
+                width: 18px
+                height: 18px
+#toggle
+    position: absolute
+    right: 0
+    top: auto
+    display: none
+    width: 28px
+    height: 30px
+    margin: 0 auto
+    align-self: center
+    background: none
+    border: none
+    z-index: 2
+
+    span:after,
+    span:before
+        content: ""
+        position: absolute
+        left: 0
+        top: -9px
+
+    span:after
+        top: 9px
+
+    span
+        position: relative
+        display: block
+    span,
+
+    span:after,
+
+    span:before
+        width: 100%
+        height: 4px
+        background-color: $color-blue
+        transition: all 0.3s
+        backface-visibility: hidden
+        border-radius: 2px
+
+    // &.on span
+    //     background-color: transparent
+
+    // &.on span:before
+    //     transform: rotate(45deg) translate(5px, 5px)
+
+    // &.on span:after
+    //     transform: rotate(-45deg) translate(7px, -8px)
+
+    &.on + #menu
+        opacity: 1
+        visibility: visible
+    +max-screen(1200px)
+        display: block
 #wpadminbar
     +max-screen(600px)
         position: fixed

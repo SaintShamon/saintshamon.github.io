@@ -37,8 +37,10 @@ h2, .h2
 		font-size: 44px
 	+max-screen(1200px)
 		font-size: 36px
+	+max-screen($breakpoint-sm)
+		font-size: 28px
 	+max-screen(360px)
-		font-size: 30px
+		font-size: 22px
 h3, .h3
 	font-weight: 700
 	font-size: 49px
@@ -67,7 +69,8 @@ p,.p
 	line-height: $default-line-height
 	+max-screen(1510px)
 		font-size: $default-font-size-min
-
+	+max-screen(1200px)
+		font-size: $default-font-size-mob
 .text
 	&--style
 	&--size--10,&--size--10 *
@@ -113,15 +116,104 @@ p,.p
 		font-size: 29px
 		+max-screen($breakpoint-xl)
 			font-size: 24px
-		+max-screen($breakpoint-md)
-			font-size: 20px
+		+max-screen(1200px)
+			font-size: 18px
 	&--size--30,&--size--30 *
 		font-size: 30px
 		+max-screen(1640px)
 			font-size: 24px
+		+max-screen(1200px)
+			font-size: 20px
+	&--size--37,&--size--37 *
+		font-size: 37px
+		+max-screen($breakpoint-xxl)
+			font-size: 32px
+		+max-screen($breakpoint-xm)
+			font-size: 28px
+		+max-screen(1200px)
+			font-size: 20px
+	&--size--39,&--size--39 *
+		font-size: 39px
+		+max-screen($breakpoint-xxl)
+			font-size: 34px
+		+max-screen($breakpoint-xm)
+			font-size: 30px
+		+max-screen(1200px)
+			font-size: 20px
+	&--size--49,&--size--49 *
+		font-size: 49px
+		+max-screen($breakpoint-xl)
+			font-size: 40px
+		+max-screen($breakpoint-xm)
+			font-size: 34px
+		+max-screen($breakpoint-sm)
+			font-size: 20px
+	&--size--52,&--size--52 *
+		font-size: 52px
+		+max-screen(1640px)
+			font-size: 32px
+		+max-screen($breakpoint-xm)
+			font-size: 22px
+	&--size--59,&--size--59 *
+		font-size: 59px
+		+max-screen(1640px)
+			font-size: 39px
+		+max-screen($breakpoint-xm)
+			font-size: 29px
 		+max-screen($breakpoint-md)
 			font-size: 20px
-
+	&--size--75,&--size--75 *
+		font-size: 75px
+		+max-screen(1640px)
+			font-size: 59px
+		+max-screen($breakpoint-xm)
+			font-size: 35px
+		+max-screen($breakpoint-sm)
+			font-size: 24px
+	&--size--100,&--size--100 *
+		font-size: 100px
+		+max-screen(1640px)
+			font-size: 80px
+		+max-screen($breakpoint-xl)
+			font-size: 50px
+		+max-screen($breakpoint-sm)
+			font-size: 30px
+	&--size--117,&--size--117 *
+		font-size: 117px
+		+max-screen(1640px)
+			font-size: 100px
+		+max-screen($breakpoint-xl)
+			font-size: 80px
+		+max-screen($breakpoint-xm)
+			font-size: 74px
+		+max-screen($breakpoint-sm)
+			font-size: 34px
+	&--size--145,&--size--145 *
+		font-size: 145px
+		+max-screen($breakpoint-xxl)
+			font-size: 100px
+		+max-screen(1640px)
+			font-size: 90px
+		+max-screen($breakpoint-xl)
+			font-size: 80px
+		+max-screen($breakpoint-xm)
+			font-size: 70px
+		+max-screen(1200px)
+			font-size: 50px
+		+max-screen($breakpoint-sm)
+			font-size: 34px
+	&--size--147,&--size--147 *
+		font-size: 147px
+		+max-screen($breakpoint-xxl)
+			font-size: 117px
+		+max-screen($breakpoint-xl)
+			font-size: 77px
+		+max-screen($breakpoint-xm)
+			font-size: 67px
+		+max-screen(1200px)
+			font-size: 50px
+		+max-screen($breakpoint-sm)
+			font-size: 34px
 	&--default,&--default *
 		font-size: rem(16px)
 		line-height: 1.2em
